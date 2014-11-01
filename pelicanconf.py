@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 from os.path import abspath, join, dirname
 
 AUTHOR = u'Balthazar Rouberol'
-SITENAME = u'🐵 - Edimbara²'
+SITENAME = u'🐵 - Edimbara'
 SITEURL = ''
 
 PATH = 'content'
