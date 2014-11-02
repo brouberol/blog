@@ -5,7 +5,7 @@ from os.path import abspath, join, dirname
 
 AUTHOR = u'Balthazar Rouberol'
 SITENAME = u'🐵 - Edimbara'
-SITEURL = ''
+SITEURL = 'http://blog.brl.ovh'
 
 PATH = 'content'
 
