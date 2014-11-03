@@ -1,0 +1,19 @@
+Title: Ovfbhf Cncn
+Date: 2014-11-03
+Category: Édimbourg
+
+Je pense qu'une des plus belles surprises de ce voyage, en dehors du hamburger camembert/oignons confits, c'est de m'être rendu compte que je suis bon dans ce que je fais. Loin de moi l'idée de me faire mousser en famille, mais c'est quand même une belle prise de conscience! Ça m'a fait me demander comment j'en suis arrivé à faire de l'informatique mon métier.
+
+Petit retour en arrière [à travers l'espace-temps](http://img2.wikia.nocookie.net/__cb20100221013911/stargate/images/6/65/Wormhole_Moving.gif).
+
+L'informatique, c'est d'abord un truc de famille. Des bouquins techniques qui traînent sur le piano de la maison de Béthisy, des carcasses de PC entassées dans le grenier, mon premier PC que j'ai monté avec papa, des jeux que j'ai cracké avec Félix... L'informatique, c'est une curiosité de gosse qui ne m'a jamais vraiment quitté en fait. J'ai eu beau jurer, à l'apothéose de ma délicieuse adolescence, que je ne ferais jamais comme papa, ni comme maman, je me retrouve avec le métier de l'un, à faire du Yoga et du Tai-Chi, tout en ayant un lombricomposteur à la cave. Ironie du sort, quand tu nous tiens.
+
+Bref, l'informatique, je crois que ça me vient tout d'abord de la volonté de comprendre des trucs obscurs, des trucs de grands. Déjà, maîtriser un jargon, à défaut d'aider avec les filles, ça donne l'impression d'en savoir plus que les autres. Et puis, ça donne aussi l'impression d'en savoir plus que la veille. Si on n'a pas cette envie de constamment se rendre compte qu'on ne sait pas grand chose, et d'y remédier, je crois que ça n'est pas la peine de se lancer dans cette voie.
+
+Un jour ou l'autre, on se rend compte aussi qu'on peut rendre service, à soi comme aux autres. On peut installer un système pour l'un, conseiller l'autre dans l'achat d'un PC, développer un programme qui s'occupe de me chercher un appart, auto-héberger son blog, organiser une conférence, parler à une autre, et plein d'autres trucs rigolos. J'insiste sur le mot *rigolo*. Mes journées passent généralement assez vite, parce que je m'amuse. Tous les passionnés d'informatique que j'ai pu rencontrer s'amusent, à un moment de leur journée. Pas plus tard que dimanche soir, j'ai décidé de tester une nouvelle techno, pour me rendre compte tout d'un coup qu'il était 4h du matin, et qu'il serait sans doute bon de fermer l'oeil. Sans l'amusement, on serait juste des gens pâles devant un écran. Mais comme on trouve que tout ça c'est quand même chouette, parce que visiblement, ça rend service à plein de gens, on développe des trucs comme Youtube, OpenStreetMap (et Mapado :), et on file des coups de main, pour le simple plaisir d'aider. Un peu comme dans le vrai monde en fait.
+
+Ça faisait plusieurs années que je m'amusais dans mon coin ou avec des amis, et puis tout d'un coup, on m'a proposé de me donner de l'argent pour continuer. ALLO. Encore quelques années après, on m'a dit que comme j'étais expert dans tel truc, ça serait choupi de déménager dans la semaine et dans un autre pays, pour que le pays en question puisse réclamer ses taxes foncières sans trop de problème. Alors bon, être expert, c'est qu'une question de perspective, mais quand je repense au Balthazar d'il y a 15 ans, je me dis que le chemin parcouru ne l'a sans doute pas été pour rien.
+
+Alors voilà, je suis parti sur un coup de tête, pour aller faire un truc qui m'amuse, pour des gens qui ont l'air de penser que ça leur rend service, et qui sont même prêts à m'aider à rembourser mon appart pour ça. Je sais pas vous, mais je trouve qu'il y a pire comme passion.
+
+Allez, il est presque minuit, je me souhaite un bon anniversaire un peu en avance, et j'éteins mon PC. Il parait que ça empêche de dormir. Des conneries tout ça.
