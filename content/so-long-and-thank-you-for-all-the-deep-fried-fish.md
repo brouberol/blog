@@ -12,7 +12,7 @@ Je confirme aussi que l'Écosse est toujours un grand pays pour le whisky. J'ai 
 
 Je me suis vraiment senti chez moi partout, sauf chez moi. C'est principalement dû au fait que mon appart est un couloir, et ma voisine du dessus (ma propriétaire) se croit tout permis. Du coup, j'ai passé mon temps à être le plus silencieux possible, histoire qu'elle me lâche la grappe, ou alors à sortir (histoire qu'elle me lâche la grappe). Je peux vous dire qu'entre elle, et l'équipe que j'ai du diriger (composée d'une folle clinique, d'un superactif probablement drogué et d'un inutile amorphe), je reviens avec un cuir bien épais. Annonce générale à tous ceux qui auraient dans leurs plans de m'emmerder: _"don't"_.
 
-Je vais rajouter des photos dans la [gallerie](http://images.brouberol.imap.cc/edinburgh/), histoire que vous puissiez vous mettre un peu à ma place. Attention, pas trop longtemps, vous risqueriez de chopper froid.
+Je vais rajouter des photos dans la [galerie](http://images.brouberol.imap.cc/edinburgh/), histoire que vous puissiez vous mettre un peu à ma place. Attention, pas trop longtemps, vous risqueriez de chopper froid.
 
 Je vous embrasse, et on se reverra sur le sol gaulois.
 
