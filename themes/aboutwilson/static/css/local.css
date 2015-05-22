@@ -1,3 +1,20 @@
+body {
+    font-family: "Roboto Slab";
+}
+
+.container {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Slab"
+}
 
 .my-list-style {
     margin-left: 0;
