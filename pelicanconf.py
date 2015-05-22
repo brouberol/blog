@@ -15,6 +15,7 @@ PATH = 'content'
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'fr'
+LOCALE = 'fr_FR.utf-8'
 
 # Feed generation is usually not desired when developing
 FEED_RSS = 'feeds/rss.xml'
