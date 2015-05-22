@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 import platform
 from os.path import abspath, join, dirname
 AUTHOR = u'Balthazar Rouberol'
-SITENAME = u'B.'
+SITENAME = u'Balthazar'
 if platform.node() == 'linux-pbat.site':
     SITEURL = ''
 else:
