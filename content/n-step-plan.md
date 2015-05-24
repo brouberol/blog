@@ -44,3 +44,6 @@ Behold, one of my first Scheme programs, a pavement in the road of my improvemen
     )
 
     (cubic-root 9)
+    ; => 2.0800838232385224
+
+Note: If you want to experiment with various languages (Scheme included) without having to install them on your machine, have a look at [repl.it](http://repl.it/languages).
