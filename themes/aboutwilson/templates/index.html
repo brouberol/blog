@@ -4,7 +4,7 @@
 {% if articles %}
 {% for article in articles_page.object_list %}
 <div class="article" itemscope itemtype="http://schema.org/BlogPosting">
-	<a href="{{ SITEURL }}/{{ article.url }}">
+	<a href="{{ SITEURL }}/{{ article.url | replace('.html', '') }}">
 		<h2 itemprop="name headline">{{ article.title }}</h2>
 	</a>
 	<time datetime="{{ article.date.isoformat() }}" itemprop="datePublished">{{ article.locale_date }}</time>
@@ -12,14 +12,14 @@
 	{% if article.category %}
 	Categorie:
 	<span itemprop="articleSection">
-		<a href="{{ SITEURL }}/{{ article.category.url }}" rel="category">{{ article.category }}</a>
+		<a href="{{ SITEURL }}/{{ article.category.url | replace('.html', '') }}" rel="category">{{ article.category }}</a>
 	</span>
 	{% endif %}
 	{% if article.tags %}
 	Tags:
 	{% for tag in article.tags %}
 	<span itemprop="keywords">
-		<a href="{{ SITEURL }}/{{ tag.url }}" rel="tag">{{ tag }}</a>
+		<a href="{{ SITEURL }}/{{ tag.url | replace('.html', '') }}" rel="tag">{{ tag }}</a>
 	</span>
 	{% endfor %}
 	{% endif %}
