@@ -9,7 +9,7 @@
 			<time datetime="{{ article.date.isoformat() }}" itemprop="datePublished">{{ article.locale_date }}</time>
 			 -
 			{% if article.category %}
-				<a href="{{ SITEURL }}/{{ article.category.url }}" rel="category">{{ article.category }}</a>
+				<a href="{{ SITEURL }}/{{ article.category.url | replace('.html', '') }}" rel="category">{{ article.category }}</a>
 			{% endif %}
 		</div>
 	</div>
@@ -19,7 +19,7 @@
 		Tags:
 		{% for tag in article.tags %}
 		<span itemprop="keywords">
-			<a href="{{ SITEURL }}/{{ tag.url }}" rel="tag">{{ tag }}</a>
+			<a href="{{ SITEURL }}/{{ tag.url | replace('.html', '') }}" rel="tag">{{ tag }}</a>
 		</span>
 		{% endfor %}
 	</div>
