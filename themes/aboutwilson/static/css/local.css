@@ -25,6 +25,10 @@ li {
     line-height: 1.5em;
 }
 
+img {
+    border-radius: 8px 8px;
+}
+
 .my-list-style {
     margin-left: 0;
 }
