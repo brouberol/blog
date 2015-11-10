@@ -8,7 +8,7 @@ Mon premier essai de pain au levain étant, en toute modestie, particulièrement
 
 ## Le levain
 
-Tout d'abord, le levain. J'ai suivi cette [recette](http://www.chefnini.com/levain-naturel-maison/), ainsi que [celle-ci](http://www.marmiton.org/magazine/tendances-gourmandes_l-aventure-du-levain-naturel-maison_4.aspx). Au bout de presque 2 semaines, mon levain (Gérard) est prêt à être intégré dans du pain: il est vif, crisse sous le doigt et a une bonne (et douce) odeur de fermentation. Notez que j'ai fait mon levain à base de farine T85 (de la bonne grosse farine dégrossie), avec de temps un temps une goûte de miel bio.
+Tout d'abord, le levain. J'ai suivi cette [recette](http://www.chefnini.com/levain-naturel-maison/), ainsi que [celle-ci](http://www.marmiton.org/magazine/tendances-gourmandes_l-aventure-du-levain-naturel-maison_4.aspx). Au bout de presque 2 semaines, mon levain (Gérard) est prêt à être intégré dans du pain: il est vif, crisse sous le doigt et a une bonne (et douce) odeur de fermentation. Notez que j'ai fait mon levain à base de farine T85 (de la bonne grosse farine dégrossie), avec de temps en temps une goûte de miel bio.
 
 ## Le pain
 
@@ -24,13 +24,13 @@ Pétrir pendant une bonne quinzaine de minutes. Afin d'incorporer le maximum d'a
 
 La plupart des recettes vous conseillent d'attendre entre 6 et 8h à ce stade là. Pour mon premier essai, vu qu'il était déjà 22h, j'ai décidé de m'en balancer et d'y aller.
 
-Je fait préchauffer mon four à 240°C, avec une tasse d'eau au fond du four. Une fois la pâte levée, je la façonne, afin de lui donner la forme finale générale. Je farine d'abord ma plaque de cuisson. J'aime beaucoup les boules de campagnes, du coup je ramène un peu la pâte sous elle même, afin d'avoir une belle boule sur mon plaque. Je farine le dessus de la boule, et incise la pâte au couteau d'une croix, d'un peu moins 1 cm de profondeur. Au four!
+Je fait préchauffer mon four à 240°C, avec une tasse d'eau au fond du four. Une fois la pâte levée, je la façonne, afin de lui donner la forme finale générale. Je farine d'abord ma plaque de cuisson. J'aime beaucoup les boules de campagne, du coup je ramène un peu la pâte sous elle même, afin d'avoir une belle boule sur mon plaque. Je farine le dessus de la boule, et incise la pâte au couteau d'une croix, d'environ un cm de profondeur. Au four!
 
-Au bout de 10-15 minutes, j'ai versé le contenu de la tasse au fond du four, afin de libérer de la vapeur d'eau, qui va aider à la formation de la croûte. Au bout de 20-25 minutes de cuisson à 240°C, je baisse le four à 220°C pour encore 20 minutes de cuisson. Une fois le pain sorti du four, je le laisse reposer plusieurs heures sur une grille, afin que l'humidité s'échappe bien. Je suis un grand adepte du pain sorti du four, mais c'est l'effet caoutchouteux garanti...
+Au bout de 10-15 minutes, je verse le contenu de la tasse au fond du four, afin de libérer de la vapeur d'eau, qui va aider à la formation de la croûte. Au bout de 20-25 minutes de cuisson à 240°C, je baisse le four à 220°C pour encore 20 minutes de cuisson. Une fois le pain sorti du four, je le laisse reposer plusieurs heures sur une grille, afin que l'humidité s'échappe bien. Je suis un grand adepte de manger le pain à la sortie du four, mais avec de telles quantités, c'est l'effet caoutchouteux garanti...
 
 ### Le résultat le lendemain
 
-![Hmm](http://cozy.brl.ovh/public/photos/photos/29890556546cd7999016d32d820bc0c4.jpg).
-Le pain est très bon, avec un léger goût acide donné par le levain. J'aimerais avoir des bulles un peu plus grosses la prochaine fois, mais je crois qu'il faut que je retravaille ma technique de pétrissage, qui n'incorpore pas assez d'air.
+![Hmm](http://cozy.brl.ovh/public/photos/photos/29890556546cd7999016d32d820bc0c4.jpg)
+Le pain est très bon, avec un léger goût acide donné par le levain. J'aimerais avoir des bulles un peu plus grosses la prochaine fois, mais je crois qu'il faut que je retravaille ma technique de pétrissage, qui n'incorpore pas assez d'air, et surtout que je laisse la pâte gonfler bien plus longtemps (voire toute la nuit).
 
 Peut-être aussi mettre un quart ou un tiers de farine semi-complète, pour lui donner un goût plus brut, auquel cas il faudra faire gaffe à ce que la pâte réussisse quand même à gonfler (augmenter l'hydratation?).
