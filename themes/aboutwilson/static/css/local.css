@@ -16,6 +16,13 @@ p {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Roboto Slab";
     font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    font-size: 1.2em;
+    line-height: 1.5em;
 }
 
 .my-list-style {
