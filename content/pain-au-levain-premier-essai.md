@@ -4,7 +4,7 @@ Category: Pain, pâtes et autres farineries
 
 Mon premier essai de pain au levain étant, en toute modestie, particulièrement réussi, je consigne ici la recette.
 
-![Hmm](https://cozy.brl.ovh/public/photos/photos/29890556546cd7999016d32d820bbb16.jpg)
+![Hmm](http://cozy.brl.ovh/public/photos/photos/29890556546cd7999016d32d820bbb16.jpg)
 
 ## Le levain
 
@@ -30,7 +30,7 @@ Au bout de 10-15 minutes, j'ai versé le contenu de la tasse au fond du four, af
 
 ### Le résultat le lendemain
 
-![Hmm](https://cozy.brl.ovh/public/photos/photos/29890556546cd7999016d32d820bc0c4.jpg).
+![Hmm](http://cozy.brl.ovh/public/photos/photos/29890556546cd7999016d32d820bc0c4.jpg).
 Le pain est très bon, avec un léger goût acide donné par le levain. J'aimerais avoir des bulles un peu plus grosses la prochaine fois, mais je crois qu'il faut que je retravaille ma technique de pétrissage, qui n'incorpore pas assez d'air.
 
 Peut-être aussi mettre un quart ou un tiers de farine semi-complète, pour lui donner un goût plus brut, auquel cas il faudra faire gaffe à ce que la pâte réussisse quand même à gonfler (augmenter l'hydratation?).
