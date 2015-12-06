@@ -4,7 +4,7 @@ Category: Pain, pâtes et autres farineries
 
 Nouvel essai, nouvelle réussite! Cette fois, j'ai testé deux nouvelles techniques (l'autolyse et le pétrissage *stretch and fold*) et j'ai augmenté la proportion de farine complète.
 
-![Hmm](http://cozy.brl.ovh/public/photos/photos/29890556546cd7999016d32d820d6abe.jpg)
+![Hmm](https://cozy.brl.ovh/public/photos/photos/29890556546cd7999016d32d820d6abe.jpg)
 
 ## Ingrédients
 
