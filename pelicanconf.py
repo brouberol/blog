@@ -8,7 +8,7 @@ SITENAME = u'Balthazar'
 if platform.node() == 'linux-pbat.site':
     SITEURL = ''
 else:
-    SITEURL = 'http://blog.balthazar-rouberol.com'
+    SITEURL = 'https://blog.balthazar-rouberol.com'
 
 PATH = 'content'
 
