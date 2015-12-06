@@ -52,7 +52,7 @@ We now need to install the sound banks. First, download them from the official w
     $ sudo mv Banks-r370.gpbank /opt/GuitarPro6
     $ sudo /opt/GuitarPro6/GPBankInstaller /opt/GuitarPro6/Soundbanks.gpbank /opt/GuitarPro6/Data/Soundbanks/
 
-We then install the desktop and icon file, so that Guitar Pro can be executes from the App launcher.
+We then install the desktop and icon file, so that Guitar Pro can be executed from the App launcher.
 
     :::bash
     $ sudo cp usr/share/applications/GuitarPro6.desktop /usr/share/applications/GuitarPro6.desktop
