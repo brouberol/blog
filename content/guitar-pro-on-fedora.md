@@ -36,7 +36,7 @@ We now need to install GuitarPro's dependencies, and of course, they're 32 bit.
         portaudio.i686 \
         pulseaudio-libs.i686
 
-Sadly, that's not it yet. GuitarPro also depends on both libcrypto and libssl 0.9.8, and they're not packaged in Fedora 23. The trick is to download them from a Ubuntu deb file, and install them manually.
+Sadly, that's not it yet. GuitarPro also depends on both libcrypto and libssl 0.9.8, and they're not packaged anymore in Fedora 22. The trick is to download them from a Ubuntu deb file, and install them manually.
 
     :::bash
     $ wget -q http://security.ubuntu.com/ubuntu/pool/universe/o/openssl098/libssl0.9.8_0.9.8o-7ubuntu3.2.14.04.1_i386.deb 1>/dev/null
