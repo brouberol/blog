@@ -36,6 +36,8 @@ We now need to install GuitarPro's dependencies, and of course, they're 32 bit.
         portaudio.i686 \
         pulseaudio-libs.i686
 
+You might have to download other packages as well, as Guitar Pro was not my first 32bit program I had to install. The required packages will be listed when you execute the ``/opt/GuitarPro6/launcher.sh`` script, and you can use the ``dnf whatprovides`` command to find the package that provides each required library.
+
 Sadly, that's not it yet. GuitarPro also depends on both libcrypto and libssl 0.9.8, and they're not packaged anymore in Fedora 22. The trick is to download them from a Ubuntu deb file, and install them manually.
 
     :::bash
