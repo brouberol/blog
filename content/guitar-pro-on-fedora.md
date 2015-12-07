@@ -99,7 +99,7 @@ Done. You should now be able to click on a tab file, and enjoy!
 
 ### Conclusion
 
-I managed to make everything work, with both some help [^2] and luck. I would however had prefered if the Guitar Pro binary was compiled statically, to ease the installation.
+I managed to make everything work, with both some help and luck. I would however had prefered if the Guitar Pro binary was compiled statically, to ease the installation.
 
 Also, when you advertise Linux compatibility, please, PLEASE, at least mention the package format (deb, rpm, other), and also mention the distributions you support natively.
 
