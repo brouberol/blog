@@ -8,13 +8,13 @@ I've been playing guitar for the last 10 years now, but I spent the last 4 years
 
 ### Installing the dependencies
 
-First, download the Guitar Pro deb file. Mine was called ``gp6-full-linux-demo-r11686.deb``
+First, download the Guitar Pro deb file. Mine was called ``gp6-full-linux-r11686.deb``
 Extract the archive called ``data.tar.gz`` from the deb, and then de-archive it:
 
     :::bash
     $ cd /tmp
-    $ mv ~/Downloads/gp6-full-linux-demo-r11686.deb .
-    $ ar vx gp6-full-linux-demo-r11686.deb
+    $ mv ~/Downloads/gp6-full-linux-r11686.deb .
+    $ ar vx gp6-full-linux-r11686.deb
     $ tar -xvf data.tar.gz
 
 Create the installation directory for Guitar Pro.
