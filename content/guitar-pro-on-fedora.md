@@ -60,7 +60,7 @@ We'll use a very cool trick: by a great stroke of luck, the libraries contained 
 
 Seriously, how cool is that [^1]?
 
-*Note*: I moved both shared libraries to the ``/opt/GuitarPro6`` directory, because it also contained numerous other ones. My guess, which turned out to be correct, was that the executable uses will look for shared objects in its directory. This way, I didn't have to fiddle with ``LD_LIBRARY_PATH`` and ``ldconfig``.
+*Note*: I moved both shared libraries to the ``/opt/GuitarPro6`` directory, because it also contained numerous other ones. My guess, which turned out to be correct, was that the executable uses will look for shared objects in its directory. This way, I didn't have to fiddle with ``LD_LIBRARY_PATH`` and ``ldconfig``, or install these libraries into my ``/usr/lib`` folder.
 
 ### Installing the sound banks
 
@@ -99,7 +99,7 @@ Done. You should now be able to click on a tab file, and enjoy!
 
 ### Conclusion
 
-I managed to make everything work, with both some help and luck. I would however had prefered if the Guitar Pro binary was compiled statically, to ease the installation process.
+I managed to make everything work, with both some help and luck. I would however have prefered if the Guitar Pro binary had been compiled statically, to ease the installation process.
 
 Also, when you advertise Linux compatibility, please, PLEASE, at least mention the package format (deb, rpm, other), and also mention the distributions you support natively.
 
