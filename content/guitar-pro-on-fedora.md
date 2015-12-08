@@ -114,5 +114,5 @@ On that note (get it?), keep on rocking in a free world!
 * [https://github.com/dpurgin/guitarpro6-rpm/](https://github.com/dpurgin/guitarpro6-rpm/)
 * [https://stackoverflow.com/questions/30931/register-file-extensions-mime-types-in-linux](https://stackoverflow.com/questions/30931/register-file-extensions-mime-types-in-linux)
 
-[^1]: We can of course try to include them from other [rpm-based distributions](http://www.rpmfind.net/linux/rpm2html/search.php?query=openssl-devel+0.9.8&submit=Search+...&system=&arch=), but I have to admin I found it cooler this way.
+[^1]: We can of course try to include them from other [rpm-based distributions](http://www.rpmfind.net/linux/rpm2html/search.php?query=openssl-devel+0.9.8&submit=Search+...&system=&arch=), but I have to admit I found it cooler this way.
 
