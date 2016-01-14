@@ -4,7 +4,7 @@ Category: Pain, pâtes et autres farineries
 
 Nouvel essai, nouvelle réussite! Cette fois, j'ai testé deux nouvelles techniques (l'autolyse et le pétrissage *stretch and fold*) et j'ai augmenté la proportion de farine complète.
 
-![Hmm](https://cozy.brl.ovh/public/photos/photos/29890556546cd7999016d32d820d6abe.jpg)
+![Hmm](https://cozy.brl.ovh/public/photos/photos/7a91982eade5221b3b681b4ec343028c.jpg)
 
 ## Ingrédients
 
@@ -44,6 +44,6 @@ Laisser le pain refroidir sur une grille pour que l'humidité interne disparaiss
 
 ## Résultat
 
-![Hmm](https://cozy.brl.ovh/public/photos/photos/29890556546cd7999016d32d820d683a.jpg)
+![Hmm](https://cozy.brl.ovh/public/photos/photos/7a91982eade5221b3b681b4ec342ea21.jpg)
 
 Le résultat n'est pas aussi aéré que ce que j'espérais, mais c'est déjà beaucoup mieux! Et c'est délicieux!
