@@ -14,7 +14,7 @@ I think that a task should be as concise as possible, in order to be able to und
 
 Let's illustrate these rules with a simple example: sending an email using a 3rd party API (eg: [Mailgun](https://mailgun.com), [Mailjet](https://en.mailjet.com/), etc). Anyone having spent enough time using third party infrastructure and systems knows they should never totally rely on them: the network can fail, they can be unavailable, etc. We thus need to handle some expectable error cases and have a fallback strategy in case of an unexpected error.
 
-Let's say that we have a function  ``api_send_mail`` that does the actual API call, raising a ``myapp.exceptions.InvalidUserInput`` exception, in case of an HTTP client error. This two exceptions constitute our set of expectable exceptions, that we need to plan for. Any other exception will be sent to some crash report backend, like [Sentry](http://getsentry.com) and trigger a retry.
+Let's say that we have a function  ``api_send_mail`` that does the actual API call, raising a ``myapp.exceptions.InvalidUserInput`` exception, in case of an HTTP client error. This exception constitute our set of expectable exceptions, that we need to plan for. Any other exception (conection error, server HTTP error, etc) will be sent to some crash report backend, like [Sentry](http://getsentry.com) and trigger a retry.
 
 My task implementation would look something like this:
 
