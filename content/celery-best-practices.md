@@ -178,7 +178,7 @@ Defining a class task amounts to defining a class inheriting from ``app.Task`` w
 By doing this, the task logic is clear and easy to follow (the ``run`` method stays concise even if the methods body are large), and each of these method can then be unit-tested independently.
 
 Another advantage of using class tasks is using multiple inheritance to specialize a task with multiple abstract base classes.
-For example, I'd like to use the [celery_once](https://github.com/TrackMaven/celery-once/) ``QueueOnce`` abstract class to introduce some locking mechanism, while still using the ``BaseTask`` for sentry logging.
+For example, I'd like to use the [celery_once](https://github.com/TrackMaven/celery-once/) ``QueueOnce`` abstract class to introduce some locking mechanism, while still using the ``BaseTask`` for sentry logging. This way, each abstract task class is used as a mixin, adding some behaviour to the task.
 
 ## Unit-test your tasks
 
