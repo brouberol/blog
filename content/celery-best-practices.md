@@ -14,13 +14,14 @@ I think that a task should be as concise as possible, in order to be able to und
 
 Let's illustrate these rules with a simple example: sending an email using a 3rd party API (eg: [Mailgun](https://mailgun.com), [Mailjet](https://en.mailjet.com/), etc). Anyone having spent enough time using third party infrastructure and systems knows they should never totally rely on them: the network can fail, they can be unavailable, etc. We thus need to handle some expectable error cases and have a fallback strategy in case of an unexpected error.
 
-Let's say that we have a function  ``api_send_mail`` that does the actual API call, raising a ``myapp.exceptions.InvalidUserInput`` exception, in case of an HTTP client error. This exception constitute our set of expectable exceptions, that we need to plan for. Any other exception (conection error, server HTTP error, etc) will be sent to some crash report backend, like [Sentry](http://getsentry.com) and trigger a retry.
+Let's say that we have a function  ``api_send_mail`` that does the actual API call, raising a ``myapp.exceptions.InvalidUserInput`` exception, in case of an HTTP client error. This exception constitutes our set of expectable exceptions, that we need to plan for. Any other exception (connection error, server HTTP error, etc) will be sent to some crash report backend, like [Sentry](http://getsentry.com) and trigger a retry.
 
 My task implementation would look something like this:
 
     ::python
 
     import requests
+
     from myproject.tasks import app  # app is your celery application
     from myproject.exceptions import InvalidUserInput
 
@@ -35,7 +36,7 @@ My task implementation would look something like this:
             # No need to retry as the user provided an invalid input
             raise
         except Exception as exc:
-            # Any other exception. Log the exception to sentry and retry.
+            # Any other exception. Log the exception to sentry and retry in 10s.
             sentrycli.captureException()
             self.retry(countdown=10, exc=exc)
         return data
@@ -44,11 +45,11 @@ What the task actually does is abstracted one layer down, and almost all the res
 
 ## Retry gracefully
 
-Setting fixed countdowns for retries may not be what you want. I tend to prefer using a backoff which increases with the number of retries. This means the more a task fails, the more I have to wait until the next retry. I think this has a couple of interesting consequences:
+Setting fixed countdowns for retries may not be what you want. I tend to prefer using a backoff increasing with the number of retries. This means the more a task fails, the more we have to wait until the next retry. I think this has a couple of interesting consequences:
 
-* it avoids hammering the external service in case of an outage,
-* it gives more time to the service status to go back to normal,
-* and thus increases your overall chance of success
+* we don't hammer the external service in case of an outage,
+* it gives more time to the service to go back to normal,
+* and thus increases our overall chance of success
 
 A simple (but effective anyhow) implementation could look something like this:
 
@@ -67,7 +68,7 @@ A simple (but effective anyhow) implementation could look something like this:
     def send_mail(self, recipients, sender_email, subject, body):
         """Send a plaintext email with argument subject, sender and body to a list of recipients."""
         try:
-            data = _send_mail(recipients, sender_email, subject, body)
+            data = api_send_mail(recipients, sender_email, subject, body)
         except InvalidUserInput:
             raise
         except Exception as exc:
@@ -127,14 +128,14 @@ All that is pretty dandy, but I don't want to re-implement the exception catchin
     def send_mail(self, recipients, sender_email, subject, body):
         """Send a plaintext email with argument subject, sender and body to a list of recipients."""
         try:
-            data = _send_mail(recipients, sender_email, subject, body)
+            data = api_send_mail(recipients, sender_email, subject, body)
         except InvalidUserInput:
             raise
         except Exception as exc:
             self.retry(countdown=backoff(self.request.retries), exc=exc)
         return data
 
-You can see that the ``send_mail`` task implementation only deals with email sending and expected error handling. All common behavior, not directly related to what the tasks does, is handled by the abstract base class. If the common behavior is more complex, this trick can *drastically* reduce the size of each task body and the amount of duplicated code in your tasks.
+You can see that the ``send_mail`` task implementation only deals with email sending and expected error handling. Everything else is handled by the abstract base class. If the common behavior is more complex, this trick can *drastically* reduce the size of each task body and the amount of duplicated code in your tasks.
 
 **Note**: this example is only here to demonstrate how to share behavior between tasks. To properly integrate Sentry with Celery, have a look at [this page](https://docs.getsentry.com/hosted/clients/python/integrations/celery/).
 
@@ -148,8 +149,6 @@ I think one of the scenarii where class tasks really shine are when you'd like t
 Defining a class task amounts to defining a class inheriting from ``app.Task`` with a ``run`` method.
 
     ::python
-
-    from myproject.tasks import app
 
     class handle_event(BaseTask):   # BaseTask inherits from app.Task
 
