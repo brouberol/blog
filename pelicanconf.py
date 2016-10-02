@@ -5,7 +5,7 @@ import platform
 from os.path import abspath, join, dirname
 AUTHOR = u'Balthazar Rouberol'
 SITENAME = u'Balthazar'
-if platform.node() == 'linux-pbat.site':
+if platform.node() == 'localhost.localdomain':
     SITEURL = ''
 else:
     SITEURL = 'https://blog.balthazar-rouberol.com'
