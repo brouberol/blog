@@ -6,6 +6,7 @@ Connectez vous sur la machine virtuelle installée en première partie de la jou
 
 1 - Installez docker
 ```bash
+$ sudo su
 $ apt-get install docker.io
 ```
 
@@ -116,4 +117,18 @@ CONTAINER ID    IMAGE     COMMAND                  CREATED         STATUS       
 
 16 - Recuperez l'IP publique de votre VM via `ip -o -4 addr show eth0 | awk '{print $4}' | cut -d'/' -f 1`
 
-17 - Ouvrez votre navigateur et visitez `http://<public_ip>:<host_port>`
+17 - Interrogez votre conteneur nginx via `curl http://<container_public_ip>:<host_port>` (dans l'exemple precedent, `<host_port>` vallait `32768`)
+
+18 - Ouvrez votre navigateur et visitez `http://<public_ip>:<host_port>`
+
+19 - Si l'etape 18 ne fonctionne pas, vous etes probablement derriere un firewall. Nous allons donc lancer le conteneur ecoutant sur le port 80 du **hote**. Tout d'abord, desinstallons apache.
+```bash
+$ apt-get remove apache2
+```
+
+20 - Lancons le conteneur sur le port 80 du hote
+```bash
+docker run -it --rm --name=nginx-1 -p 80:80 nginx
+```
+
+21 - Ouvrez votre navigateur et visitez `http://<public_ip>`
