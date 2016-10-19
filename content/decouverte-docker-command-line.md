@@ -6,7 +6,7 @@ Connectez vous sur la machine virtuelle installée en première partie de la jou
 
 1 - Installez docker
 ```bash
-$ apt-get install docker
+$ apt-get install docker.io
 ```
 
 2 - Assurez vous que docker est correctement installé. Si c'est le cas, vous devriez avoir une sortie similaire à celle-ci:
