@@ -85,14 +85,14 @@ $ docker run ubuntu echo "hello world"
 $ docker ps -a
 ```
 
-9 - Pullez l'image `nginx`
+9 - Pullez l'image `brouberol/nginx`
 ```bash
-$ docker pull nginx
+$ docker pull brouberol/nginx
 ```
 
-10 - Lancez l'image nginx avec la commande suivante
+10 - Lancez l'image `brouberol/nginx` avec la commande suivante
 ```
-$ docker run -it --rm --name=nginx-1 -P nginx
+$ docker run -it --rm --name=nginx-1 -p 80:80 brouberol/nginx
 ```
 
 11 - Lancez un `docker run --help` et tentez de comprendre les options passées dans la commande précédente
@@ -107,28 +107,30 @@ $ docker ps
 Vous devriez avoir une sortie telle que
 ```
 $ docker ps
-CONTAINER ID    IMAGE     COMMAND                  CREATED         STATUS          PORTS                                           NAMES
-76ee1a3f4ce2    nginx-1   "nginx -g 'daemon off"   7 seconds ago   Up 6 seconds    0.0.0.0:32769->80/tcp, 0.0.0.0:32768->443/tcp   nginx-1
+CONTAINER ID    IMAGE             COMMAND              CREATED         STATUS          PORTS                NAMES
+76ee1a3f4ce2    brouberol/nginx   "./entrypoint.sh"    7 seconds ago   Up 6 seconds    0.0.0.0:80->80/tcp   nginx-1
 ```
+À quoi servait l'option `-p 80:80` de la commande `docker run`?
 
-14 - Listez les ports hosts/conteneurs lies a votre conteneur via `docker port <id>` (dans l'exemple precedent, `<id>` vallait `76ee1a3f4ce2`).
+14 - Listez les ports hosts/conteneurs liés a votre conteneur via `docker port <id>` (dans l'exemple précédent, `<id>` vallait `76ee1a3f4ce2`).
 
-15 - Interrogez votre conteneur nginx via `curl http://localhost:<host_port>` (dans l'exemple precedent, `<host_port>` vallait `32768`)
+15 - Interrogez votre conteneur nginx via `curl localhost`
 
-16 - Recuperez l'IP publique de votre VM via `ip -o -4 addr show eth0 | awk '{print $4}' | cut -d'/' -f 1`
+16 - Recuperez l'IP publique de votre VM via `ip -o -4 addr show eth0 | awk '{print $4}' | cut -d'/' -f `
 
-17 - Interrogez votre conteneur nginx via `curl http://<container_public_ip>:<host_port>` (dans l'exemple precedent, `<host_port>` vallait `32768`)
+17 - Ouvrez votre navigateur et visitez `http://<public_ip>`
 
-18 - Ouvrez votre navigateur et visitez `http://<public_ip>:<host_port>`
+18 - Inspectez votre conteneur via la commande `docker inspect`.
 
-19 - Si l'etape 18 ne fonctionne pas, vous etes probablement derriere un firewall. Nous allons donc lancer le conteneur ecoutant sur le port 80 du **hote**. Tout d'abord, desinstallons apache.
-```bash
-$ apt-get remove apache2
-```
+19 - Lancez la commande `docker history --no-trunc brouberol/nginx` et tentez de comprendre la différence entre l'image `nginx` de base et l'image `brouberol/nginx`.
 
-20 - Lancons le conteneur sur le port 80 du hote
-```bash
-docker run -it --rm --name=nginx-1 -p 80:80 nginx
-```
+20 - Inspectez le Dockerfile et l'entrypoint utilisés via les commandes suivantes:
 
-21 - Ouvrez votre navigateur et visitez `http://<public_ip>`
+   * `docker exec nginx-1 cat Dockerfile`
+   * `docker exec nginx-1 cat entrypoint.sh`
+
+21 - À quoi sert `docker exec`?
+
+22 - Selon vous, pourquoi utilisons nous un `exec` dans l'entrypoint? Indice: la commande `docker stop` envoie un SIGTERM au process PID 1 du conteneur.
+
+23 - Visitez [https://hub.docker.com/explore/](https://hub.docker.com/explore/), et tentez de deployer une autre application officiellement supportée par Docker!
