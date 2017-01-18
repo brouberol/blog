@@ -116,7 +116,7 @@ CONTAINER ID    IMAGE             COMMAND              CREATED         STATUS   
 
 15 - Interrogez votre conteneur nginx via `curl localhost`
 
-16 - Recuperez l'IP publique de votre VM via `ip -o -4 addr show eth0 | awk '{print $4}' | cut -d'/' -f `
+16 - Recuperez l'IP publique de votre VM via `ip -o -4 addr show eth0 | awk '{print $4}' | cut -d'/' -f 1`
 
 17 - Ouvrez votre navigateur et visitez `http://<public_ip>`
 
