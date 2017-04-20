@@ -4,7 +4,7 @@ Category: Pain, pâtes et autres farineries
 
 Nouvel essai, nouvelle réussite! Cette fois, j'ai testé deux nouvelles techniques (l'autolyse et le pétrissage *stretch and fold*) et j'ai augmenté la proportion de farine complète.
 
-![Hmm](https://cozy.brl.ovh/public/photos/photos/7a91982eade5221b3b681b4ec343028c.jpg)
+![Hmm](https://photos-1.dropbox.com/t/2/AABMikZDG-kCfri6UhpPS7yobn7ODYKQLBHsV1zCb2EaIg/12/6113789/jpeg/32x32/1/_/1/2/2015-11-14%2001.36.43.jpg/EN_7xwQYwKULIAcoBw/JOXx1WmhE_160LIE_WcHAkck1m5p86oo37RMz0mVtqw?size=2048x1536&size_mode=3)
 
 ## Ingrédients
 
@@ -44,6 +44,6 @@ Laisser le pain refroidir sur une grille pour que l'humidité interne disparaiss
 
 ## Résultat
 
-![Hmm](https://cozy.brl.ovh/public/photos/photos/7a91982eade5221b3b681b4ec342ea21.jpg)
+![Hmm](https://photos-1.dropbox.com/t/2/AABQqNS9Hbmwt3ll8b31j1A2A8QR0-A2XHHlfVC41u4Xbg/12/6113789/jpeg/32x32/1/_/1/2/2015-11-14%2009.43.35.jpg/EN_7xwQYwKULIAcoBw/cbys1fWIPfdr1hxtUATrx6BA4lNzBBLafnMFJVloSug?size=2048x1536&size_mode=3)
 
 Le résultat n'est pas aussi aéré que ce que j'espérais, mais c'est déjà beaucoup mieux! Et c'est délicieux!

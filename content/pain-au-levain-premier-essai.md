@@ -4,7 +4,7 @@ Category: Pain, pâtes et autres farineries
 
 Mon premier essai de pain au levain étant, en toute modestie, particulièrement réussi, je consigne ici la recette.
 
-![Hmm](https://cozy.brl.ovh/public/photos/photos/7a91982eade5221b3b681b4ec34308fd.jpg)
+![Hmm](https://photos-5.dropbox.com/t/2/AAD6k3Z-PwWYi6x1lVPu6A2F3EwQ4hLyRk-4nfNP2casUg/12/6113789/jpeg/32x32/1/_/1/2/2015-11-09%2022.32.01.jpg/EN_7xwQYwKULIAcoBw/AuhP6yBmYGt8mTX2t7PojrCnzaGhB3RzFocf8EhoOfo?size=2048x1536&size_mode=3)
 
 ## Le levain
 
@@ -30,7 +30,7 @@ Au bout de 10-15 minutes, je verse le contenu de la tasse au fond du four, afin 
 
 ### Le résultat le lendemain
 
-![Hmm](https://cozy.brl.ovh/public/photos/photos/7a91982eade5221b3b681b4ec342f9a6.jpg)
+![Hmm](https://photos-4.dropbox.com/t/2/AAAxgDMM3RnPJMpFEO-gVR-BpJyfwEYgqZkFTkkfaXsm0A/12/6113789/jpeg/32x32/1/_/1/2/2015-11-10%2007.35.34.jpg/EN_7xwQYwKULIAcoBw/EF4N7bvShkTBHtj5P14OS3MpuVQnwIRU5ax7vJyQV5g?size=2048x1536&size_mode=3)
 Le pain est très bon, avec un léger goût acide donné par le levain. J'aimerais avoir des bulles un peu plus grosses la prochaine fois, mais je crois qu'il faut que je retravaille ma technique de pétrissage, qui n'incorpore pas assez d'air, et surtout que je laisse la pâte gonfler bien plus longtemps (voire toute la nuit).
 
 Peut-être aussi mettre un quart ou un tiers de farine semi-complète, pour lui donner un goût plus brut, auquel cas il faudra faire gaffe à ce que la pâte réussisse quand même à gonfler (augmenter l'hydratation?).
