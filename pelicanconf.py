@@ -5,8 +5,8 @@ import platform
 from os.path import abspath, join, dirname
 AUTHOR = u'Balthazar Rouberol'
 SITENAME = u'Balthazar'
-if platform.node() == 'localhost.localdomain':
-    SITEURL = ''
+if platform.node() == 'morenika':
+    SITEURL = 'http://localhost:8000'
 else:
     SITEURL = 'https://blog.balthazar-rouberol.com'
 
@@ -33,6 +33,6 @@ SOCIAL = ()
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True
 
 DISQUS_SITENAME = 'balthazar-blog'
