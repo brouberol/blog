@@ -2,11 +2,11 @@ Title: Preparing the SRE interview
 Date: 2017-04-20
 Category: Programming
 
-I recently interviewed for an <abbr title="Site Reliability Engineer">SRE</abbr> position. I spend a full week learning (or refreshing my memory) on the subjects and topics that could be covered in such an interview. I'll try and lay down the list of topics I covered and resources I used.
+I recently interviewed for an <abbr title="Site Reliability Engineer">SRE</abbr> position. I spent a full week learning (or refreshing my memory) on the subjects and topics that could be covered in such an interview. I'll try and lay down the list of topics I covered and resources I used.
 
 ## What is an SRE?
 
-Having spend the last 2 years employed as a DevOps, I've often felt that DevOps and SRE were two slightly differing implementations of the same ideas. The first one felt like a set of general principles, when the second one is a clear and detailed model (pre-dating DevOps), with a set of rules and guidelines. Google developed the SRE model and explained it in the [SRE book][srebook]. The underlying ideas are simple, but extremely powerful:
+Having spent the last 2 years employed as a DevOps, I've often felt that DevOps and SRE were two slightly differing implementations of the same ideas. The first one felt like a set of general principles, when the second one is a clear and detailed model (pre-dating DevOps), with a set of rules and guidelines. Google developed the SRE model and explained it in the [SRE book][srebook]. The underlying ideas are simple, but extremely powerful:
 
 * Develop tools and systems reducing toil and repetitive work from engineers
 * Automate everything (deployments, maintenances, tests, scaling, mitigation)
@@ -88,7 +88,7 @@ The most useful resources I found to prepare were:
 
 ## System troubleshooting interview
 
-To be able to automate the administration of a system, one should first know the said system in depth, which, in a lot of cases, will be GNU/Linux. If you have time, I strongly suggest reading [The Linux Programming Interface][tlpi]. Note that this is a **large** book (my version has 1556 pages) which focuses on an old version of the Linux kernel (2.6.x). Fear not! You'll still gain a vast knowledge about how a GNU/Linux system operates. For a quicker tour, you could have a look at the [Linux Kernel Internals][linuxtour] blog. You'll also find interesting SRE interview questions/answers in this [SRE interview questions](https://syedali.net/engineer-interview-questions/) blogpost.
+To be able to automate the administration of a system, one should first know the said system in depth, which, in a lot of cases, will be GNU/Linux. If you have time, I strongly suggest reading [The Linux Programming Interface][tlpi]. Note that this is a **large** book (my version has 1556 pages) focusing on an old version of the Linux kernel (2.6.x). Fear not! You'll still gain a vast knowledge about how a GNU/Linux system operates. For a quicker tour, you could have a look at the [Linux Kernel Internals][linuxtour] blog. You'll also find interesting SRE interview questions/answers in this [SRE interview questions](https://syedali.net/engineer-interview-questions/) blogpost.
 
 [Julia Evans](https://jvns.ca/), also known as [b0rk](https://twitter.com/b0rk) has written some absolutely **fantastic** beginner-friendly resources about troubleshooting and networking.
 I strongly recommend having a look at:
