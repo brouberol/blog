@@ -6,10 +6,10 @@ I recently interviewed for an <abbr title="Site Reliability Engineer">SRE</abbr>
 
 ## What is an SRE?
 
-Having spent the last 2 years employed as a DevOps, I've often felt that DevOps and SRE were two slightly differing implementations of the same ideas. The first one felt like a set of general principles, when the second one is a clear and detailed model (pre-dating DevOps), with a set of rules and guidelines. Google developed the SRE model and explained it in the [SRE book][srebook]. The underlying ideas are simple, but extremely powerful:
+Having spent the last 2 years employed as a DevOps, I've often felt that DevOps and SRE were two slightly differing implementations of the same ideas. The first one felt like a set of general principles, when the second one is a clear and detailed model (pre-dating DevOps), with a set of rules and guidelines. Google developed the SRE model and explained it in the [SRE book][srebook]. The underlying ideas are simple, but powerful:
 
 * Develop tools and systems reducing toil and repetitive work from engineers
-* Automate everything (deployments, maintenances, tests, scaling, mitigation)
+* Automate everything, or as much as possible (deployments, maintenances, tests, scaling, mitigation)
 * Monitor everything
 * Think scalable from the start
 * Build **resilient-enough** architectures
