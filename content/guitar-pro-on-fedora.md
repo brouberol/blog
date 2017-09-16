@@ -4,7 +4,7 @@ Category: Linux
 
 I've been playing guitar for the last 10 years now, but I spent the last 4 years only playing and singing alone. I decided to improve my technique, and to treat me with [Guitar Pro 6](http://www.guitar-pro.com/en/index.php?pg=guitar-pro-6). I was happy to see they even supported Linux natively! Sadly, they only provide a deb file, and no rpm. I'll thus describe here how I managed to install it on Fedora 22, ♬ *with a little help from my friends* ♫.
 
-![GuitarPro screenshot](https://upload.wikimedia.org/wikipedia/en/0/0a/GP6-pic2.png)
+![GuitarPro screenshot](https://i.ytimg.com/vi/9TRyKjXpfZo/maxresdefault.jpg?time=1495551778029)
 
 ### Installing the dependencies
 
