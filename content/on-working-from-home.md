@@ -1,5 +1,6 @@
 Title: On working from home while remaining sane
 Date: 2017-10-29
+Category: Programming
 
 
 Since I started working at [Datadog](https://datadoghq.com), I've had the opportunity of working from home full-time (for the second time in my career). Although I consider this to be a real privilege, it comes with its own set of challenges that I'd like to pinpoint and address in light of my personal experiences.
