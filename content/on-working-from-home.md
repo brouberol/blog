@@ -11,11 +11,11 @@ I hope this article will be useful for anyone willing to try out (or struggling 
 
 First, why would you even want to work from home in the first place? To me, it's both about flexibility and productivity. I can focus on complex tasks for long periods of time without being [interrupted](http://heeris.id.au/2013/this-is-why-you-shouldnt-interrupt-a-programmer/), while still being able to keep a flexible timetable. I can also work from anywhere, as long as I can have an good enough internet connection.
 
-However, this flexibility and freedom has a cost, which is isolation, which can then lead to demotivation or burn-out down the road. Remote work is, by definition, solitary, which can quickly become an issue, because humans are social animals and (for most of us) crave for social and physical interaction. This make be believe that remote workers are more exposed to burn-out.
+However, this flexibility and freedom is paid with isolation, which can then lead to demotivation or burn-out down the road. Remote work is, by definition, solitary, which can quickly become an issue, because humans are social animals and (for most of us) crave for social and physical interaction. This make be believe that remote workers are more exposed to burn-out.
 
 ## The burn-out cycle
 
-In my experience, the easiest path to demotivation or burn-out (whether you're working remotely or not) is being over-enthusiast and working long hours. When doing so, it's easy to develop some kind of *hero complex*, a belief that you're indispensable and that things will break down if you take a break, or leave on holidays. The more hours you pull, the less sleep you get, the more stressed tired you become. Because you're stressed, you then feel you need to work harder, until you just can't take it anymore, and you burn-out.
+In my experience, the easiest path to demotivation or burn-out (whether you're working remotely or not) is being over-enthusiast and working long hours. When doing so, it's easy to develop some kind of *hero complex*, a belief that you're indispensable and that things will break down if you take a break, or leave on holidays. The more hours you pull, the less sleep you get, the more stressed and tired you become. Because you're stressed, you then feel you need to work harder, until you just can't take it anymore, and you burn-out.
 
 Ideally, this cycle can be prevented or broken with proper management and supervision. If your manager realises you've started to walk this slippery slope, she/he should take action, and incite/force you to take a break. This can be enforced by regular 1-1 meetings, to keep track on how remote workers are doing.
 
