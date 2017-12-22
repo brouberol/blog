@@ -31,7 +31,7 @@ LINKS = ()
 
 # Social widget
 SOCIAL = [
-    ('home', 'https://balthazar.rouberol.com'),
+    ('home', 'https://balthazar-rouberol.com'),
     ('twitter', 'https://twitter.com/brouberol'),
     ('github', 'https://github.com/brouberol'),
     ('linkedin', 'https://www.linkedin.com/in/balthazar-rouberol/'),
