@@ -23,12 +23,20 @@ FEED_ALL_ATOM = 'feeds/all.atom.xml'
 TRANSLATION_FEED_ATOM = None
 STATIC_PATHS = ['images', ]
 THEME = abspath(join(dirname(__file__), 'themes', 'pelican-hyde'))
+PROFILE_IMAGE = 'https://balthazar-rouberol.com/static/img/image.jpg'
+BIO = 'I work with humans and computers.'
 
 # Blogroll
 LINKS = ()
 
 # Social widget
-SOCIAL = ()
+SOCIAL = [
+    ('home', 'https://balthazar.rouberol.com'),
+    ('twitter', 'https://twitter.com/brouberol'),
+    ('github', 'https://github.com/brouberol'),
+    ('linkedin', 'https://www.linkedin.com/in/balthazar-rouberol/'),
+]
+
 
 DEFAULT_PAGINATION = 10
 
