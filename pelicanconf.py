@@ -36,3 +36,5 @@ DEFAULT_PAGINATION = 10
 # RELATIVE_URLS = True
 
 DISQUS_SITENAME = 'balthazar-blog'
+PLUGIN_PATHS = ["pelican-plugins"]
+PLUGINS = ['render_math']
