@@ -10,7 +10,7 @@ I hope this article will be useful for anyone willing to try out (or struggling 
 
 ## Productivity VS isolation
 
-First, why would you even want to work from home in the first place? To me, it's both about flexibility and productivity. I can focus on complex tasks for long periods of time without being [interrupted](http://heeris.id.au/2013/this-is-why-you-shouldnt-interrupt-a-programmer/), while still being able to keep a flexible timetable. I can also work from anywhere, as long as I can have an good enough internet connection.
+First, why would you even want to work from home in the first place? To me, it's both about flexibility and productivity. I can focus on complex tasks for long periods of time without being [interrupted](http://heeris.id.au/2013/this-is-why-you-shouldnt-interrupt-a-programmer/), while still being able to keep a flexible timetable. I can also work from anywhere, as long as I can have a good enough internet connection.
 
 However, this flexibility and freedom is paid with isolation, which can then lead to demotivation or burn-out down the road. Remote work is, by definition, solitary, which can quickly become an issue, because humans are social animals and (for most of us) crave for social and physical interaction. This make be believe that remote workers are more exposed to burn-out.
 
