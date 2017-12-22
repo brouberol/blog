@@ -22,7 +22,7 @@ FEED_RSS = 'feeds/rss.xml'
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 TRANSLATION_FEED_ATOM = None
 STATIC_PATHS = ['images', ]
-THEME = abspath(join(dirname(__file__), 'themes', 'aboutwilson'))
+THEME = abspath(join(dirname(__file__), 'themes', 'pelican-hyde'))
 
 # Blogroll
 LINKS = ()
