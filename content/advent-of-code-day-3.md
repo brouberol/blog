@@ -27,7 +27,7 @@ For any point $(X_P, Y_P)$ of value $V$, we know that it is located somewhere on
 We need to know the number of elements a shell of index $i$ is composed of, noted $Δ_i$ On this representation, the first shell is a square of side of length 3, the second shell is a square of side of length 5. We can generalize this to $L = 2i + 1$, where $i$ is the index of the shell. For any index $i$, the shell is composed of the following number of elements
 
 \begin{align*}
-Δ_i &= (2i + 1)^2 + (2(i -1) + 1)^2 \\
+Δ_i &= (2i + 1)^2 - (2(i -1) + 1)^2 \\
     &= 4i^2 + 4i + 1 - 4i^2 +4i - 1 \\
     &= 8i
 \end{align*}
