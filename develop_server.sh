@@ -17,10 +17,10 @@ CONFFILE=$BASEDIR/pelicanconf.py
 
 
 function start_up(){
-  local port=$1
+  local port=8000
   echo "Starting up Pelican and HTTP server"
   shift
-  $PELICAN --debug --autoreload -r $INPUTDIR -o $OUTPUTDIR -s $CONFFILE $PELICANOPTS
+  $PELICAN --debug --autoreload -r $INPUTDIR -o $OUTPUTDIR -s $CONFFILE $PELICANOPTS&
   cd $OUTPUTDIR
   $PY -m pelican.server $port
 }
