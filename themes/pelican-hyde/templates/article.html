@@ -7,6 +7,9 @@
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="{{ SITEURL }}/{{ article.url }}" />
 {% endblock %}
+{% block title %}
+{{ SITENAME }} - {{ article.title }}
+{% endblock %}
 
 {% block content %}
 <div class="post">
