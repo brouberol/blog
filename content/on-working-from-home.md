@@ -59,3 +59,15 @@ Talk with other remote workers about how *they* make it. Share tips, stories, do
 Working from home can be liberating and an amazing productivity booster, but you need to stay alert and conscious of the challenges and constraints it entails. I'd urge you to show a fair amount of self-discipline and organisation in order to avoid falling into the burn-out spiral.
 
 Have fun!
+
+
+## Edit
+
+I found this very interesting resource from Trello, called [How to embrace remote work](https://info.trello.com/hubfs/Trello-Embrace-Remote-Work-Ultimate-Guide.pdf).
+
+The main takeways I get from it are:
+
+- pace yourself: work isn't going anyhwere. Do not forget to ake breaks.
+- use the right tool to convey the right information (do not rely on instant messaging for crucial information!)
+- don't forget to use passive communication (eg: status messages)
+- intent can be lost over text communication. Assume **positive** intent.
