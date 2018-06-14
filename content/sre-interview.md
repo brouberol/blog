@@ -83,7 +83,7 @@ The most useful resources I found to prepare were:
 * this great [step-by-step walkthrough](https://www.hiredintech.com/classrooms/system-design/lesson/52) on design questions, by HiredInTech
 * [Scaling up to your first 10 million users](https://www.youtube.com/watch?v=vg5onp8TU6Q), talk given by Joel Williams of AWS
 * [Crack the design interview](http://www.puncsky.com/blog/2016/02/14/crack-the-system-design-interview/)
-* [When to use NoSQL vs SQL](https://docs.microsoft.com/en-us/azure/documentdb/documentdb-nosql-vs-sql)
+* [When to use NoSQL vs SQL](https://docs.microsoft.com/en-us/azure/architecture/guide/technology-choices/data-store-overview)
 
 
 ## System troubleshooting interview
