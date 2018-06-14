@@ -5,7 +5,7 @@
 	<meta property="og:description" content="{% if article.description %}{{ article.description }}{% else %}{{ BIO }}{% endif %}">
 	<meta property="og:title" content="{{ article.title }}" />
 	<meta property="og:type" content="article" />
-	<meta property="og:url" content="{{ SITEURL }}/{{ article.url }}" />
+	<meta property="og:url" content="{{ SITEURL }}/{{ article.url | replace('.html', '')}}" />
 {% endblock %}
 {% block title %}
 {{ SITENAME }} - {{ article.title }}
