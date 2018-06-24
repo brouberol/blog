@@ -67,7 +67,7 @@ I found this very interesting resource from Trello, called [How to embrace remot
 
 The main takeways I get from it are:
 
-- pace yourself: work isn't going anyhwere. Do not forget to ake breaks.
+- pace yourself: work isn't going anyhwere. Do not forget to take breaks.
 - use the right tool to convey the right information (do not rely on instant messaging for crucial information!)
 - don't forget to use passive communication (eg: status messages)
 - intent can be lost over text communication. Assume **positive** intent.
