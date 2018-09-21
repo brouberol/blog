@@ -76,6 +76,6 @@ These criterion are my pick, but I suggest you clearly and openly define which o
 
 ### Closing words
 
-In my view, the tech industry as a whole has been guilty of resistance to change by kicking around the old meritocracy horse for too long. We need to talk about the lack of women, the rampant misogynist attitudes, the male/women pay gap. We need to fix these issues by acknowledging them first, and debating them transparently. Not just as an industry, but as a society.
+In my view, the tech industry as a whole has been guilty of resistance to change by kicking around the old meritocracy horse for too long. We need to talk about the lack of women, the rampant misogynist attitudes, the male/women pay gap. We need to fix these issues by acknowledging them first, and debating them transparently, in a less polarized way. Not just as an industry, but as a society.
 
-However, as I don't buy in "show me the code or GTFO" attitude, I don't believe in politically correctness before everything else. If some people lack the ability to recognize that _Beautiful is better than ugly_ in the [Zen of Python](https://www.python.org/dev/peps/pep-0020/) does not body shame people, then maybe we shouldn't let them define what our core values are.
+However, as I don't buy in the "show me the code or GTFO" attitude, I don't believe in politically correctness before everything else. If some people lack the ability to recognize that _Beautiful is better than ugly_ in the [Zen of Python](https://www.python.org/dev/peps/pep-0020/) does not body shame people, then maybe we shouldn't let them define what our core values are.
