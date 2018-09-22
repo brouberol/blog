@@ -63,7 +63,7 @@ Although that example could seem frivolous or ridiculous, it points out somethin
 
 > In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of who they are and how they identify.
 
-as I think some issues stem from the fact we have attempted to list what constitutes "diversity". If a tech conference decides to impose quotas on speakers, these quotas will focus on certain attributes (eg sex and skin color) while missing others (eg age, education), which might some people to better identify to the speakers, but might not help others. This _inventaire à la Prévert_ certainly looks like inclusiveness, but I think it misses the point.
+as I think some issues stem from the fact we have attempted to list what constitutes "diversity". If a tech conference decides to impose quotas on speakers, these quotas will focus on certain attributes (eg sex and skin color) while missing others (eg age, education), which might help some people to better identify to the speakers, but might not help others. This _inventaire à la Prévert_ certainly looks like inclusiveness, but I think it misses the point.
 
 How we identify is both subjective and subject to context. I might identify as an SRE, an engineer or a Python developer in the context of work or a tech-related event, a social extrovert in the context of a party, an leftist heterosexual male in the context of my personal and private life, etc.
 
