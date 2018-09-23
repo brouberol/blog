@@ -39,7 +39,9 @@ We now need to install Guitar Pro's dependencies, and of course, they're 32 bit.
         libvorbis.i686 \
         alsa-lib.i686 \
         portaudio.i686 \
-        pulseaudio-libs.i686
+        pulseaudio-libs.i686 \
+        qt-x11.i686 \
+        qtwebkit.i668
 
 You might have to download other packages as well, as Guitar Pro was not my first 32 bit program I had to install.
 
