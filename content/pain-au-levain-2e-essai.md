@@ -4,7 +4,8 @@ Category: Pain, pâtes et autres farineries
 
 Nouvel essai, nouvelle réussite! Cette fois, j'ai testé deux nouvelles techniques (l'autolyse et le pétrissage *stretch and fold*) et j'ai augmenté la proportion de farine complète.
 
-![Hmm](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/images/2015-11-14+01.36.43_preview.jpeg)
+![Hmm](
+https://balthazar-rouberol-blog.s3.nl-ams.scw.cloud/2015-11-14+01.36.43_preview.jpeg)
 
 ## Ingrédients
 
@@ -44,6 +45,7 @@ Laisser le pain refroidir sur une grille pour que l'humidité interne disparaiss
 
 ## Résultat
 
-![Hmm](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/images/2015-11-14+09.43.35_preview.jpeg)
+![Hmm](
+https://balthazar-rouberol-blog.s3.nl-ams.scw.cloud/2015-11-14+09.43.35_preview.jpeg)
 
 Le résultat n'est pas aussi aéré que ce que j'espérais, mais c'est déjà beaucoup mieux! Et c'est délicieux!

@@ -18,11 +18,13 @@ D_P &= |X_P - X_0| + |Y_P - Y_0| \\
 
 My approach was the following: a spiral has nested "shells", all centered around the center. In this image, the first shell is outlined in grey, and the second one in purple. Each of these spirals has a first value, called $S_i$, where $i$ is the index of the spiral.
 
-![spiral](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/images/memory-spiral.jpg)
+![spiral](
+https://balthazar-rouberol-blog.s3.nl-ams.scw.cloud/memory-spiral.jpg)
 
 For any point $(X_P, Y_P)$ of value $V$, we know that it is located somewhere on the shell located right before the first shell with start value $S$ such as $S > V$. For example, if the input value was 23, we know that it's located on the second shell as $S_2 ≤ 23 < S_3$.
 
-![spiral](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/images/spiral-shells.jpg)
+![spiral](
+https://balthazar-rouberol-blog.s3.nl-ams.scw.cloud/spiral-shells.jpg)
 
 We need to know the number of elements a shell of index $i$ is composed of, noted $Δ_i$ On this representation, the first shell is a square of side of length 3, the second shell is a square of side of length 5. We can generalize this to $L = 2i + 1$, where $i$ is the index of the shell. For any index $i$, the shell is composed of the following number of elements
 
@@ -52,7 +54,8 @@ We now need to get the coordinates of any given first shell point. By simply loo
 
 The final piece of the puzzle is to infer the coordinates of the point $P$ given the coordinates of the start point $S_i$ of the shell it belongs to. To do that, we need to look at how the coordinates evolve along a shell.
 
-![spiral](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/images/shell-coordinates.jpg)
+![spiral](
+https://balthazar-rouberol-blog.s3.nl-ams.scw.cloud/shell-coordinates.jpg)
 
 We can see that:
 
