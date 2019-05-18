@@ -5,7 +5,7 @@ import platform
 from os.path import abspath, join, dirname
 AUTHOR = u'Balthazar Rouberol'
 SITENAME = u'Balthazar'
-if platform.node() == 'morenika':
+if platform.node() in ['morenika', 'Balthazars-MacBook-Pro.local']:
     SITEURL = 'http://localhost:8000'
 else:
     SITEURL = 'https://blog.balthazar-rouberol.com'
