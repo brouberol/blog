@@ -4,7 +4,7 @@ Date: 2019-05-18
 Category: Pain, pâtes et autres farineries
 lang: english
 
-![bread](https://lh3.googleusercontent.com/XAbRdhDRJC7BPnuW9nN1-ZFafV6ex_N7usIxYEydR4MC-gM_ibpi4QFH8VZxYQn86ooSRbya4F9CgVME0QR7-ublWTm8WiHGe94Gir4G7M_ukEPnnM3Qzw85k5Nhmkmg1ABYQRg8qZEZoWUbMYWenXsPtO2EovhNTU0pq0ChPWdCsaNQIhDNiMhb5OCdhaI4e1cyv7syMbwWJR9i1T2I6zgP2Y5oypfnHsi1dlBOImvbp-VNfeKJNVr7LuHZt-txowBlwCFa7Y5aKjzvOHIgNixZUIn49BuT10eAypvNWrHIcGGpkfHcu5ePzSz5QIqZ7I-EwHlZxNzOxdcnwnvAvX7UvTq3-kMIfZHjifE6DMctIxRFZUy6tJLONEazPKvAs8mithnEw5B2VICCGCPoC_A7AfCfNON76Kt0b-fJojUYJBI96YGuWDSL6Ro-Gk3PEOP9Ugh8LNMwVqkhPX-Qkoj_OEJyJ90rUurkosYioIG1WpFcPW0eW5Q-SjnPy9r2Cp8EPd1Oepbsb3ZH--qXn0LzpzA8BBp2jCdgjwANUIM2AJIdKk0ngEk48oTdhEbrM7gMBuw3AWse3qNUTlHQRLOOBbYpaXpXLLNauY-steNWpxxv_Y9BcZFqvc1baCQV_DPabg16bB1z1-9A3iadUHVqkdz4EwQ=w3312-h1862-no)
+![bread](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/DSC_0032.JPG)
 
 
 I've taken baking again, and I think I'm really getting nice results. On top of it, they are reproducible! In that post, I'll walk you through my favorite recipe step-by-step.
