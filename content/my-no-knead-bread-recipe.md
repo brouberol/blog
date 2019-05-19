@@ -102,3 +102,6 @@ Place your hot loaf on a grille, and let it rest and cool down for a couple of h
 ### Eating
 
 You know what to do.
+
+![crumb shot](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/DSC_0015c.JPG)
+<span class="image-caption">Final crumb shot</span>
