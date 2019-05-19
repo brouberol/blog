@@ -41,9 +41,9 @@ Once the yeast is active and is well mixed into the water, incorporate it into t
 
 As this is a no-knead recipe, we'll use the [stretch and fold](https://www.youtube.com/watch?v=3_5x70h14VQ) technique to [stretch and reinforce the gluten strands](https://cooking.stackexchange.com/questions/21675/why-stretch-and-fold-vs-traditional-kneading-of-bread-dough), which will then make sure the dough is elastic and can expand and rise nicely at cooking time.
 
-**Note**: the dough will stick to the fingers during the first 2 stretch-and-folds. It's ok. Try to refrain adding too much flour.
+**Note**: the dough will stick to the fingers during the first 2 stretch-and-folds. It's ok. Try to refrain from adding too much flour.
 
-First, flour the table a little, and get the dough out of the bowl (preferably using a [scraper](https://www.amazon.fr/Buyer-4858-00N-Raclette-Corne-Blanche/dp/B000ECUDVK/ref=sr_1_4?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3NQH6UB4FQIMI&keywords=corne+de+boulanger&qid=1558194084&s=gateway&sprefix=corne+de+boul%2Caps%2C219&sr=8-4)). Stretch it slowly and as much as possible. The first times, it's possible some holes will form. If so, try to patch them and don't overstretch.
+First, flour the table a little, and get the dough out of the bowl (preferably using a [scraper](https://www.amazon.fr/Buyer-4858-00N-Raclette-Corne-Blanche/dp/B000ECUDVK/ref=sr_1_4?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3NQH6UB4FQIMI&keywords=corne+de+boulanger&qid=1558194084&s=gateway&sprefix=corne+de+boul%2Caps%2C219&sr=8-4), to avoid tearing the dough while you get it out). Stretch it slowly and as much as possible. The first times, it's possible some holes will form. If so, try to patch them and don't overstretch.
 
 ![stretched](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/no-knead-bread-recipe/DSC_0017.JPG)
 
