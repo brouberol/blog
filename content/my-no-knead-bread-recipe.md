@@ -7,7 +7,7 @@ lang: english
 ![bread](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/no-knead-bread-recipe/DSC_0032.JPG)
 
 
-I've taken baking again, and I think I'm really getting nice results. On top of it, they are reproducible! In that post, I'll walk you through my favorite recipe step-by-step.
+I've started baking again, and I think I'm really getting nice results. On top of it, they are reproducible! In that post, I'll walk you through my favorite recipe step-by-step.
 
 I'm baking a 65% hydrated loaf using a no-knead technique, cooked in a cooking pot.
 
