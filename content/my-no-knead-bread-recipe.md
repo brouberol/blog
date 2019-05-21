@@ -87,7 +87,7 @@ Pre-heat your oven at 250°C (482°F) with the cooking pot (lid included) inside
 ### Cooking
 
 Get the cooking pot from the oven, and place the loaf inside, still on the cooking paper.
-Let it cook lid closed for 30 minutes, to make sure the water contained in the bread evaporates in the pot, which will help the crust develop. Remove the lid and lower the oven temperature to 235°C (455°F). Get the bread out of the over after 15 to 20 minutes, when you feel it's cooked enough and you like the color.
+Let it cook lid closed for 30 minutes, to make sure the water contained in the bread evaporates in the pot, which will help the crust develop. Remove the lid and lower the oven temperature to 235°C (455°F). Get the bread out of the oven after 15 to 20 minutes, when you feel it's cooked enough and you like the color.
 
 
 
