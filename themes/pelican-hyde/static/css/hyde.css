@@ -31,18 +31,66 @@
  * Update the foundational and global aspects of the page.
  */
 
+@font-face {
+  font-family: 'Merriweather';
+  src: url('../font/Merriweather-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('../font/RobotoSlab-Light.ttf');
+}
+
 html {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.7em;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-size: 16px;
+  --base: 1rem;
+  --mult: 1.17;
+  --intertitle-padding-top: 0.5;
+  --intertitle-padding-bottom: 0.1;
+  --small: calc(var(--base) / var(--mult));
+  --first: calc(var(--base) * var(--mult));
+  --second: calc(var(--first) * var(--mult));
+  --third: calc(var(--second) * var(--mult));
+  --fourth: calc(var(--third) * var(--mult));
+  --fifth: calc(var(--fourth) * var(--mult));
 }
-@media (min-width: 48em) {
-  html {
-    font-size: 16px;
-  }
+
+header, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
 }
-@media (min-width: 58em) {
-  html {
-    font-size: 20px;
-  }
+
+.post h1 {
+  font-size: var(--fifth);
+  padding-bottom: calc(var(--intertitle-padding-bottom) * var(--fifth));
+  padding-top: calc(var(--intertitle-padding-top) * var(--fifth));
+}
+
+.post h2 {
+  font-size: var(--fourth);
+  padding-bottom: calc(var(--intertitle-padding-bottom) * var(--fourth));
+  padding-top: calc(var(--intertitle-padding-top) * var(--fourth));
+}
+
+.post h3 {
+  font-size: var(--third);
+  padding-bottom: calc(var(--intertitle-padding-bottom) * var(--third));
+  padding-top: calc(var(--intertitle-padding-top) * var(--third));
+}
+
+.post h4 {
+  font-size: var(--second);
+  padding-bottom: calc(var(--intertitle-padding-bottom) * var(--second));
+  padding-top: calc(var(--intertitle-padding-top) * var(--second));
+}
+
+.post h5 {
+  font-size: var(--first);
+  padding-bottom: calc(var(--intertitle-padding-bottom) * var(--first));
+  padding-top: calc(var(--intertitle-padding-top) * var(--first));
 }
 
 
