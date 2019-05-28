@@ -16,6 +16,11 @@ CONFFILE=$BASEDIR/pelicanconf.py
 ###
 
 
+function die {
+    echo "Shutting down..."
+    ps aux | grep '[p]elican' | awk '{ print $2 }' | xargs kill
+}
+
 function start_up(){
   local port=8000
   echo "Starting up Pelican and HTTP server"
@@ -28,4 +33,6 @@ function start_up(){
 ###
 #  MAIN
 ###
+
+trap die SIGTERM EXIT
 start_up
