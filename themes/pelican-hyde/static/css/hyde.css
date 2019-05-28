@@ -106,6 +106,7 @@ header, h1, h2, h3, h4, h5, h6 {
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
   background-color: #202020;
+  line-height: 1.3rem;
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -137,7 +138,7 @@ header, h1, h2, h3, h4, h5, h6 {
 }
 
 .sidebar-about .profile-picture {
-  margin: 0 auto;
+  margin: 0.5em auto;
   border-radius: 50%;
   border: 2px solid #5b8da2;
   max-width: 5rem;
