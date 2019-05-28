@@ -24,9 +24,7 @@ My recipe contains:
 - 8g of fresh baker's yeast
 
 
-## Recipe
-
-### Initial mix
+## Initial mix
 
 First, mix the flour, the salt, and half of the water in a bowl, and the fresh baker's yeast with the other half of the water. Wait for a good half-hour.
 
@@ -37,7 +35,7 @@ Once the yeast is active and is well mixed into the water, incorporate it into t
 ![mix2](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/no-knead-bread-recipe/DSC_0033.JPG)
 
 
-### Stretch and folds
+## Stretch and folds
 
 As this is a no-knead recipe, we'll use the [stretch and fold](https://www.youtube.com/watch?v=3_5x70h14VQ) technique to [stretch and reinforce the gluten strands](https://cooking.stackexchange.com/questions/21675/why-stretch-and-fold-vs-traditional-kneading-of-bread-dough), which will then make sure the dough is elastic and can expand and rise nicely at cooking time.
 
@@ -65,7 +63,7 @@ Repeat these steps 4 to 5 times until the dough passes the [finger dent test](ht
 ![stretch5](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/no-knead-bread-recipe/DSC_0028.JPG)
 <span class="image-caption">The dough after 5 stretch and folds</span>
 
-### Proofing
+## Proofing
 
 Shape the dough into a boule, and let it proof for 2 hours under a slightly damp towel. Go watch Netflix or something. After the 2 hours, shape it into a boule again, to re-tighten the dough.
 
@@ -73,7 +71,7 @@ Shape the dough into a boule, and let it proof for 2 hours under a slightly damp
 <span class="image-caption">The dough after 2 hours of proofing and a tightening</span>
 
 
-### Pre-heating and scoring
+## Pre-heating and scoring
 
 Pre-heat your oven at 250°C (482°F) with the cooking pot (lid included) inside. Once the oven is hot enough, place the proofed dough on cooking paper, flour it, then [score it](https://www.machineapain.org/comment-bien-faire-le-grignage-de-votre-pain/).
 
@@ -84,14 +82,14 @@ Pre-heat your oven at 250°C (482°F) with the cooking pot (lid included) inside
 <span class="image-caption">A deep scoring pattern allows the gas to dissipate. Shallow ones are just for show</span>
 
 
-### Cooking
+## Cooking
 
 Get the cooking pot from the oven, and place the loaf inside, still on the cooking paper.
 Let it cook lid closed for 30 minutes, to make sure the water contained in the bread evaporates in the pot, which will help the crust develop. Remove the lid and lower the oven temperature to 235°C (455°F). Get the bread out of the oven after 15 to 20 minutes, when you feel it's cooked enough and you like the color.
 
 
 
-### Resting
+## Resting
 
 Place your hot loaf on a grille, and let it rest and cool down for a couple of hours. Enjoy the cracking sounds.
 
@@ -99,7 +97,7 @@ Place your hot loaf on a grille, and let it rest and cool down for a couple of h
 <span class="image-caption">All done!</span>
 
 
-### Eating
+## Eating
 
 You know what to do.
 
