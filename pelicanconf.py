@@ -23,7 +23,7 @@ FEED_ALL_ATOM = 'feeds/all.atom.xml'
 TRANSLATION_FEED_ATOM = None
 STATIC_PATHS = ['images', ]
 THEME = abspath(join(dirname(__file__), 'themes', 'pelican-hyde'))
-PROFILE_IMAGE = 'https://balthazar-rouberol.com/static/img/image.jpg'
+PROFILE_IMAGE = 'https://balthazar-rouberol.com/static/img/image-small.jpg'
 BIO = 'I work with humans and computers.'
 
 # Blogroll
