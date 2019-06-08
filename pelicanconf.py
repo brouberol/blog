@@ -21,6 +21,7 @@ LOCALE = 'en_US.utf-8'
 FEED_RSS = 'feeds/rss.xml'
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 TRANSLATION_FEED_ATOM = None
+RSS_FEED_SUMMARY_ONLY = False
 STATIC_PATHS = ['images', ]
 THEME = abspath(join(dirname(__file__), 'themes', 'pelican-hyde'))
 PROFILE_IMAGE = 'https://balthazar-rouberol.com/static/img/image-small.jpg'
