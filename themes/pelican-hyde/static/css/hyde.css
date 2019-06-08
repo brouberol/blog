@@ -133,6 +133,10 @@ header, h1, h2, h3, h4, h5, h6 {
 
 /* About section */
 
+.sidebar-about {
+  padding-bottom: 1rem;
+}
+
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
@@ -141,7 +145,7 @@ header, h1, h2, h3, h4, h5, h6 {
 }
 
 .sidebar-about .lead {
-  font-size: .8rem;
+  font-size: .9rem;
 }
 
 .sidebar-about .profile-picture {
