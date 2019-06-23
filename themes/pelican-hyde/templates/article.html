@@ -22,6 +22,10 @@
     <meta name="twitter:title" content="{{ article.title }}" />
     <meta name="twitter:site" content="@brouberol" />
     <meta name="twitter:creator" content="@brouberol" />
+    {% if article.category %}
+    <meta name="twitter:label1" value="Theme" />
+    <meta name="twitter:data1" value="{{ article.category }}" />
+    {% endif %}
 
 {% endblock %}
 {% block title %}
