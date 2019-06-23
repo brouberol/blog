@@ -1,7 +1,6 @@
 Title: Managing my infra like it's 2019
 Date: 2019-07-22
 Category: Programming
-Status: draft
 
 
 I recently realized that I was routinely managing thousands of servers and petabytes of data in my daily job, but was still managing my own personal infrastructure like I was living in 1999.
