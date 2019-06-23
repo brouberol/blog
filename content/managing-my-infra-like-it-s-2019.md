@@ -1,7 +1,8 @@
 Title: Managing my infra like it's 2019
 Date: 2019-07-22
 Category: Programming
-
+Description: How I use modern infrastructure tools to manage my personal infrastructure
+TwitterImg: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/managing-infra/infra.png
 
 I recently realized that I was routinely managing thousands of servers and petabytes of data in my daily job, but was still managing my own personal infrastructure like I was living in 1999.
 

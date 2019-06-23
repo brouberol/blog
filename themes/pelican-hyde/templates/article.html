@@ -1,11 +1,28 @@
 {% extends "base.html" %}
 
 {% block metadata %}
-	<meta name="description" content="{% if article.description %}{{ article.description }}{% else %}{{ BIO }}{% endif %}">
-	<meta property="og:description" content="{% if article.description %}{{ article.description }}{% else %}{{ BIO }}{% endif %}">
-	<meta property="og:title" content="{{ article.title }}" />
-	<meta property="og:type" content="article" />
-	<meta property="og:url" content="{{ SITEURL }}/{{ article.url | replace('.html', '')}}" />
+    <meta name="description" content="{% if article.description %}{{ article.description }}{% else %}{{ BIO }}{% endif %}">
+    <meta property="og:description" content="{% if article.description %}{{ article.description }}{% else %}{{ BIO }}{% endif %}">
+    <meta property="og:title" content="{{ article.title }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ SITEURL }}/{{ article.url | replace('.html', '')}}" />
+
+    {% if article.description %}
+    <meta name="twitter:description" content="{{ article.description }}" />
+    {% else %}
+    <meta name="twitter:description" content="{{ article.content }}" />
+    {% endif %}
+
+    {% if article.twitterimg %}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="{{ article.twitterimg }}" />
+    {% else %}
+    <meta name="twitter:card" content="summary" />
+    {% endif %}
+    <meta name="twitter:title" content="{{ article.title }}" />
+    <meta name="twitter:site" content="@brouberol" />
+    <meta name="twitter:creator" content="@brouberol" />
+
 {% endblock %}
 {% block title %}
 {{ SITENAME }} - {{ article.title }}
@@ -13,10 +30,11 @@
 
 {% block content %}
 <div class="post">
-	<h1 class="post-title">{{ article.title }}</h1>
-	<span class="post-date">{{ article.locale_date }}</span>
+    <h1 class="post-title">{{ article.title }}</h1>
+    <span class="post-date">{{ article.locale_date }}</span>
     {% include "translations.html" %}
 
-	{{ article.content }}
+    {{ article.content }}
+
 </div>
 {% endblock %}
