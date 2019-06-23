@@ -6,6 +6,7 @@ from os.path import abspath, join, dirname
 AUTHOR = u'Balthazar Rouberol'
 SITENAME = u'Balthazar'
 SITEURL = 'https://blog.balthazar-rouberol.com'
+ABSOLUTE_SITEURL = SITEURL
 
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = "en"

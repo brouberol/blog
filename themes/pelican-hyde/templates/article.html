@@ -5,7 +5,7 @@
     <meta property="og:description" content="{% if article.description %}{{ article.description }}{% else %}{{ BIO }}{% endif %}">
     <meta property="og:title" content="{{ article.title }}" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="{{ SITEURL }}/{{ article.url | replace('.html', '')}}" />
+    <meta property="og:url" content="{{ ABSOLUTE_SITEURL }}/{{ article.url | replace('.html', '')}}" />
 
     {% if article.twitterimg %}
     <meta name="twitter:card" content="summary_large_image" />
@@ -15,7 +15,7 @@
     {% endif %}
     <meta name="twitter:title" content="{{ article.title }}" />
     <meta name="twitter:site" content="@brouberol" />
-    <meta name="twitter:url" content="{{ SITEURL }}/{{ article.url | replace('.html', '')}}" />
+    <meta name="twitter:url" content="{{ ABSOLUTE_SITEURL }}/{{ article.url | replace('.html', '')}}" />
     {% if article.description %}
     <meta name="twitter:description" content="{{ article.description }}" />
     {% else %}
