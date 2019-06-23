@@ -10,7 +10,7 @@ I recently realized that I was routinely managing thousands of servers and petab
 
 ---
 
-With the advent of configuration management tools such as [Ansible](https://docs.ansible.com/), [Chef](https://www.chef.io/), and the like, it became easier to configure instances in a reproducible manner by defining said configuration as code. Tooling such as [Terraform](http://terraform.io/) made it easier to codify and provision cloud resources, such as instances, but also security groups, permissions, storage, load balancers, etc.
+With the advent of configuration management tools such as [Ansible](https://docs.ansible.com/), [Chef](https://www.chef.io/), and the like, it became easier to configure instances in a reproducible manner by defining said configuration as code. [Terraform](http://terraform.io/) made it easier to codify and provision cloud resources: instances, but also security groups, permissions, storage, load balancers, etc.
 
 It's easy to simply think of a cloud infrastructure as a pool of compute resource. It is however often so much more than that. When executed right, The Cloud is a set of meshed services, interacting and communicating with each other (possibly with compute resources sitting in the middle). That applies for vast and complex infrastructures such as the one I work on at [Datadog](https://datadoghq.com), but it also applies to my ridiculously tiny personal one. Realizing this got me thinking. Why wasn't I using the same tools and techniques to manage my small infrastructure than the ones I'm using daily?
 
@@ -42,6 +42,7 @@ I had several objectives in mind to improve the current setup:
 - monitor the hosts and services using [Datadog](https://datadoghq.com) (free for 5 hosts or less) , with monitors define in terraform
 - secure the SSH connections of the internet-facing hosts via [Duo](https://duo.com/) (free for 10 users or less)
 - be able to SSH into all hosts from my personal and work laptop, as well as from my [phone](https://play.google.com/store/apps/details?id=org.connectbot&hl=en_US)
+- monitor my daily backups
 
 
 ## Show me the code
