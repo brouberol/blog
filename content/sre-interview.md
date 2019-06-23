@@ -1,6 +1,7 @@
 Title: Preparing the SRE interview
 Date: 2017-04-20
 Category: Programming
+Description: Resources to prepare an SRE interview
 
 I recently interviewed for an <abbr title="Site Reliability Engineer">SRE</abbr> position. I spent a full week learning (or refreshing my memory) on the subjects and topics that could be covered in such an interview. I'll try and lay down the list of topics I covered and resources I used.
 
