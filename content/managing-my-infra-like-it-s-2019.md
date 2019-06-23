@@ -18,8 +18,8 @@ It's easy to simply think of a cloud infrastructure as a pool of compute resourc
 
 My personal infrastructure consists of (drumrolls...) 3 servers:
 
-- a VPS running at Scaleway, hosting my personal services (personal website, blog, git repositories, [CalDAV server](https://radicale.org/documentation/), [traffic analytics](https://usefathom.com/), [IRC client](https://thelounge.chat/), [Read-it-later service](https://www.wallabag.org/en), etc)
-- a VPS running at OVH, hosting my mother's website
+- a VPS running in Scaleway, hosting my personal services (personal website, blog, git repositories, [CalDAV server](https://radicale.org/documentation/), [traffic analytics](https://usefathom.com/), [IRC client](https://thelounge.chat/), [Read-it-later service](https://www.wallabag.org/en), etc)
+- a VPS running in OVH, hosting my mother's website
 - a Raspberry Pi, running in my living room, hosting private services ([Kresus](https://kresus.org/en/index.html))
 
 Until now, each of these servers were managed in an _ad-hoc_ fashion, sometimes with scripts, sometimes without. All the cloud resources on which my services (S3 buckets, DNS zones, etc) were managed manually, using the cloud provider web console.
