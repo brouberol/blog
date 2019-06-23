@@ -164,12 +164,8 @@ fn main() {
 
 ## The solution
 
-<details>
-<summary>Click to see the solution</summary>
-
 ```
 312051 is found on level 279 of the spiral
 312051 has coordinates (-152, -278)
 312051 is at a distance of 430 from the center
 ```
-</details>

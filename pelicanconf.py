@@ -15,7 +15,7 @@ LOCALE = 'en_US.utf-8'
 FEED_RSS = 'feeds/rss.xml'
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 TRANSLATION_FEED_ATOM = None
-RSS_FEED_SUMMARY_ONLY = True
+RSS_FEED_SUMMARY_ONLY = False
 
 PATH = 'content'
 STATIC_PATHS = ['images', ]
