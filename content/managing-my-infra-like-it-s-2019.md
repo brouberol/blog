@@ -52,7 +52,7 @@ You can have a look at the code [here](https://github.com/brouberol/infrastructu
 
 ## What now?
 
-I'm now confident that I can open some of these services to friends, if they need to. I measure and monitor my own SLIs, the expiry of the SSL certificates, and can intervene from anywhere if something breaks.
+I'm now confident that I can open some of these services to friends, if they want to. I measure and monitor my own SLIs, the expiry of the SSL certificates, and can intervene from anywhere if something breaks.
 
 ![ssl-expiry-monitoring](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/managing-infra/ssl-expiry-monitoring.png)
 
