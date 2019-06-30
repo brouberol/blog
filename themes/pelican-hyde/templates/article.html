@@ -14,14 +14,10 @@
     <meta name="twitter:card" content="summary" />
     {% endif %}
     <meta name="twitter:title" content="{{ article.title }}" />
-    <meta name="twitter:site" content="@brouberol" />
+    <meta name="twitter:site" content="{{ AUTHOR_TWITTER }}" />
     <meta name="twitter:url" content="{{ ABSOLUTE_SITEURL }}/{{ article.url | replace('.html', '')}}" />
-    {% if article.description %}
-    <meta name="twitter:description" content="{{ article.description }}" />
-    {% else %}
-    <meta name="twitter:description" content="{{ article.content | truncate(240) }}" />
-    {% endif %}
-    <meta name="twitter:creator" content="@brouberol" />
+    <meta name="twitter:description" content="{% if article.description %}{{ article.description }}{% else %}{{ BIO }}{% endif %}">
+    <meta name="twitter:creator" content="{{ AUTHOR_TWITTER }}" />
     {% if article.category %}
     <meta name="twitter:label1" value="Theme" />
     <meta name="twitter:data1" value="{{ article.category }}" />

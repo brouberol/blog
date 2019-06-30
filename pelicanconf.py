@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 from os.path import abspath, join, dirname
 
 AUTHOR = u'Balthazar Rouberol'
+AUTHOR_TWITTER = '@brouberol'
 SITENAME = u'Balthazar'
 SITEURL = 'https://blog.balthazar-rouberol.com'
 ISSOURL = 'https://comments.balthazar-rouberol.com'
