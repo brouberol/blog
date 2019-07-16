@@ -39,7 +39,7 @@ Now, if your company has remote in its blood and culture, good! Now, all is left
 
 The first thing I find absolutely essential is containerisation (no, not Docker) of your private and professional life. You need to have a dedicated office room, with a door, that is not your living room. The idea is that, when you open that door, you're at work, and when you close it, you're out. I find it to be especially important during the first weeks of remote work. I now find myself work more and more from my living room, but I know that if I need isolation for some reason, I still have this room I can go to.
 
-For the same reason (along with a bazillion security reasons), never work on your personal machine. You want to make it a conscious effort to switch from watching Netflix to reading your work email.
+For the same reason (along with a bazillion security reasons), never work from your personal machine. You want to make it a conscious effort to switch from watching Netflix to reading your work email.
 
 ### Routine
 
