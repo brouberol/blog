@@ -1,6 +1,7 @@
-Title: About letting go
+Title: On letting go
 Date: 2019-11-11
 Category: Personal
+
 
 I have been feeling more and more burdened in the recent months. It first wasn't clear to me why I was feeling that way: I'm in the most happy and fulfilling relationship I've ever been in, we just moved to a beautiful apartment we both fell in love with, I'm honoured and lucky to have great friends, and a fantastic job I'm enjoying myself in (which also turns out to pay greatly), alongside some of the greatest engineers out there. Why on Earth was I therefore sometimes feeling like all I felt like doing was sit on the couch, turn on Netflix, and wait for the day to end?
 
