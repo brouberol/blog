@@ -47,7 +47,7 @@ First, flour the table a little, and get the dough out of the bowl (preferably u
 
 ![stretched](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/no-knead-bread-recipe/DSC_0017.JPG)
 
-Then, fold the dough [4 times on itself](https://youtu.be/j0o4asEGW78?t=42) and shape the dough into a boule. Let it rest in a bowl, under a slightly damp towel for a half-hour.
+Then, fold the dough [4 times on itself](https://youtu.be/j0o4asEGW78?t=42) and shape the dough into a boule. Let it rest in a bowl, under a slightly damp towel for between a half-hour an an hour. In my experience, the more you wait, the more the yeast will activate and the more bubbles you'll get in the end.
 
 After that waiting period, the dough should have expanded a bit, and feel more elastic, as well as less sticky.
 
