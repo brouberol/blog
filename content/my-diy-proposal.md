@@ -21,12 +21,11 @@ I finally ended up with something looking pretty good, that I could export to a 
 
 ![chest-plan](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/proposal/chest-plan.png)
 
-At that point, the easy part was done and I needed to get to the actual building. I found a [fablab](https://fabmanager.astech-fablab.fr) in my area that looked pretty nice, but I couldn't find enough time to sneak around there and actually get to it. Time passed, and I one day noticed a big stack of cardboard lying around in our flat. I finally decided to make the chest out of that, as it would be easier to sneakily work on during the day.
+At that point, the easy part was done and I needed to get to the actual building phase. I found a [fablab](https://fabmanager.astech-fablab.fr) in my area that looked pretty nice, but I couldn't find enough time to sneak around there and actually get to it. Time passed, and I one day noticed a big stack of cardboard lying around in our flat. I finally decided to make the chest out of cardboard instead, as it'd be easier to work and iterate with.
 
-I followed the plan as best as I could, and ended up with something looking really good! (albeit a little wonky)
+I followed the plan as best as I could (and improvised a fair amount), and ended up with something looking quite good!
 
 ![chest4](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/proposal/chest-4.jpeg)
-
 ![chest2](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/proposal/chest-2.jpeg)
 ![chest3](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/proposal/chest-3.jpeg)
 
