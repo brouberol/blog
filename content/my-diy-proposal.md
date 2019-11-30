@@ -34,7 +34,7 @@ At that point, I had a nice looking chest, but I also wanted music and light to 
 
 I taught myself [Kotlin](https://kotlinlang.org/) and Android development on [Udemy](https://udemy.com) (thanks to Datadog for providing employees with an account!), by following [Kotlin for Android: Beginner to Advanced](https://datadog.udemy.com/course/devslopes-android-kotlin/learn/lecture/7866294), by [Devslopes](https://www.youtube.com/channel/UClLXKYEEM8OBBx85DOa6-cg/featured), which I can't recommend enough. I ended up with that small [application](https://github.com/brouberol/OpenChest) installed on my phone.
 
-One issue that I encountered was that Android does not give you any API to ask the brightness sensot for the _current_ brightness value. All you can do is be notified when that value changes.
+One issue that I encountered was that Android does not give you any API to ask the brightness sensor for the _current_ brightness value. All you can do is be notified when that value changes.
 
 ```kotlin
 // Event handler executed when the light sensor detects a change
