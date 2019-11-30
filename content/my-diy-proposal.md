@@ -3,7 +3,7 @@ Date: 2019-11-30
 Category: DIY
 Description: Who said that geeks couldn't be creative and romantic?
 TwitterImg: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/proposal/chest-4.jpeg
-status: draft
+
 
 You know how everyone wants their proposal to be special, thoughtful, original, and above all, wants to avoid being cliché? Well, I wanted all that. I also wanted it to be DIY and geeky. With all that in mind, and because my SO is such a Zelda fan, I decided to propose to her by having her open an Ocarina of time themed treasure chest, which would light up from the inside and play the famous music when it opens.
 
