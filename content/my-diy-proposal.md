@@ -17,7 +17,7 @@ To that end, I started by creating a [3D model](https://balthazar-rouberol-blog.
 
 ![3dModel](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/proposal/chest-3d.png)
 
-I finally ended up with something looking pretty good, that I could export to a plan with precise dimensions reported in mm.
+I finally ended up with something looking pretty good, that I could export to a [plan](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/proposal/chest.pdf) with precise dimensions reported in mm.
 
 ![chest-plan](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/proposal/chest-plan.png)
 
@@ -57,6 +57,9 @@ At that point, I was _finally_ all set.
         <source
             src="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/proposal/chest-opening.webm"
             type="video/webm">
+        <source
+            src="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/proposal/chest-opening.mp4"
+            type="video/mp4">
     </video>
 </div>
 
