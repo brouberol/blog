@@ -21,7 +21,7 @@ I finally ended up with something looking pretty good, that I could export to a 
 
 ![chest-plan](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/proposal/chest-plan.png)
 
-At that point, the easy part was done and I needed to get to the actual building phase. I found a [fablab](https://fabmanager.astech-fablab.fr) in my area that looked pretty nice, but I couldn't find enough time to sneak around there and actually get to it. Time passed, and I one day noticed a big stack of cardboard lying around in our flat. I finally decided to make the chest out of cardboard instead, as it'd be easier to work and iterate with.
+The easy part was now done, and I needed to get to the actual building phase. I found a [fablab](https://fabmanager.astech-fablab.fr) in my area that looked pretty nice, but I couldn't find enough time to sneak around there and actually get to it. Time passed, and I one day noticed a big stack of cardboard lying around in our flat. I finally decided to make the chest out of cardboard instead, as it'd be easier to work and iterate with.
 
 I followed the plan as best as I could (and improvised a fair amount), and ended up with something looking quite good!
 
@@ -50,7 +50,7 @@ override fun onSensorChanged(event: SensorEvent) {
 
 This is unwieldy as all the app can do is detect if the ambiant brightness crosses an absolute threshold, which itself depends on the time of the day, of the ambient light of the room, etc. I investigate whether I could light the LED up for a couple of seconds, then turn it off, to force the sensor to pick up some changes, to approximate the current brightness inside the chest, but in the end, it was easier to just cover the inside with black foam to make sure the phone was in pitch black darkness.
 
-At that point, I was _finally_ all set.
+I was _finally_ all set.
 
 <div class="vid-container">
     <video class="video" controls>
