@@ -29,7 +29,7 @@ I followed the plan as best as I could (and improvised a fair amount), and ended
 ![chest2](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/proposal/chest-2.jpeg)
 ![chest3](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/proposal/chest-3.jpeg)
 
-At that point, I had a nice looking chest, but I also wanted music and light to beam out of it when it was being opened. I investigated a setup based on an Arduino with external speakers, a lever switch and an external LED for a while, but I soon realized that my phone was all I needed to make it work! All I needed to do was write an app that would play an mp3 and light up the phone's LED when it detected an ambient brightness increase. As the brightness sensor needed to face upwards, that'd mean that the LED would face downwards and beam the light towards the bottom of the chest. I decided to put a small mirror in the chest, and go with that.
+At that point, I had a nice looking chest, but I also wanted music and light to beam out of it when it was being opened. I investigated a setup based on an Arduino with external speakers, a lever switch and an external LED for a while, but I soon realised that my phone was all I needed to make it work! All I needed to do was write an app that would play an mp3 and light up the phone's LED when it detected an ambient brightness increase. As the brightness sensor needed to face upwards, that'd mean that the LED would face downwards and beam the light towards the bottom of the chest. I decided to put a small mirror in the chest, and go with that.
 
 
 I taught myself [Kotlin](https://kotlinlang.org/) and Android development on [Udemy](https://udemy.com) (thanks to Datadog for providing employees with an account!), by following [Kotlin for Android: Beginner to Advanced](https://datadog.udemy.com/course/devslopes-android-kotlin/learn/lecture/7866294), by [Devslopes](https://www.youtube.com/channel/UClLXKYEEM8OBBx85DOa6-cg/featured), which I can't recommend enough. I ended up with that small [application](https://github.com/brouberol/OpenChest) installed on my phone.
@@ -48,7 +48,7 @@ override fun onSensorChanged(event: SensorEvent) {
 }
 ```
 
-This is unwieldy as all the app can do is detect if the ambiant brightness crosses an absolute threshold, which itself depends on the time of the day, of the ambient light of the room, etc. I investigate whether I could light the LED up for a couple of seconds, then turn it off, to force the sensor to pick up some changes, to approximate the current brightness inside the chest, but in the end, it was easier to just cover the inside with black foam to make sure the phone was in pitch black darkness.
+This is unwieldy as all the app can do is detect if the ambient brightness crosses an absolute threshold, which itself depends on the time of the day, of the ambient light of the room, etc. I investigate whether I could light the LED up for a couple of seconds, then turn it off, to force the sensor to pick up some changes, to approximate the current brightness inside the chest, but in the end, it was easier to just cover the inside with black foam to make sure the phone was in pitch black darkness.
 
 I was _finally_ all set.
 
