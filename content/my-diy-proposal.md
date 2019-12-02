@@ -48,7 +48,7 @@ override fun onSensorChanged(event: SensorEvent) {
 }
 ```
 
-This is unwieldy as all the app can do is detect if the ambient brightness crosses an absolute threshold, which itself depends on the time of the day, of the ambient light of the room, etc. I investigate whether I could light the LED up for a couple of seconds, then turn it off, to force the sensor to pick up some changes, to approximate the current brightness inside the chest, but in the end, it was easier to just cover the inside with black foam to make sure the phone was in pitch black darkness.
+This is unwieldy as all the app can do is detect if the ambient brightness crosses an absolute threshold, which itself depends on the time of the day, the ambient light of the room, etc. I investigate whether I could light the LED up for a couple of seconds, then turn it off, to force the sensor to pick up some changes, to approximate the current brightness inside the chest. In the end, it was easier to just cover the inside with black foam to make sure the phone was in pitch black darkness.
 
 I was _finally_ all set.
 
