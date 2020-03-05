@@ -3,39 +3,40 @@
 from __future__ import unicode_literals
 from os.path import abspath, join, dirname
 
-AUTHOR = u'Balthazar Rouberol'
-AUTHOR_TWITTER = '@brouberol'
-SITENAME = u'Balthazar'
-SITEURL = 'https://blog.balthazar-rouberol.com'
-ISSOURL = 'https://comments.balthazar-rouberol.com'
+AUTHOR = "Balthazar Rouberol"
+AUTHOR_TWITTER = "@brouberol"
+SITENAME = "Balthazar"
+SITEURL = "https://blog.balthazar-rouberol.com"
+ISSOURL = "https://comments.balthazar-rouberol.com"
 ABSOLUTE_SITEURL = SITEURL
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = "Europe/Paris"
 DEFAULT_LANG = "en"
-LOCALE = 'en_US.utf-8'
+LOCALE = "en_US.utf-8"
 
 # Feed generation is usually not desired when developing
-FEED_RSS = 'feeds/rss.xml'
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
+FEED_RSS = "feeds/rss.xml"
+FEED_ALL_ATOM = "feeds/all.atom.xml"
 TRANSLATION_FEED_ATOM = None
 RSS_FEED_SUMMARY_ONLY = False
+CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
+DISPLAY_CATEGORIES = True
 
-PATH = 'content'
-STATIC_PATHS = ['images', ]
-THEME = abspath(join(dirname(__file__), 'themes', 'pelican-hyde'))
+PATH = "content"
+STATIC_PATHS = ["images"]
+THEME = abspath(join(dirname(__file__), "themes", "pelican-hss"))
 
-PROFILE_IMAGE = 'https://balthazar-rouberol.com/static/img/image-small.jpg'
-BIO = 'I work with humans and computers.'
+USER_LOGO_URL = "https://balthazar-rouberol.com/static/img/image-small.jpg"
+TAGLINE = "I work with humans and computers."
 
 # Blogroll
 LINKS = ()
 
 # Social widget
 SOCIAL = [
-    ('home', 'https://balthazar-rouberol.com'),
-    ('twitter', 'https://twitter.com/brouberol'),
-    ('github', 'https://github.com/brouberol'),
-    ('linkedin', 'https://www.linkedin.com/in/balthazar-rouberol/'),
+    ("twitter", "https://twitter.com/brouberol"),
+    ("github", "https://github.com/brouberol"),
+    ("linkedin", "https://www.linkedin.com/in/balthazar-rouberol/"),
 ]
 
 DEFAULT_PAGINATION = 10
@@ -43,6 +44,14 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-DISQUS_SITENAME = 'balthazar-blog'
 PLUGIN_PATHS = ["pelican-plugins"]
-PLUGINS = ['render_math']
+PLUGINS = ["render_math"]
+
+MARKDOWN = {
+    "extensions": [
+        "markdown.extensions.codehilite",
+        "markdown.extensions.extra",
+        "markdown.extensions.meta",
+    ],
+    "extension_configs": {"markdown.extensions.codehilite": {"css_class": "highlight"}},
+}
