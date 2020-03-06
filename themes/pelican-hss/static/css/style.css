@@ -11,6 +11,7 @@
 kbd {
   background-color: #eee;
   border-radius: 3px;
+  font-family: Cascadia;
   border: 1px solid #b4b4b4;
   box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
   color: #333;
@@ -45,6 +46,16 @@ div#comments {
 }
 
 div#archives {
+    text-align: center;
+}
+
+span.imgcaption {
+    font-size: 14px;
+/*    margin-left: auto;
+    margin-right: auto;*/
+    margin-top: -1em;
+    padding-bottom: 2em;
+    display: block;
     text-align: center;
 }
 
@@ -256,7 +267,8 @@ main {
 }
 
 main header {
-    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     border-top: #eee 1px solid;
     border-bottom: #eee 1px solid;
     text-align: center
@@ -295,7 +307,7 @@ main article .article__text h1 {
 
 main article .article__text h2 {
     border-bottom: #eee 1px solid;
-    margin-top: 2.375rem;
+    margin-top: 3.375rem;
     margin-bottom: 1.375em;
     padding-bottom: 0.5em
 }
@@ -319,6 +331,7 @@ main article .article__text pre {
     margin: 22px 2px 22px 2px;
     padding: 9.5px;
     font-family: "Cascadia", monospace;
+    font-size: 0.9em;
     line-height: 1.45;
     overflow-x: auto;
     border-style: none;
@@ -343,7 +356,7 @@ main article .article__text blockquote {
 }
 
 main article .article__text blockquote:before {
-    content: '🙶';
+    content: '“';
     font-size: 600%;
     font-style: bold;
     line-height: 1em;
