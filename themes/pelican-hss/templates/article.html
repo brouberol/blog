@@ -1,6 +1,27 @@
 {% extends "base.html" %}
 {% block head %}
 <meta name="keywords" content="{{ article.tags|join(', ')  }}">
+<meta name="description" content="{% if article.description %}{{ article.description }}{% else %}{{ BIO }}{% endif %}">
+<meta property="og:description" content="{% if article.description %}{{ article.description }}{% else %}{{ BIO }}{% endif %}">
+<meta property="og:title" content="{{ article.title }}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ ABSOLUTE_SITEURL }}/{{ article.url | replace('.html', '')}}" />
+
+{% if article.image %}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="{{ article.image }}" />
+{% else %}
+<meta name="twitter:card" content="summary" />
+{% endif %}
+<meta name="twitter:title" content="{{ article.title }}" />
+<meta name="twitter:site" content="{{ AUTHOR_TWITTER }}" />
+<meta name="twitter:url" content="{{ ABSOLUTE_SITEURL }}/{{ article.url | replace('.html', '')}}" />
+<meta name="twitter:description" content="{% if article.description %}{{ article.description }}{% else %}{{ BIO }}{% endif %}">
+<meta name="twitter:creator" content="{{ AUTHOR_TWITTER }}" />
+{% if article.category %}
+<meta name="twitter:label1" value="Theme" />
+<meta name="twitter:data1" value="{{ article.category }}" />
+    {% endif %}
 {% endblock %}
 
 {% block title %}&ndash; {{ article.title }}{% endblock %}
