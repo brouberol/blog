@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block head %}
+<meta name="keywords" content="{{ article.tags|join(', ')  }}">
+{% endblock %}
+
+{% block title %}&ndash; {{ article.title }}{% endblock %}
+
+{% block content %}
+<article>
+  <div class="article__title">
+    <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+  </div>
+  <div class="article__meta">
+    <p class="article__meta__post-date">{{ article.locale_date }}</p>
+    {% if DISPLAY_CATEGORIES == '' or DISPLAY_CATEGORIES %}
+    <p class="article__meta__category"><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+    {% endif %}
+      {% if article.tags %} -
+      {% for tag in article.tags %}
+      <a class=taglink href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %} {% endif %}
+      {% endfor %}
+      {% endif %}
+    </p>
+  </div>
+  <div class="article__text">
+    {{ article.content }}
+  </div>
+  {% if SHOW_SOCIAL_SHARE_BUTTON %}
+    {% include "modules/social-tools.html" %}
+  {% endif %}
+  {% if ISSOURL %}
+  <div id=comments>
+    <h2>Comments</h2>
+    <script data-isso="{{ ISSOURL }}/"
+            data-isso-avatar="false"
+            data-isso-gravatar="true"
+            src="{{ ISSOURL }}/js/embed.min.js"></script>
+    <section id="isso-thread"></section>
+  </div>
+  {% endif %}
+
+
+</article>
+{% endblock %}
