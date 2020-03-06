@@ -1,17 +1,16 @@
 Title: Discovering the terminal
 Date: 2020-03-05
 Category: Essential Tools and Practices for the Aspiring Software Developer
-Description:
-Image:
+Description: In which we help you take your first steps in the terminal
+Image: https://blog.balthazar-rouberol.com/images/terminal/physical-terminal.png
 Tags: terminal
-Status: draft
 
 <header>
 <p>
     This article is part of a self-published book project by Balthazar Rouberol and <a href=https://etnbrd.com>Etienne Brodu</a>, ex-roommates, friends and colleagues, aiming at empowering the up and coming generation of developers. We currently are hard at work on it!
 </p>
 <p>
-  If you are interested in the project, we invite you to join the <a href=https://ballthazar-rouberol.us4.list-manage.com/subscribe?u=1f6080d496af07a836270ff1d&id=81ebd36adb>mailing list</a>!
+  If you are interested in following the project, we invite you to join the <a href=https://balthazar-rouberol.us4.list-manage.com/subscribe?u=1f6080d496af07a836270ff1d&id=81ebd36adb>mailing list</a>!
 </p>
 </header>
 
@@ -117,20 +116,23 @@ a whole room.
 
 ![The DEC VT100, a physical video terminal dating back
 1978](images/terminal/physical-terminal.png)
+<span class=imgcaption>The DEC VT100, a physical video terminal dating back 1978</span>
 
 Nowadays, terminals are programs run into a graphical window, emulating
 the behavior of the video terminals of old.
 
 ![This is what a terminal looks like
 nowadays](images/terminal/shell.png)
+<span class=imgcaption>This is what a terminal looks like nowadays.</span>
 
 Different operating systems come with different terminals and different
-shells pre-installed. Before we go any deeper, let’s open a terminal!
-The way you do this depends on your operating system.
+shells pre-installed, but most common shell out there is certainly `bash`.
+
+Before we go any deeper, let’s open a terminal! The way you do this however depends on your operating system.
 
 ### Opening a terminal
 
-**On MacOS**
+#### On MacOS
 
 Open the `Finder` app, click on `Applications` on the left pane, then
 enter the `Utilities` directory, then execute the `Terminal` app. You
@@ -138,7 +140,7 @@ can also use the Spotlight search by clicking on the magnifying glass
 icon on the top right corner of your screen (or use the <kbd>Cmd</kbd>
 <kbd>Space</kbd> keyboard shortcut), and type `Terminal`.
 
-**On Linux**
+#### On Linux
 
 Depending on the Linux distribution you use, it might come with XTerm,
 Gnome-Terminal or Konsole pre-installed. Look for any of these in your
@@ -146,9 +148,14 @@ applications menu. A lot of Linux installation use the
 <kbd>Ctrl</kbd> - <kbd>Alt</kbd> - <kbd>T</kbd> keyboard shortcut to
 open a terminal window.
 
-**On Windows**
+#### On Windows
 
-TODO
+Windows is a special case: Linux and MacOS come with bash pre-installed, whereas Windows does not. It comes with 2 built-in shells: `cmd` and `Powershell`. The rest of this tutorial and its following chapters however assume you are running bash. The reason for that is that `bash` is pretty much ubiquitous, whether it's on a personal workstations or on servers. On top of that, bash comes with a myriad of tools and commands that will be detailed in the next chapter.
+
+Fortunately, Windows 10 can now natively run bash since 2019 by using the _Windows Subsystem for Linux_ (WSL). We suggest you follow the instructions from this [tutorial](https://itsfoss.com/install-bash-on-windows/).
+
+![Running bash on Windows is now possible](https://i1.wp.com/itsfoss.com/wp-content/uploads/2016/08/install-ubuntu-windows-10-linux-subsystem-10.jpeg)
+<span class=imgcaption>Running bash on Windows is now possible</span>
 
 ### Running our first command
 
@@ -160,6 +167,7 @@ username, and `morenika` is my computer’s name (its *<span class="gls"
 key="hostname">hostname</span>*).
 
 ![`br@morenika:~$` is my prompt](images/terminal/shell.png)
+<span class=imgcaption>`br@morenika:~$` is my prompt</span>
 
 The black rectangle is called a *cursor*. It represents your current
 typing position.
@@ -193,6 +201,7 @@ These are all the files and directories located in my personal directory
 Let’s open a graphical file explorer and check, just to be sure.
 
 ![As expected, we weren’t lied to](images/terminal/home.png)
+<span class=imgcaption>As expected, we weren’t lied to</span>
 
 <div class="Warning" markdown="1">
 
@@ -332,8 +341,8 @@ that this option simply does not have a long form.
 -   By convention, options can have have multiple forms: a short and/or
     a long one.
 
-![Here is a summary of the different parts of a
-command](images/terminal/terminal-parts.png)
+![Here is a summary of the different parts of a command](images/terminal/terminal-parts.png)
+<span class=imgcaption>Here is a summary of the different parts of a command</span>
 
 <a id="managing-files"></a>
 ## Managing files
@@ -451,6 +460,7 @@ system, each of these directories possibly containing others, to form a
 structure looking like a tree.
 
 ![Your disk is organized like a tree](images/terminal/paths.png)
+<span class=imgcaption>Your disk is organized like a tree</span>
 
 Let’s look a what that `/` root directory contains.
 
@@ -499,6 +509,7 @@ parent folder called `..`.
 
 ![The `.` link points to the folder itself and the `..` link points to
 the folder’s parent](images/terminal/dotpaths.png)
+<span class=imgcaption>The `.` link points to the folder itself and the `..` link points to the folder’s parent</span>.
 
 We can use these `.` and `..` links when constructing relative paths.
 For example, were you current located in `/home/br`, you could refer to
@@ -513,8 +524,8 @@ Sdk
 Were you located under `/home/br/Android`, you could also refer as
 `/home/br/Downloads` as `../Downloads`.
 
-![Following `Android`’s `..` link takes you back to the `home`
-directory](images/terminal/dotdot.png)
+![Following `Android`’s `..` link takes you back to the `home` directory](images/terminal/dotdot.png)
+<span class=imgcaption>Following `Android`’s `..` link takes you back to the `home` director</span>
 
 <div class="Note" markdown="1">
 
@@ -568,10 +579,8 @@ AndroidStudioProjects  code  Documents  Dropbox    Firefox_wallpaper.png  Pictur
 
 We can also see that directory by opening our file explorer.
 
-![The directory we have just created in the terminal can be seen in our
-file explorer. The terminal displays the information as text, and the
-file explorer displays it in a graphical
-form.](images/terminal/new-dir.png)
+![The directory we have just created in the terminal can be seen in our file explorer. The terminal displays the information as text, and the file explorer displays it in a graphical form.](images/terminal/new-dir.png)
+<span class=imgcaption>The directory we have just created in the terminal can be seen in our file explorer. The terminal displays the information as text, and the file explorer displays it in a graphical form.</span>
 
 Running `mkdir` on a pre-existing command causes it to fail and display
 an error message.
@@ -816,8 +825,8 @@ Let’s give it a go, by typing the following command.
 $ man ls
 ```
 
-![`man ls` displays the manual of the `ls` command: everything you need
-to know about what `ls` can be used for.](images/terminal/man-ls.png)
+![`man ls` displays the manual of the `ls` command: everything you need to know about what `ls` can be used for.](images/terminal/man-ls.png)
+<span class=imgcaption>`man ls` displays the manual of the `ls` command: everything you need to know about what `ls` can be used for.</span>
 
 #### Reading the synopsis
 
@@ -911,6 +920,7 @@ $ man man
 ```
 
 ![Low and behold, the manual’s manual.](images/terminal/man-man.png)
+<span class="imgcaption">Low and behold, the manual’s manual.</span>
 
 <a id="command-inputoutput-streams"></a>
 ## Command Input/Output streams
@@ -934,9 +944,9 @@ key="fd">file descriptor</span>*, a number used by the shell to
 reference that stream. `stdin` has the file descriptor 0, `stdout` has
 1, and `stderr` has 2.
 
-![stdin (file descriptor 0) is the process input stream, stdout (file
-descriptor 1) is the process output stream and stderr (file descriptor
-2) is the process error stream](images/terminal/process-stream.png)
+![stdin (file descriptor 0) is the process input stream, stdout (file descriptor 1) is the process output stream and stderr (file descriptor 2) is the process error stream](images/terminal/process-stream.png)
+<span class=imgcaption>`stdin` (file descriptor 0) is the process input stream, `stdout` (file descriptor 1) is the process output stream and `stderr` (file descriptor 2) is the process error stream.</span>
+
 
 ### Redirecting output to a file
 
@@ -1095,8 +1105,8 @@ cat: notthere: No such file or directory
 
 This `stderr` redirection can be illustrated by the following diagram.
 
-![Any errors displayed by `cat` will be redirected into the `errors.txt`
-file](images/terminal/redirect-stderr.png)
+![Any errors displayed by `cat` will be redirected into the `errors.txt` file](images/terminal/redirect-stderr.png)
+<span class=imgcaption>Any errors displayed by `cat` will be redirected into the `errors.txt` file</span>
 
 You can also redirect the command’s `sdterr` to a file, and its `stderr`
 to another file.
@@ -1108,9 +1118,8 @@ $ cat errors.txt
 cat: notthere: No such file or directory
 ```
 
-![Normal output will be redirected into `output.txt` whereas errors are
-redirected to into
-`errors.txt`](images/terminal/redirect-stdout-stderr.png)
+![Normal output will be redirected into `output.txt` whereas errors are redirected to into `errors.txt`](images/terminal/redirect-stdout-stderr.png)
+<span class=imgcaption>Normal output will be redirected into `output.txt` whereas errors are redirected to into `errors.txt`</span>
 
 It is also possible to redirect the command’s `stderr` into its `stdout`
 using `2>&1`. This will effectively merge both streams into a single
@@ -1122,8 +1131,8 @@ $ cat output.txt
 cat: notthere: No such file or directory
 ```
 
-![`cat`’s stdout and stderr are merged together into a single
-stream](images/terminal/redirect-stderr-into-stdout.png)
+![`cat`’s stdout and stderr are merged together into a single stream](images/terminal/redirect-stderr-into-stdout.png)
+<span class=imgcaption>`cat`’s stdout and stderr are merged together into a single stream</span>
 
 <div class="Note" markdown="1">
 
@@ -1164,10 +1173,8 @@ A pipe simply works by connecting the `stdout` stream of a command to
 the `stdin` stream of the next command. Simply said, the output of a
 command becomes the input of the next.
 
-![`ls` is *piped* into `wc` by redirecting its output into `wc`’s input.
-A pipe allows to compose and assemble commands into pipelines, which
-makes the terminal so
-powerful.](images/terminal/process-pipe-stream.png)
+![`ls` is *piped* into `wc` by redirecting its output into `wc`’s input. A pipe allows to compose and assemble commands into pipelines, which makes the terminal so powerful.](images/terminal/process-pipe-stream.png)
+<span class=imgcaption>`ls` is *piped* into `wc` by redirecting its output into `wc`’s input. A pipe allows to compose and assemble commands into pipelines, which makes the terminal so powerful.</span>
 
 You can of course chain as many commands as possible and create command
 pipelines.
@@ -1222,8 +1229,8 @@ Android
 code
 ```
 
-![`tee` is named after the T-splitter used in
-plumbing.](images/terminal/tee.png)
+![`tee` is named after the T-splitter used in plumbing.](images/terminal/tee.png)
+<span class=imgcaption>`tee` is named after the T-splitter used in plumbing.</span>
 
 <a id="escaping-from-bad-situations"></a>
 ## Escaping from bad situations
@@ -1356,9 +1363,9 @@ same file, while also displaying them all on screen at the same time.
 <em>Essential Tools and Practices for the Aspiring Software Developer</em> is a self-published book project by Balthazar Rouberol and <a href=https://etnbrd.com>Etienne Brodu</a>, ex-roommates, friends and colleagues, aiming at empowering the up and coming generation of developers. We currently are hard at work on it!
 </p>
 <p>The book will help you set up a productive development environment and get acquainted with tools and practices that, along with your programming languages of choice, will go a long way in helping you grow as a software developer.
-  It will cover subjects such as mastering the terminal, configuring and getting productive in a shell, the basics of code versioning with git, SQL basics, tools such as Make, jq and regular expressions, networking basics as well as software engineering and collaboration best practices.
+  It will cover subjects such as mastering the terminal, configuring and getting productive in a shell, the basics of code versioning with `git`, SQL basics, tools such as `Make`, `jq` and regular expressions, networking basics as well as software engineering and collaboration best practices.
 </p>
 <p>
-  If you are interested in the project, we invite you to join the <a href=https://ballthazar-rouberol.us4.list-manage.com/subscribe?u=1f6080d496af07a836270ff1d&id=81ebd36adb>mailing list</a>!
+  If you are interested in the project, we invite you to join the <a href=https://balthazar-rouberol.us4.list-manage.com/subscribe?u=1f6080d496af07a836270ff1d&id=81ebd36adb>mailing list</a>!
 </p>
 </footer>
