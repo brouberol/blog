@@ -1355,12 +1355,13 @@ same file, while also displaying them all on screen at the same time.
 **1.6**: Given an `echoes` file, what is the difference between
 `wc -l echoes`, `cat echoes | wc -l` and `wc -l < echoes` ?
 
+
 <footer>
 <p>
 <em>Essential Tools and Practices for the Aspiring Software Developer</em> is a self-published book project by Balthazar Rouberol and <a href=https://etnbrd.com>Etienne Brodu</a>, ex-roommates, friends and colleagues, aiming at empowering the up and coming generation of developers. We currently are hard at work on it!
 </p>
 <p>The book will help you set up a productive development environment and get acquainted with tools and practices that, along with your programming languages of choice, will go a long way in helping you grow as a software developer.
-  It will cover subjects such as mastering the terminal, configuring and getting productive in a shell, the basics of code versioning with `git`, SQL basics, tools such as `Make`, `jq` and regular expressions, networking basics as well as software engineering and collaboration best practices.
+  It will cover subjects such as mastering the terminal, configuring and getting productive in a shell, the basics of code versioning with <code>git</code>, SQL basics, tools such as <code>Make</code>, <code>jq</code> and regular expressions, networking basics as well as software engineering and collaboration best practices.
 </p>
 <p>
   If you are interested in the project, we invite you to join the <a href=https://balthazar-rouberol.us4.list-manage.com/subscribe?u=1f6080d496af07a836270ff1d&id=81ebd36adb>mailing list</a>!
