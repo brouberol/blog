@@ -114,15 +114,13 @@ In the early days of computing, video terminals were actual physical
 devices, used to execute commands onto a remote computer that could take
 a whole room.
 
-![The DEC VT100, a physical video terminal dating back
-1978](images/terminal/physical-terminal.png)
+![The DEC VT100, a physical video terminal dating back 1978](images/terminal/physical-terminal.png)
 <span class=imgcaption>The DEC VT100, a physical video terminal dating back 1978</span>
 
 Nowadays, terminals are programs run into a graphical window, emulating
 the behavior of the video terminals of old.
 
-![This is what a terminal looks like
-nowadays](images/terminal/shell.png)
+![This is what a terminal looks like nowadays](images/terminal/shell.png)
 <span class=imgcaption>This is what a terminal looks like nowadays.</span>
 
 Different operating systems come with different terminals and different
@@ -372,33 +370,32 @@ $ pwd
 /home/br
 ```
 
-Now that we found our bearings, we can finally move around, for example
-to the `experiments` directory we’ve created in the previous part. We
+Now that we found our bearings, we can finally move around. We
 can do that with the `cd` command, standing for (you might have guessed
 it) *change directory*.
 
 ``` bash
-$ cd experiments
+$ cd Documents
 $ pwd
-/home/br/experiments
-$ cd ./art
+/home/br/Documents
+$ cd ./invoices
 $ pwd
-/home/br/experiments/art
-$ cd paintings
+/home/br/Documents/invoices
+$ cd 2020
 $ pwd
-/home/br/experiments/art/paintings
+/home/br/Documents/invoices/2020
 ```
 
-As `paintings` is empty, we can’t go any further. However, we can also
+As `2020` is empty, we can’t go any further. However, we can also
 go back to the *parent directory* (the directory containing the one we
 are currently into) using `cd ..`.
 
 ``` bash
 $ pwd
-/home/br/experiments/art/paintings
+/home/br/Documents/invoices/2020
 $ cd ..
 $ pwd
-/home/br/experiments/art
+/home/br/Documents/invoices
 ```
 
 We don’t have to always change directory one level at the time. We can
@@ -406,7 +403,7 @@ go up multiples directories at a time.
 
 ``` bash
 $ pwd
-/home/br/experiments/art
+/home/br/Documents/invoices
 $ cd ../..
 $ pwd
 /home/br
@@ -417,14 +414,14 @@ We can also go several directories down at the same time
 ``` bash
 $ pwd
 /home/br
-$ cd experiments/art/paintings
+$ cd Documents/invoices/2020
 ```
 
 Running `cd` without arguments takes you back to your home directory.
 
 ``` bash
 $ pwd
-/home/br/experiments/art/paintings
+/home/br/Documents/invoices/2020
 $ cd
 $ pwd
 /home/br
@@ -434,11 +431,11 @@ Running `cd -` takes you back to your previous location.
 
 ``` bash
 $ pwd
-/home/br/experiments/art/paintings
+/home/br/Documents/invoices/2020
 $ cd /home/br
 $ cd -
 $ pwd
-/home/br/experiments/art/paintings
+/home/br/Documents/invoices/2020
 ```
 
 You might wonder why `cd ..` takes you back to the parent directory?
