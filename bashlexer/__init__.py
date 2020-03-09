@@ -10,7 +10,8 @@ class ExtendedBashLexer(BashLexer):
         'alias', 'which', 'typeset', 'echo', 'cat', 'ls', 'mkdir',
         'cp', 'mv', 'rm', 'man', 'ln', 'grep', 'less', 'awk', 'sed',
         'cut', 'paste', 'head', 'tail', 'wc', 'sort', 'uniq', 'tr',
-        'fold', 'xargs', 'touch', 'tree', 'sudo', 'chsh', 'python'
+        'fold', 'xargs', 'touch', 'tree', 'sudo', 'chsh', 'python',
+        'ifconfig'
     ]
     EXTRA_KEYWORDS = [
         '>', '<', '<<', '>>', '&', '|', '^', '!$', '!!', '~', '~-', '~+'

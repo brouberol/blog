@@ -42,5 +42,7 @@ with open(filename) as f:
 
     data = re.sub(SHELL_BLOCKQUOTE_PATTERN, SHELL_BLOCKQUOTE_REPLACE, data)
 
+    data = data.replace("## Exercices", "## Going further")
+
 with open(filename, 'w') as out:
     out.write(data)
