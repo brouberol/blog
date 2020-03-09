@@ -10,9 +10,11 @@ class ExtendedBashLexer(BashLexer):
         'alias', 'which', 'typeset', 'echo', 'cat', 'ls', 'mkdir',
         'cp', 'mv', 'rm', 'man', 'ln', 'grep', 'less', 'awk', 'sed',
         'cut', 'paste', 'head', 'tail', 'wc', 'sort', 'uniq', 'tr',
-        'fold'
+        'fold', 'xargs', 'touch', 'tree', 'sudo', 'chsh', 'python'
     ]
-    EXTRA_KEYWORDS = ['>', '<', '<<', '>>', '&', '|']
+    EXTRA_KEYWORDS = [
+        '>', '<', '<<', '>>', '&', '|', '^', '!$', '!!', '~', '~-', '~+'
+    ]
 
     def get_tokens_unprocessed(self, text):
         for index, token, value in BashLexer.get_tokens_unprocessed(self, text):
