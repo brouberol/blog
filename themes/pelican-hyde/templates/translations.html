@@ -1,9 +1,0 @@
-{% if article.translations %}
-<span class="post-translation">
-- Also in
-
-{% for translated_article in article.translations %}
-    <a href={{ translated_article.url }}>{{ translated_article.lang | lower }}</a>{% if not loop.last %}, {% endif %}
-{% endfor %}
-</span>
-{% endif %}
