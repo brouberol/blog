@@ -187,7 +187,7 @@ command, we need to type `ls` after the prompt, and then hit
 The text that is displayed after our command and before the next prompt
 is the command’s *output*.
 
-``` bash
+``` extbash
 br@morenika:~$ ls
 Android                code       Downloads              Music
 AndroidStudioProjects  Desktop    Dropbox                Pictures
@@ -206,7 +206,7 @@ Let’s open a graphical file explorer and check, just to be sure.
 The shell is sensitive to casing: a lower-case command is not the same
 thing as it’s upper case equivalent.
 
-``` bash
+``` extbash
 br@morenika:~$ LS
 bash: LS: command not found
 ```
@@ -223,7 +223,7 @@ home directory. What if I wanted to list all files located in the `bin`
 directory that we can see in the output? In that case, I could pass
 `bin` as an *argument* to the `ls` command.
 
-``` bash
+``` extbash
 $ ls bin
 bat            fix-vlc-size  lf          terraform  vpnconnect
 clean-desktop  itresize      nightlight  tv-mode
@@ -233,7 +233,7 @@ By passing the `bin` argument to the `ls` command, we told it where to
 look, and we thus changed its behavior. Note that it is possible to pass
 more than one argument to a command.
 
-``` bash
+``` extbash
 $ ls Android bin
 Android:
 Sdk
@@ -257,7 +257,7 @@ are. No problem! The `ls` command has *options* we can use to adjust its
 behavior. The `-s` option causes `ls` to display each file size, in
 kilobytes.
 
-``` bash
+``` extbash
 $ ls -s bin
 total 52336
  4772 bat                4 itresize    44296 terraform
@@ -268,7 +268,7 @@ total 52336
 While this is nice, I’d prefer to see the file size in a human-readable
 unit. I can add the `-h` option to further specify what `ls` has to do.
 
-``` bash
+``` extbash
 $ ls -s -h bin
 total 52M
 4.7M bat            4.0K itresize     44M terraform
@@ -279,7 +279,7 @@ total 52M
 I can separate both options with a space, or also group them as one
 option.
 
-``` bash
+``` extbash
 $ ls -sh bin
 total 52M
 4.7M bat            4.0K itresize     44M terraform
@@ -290,7 +290,7 @@ total 52M
 I’d finally like each file and its associated size to be displayed on
 its own line. Enter the `-1` option!
 
-``` bash
+``` extbash
  $ ls -s -h -1 bin
 total 52M
 4.7M bat
@@ -311,7 +311,7 @@ Luckily, options can have a *long form* and a *short form*. For example,
 `-s` can be replaced by its long form `--size`, and `-h` by
 `--human-readable`.
 
-``` bash
+``` extbash
 $ ls --size --human-readable -1 bin
 total 52M
 4.7M bat
@@ -365,7 +365,7 @@ Before going anywhere, we first need to find know where we are. Enters
 `pwd`, standing for *print working directory*. This command displays
 your current working directory (*a.k.a* where you are).
 
-``` bash
+``` extbash
 $ pwd
 /home/br
 ```
@@ -374,7 +374,7 @@ Now that we found our bearings, we can finally move around. We
 can do that with the `cd` command, standing for (you might have guessed
 it) *change directory*.
 
-``` bash
+``` extbash
 $ cd Documents
 $ pwd
 /home/br/Documents
@@ -390,7 +390,7 @@ As `2020` is empty, we can’t go any further. However, we can also
 go back to the *parent directory* (the directory containing the one we
 are currently into) using `cd ..`.
 
-``` bash
+``` extbash
 $ pwd
 /home/br/Documents/invoices/2020
 $ cd ..
@@ -401,7 +401,7 @@ $ pwd
 We don’t have to always change directory one level at the time. We can
 go up multiples directories at a time.
 
-``` bash
+``` extbash
 $ pwd
 /home/br/Documents/invoices
 $ cd ../..
@@ -411,7 +411,7 @@ $ pwd
 
 We can also go several directories down at the same time
 
-``` bash
+``` extbash
 $ pwd
 /home/br
 $ cd Documents/invoices/2020
@@ -419,7 +419,7 @@ $ cd Documents/invoices/2020
 
 Running `cd` without arguments takes you back to your home directory.
 
-``` bash
+``` extbash
 $ pwd
 /home/br/Documents/invoices/2020
 $ cd
@@ -429,7 +429,7 @@ $ pwd
 
 Running `cd -` takes you back to your previous location.
 
-``` bash
+``` extbash
 $ pwd
 /home/br/Documents/invoices/2020
 $ cd /home/br
@@ -461,7 +461,7 @@ structure looking like a tree.
 
 Let’s look a what that `/` root directory contains.
 
-``` bash
+``` extbash
 $ ls /
 bin  boot  dev  etc  home  lib  lib64  lost+found  media
 mnt opt  proc  root  run  sbin  srv  sys  tmp  usr  var
@@ -485,7 +485,7 @@ Any path starting by `/` is an absolute path.
 We can then use that path to inspect the content of the `home` directory
 with the `ls` command.
 
-``` bash
+``` extbash
 $ ls /home
 br
 ```
@@ -513,7 +513,7 @@ For example, were you current located in `/home/br`, you could refer to
 the `Android` folder as `./Android`, meaning “the `Android` folder
 located under `.` (the current directory)”.
 
-``` bash
+``` extbash
 $ ls ./Android
 Sdk
 ```
@@ -529,7 +529,7 @@ Were you located under `/home/br/Android`, you could also refer as
 `ls -a` allows you to see *hidden files*, a.k.a all files starting with
 a dot. We can indeed see the `.` and `..` links!
 
-``` bash
+``` extbash
 $ ls -a
 .  ..  Sdk
 ```
@@ -551,7 +551,7 @@ for *make directories*. By executing the command `mkdir experiments`,
 you will create the `experiments` directory in your current directory.
 Let’s test this out.
 
-``` bash
+``` extbash
 $ ls
 Android                code       Downloads              Music
 AndroidStudioProjects  Desktop    Dropbox                Pictures
@@ -568,7 +568,7 @@ news.
 
 We can now check that the directory has been created.
 
-``` bash
+``` extbash
 $ ls
 Android          bin   Desktop  Downloads  experiments      Music     Videos
 AndroidStudioProjects  code  Documents  Dropbox    Firefox_wallpaper.png  Pictures
@@ -582,7 +582,7 @@ We can also see that directory by opening our file explorer.
 Running `mkdir` on a pre-existing command causes it to fail and display
 an error message.
 
-``` bash
+``` extbash
 $ mkdir experiments
 mkdir: experiments: File exists
 ```
@@ -590,7 +590,7 @@ mkdir: experiments: File exists
 What if we wanted to create a directory in `experiments` called `art`,
 and another directory called `paintings` itself located into `art`?
 
-``` bash
+``` extbash
 $ mkdir experiments/art/paintings
 mkdir: experiments/art: No such file or directory
 ```
@@ -602,14 +602,14 @@ fortunately, `mkdir` provides us with a `-p` option that causes `mkdir`
 to succeed even if directories already exist, and that will create each
 parent directory.
 
-``` bash
+``` extbash
 -p, --parents: no error if existing, make parent directories as needed
 ```
 
 This looks like exactly what we need in that case! Let’s see if it works
 as expected.
 
-``` bash
+``` extbash
 $ mkdir -p experiments/art/paintings
 $ ls experiments
 art
@@ -624,7 +624,7 @@ $
 `cp` (standing for `copy`) allows you to copy a file or a directory to
 another location.
 
-``` bash
+``` extbash
 $ cp Documents/readme experiments/art
 $ ls experiments/art
 paintings   readme
@@ -634,7 +634,7 @@ readme
 
 You can also move the file from a location to another by using `mv`.
 
-``` bash
+``` extbash
 $ mv experiments/art/readme experiments
 $ ls experiments
 art   readme
@@ -644,7 +644,7 @@ paintings
 
 That does not seem to work on directories however.
 
-``` bash
+``` extbash
 $ cp experiments/art experiments/art-copy
 cp: experiments/art is a directory (not copied).
 ```
@@ -654,7 +654,7 @@ use the `-r` option to tell `cp` to recursively copy `experiments/art`
 to `experiments/art-copy`, meaning `cp` will copy the directory and
 every file and directories it contains.
 
-``` bash
+``` extbash
 $ cp -r experiments/art experiments/art-copy
 $ ls experiments
 art-copy art  readme
@@ -669,7 +669,7 @@ sound surprising that there is not `rn` or `rename` command, but
 renaming a file is actually just moving it to another location in the
 same directory.
 
-``` bash
+``` extbash
 $ mv experiments/readme experiments/README
 $ ls experiments
 README    art-copy art
@@ -684,7 +684,7 @@ The `rm` copy allows you to delete files and directories.
 **Be careful with `rm`**, when a file is deleted, it is not moved to the
 trash, it is gone.
 
-``` bash
+``` extbash
 $ rm experiments/README
 $ ls experiments
 art-copy art
@@ -695,7 +695,7 @@ art-copy art
 `rm` behaves like `cp`: it only allows you to remove directories by
 using the `-r` option.
 
-``` bash
+``` extbash
 $ rm experiments/art
 rm: experiments/art: is a directory
 $ rm -r experiments/art
@@ -716,7 +716,7 @@ without actually having to store multiple copies on disk.
 We can create such a link by using the `ln -s` command (`-s` stands for
 *symbolic*).
 
-``` bash
+``` extbash
 $ pwd
 /home/br
 $ ln -s Documents/readme Desktop/my-readme
@@ -724,7 +724,7 @@ $ ln -s Documents/readme Desktop/my-readme
 
 Using the `-l` option of `ls`, we can see where a link points to.
 
-``` bash
+``` extbash
 $ ls -l Desktop
 total 0
 lrwxr-xr-x  1 br  br  21 Jan 17 16:48 my-readme -> /home/br/Documents/readme
@@ -744,7 +744,7 @@ remembering *s for source*: the source file goes after the `-s` option.
 directory) and its subfolders in a tree-like representation. It is very
 useful to have a quick look at the current content of a directory,
 
-``` bash
+``` extbash
 $ tree experiments
 experiments
 |__ art
@@ -774,7 +774,7 @@ Most of the commands out there take a `-h` (or `--help`) option that
 will display the list of options the command itself can take, and what
 they do.
 
-``` bash
+``` extbash
 $ ls --help
 Usage: ls [OPTION]... [FILE]...
 List information about the FILEs (the current directory by default).
@@ -818,7 +818,7 @@ page (*man* stands for *manual*).
 
 Let’s give it a go, by typing the following command.
 
-``` bash
+``` extbash
 $ man ls
 ```
 
@@ -843,7 +843,7 @@ The `...` following `[OPTION]` and `[FILE]` means that several options
 and several files arguments can be passed as arguments to `ls`, as
 illustrated by the following example.
 
-``` bash
+``` extbash
 $ ls -sh Android bin
 Android:
 total 4.0K
@@ -899,7 +899,7 @@ While `man` uses `less` under the hood to help you read documentation,
 you can simply use `less` to page through any file your disk. For
 example, I can use this command on my computer.
 
-``` bash
+``` extbash
 $ less Documents/readme
 ```
 
@@ -912,7 +912,7 @@ Exactly like `ls`, `man` itself is a command, and as most of the
 commands, it has a manual! You can read more about `man` itself by
 typing
 
-``` bash
+``` extbash
 $ man man
 ```
 
@@ -952,14 +952,14 @@ further process it at a later time, or to send it to someone else. You
 can use the `>` operator to redirect the `stdout` of a command to a
 file.
 
-``` bash
+``` extbash
 $ ls /home/br > ls-home.txt
 ```
 
 We can then display the content of the `ls-home.txt` file using the
 `cat` command.
 
-``` bash
+``` extbash
 $ cat ls-home.txt
 Android                code       Downloads              Music
 AndroidStudioProjects  Desktop    Dropbox                Pictures
@@ -975,7 +975,7 @@ command.
 In that example, we use the `echo` command, that simply sends the
 argument text to its `stdout`.
 
-``` bash
+``` extbash
 $ cat ls-home.txt
 Android                code       Downloads              Music
 AndroidStudioProjects  Desktop    Dropbox                Pictures
@@ -988,7 +988,7 @@ Hello world!
 If you want to append the output of a command to a file without
 overwriting its content, you can use the `>>` operator instead of `>`.
 
-``` bash
+``` extbash
 $ cat echoes
 cat: echoes: No such file or directory
 $ echo "Hey, I just met you, and this is crazy" >> echoes
@@ -1007,7 +1007,7 @@ In that example, we’ll redirect the content of the `echoes` file to the
 input of the `wc -l` command, counting the number of lines of its input
 stream or the file(s) passed by argument.
 
-``` bash
+``` extbash
 $ cat echoes
 Hey, I just met you, and this is crazy
 so here's my echo, so cat it maybe
@@ -1020,7 +1020,7 @@ command. In the following example, we will redirect the content of the
 `echoes` file to the `wc -l` command, and redirect the output of that
 command to the `echoes-lines` files.
 
-``` bash
+``` extbash
 $ wc -l < echoes > echoes-lines
 $ wc -l < echoes > echoes-lines
 $ cat echoes-lines
@@ -1049,7 +1049,7 @@ of file”) is pretty commonly used.
 
 Let’s consider the following example:
 
-``` bash
+``` extbash
 $ cat <<EOF
 My username is br
 I'm living at /home/br
@@ -1064,7 +1064,7 @@ This command will output the following block of text:
 You can redirect that block into a file by combining both the `<<` and
 `>` operators.
 
-``` bash
+``` extbash
 $ cat > aboutme <<EOF
 My username is br
 I'm living at /home/br
@@ -1078,7 +1078,7 @@ I'm living at /home/br
 
 Let’s consider the following example.
 
-``` bash
+``` extbash
 $ cat -n notthere > notthere-with-line-numbers
 cat: notthere: No such file or directory
 $ cat notthere-with-line-numbers
@@ -1094,7 +1094,7 @@ exist, the `cat` command fails, and displays an error message on it’s
 You can redirect a process stream by using its file descriptor.
 Remember? 0 for `stdin`, 1 for `stdout` and 2 for `stderr`.
 
-``` bash
+``` extbash
 $ cat -n notthere  2>errors.txt
 $ cat errors.txt
 cat: notthere: No such file or directory
@@ -1108,7 +1108,7 @@ This `stderr` redirection can be illustrated by the following diagram.
 You can also redirect the command’s `sdterr` to a file, and its `stderr`
 to another file.
 
-``` bash
+``` extbash
 $ cat -n notthere >output.txt 2>errors.txt
 $ cat output.txt
 $ cat errors.txt
@@ -1122,7 +1122,7 @@ It is also possible to redirect the command’s `stderr` into its `stdout`
 using `2>&1`. This will effectively merge both streams into a single
 one.
 
-``` bash
+``` extbash
 $ cat notthere > output.txt 2>&1
 $ cat output.txt
 cat: notthere: No such file or directory
@@ -1138,7 +1138,7 @@ You’d expect the following syntax to work, as it feels (at least to me)
 more logical, by saying “redirect all errors to stdout, and redirect the
 whole thing to a file”. It does not work though.
 
-``` bash
+``` extbash
 $ cat notthere 2>&1 > output.txt
 cat: notthere: No such file or directory
 $ cat output.txt
@@ -1162,7 +1162,7 @@ This is done via the *<span class="gls" key="pipe">pipe</span>*: `|`,
 allowing the redirection of a command’s output stream to another
 command’s input stream.
 
-``` bash
+``` extbash
 $ command1 | command2
 ```
 
@@ -1176,7 +1176,7 @@ command becomes the input of the next.
 You can of course chain as many commands as possible and create command
 pipelines.
 
-``` bash
+``` extbash
 $ command1 | command2 | command3 | ... | commandN
 ```
 
@@ -1193,7 +1193,7 @@ For example, let’s imagine I’d like to count the number of files in my
 *word count*) commands. `wc`, when used with the `-l` options, allows to
 count the number of lines in its input.
 
-``` bash
+``` extbash
 $ ls -1 ~/Downloads | wc -l
 34
 ```
@@ -1205,7 +1205,7 @@ rescue! `grep` allows to filer its input on a given pattern (more on
 of `ls -1` to only the filenames containing “pdf”, and then count how
 many filenames were filtered using `wc -l`.
 
-``` bash
+``` extbash
 $ ls -1 ~/Downloads | grep pdf | wc -l
 22
 ```
@@ -1217,7 +1217,7 @@ while still displaying it into the console. This can be very useful if
 you want to store the output of a command in a file, but still be able
 to see what it’s doing in real-time.
 
-``` bash
+``` extbash
 $ ls -1 | head -n 2 | tee output.txt
 Android
 code
@@ -1238,11 +1238,11 @@ If you mistype a command, or forget to add arguments, you can find
 yourself in a situation where your shell hangs, and nothing happens. For
 example, type any of the following commands.
 
-``` bash
+``` extbash
 $ cat
 ```
 
-``` bash
+``` extbash
 $ echo 'hello world
 ```
 
@@ -1259,7 +1259,7 @@ you can also cleanly exit it by hitting <kbd>Ctrl</kbd> - <kbd>D</kbd>
 which will send a special EOF (“end of file”) character, indicating to
 the command that its input is now closed.
 
-``` bash
+``` extbash
 $ cat
 hello
 hello
@@ -1276,7 +1276,7 @@ $
 Imagine for a second that you had a file on disk named `my file`, and
 you wanted to display its content using `cat`.
 
-``` bash
+``` extbash
 $ cat my file
 cat: my: No such file or directory
 cat: file: No such file or directory
@@ -1287,7 +1287,7 @@ and `file`, none of which corresponded to any existing file. We have 2
 solutions to make this work: quoting the file name, or using an <span
 class="gls" key="escapechar">escape character</span>.
 
-``` bash
+``` extbash
 $ cat 'my file'
 That file has spaces in it...
 $ cat "my file"
@@ -1301,7 +1301,7 @@ Like previously mentioned, we could also use the backslash escape
 character, which indicates that whatever following character doesn’t
 have any special meaning.
 
-``` bash
+``` extbash
 $ cat my\ file
 That file has spaces in it...
 ```
