@@ -1,9 +1,9 @@
 Title: Text processing in the shell
-Date: 2020-03-09
+Date: 2020-03-14
 Category: Essential Tools and Practices for the Aspiring Software Developer
-Description: Introduction to shell text processing tools and real life examples
+Description: A quick overview of the most common text processing terminal tools and why they should be part of your day-to-day toolbox.
 Image: https://live.staticflickr.com/2909/14074154115_efa9541b12_b.jpg
-Tags: shell
+Tags: terminal, bash
 Status: draft
 
 <header>
@@ -55,9 +55,9 @@ with a specialized tool.
 
 > Make each program do one thing well.[^1]
 
-The examples in that chapter might seem a little contrived, but this is
-also by design. Each of these tools were designed to solve one small
-problem. They however become extremely powerful when combined.
+The examples in that chapter might seem a little contrived at first, but
+this is also by design. Each of these tools were designed to solve one
+small problem. They however become extremely powerful when combined.
 
 We will go over some of the most common and useful text processing
 commands the shell has to offer, and will demonstrate real-life
@@ -218,6 +218,13 @@ metric_name,metric_type,interval,unit_name,per_unit_name,description,orientation
 $ grep -i os metadata.csv
 mysql.innodb.mutex_os_waits,gauge,,event,second,The rate of mutex OS waits.,0,mysql,mutex os waits
 mysql.innodb.os_log_fsyncs,gauge,,write,second,The rate of fsync writes to the log file.,0,mysql,log fsyncs
+```
+
+`grep -l` only lists files containing a match.
+
+``` extbash
+$ grep -l mysql metadata.csv
+metadata.csv
 ```
 
 `grep -c` counts the number of times a pattern was found.
@@ -606,8 +613,8 @@ It works by taking one or many optional *addresses*, a *function* and
 
     [address[,address]]function[arguments]
 
-While `sed` can perform many functions, we will cover only substitute,
-insertion and deletion.
+While `sed` can perform many functions, we will cover only substitution,
+as it is probably `sed`’s most common use.
 
 ### Substituting text
 
@@ -703,32 +710,6 @@ On Linux, only `-i` needs to be specified. However, due to the fact that
 added right after `-i`.
 
 </div>
-
-### Deleting text
-
-`sed` can delete lines by using a combination of an address (either
-simple or a range of) and the `d` function.
-
-``` extbash
-$ cat hello
-Bonjour hello
-Bonjour world
-hi
-$ cat hello | sed '1d'
-Bonjour world
-hi
-$ cat hello | sed '2,$d'
-Bonjour world
-```
-
-Lines can be deleted in-place as well, using the `-i` option that was
-described in the previous section.
-
-``` extbash
-$ sed -i '' '2,$d' sed-data
-$ cat sed-data
-Bonjour world
-```
 
 <a id="real-life-examples"></a>
 ## Real-life examples
@@ -855,6 +836,19 @@ $ grep "Too many connections from" db.log | head -n 1
 
 `awk '{ print $12 }'` then extracts the IP from the line.
 
+<div class="Note" markdown="1">
+
+As we have previously seen, we can use whatever separator we want for
+`sed`. While `/` is commonly used as a separator, we are currently
+replacing that very character, which would make the substitution
+expression sightly less readable.
+
+``` extbash
+sed 's/\//'
+```
+
+</div>
+
 ``` extbash
 $ grep "Too many connections from" db.log | awk '{ print $12 }'
 /10.11.112.108
@@ -914,58 +908,138 @@ $ grep 'Too many connections from' db.log | \
   10.11.107.120
 ```
 
-<a id="going-further-for-loops-and-xargs"></a>
-## Going further: `for` loops and `xargs`
+### Renaming a function in source file
 
-After having written a complex chain of text processing commands to
-extract information form a text file, you might be interested in
-performing an action based on its output. In the case of the previous
-example, we might want to block these IPs using a firewall.
-
-We can use the `xargs` command to perform an action of each line in the
-output.
+Let’s imagine that we are working a code project, and we would like to
+rename rename a poorly named function (or class, variable, etc) in a
+code file. We can do this by using `sed -i`, which performs an in-place
+replacement in a file.
 
 ``` extbash
-$ grep 'Too many connections from' db.log | \
-  awk '{ print $12 }' | \
-  sed 's@/@@' | \
-  sort | \
-  uniq -c | \
-  sort -rn | \
-  head -n 10 | \
-  awk '{ print $2 }' | \
-  xargs -n 1 -i _ "firewall-block --port 2181 --ip _"
+$ cat izk/utils.py
+def bool_from_str(s):
+    if s.isdigit():
+        return int(s) == 1
+    return s.lower() in ['yes', 'true', 'y']
 ```
 
-`-n 1` tells `xargs` that each line in the output should cause a
-separate command to be executed, and `-i _` causes the character `_` to
-be replaced by the IPs from our output.
-
-The following commands will then be executed:
-
-    firewall-block --port 2181 --ip 172.22.112.108
-    firewall-block --port 2181 --ip 172.22.111.70
-    firewall-block --port 2181 --ip 172.22.97.57
-    firewall-block --port 2181 --ip 172.22.109.72
-    firewall-block --port 2181 --ip 172.22.116.156
-    firewall-block --port 2181 --ip 172.22.100.221
-    firewall-block --port 2181 --ip 172.22.96.242
-    firewall-block --port 2181 --ip 172.22.81.68
-    firewall-block --port 2181 --ip 172.22.99.112
-    firewall-block --port 2181 --ip 172.22.107.120
+``` extbash
+$ sed -i 's/def bool_from_str/def is_affirmative/' izk/utils.py
+$ cat izk/utils.py
+def is_affirmative(s):
+    if s.isdigit():
+        return int(s) == 1
+    return s.lower() in ['yes', 'true', 'y']
+```
 
 <div class="Note" markdown="1">
 
-`firewall-block` is not a real command, it’s only used to illustrate our
-point.
+Use `sed -i ''` instead of `sed -i` on macOs, as the `sed` version
+behaves slightly differently.
 
 </div>
 
-Another option is to use a *for loop* and a *command expansion*.
+We’ve however only renamed this function in the file it was defined in.
+Any other file we import `bool_from_str` will now be broken, as this
+function is not defined anymore. We’d need a way to rename
+`bool_from_str` everywhere it is found in our project. We can achieve
+just that by using `grep`, `sed`, and either `for` loops or `xargs`.
 
-Your shell has `for` lops, which allow you to iterate over a list of
-lines and perform an action on each element. These `for` loops have the
-following syntaxes:
+<a id="going-further-for-loops-and-xargs"></a>
+## Going further: `for` loops and `xargs`
+
+To replace all occurrences of `bool_from_str` in our project, we first
+need to recursively find them using `grep -r`.
+
+``` extbash
+$ grep -r bool_from_str .
+./tests/test_utils.py:from izk.utils import bool_from_str
+./tests/test_utils.py:def test_bool_from_str(s, expected):
+./tests/test_utils.py:    assert bool_from_str(s) == expected
+./izk/utils.py:def bool_from_str(s):
+./izk/prompt.py:from .utils import bool_from_str
+./izk/prompt.py:                    default = bool_from_str(os.environ[envvar])
+```
+
+As we are only interested in the matching files, we also need to use the
+`-l/--files-with-matches` option:
+
+    -l, --files-with-matches
+            Only the names of files containing selected lines are written to standard out-
+            put.  grep will only search a file until a match has been found, making
+            searches potentially less expensive.  Pathnames are listed once per file
+            searched.  If the standard input is searched, the string ``(standard input)''
+            is written.
+
+``` extbash
+$ grep -r --files-with-matches bool_from_str .
+./tests/test_utils.py
+./izk/utils.py
+./izk/prompt.py
+```
+
+We can then use the `xargs` command to perform an action of each line in
+the output (each file containing the `bool_from_str` string).
+
+``` extbash
+$ grep -r --files-with-matches bool_from_str . | \
+  xargs -n 1 sed -i 's/bool_from_str/is_affirmative/'
+```
+
+`-n 1` tells `xargs` that each line in the output should cause a
+separate `sed` command to be executed.
+
+The following commands were then executed:
+
+``` extbash
+$ sed -i 's/bool_from_str/is_affirmative/' ./tests/test_utils.py
+$ sed -i 's/bool_from_str/is_affirmative/' ./izk/utils.py
+$ sed -i 's/bool_from_str/is_affirmative/' ./izk/prompt.py
+```
+
+If the command you call with `xargs` (`sed`, in our case) support
+multiple arguments, you can drop the `-n 1` argument and run
+
+``` extbash
+grep -r --files-with-matches bool_from_str . | xargs sed -i 's/bool_from_str/is_affirmative/'
+```
+
+which will then execute
+
+``` extbash
+$ sed -i 's/bool_from_str/is_affirmative/' ./tests/test_utils.py ./izk/utils.py ./izk/prompt.py
+```
+
+<div class="Note" markdown="1">
+
+We can see that `sed` can take multiple arguments by looking at its
+synopsis, in its `man` page.
+
+    SYNOPSIS
+         sed [-Ealn] command [file ...]
+         sed [-Ealn] [-e command] [-f command_file] [-i extension] [file ...]
+
+Indeed, as we’ve seen in the previous chapter, `file ...` means that
+multiple arguments representing file names are accepted.
+
+</div>
+
+We can see that all `bool_from_str` occurrences have been replaced.
+
+``` extbash
+$ grep -r is_affirmative .
+./tests/test_utils.py:from izk.utils import is_affirmative
+./tests/test_utils.py:def test_is_affirmative(s, expected):
+./tests/test_utils.py:    assert is_affirmative(s) == expected
+./izk/utils.py:def is_affirmative(s):
+./izk/prompt.py:from .utils import is_affirmative
+./izk/prompt.py:                    default = is_affirmative(os.environ[envvar])
+```
+
+As it is often the case, there are multiple ways of achieving the same
+result. Instead of using `xargs`, we could have used `for` lops, which
+allow you to iterate over a list of lines and perform an action on each
+element. These `for` loops have the following syntaxes:
 
 ``` extbash
 for item in list; do
@@ -973,30 +1047,22 @@ for item in list; do
 done
 ```
 
-or
+By wrapping our `grep` command by `$()`, it will cause the shell to
+execute the it in a *subshell*, which result will then be iterated on by
+the `for` loop.
 
 ``` extbash
-for item in list
-do
-    command $item
+$ for file in $(grep -r --files-with-matches bool_from_str .); do
+  sed -i 's/bool_from_str/is_affirmative/' $file
 done
 ```
 
-We can wrap our command pipeline with `$()`, which will cause the shell
-to execute the command in a *subshell*, which result will then be
-iterated on by the `for` loop.
+which will execute
 
 ``` extbash
-$ for ipaddress in $(grep 'Too many connections from' zk.log | \
-  awk '{ print $12 }' | \
-  sed 's@/@@' | \
-  sort | \
-  uniq -c | \
-  sort -rn | \
-  head -n 10 | \
-  awk '{ print $2 }'); do
-    firewall-block --port 2181 --ip $ipaddress
-  done
+$ sed -i 's/bool_from_str/is_affirmative/' ./tests/test_utils.py
+$ sed -i 's/bool_from_str/is_affirmative/' ./izk/utils.py
+$ sed -i 's/bool_from_str/is_affirmative/' ./izk/prompt.py
 ```
 
 I tend to find the for loop syntax clearer than `xargs`’s. `xargs` can
