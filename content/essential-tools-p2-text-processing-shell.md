@@ -859,7 +859,7 @@ replacing that very character, which would make the substitution
 expression sightly less readable.
 
 ``` extbash
-sed 's/\//'
+sed 's/\///'
 ```
 
 </div>
