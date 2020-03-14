@@ -428,7 +428,7 @@ and two
 `uniq -c` prepends all lines with its number of occurrences.
 
 ``` extbash
-$ sort duplicates | uniq
+$ sort duplicates | uniq -c
    3 and one
    1 and one, two, three
    2 and two
