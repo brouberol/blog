@@ -3,7 +3,7 @@ Date: 2020-03-14
 Category: Essential Tools and Practices for the Aspiring Software Developer
 Description: A quick overview of the most common text processing terminal tools and why they should be part of your day-to-day toolbox.
 Image: https://live.staticflickr.com/2909/14074154115_efa9541b12_b.jpg
-Tags: terminal, bash
+Tags: terminal
 Summary: One of the things that makes the shell an invaluable tool is the amount of available text processing commands, and the ability to easily pipe them into each other to build complex text processing workflows. These commands can make it trivial to perform text and data analysis, convert data between different formats, filter lines, etc. This chapter will go over some of the most common and useful text processing commands the shell has to offer, and will demonstrate real-life workflows piping them together.
 
 <header>
