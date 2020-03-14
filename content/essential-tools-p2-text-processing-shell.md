@@ -4,7 +4,6 @@ Category: Essential Tools and Practices for the Aspiring Software Developer
 Description: A quick overview of the most common text processing terminal tools and why they should be part of your day-to-day toolbox.
 Image: https://live.staticflickr.com/2909/14074154115_efa9541b12_b.jpg
 Tags: terminal, bash
-Status: draft
 
 <header>
 <p>
