@@ -836,18 +836,6 @@ $ grep "Too many connections from" db.log | head -n 1
 
 `awk '{ print $12 }'` then extracts the IP from the line.
 
-<div class="Note" markdown="1">
-
-As we have previously seen, we can use whatever separator we want for
-`sed`. While `/` is commonly used as a separator, we are currently
-replacing that very character, which would make the substitution
-expression sightly less readable.
-
-``` extbash
-sed 's/\//'
-```
-
-</div>
 
 ``` extbash
 $ grep "Too many connections from" db.log | awk '{ print $12 }'
@@ -862,6 +850,19 @@ $ grep "Too many connections from" db.log | awk '{ print $12 }' | sed 's@/@@'
 10.11.112.108
 ...
 ```
+
+<div class="Note" markdown="1">
+
+As we have previously seen, we can use whatever separator we want for
+`sed`. While `/` is commonly used as a separator, we are currently
+replacing that very character, which would make the substitution
+expression sightly less readable.
+
+``` extbash
+sed 's/\//'
+```
+
+</div>
 
 `sort | uniq -c` sorts the IPs lexicographically, and then removed
 duplicates while prefixing IPs by their associated number of
