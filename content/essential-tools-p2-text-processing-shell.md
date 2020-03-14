@@ -311,7 +311,7 @@ butter  1.50$
 tomatoes    2$/kg
 ```
 
-By default, `pastes` uses a tab delimiter, but you can change that using
+By default, `paste` uses a tab delimiter, but you can change that using
 the `-d` option.
 
 ``` extbash
@@ -591,7 +591,7 @@ llowing so far!
 `fold -s` will only break lines on a space character, and can be
 combined with `-w` to fold up to a given number of characters.
 
-``` extbash
+```
 Thanks again
 for reading
 this book!
@@ -620,7 +620,8 @@ as it is probably `sed`’s most common use.
 
 A `sed` substitution command looks like this:
 
-    s/<pattern>/<replacement>/[options]
+    s/PATTERN/REPLACEMENT/[options]
+
 
 **Example**: replacing the first instance of a word for each line in a
 file
