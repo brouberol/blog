@@ -1040,7 +1040,7 @@ $ grep -r is_affirmative .
 As it is often the case, there are multiple ways of achieving the same
 result. Instead of using `xargs`, we could have used `for` lops, which
 allow you to iterate over a list of lines and perform an action on each
-element. These `for` loops have the following syntaxes:
+element. These `for` loops have the following syntax:
 
 ``` extbash
 for item in list; do
