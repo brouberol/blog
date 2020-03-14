@@ -909,7 +909,7 @@ $ grep 'Too many connections from' db.log | \
   10.11.107.120
 ```
 
-### Renaming a function in source file
+### Renaming a function in a source file
 
 Let’s imagine that we are working a code project, and we would like to
 rename rename a poorly named function (or class, variable, etc) in a
