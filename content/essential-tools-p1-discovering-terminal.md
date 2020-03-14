@@ -479,7 +479,7 @@ given directory, starting from the root directory. In the case of
 
 <div class="Note" markdown="1">
 
-Any path starting by `/` is an absolute path.
+Any path starting with `/` is an absolute path.
 
 </div>
 
