@@ -8,11 +8,11 @@
   <div class="article__meta">
     <p class="article__meta__post-date">{{ article.locale_date }}</p>
     {% if DISPLAY_CATEGORIES == '' or DISPLAY_CATEGORIES %}
-    <p class="article__meta__category"><a href="{{ SITEURL }}/{{ article.category.url | replace('.html', '')}}">{{ article.category }}</a>
+    <p class="article__meta__category middot"><a href="{{ SITEURL }}/{{ article.category.url | replace('.html', '')}}">{{ article.category }}</a>
     {% endif %}
-      {% if article.tags %} -
+      {% if article.tags %}
       {% for tag in article.tags %}
-      <a class=taglink href="{{ SITEURL }}/{{ tag.url | replace('.html', '')}}">{{ tag }}</a>{% if not loop.last %} {% endif %}
+      <a class="taglink middot" href="{{ SITEURL }}/{{ tag.url | replace('.html', '')}}">{{ tag }}</a>
       {% endfor %}
       {% endif %}
     </p>
