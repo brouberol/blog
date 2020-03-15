@@ -78,6 +78,28 @@ div.article__meta a {
     color: #666666
 }
 
+div.article__next_prev_chapters:after {
+    clear: both;
+}
+
+div.article__next_prev_chapters {
+    margin-top: 5em;
+}
+p.article__prev_chapter:before {
+    content: "<<< ";
+}
+p.article__prev_chapter {
+    float: left;
+}
+
+p.article__next_chapter {
+    float: right;
+}
+
+p.article__next_chapter:after {
+    content: " >>>";
+}
+
 /*
 ^ Manually insterted ^
 */

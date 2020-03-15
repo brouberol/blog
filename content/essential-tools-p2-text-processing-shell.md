@@ -7,6 +7,8 @@ Image: https://live.staticflickr.com/2909/14074154115_efa9541b12_b.jpg
 Tags: terminal
 Keywords: bash, awk, grep, sed, zsh, linux
 read_time: 18
+prev_article_url: discovering-the-terminal
+next_article_url:
 
 <header>
 <p>

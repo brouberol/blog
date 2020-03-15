@@ -48,6 +48,16 @@
   </div>
   <div class="article__text">
     {{ article.content }}
+
+    <div class=article__next_prev_chapters>
+    {% if article.prev_article_title %}
+      <a href="/{{ article.prev_article_url }}"><p class="article__prev_chapter">Previous chapter</p></a>
+    {% endif %}
+    {% if article.next_article_title %}
+      <a href="/{{ article.next_article_url }}"><p class="article__next_chapter">Next chapter</p></a>
+    {% endif %}
+    </div>
+
   </div>
   {% if SHOW_SOCIAL_SHARE_BUTTON %}
     {% include "modules/social-tools.html" %}
