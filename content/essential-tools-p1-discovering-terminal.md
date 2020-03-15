@@ -6,6 +6,7 @@ Summary: This chapter will help you take your first steps in the terminal, this 
 Image: https://blog.balthazar-rouberol.com/images/terminal/physical-terminal.png
 Tags: terminal
 Keywords: bash, zsh, linux
+read_time: 28
 
 <header>
 <p>

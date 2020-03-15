@@ -7,6 +7,9 @@
   </div>
   <div class="article__meta">
     <p class="article__meta__post-date">{{ article.locale_date }}</p>
+    {% if article.read_time %}
+    <p class="article__meta__category middot">{{ article.read_time }} minute read</p>
+    {% endif %}
     {% if DISPLAY_CATEGORIES == '' or DISPLAY_CATEGORIES %}
     <p class="article__meta__category middot"><a href="{{ SITEURL }}/{{ article.category.url | replace('.html', '')}}">{{ article.category }}</a>
     {% endif %}
