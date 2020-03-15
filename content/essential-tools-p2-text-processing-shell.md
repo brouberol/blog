@@ -447,7 +447,7 @@ and one, two, three
 <div class="Note" markdown="1">
 
 `uniq` is particularly useful used in conjunction with `sort`, as
-`| uniq | sort` allows you to remove any duplicate line in a file or a
+`| sort | uniq` allows you to remove any duplicate line in a file or a
 stream.
 
 </div>
