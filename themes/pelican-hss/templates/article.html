@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block head %}
-<meta name="keywords" content="{{ article.tags|join(', ')  }}">
+<meta name="keywords" content="{{ article.tags | join(', ')}}{% if article.keywords %}, {{ article.keywords }}{% endif %}">
 <meta name="description" content="{% if article.description %}{{ article.description }}{% else %}{{ BIO }}{% endif %}">
 <meta property="og:description" content="{% if article.description %}{{ article.description }}{% else %}{{ BIO }}{% endif %}">
 <meta property="og:title" content="{{ article.title }}" />
