@@ -782,6 +782,20 @@ $ ifconfig en0 | grep inet | grep -v inet6 | awk '{ print $2 }'
 192.168.0.38
 ```
 
+:::Note
+It has been [suggested](https://www.reddit.com/r/bash/comments/finbd2/beginner_friendly_introduction_to_the_shell_text/fki8523/?context=3) to me that `grep inet | grep -v inet6` could be replaced by the following future-proof `awk` command:
+
+
+``` extbash
+$ ifconfig en0 | awk ' $1 == "inet" { print $2 }'
+192.168.0.38
+```
+
+It is shorted and specifically targets IPv4 using the `$1 == "inet"` condition.
+
+:::
+
+
 ### Extracting a value from a config file
 
 ``` extbash
