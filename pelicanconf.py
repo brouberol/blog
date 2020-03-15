@@ -14,6 +14,7 @@ ABSOLUTE_SITEURL = SITEURL
 TIMEZONE = "Europe/Paris"
 DEFAULT_LANG = "en"
 LOCALE = "en_US.utf-8"
+DEFAULT_DATE_FORMAT = "%b %d, %Y"
 
 # Feed generation is usually not desired when developing
 FEED_RSS = "feeds/rss.xml"
