@@ -1,7 +1,8 @@
 Title: My no-knead bread recipe
 Slug: my-no-knead-bread-recipe
 Date: 2019-05-18
-Category: Pain, pâtes et autres farineries
+Category: yeast
+Tags: bread
 lang: english
 Description: My no-knead bread recipe
 Image: https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/no-knead-bread-recipe/DSC_0032.JPG

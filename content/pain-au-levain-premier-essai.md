@@ -1,6 +1,7 @@
 Title: Pain au levain, premier essai
 Date: 2015-11-06
-Category: Pain, pâtes et autres farineries
+Category: yeast
+Tags: bread
 
 Mon premier essai de pain au levain étant, en toute modestie, particulièrement réussi, je consigne ici la recette.
 
