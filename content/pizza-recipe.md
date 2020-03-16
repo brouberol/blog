@@ -7,7 +7,7 @@ Image: https://pbs.twimg.com/media/ES2yTPtU4AIBHmb?format=jpg&name=large
 Tags: pizza
 Status: draft
 
-![pizza](https://pbs.twimg.com/media/ES2yTPtU4AIBHmb?format=jpg&name=large)
+![pizza](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-done.jpg)
 
 I've always enjoyed a good looking Neapolitan pizza. You know, the ones with the [puffy, slightly burned crust](https://www.napolike.it/wp-content/uploads/2017/12/Pizze-gratis-al-Napoli-Pizza-village-per-il-riconoscimento-unesco.jpg). I have probably baked dozens of them during the last couple of years, but only recently did I become satisfied enough with my recipe to feel comfortable sharing it.
 
@@ -38,9 +38,12 @@ For 2 pizzas, you'll need:
 When it comes to the flour, the traditional flour is called _Double zero_ (00) flour. This means that it's ground extremely fine. It's usually found in specialized Italian shops.
 
 <div class="Note">
-What's important to note here is that a flour is characterized by [several things](http://www.thefreshloaf.com/node/51263/what-are-flour-types-t45-t55-t65-t150-type-0-or-type-00-magic-enzy-flour-rye-flour-t1150):
-- how fine it was ground
-- its protein content
+What's important to note here is that a flour is characterized by <a href=https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-mix.jpg>several things</a>:
+
+<ul>
+<li>how fine it was ground
+<li>its protein content
+</ul>
 
 Pizza dough needs a high amount of gluten in the flour (14% is recommended) to develop its elasticity, and you can have 00 flour with a very low amount of protein (think cake flour), which will probably give you disappointing results.
 
@@ -68,11 +71,11 @@ In theory, we should add the salt after the autolysis process, but as I use kosh
 
 After having waited a good half-hour, incorporate the _petit levain_ with the mix of flour, salt and water, by using your dough scraper. It's ok if there is a bit of flour left in the bowl, it will get absorbed during the kneading. Wait for 10, 15 minutes.
 
-![]()
+![mix](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-mix.jpg)
 
 Pop the dough on your table (add a little bit of flour on the table if there isn't any left in the bowl), and knead it for about 10 minutes. Feel free to stop when the dough is pretty smooth and supple.
 
-![]()
+![ball](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-ball.jpg)
 
 Put the dough in a closed container, and put it to rest in the fridge for 48 to 72h. Yep, you read that right. If you're thinking "I am my own person, I do what I want, and I want to eat that pizza tonight", sure, let the pizza rest for about 2h on your kitchen counter instead, under a damp towel.
 
