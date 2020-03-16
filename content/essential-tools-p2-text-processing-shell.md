@@ -383,13 +383,13 @@ $ cat numbers
 1
 10
 3
-$ cat numbers | sort
+$ sort numbers
 0
 1
 10
 2
 3
-$ cat numbers | sort -n
+$ sort -n numbers
 0
 1
 2
@@ -574,6 +574,13 @@ $ echo "computers are fast" | tr 'a-e' 'x'
 xomputxrs xrx fxst
 $ echo "5uch l337 5p34k" | tr '1-4' 'x'
 5uch lxx7 5pxxk
+```
+
+`tr -s string1` compresses any multiple occurrences of the characters in `string1` into a single one. One of the most useful uses of `tr -s` is to replace multiple consecutive spaces by a single one.
+
+``` extbash
+$ echo "Computers         are       fast" | tr -s ' '
+Computers are fast
 ```
 
 <a id="fold"></a>
@@ -813,9 +820,9 @@ space around that column.
 ``` extbash
 $ grep 'editor =' ~/.gitconfig
      editor = /usr/bin/vim
-$ grep 'editor =' ~/.gitconfig  | cut -d = -f2
+$ grep 'editor =' ~/.gitconfig  | cut -d'=' -f2
  /usr/bin/vim
-$ grep 'editor =' ~/.gitconfig  | cut -d = -f2 | sed 's/ //'
+$ grep 'editor =' ~/.gitconfig  | cut -d'=' -f2 | sed 's/ //'
 /usr/bin/vim
 ```
 
@@ -1019,7 +1026,7 @@ $ sed -i 's/bool_from_str/is_affirmative/' ./izk/prompt.py
 ```
 
 If the command you call with `xargs` (`sed`, in our case) support
-multiple arguments, you can drop the `-n 1` argument and run
+multiple arguments, you can (and shoud, as a single command will execute faster) drop the `-n 1` argument and run
 
 ``` extbash
 grep -r --files-with-matches bool_from_str . | xargs sed -i 's/bool_from_str/is_affirmative/'
