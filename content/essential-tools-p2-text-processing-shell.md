@@ -194,7 +194,7 @@ mysql.innodb.mutex_spin_rounds,gauge,,event,second,The rate of mutex spin rounds
 mysql.innodb.mutex_spin_waits,gauge,,event,second,The rate of mutex spin waits.,0,mysql,mutex spin waits
 ```
 
-`grep` can either files passed as arguments, or a stream of text passed
+`grep` can either filter files passed as arguments, or a stream of text passed
 to its `stdin`. We can thus chain multiple `grep` commands to further
 filter our text. In the next example, we filter lines in our
 `metadata.csv` file that contain both the *mutex* and *OS* words.
@@ -513,7 +513,7 @@ probably accounts for 99% of my personal usage.
 either works on characters or character *classes*, such as lowercase,
 printable, spaces, alphanumeric, etc.
 
-`tr <char1> <char2` translates all occurrences of `<char1>` from its
+`tr <char1> <char2>` translates all occurrences of `<char1>` from its
 standard input into `<char2>`.
 
 ``` extbash
