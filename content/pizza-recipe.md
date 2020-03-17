@@ -37,31 +37,29 @@ For 2 pizzas, you'll need:
 
 When it comes to the flour, the traditional flour is called _Double zero_ (00) flour. This means that it's ground extremely fine. It's usually found in specialized Italian shops.
 
-<div class="Note">
-What's important to note here is that a flour is characterized by <a href=https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-mix.jpg>several things</a>:
+<div class="Note" markdown="1">
+What's important to note here is that a flour is characterized by [several things](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-mix.jpg):
 
-<ul>
-<li>how fine it was ground
-<li>its protein content
-</ul>
+- how fine it was ground
+- its protein content
 
 Pizza dough needs a high amount of gluten in the flour (14% is recommended) to develop its elasticity, and you can have 00 flour with a very low amount of protein (think cake flour), which will probably give you disappointing results.
 
-I've never managed to find 00 flour close to my place, but I found a good organic T65 flour (French T65 flours are commonly used in bread making) with 12% of protein.
+I've never managed to find pizza 00 flour close to my place, but I found a good organic T65 flour (French T65 flours are commonly used in bread making) with 12% of protein which gives good results.
 </div>
 
 ## Recipe
 
 ### Petit levain
 
-The first thing we're making is a _petit levain_, a mix of water, flour and yeast aiming at gently activating the yeast coming out of your fridge of freezer.
+The first thing we're going to make is a _petit levain_: a mix of water, flour and yeast aiming at gently activating the yeast coming out of your fridge of freezer.
 
 Mix 50g of flour, 100mL and the yeast. Stir with a wooden spoon, as the yeast isn't too fond of metal.
 
 
 ### Autolysis
 
-Mix the rest of the flour and water with the salt, and let it rest for half and hour, for an _autolysis_ phase. During that phase, the water will be fully absorbed by the flour, which will make it easier to work with. The water will also start to degrade the flour into simpler sugars that will be easily digested by the yeast when we add it.
+Mix the rest of the flour and water with the salt, and let it rest for half and hour, for an _autolysis_ phase. During that phase, the water will get fully absorbed by the flour, which will make it easier to work with. The water will also start to degrade the flour into simpler sugars that will be more easily digested by the yeast when we add it, increasing the yeast activity.
 
 <div class="Note">
 In theory, we should add the salt after the autolysis process, but as I use kosher salt, I find it easier to add it at this step rather than working it into the dough afterwards.
@@ -77,7 +75,7 @@ Pop the dough on your table (add a little bit of flour on the table if there isn
 
 ![ball](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-ball.jpg)
 
-Put the dough in a closed container, and put it to rest in the fridge for 48 to 72h. Yep, you read that right. If you're thinking "I am my own person, I do what I want, and I want to eat that pizza tonight", sure, let the pizza rest for about 2h on your kitchen counter instead, under a damp towel.
+Put the dough in a closed container, and put it to rest in the fridge for 48 to 72h. Yep, you read that right. If you're thinking _"I am my own person, I do what I want, and I want to eat that pizza tonight"_, sure, let the dough rest for about 2h on your kitchen counter instead, under a damp towel.
 
 Letting your dough rest for a long time will give it time to ferment and develop flavors and aromas. Trust me, it will smell fantastic when you open the container.
 
@@ -94,20 +92,20 @@ Letting the dough out early will give it time to "relax" and will make it easier
 
 ### Stretching
 
-When stretching, you want to make sure to *never* use a rolling pin, and never touch the outside rim, otherwise you'll chase the air out and the crust won't expand as much as we'd want. I learned a ton from that [super short video](https://www.youtube.com/watch?v=9f9-xTcKzZo), which really helped me getting that Neapolitan style I wanted to get.
+When stretching, you want to make sure to *never* use a rolling pin, and never touch the outside rim, otherwise you'll chase the air out and the crust won't expand as much as we'd want. I learned a ton from that [super short video](https://www.youtube.com/watch?v=9f9-xTcKzZo), which really helped me getting that Neapolitan look I wanted to get.
 
-Sprinkle flour on your pizza tray, and put the dough on it.
+Sprinkle flour on your pizza tray, and pop the dough on it.
 
 ![]()
 
 
 ### Toppings
 
-First off, a some tomato sauce. One important thing is to avoid putting too much, which would dampen the dough and make the pizza quite watery. I usually use 2 big spoons of sauce, and spread it in circles, starting from the center. Make sure to avoid touching the outside rim.
+First off, add some tomato sauce. One important thing is to avoid putting too much, which would dampen the dough and make the pizza quite watery. I usually use 2 big spoons of sauce, and spread it in circles, starting from the center. Make sure to avoid touching the outside rim.
 
 Pre-heat your oven at 250°C (480°F) with rotating heat, if you have that.
 
-At that point, you're free to make choices, I won't tell you what you should put on your pizza. I can describe my favorite one though, which has (put on the pizza in that order)
+At that point, you're going to have to make choices. I won't tell you what you should put on your pizza, but I can describe my favorite one though, which has (put on the pizza in that order)
 
 - small onions slices, previously cooked in olive oil
 - shreds of mozzarella di bufala
