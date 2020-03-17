@@ -656,7 +656,7 @@ use the `g` (for *global*) option.
 $ cat hello | sed 's/hello/Hey I just met you/g'
 Hey I just met you Hey I just met you
 Hey I just met you world
-ji
+hi
 ```
 
 `sed` allows you to specify any other separator than `/`, which is
@@ -667,7 +667,7 @@ replacement pattern contains forward slashes.
 $ cat hello | sed 's@hello@Hey I just met you@g'
 Hey I just met you Hey I just met you
 Hey I just met you world
-ji
+hi
 ```
 
 By specifying an address, we can tell sed on which line or line range to
