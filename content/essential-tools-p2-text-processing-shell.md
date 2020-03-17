@@ -670,7 +670,7 @@ Hey I just met you world
 hi
 ```
 
-By specifying an address, we can tell sed on which line or line range to
+By specifying an address, we can tell sed on which line or line-range to
 actually perform the substitution.
 
 ``` extbash
