@@ -3,7 +3,7 @@ Date: 2020-03-18
 Category: yeast
 Description: Make your own pizza by doing almost nothing but waiting
 Summary: ![pizza](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-done.jpeg) I've always enjoyed a good looking Neapolitan pizza. You know, the ones with the [puffy, slightly burned crust](https://www.napolike.it/wp-content/uploads/2017/12/Pizze-gratis-al-Napoli-Pizza-village-per-il-riconoscimento-unesco.jpeg). I have probably baked dozens of them during the last couple of years, but only recently did I become satisfied enough with my recipe to feel comfortable sharing it.
-Image: https://pbs.twimg.com/media/ES2yTPtU4AIBHmb?format=jpg&name=large
+Image: https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-done.jpeg
 Tags: pizza
 
 ![pizza](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-done.jpeg)
@@ -44,7 +44,7 @@ What's important to note here is that a flour is characterized by [several thing
 
 Pizza dough needs a high amount of gluten in the flour (14% is recommended) to develop its elasticity, and you can have 00 flour with a very low amount of protein (think cake flour), which will probably give you disappointing results.
 
-I've never managed to find pizza 00 flour close to my place, but I found a good organic T65 flour (French T65 flours are commonly used in bread making) with 12% of protein which gives good results.
+I've never managed to find 00 pizza flour close to my place, but I found a good organic T65 flour (French T65 flours are commonly used in bread making) with 12% of protein which gives good results.
 </div>
 
 ## Recipe
