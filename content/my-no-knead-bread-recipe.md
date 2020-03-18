@@ -22,7 +22,7 @@ As the [FWSY book](https://www.amazon.fr/Flour-Water-Salt-Yeast-Fundamentals/dp/
 My recipe contains:
 
 - 500g T65 flour
-- 325mL of mild water (the hydration percentage is calculated based on the flour mass, so 500 * 0.65 = 325g)
+- 325mL of lukewarm water (the hydration percentage is calculated based on the flour mass, so 500 * 0.65 = 325g)
 - 9g of coarse sea salt (the french yeast syndicate [has settled](https://www.chambresyndicalelevure.com/18-g-de-sel/) on 18g of salt per kg of flour, so who am I so say otherwise?)
 - 8g of fresh baker's yeast
 
