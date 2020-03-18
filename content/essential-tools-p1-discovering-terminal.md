@@ -1111,7 +1111,7 @@ This `stderr` redirection can be illustrated by the following diagram.
 ![Any errors displayed by `cat` will be redirected into the `errors.txt` file](images/terminal/redirect-stderr.png)
 <span class=imgcaption>Any errors displayed by `cat` will be redirected into the `errors.txt` file</span>
 
-You can also redirect the command’s `sdterr` to a file, and its `stderr`
+You can also redirect the command’s `stdout` to a file, and its `stderr`
 to another file.
 
 ``` extbash
