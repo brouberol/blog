@@ -92,7 +92,7 @@ Letting the dough out early will give it time to "relax" and will make it easier
 
 ### Stretching
 
-When stretching, you want to make sure to *never* use a rolling pin, and never touch the outside rim, otherwise you'll chase the air out and the crust won't expand as much as we'd want. I learned a ton from that [super short video](https://www.youtube.com/watch?v=9f9-xTcKzZo), which really helped me getting that Neapolitan look I wanted to get.
+When stretching, you want to make sure to *never* use a rolling pin, and never touch the outside rim, otherwise you'll chase the air out and the crust won't expand as much as we'd want. I learned a ton from that [super short video](https://www.youtube.com/watch?v=9f9-xTcKzZo), which really helped me getting that Neapolitan look I wanted.
 
 
 ![streched](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-streched.jpeg)
