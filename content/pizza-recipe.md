@@ -43,9 +43,9 @@ What's important to note here is that a flour is characterized by [several thing
 - its protein content
 
 Pizza dough needs a high amount of gluten in the flour (14% is recommended) to develop its elasticity, and you can have 00 flour with a very low amount of protein (think cake flour), which will probably give you disappointing results.
+</div>
 
 I've never managed to find 00 pizza flour close to my place, but I found a good organic T65 flour (French T65 flours are commonly used in bread making) with 12% of protein which gives good results.
-</div>
 
 ## Recipe
 
