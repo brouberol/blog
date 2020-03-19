@@ -29,7 +29,7 @@ This is what I use for this recipe:
 For 2 pizzas, you'll need:
 
 - 400g of flour
-- 6g of salt (I personally use kosher salt)
+- 6g of salt (I personally use kosher salt, although more out of habit than anything else)
 - 220mL of water
 - 6g of fresh baker's yeast (dried yeast works as well. I prefer it fresh.)
 - time
