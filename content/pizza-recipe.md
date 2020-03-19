@@ -106,7 +106,7 @@ First off, add some tomato sauce. One important thing is to avoid putting too mu
 
 ![with tomato](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-tomato.jpeg)
 
-Pre-heat your oven at 250°C (480°F) with rotating heat, if possible.
+Pre-heat your oven at 250°C (480°F) with convection, if possible.
 
 At that point, you're going to have to make choices. I won't tell you what you should put on your pizza, but I can describe my favorite one though, which has (put on the pizza in that order)
 
