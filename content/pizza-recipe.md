@@ -80,20 +80,21 @@ Letting your dough rest for a long time will give it time to ferment and develop
 
 ### Shaping
 
-Take the container of the fridge about 6h (if you can) before cooking time, and divide it into 2 even parts. [Shape](https://www.youtube.com/watch?v=v5t5MEZt6LM) each half into a nice stretched ball, and put them in a closed container.
-
-![tuppwerware](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-tupperware.jpeg)
-![balls](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-balls.jpeg)
+Take the container of the fridge about 6h (if you can) before cooking time, and divide it into 2 even parts.
 
 <div class="Note">
 Letting the dough out early will give it time to "relax" and will make it easier to stretch.
 </div>
 
+![tuppwerware](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-tupperware.jpeg)
+![balls](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-balls.jpeg)
+
+[Shape](https://www.youtube.com/watch?v=v5t5MEZt6LM) each half into a nice stretched ball, and put them in a closed container until you start cooking (or put the second one in the fridge if you're only planning to make one).
+
 
 ### Stretching
 
-When stretching, you want to make sure to *never* use a rolling pin, and never touch the outside rim, otherwise you'll chase the air out and the crust won't expand as much as we'd want. I learned a ton from that [super short video](https://www.youtube.com/watch?v=9f9-xTcKzZo), which really helped me getting that Neapolitan look I wanted.
-
+When stretching your dough, you want to make sure to *never* use a rolling pin, and never touch the outside rim, otherwise you'll chase the air out and the crust won't expand as much as we'd want. I learned a ton from that [super short video](https://www.youtube.com/watch?v=9f9-xTcKzZo), which really helped me getting that Neapolitan look I wanted.
 
 ![streched](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-streched.jpeg)
 
