@@ -104,6 +104,20 @@ div.avatar > img {
     border-radius: 50%;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  padding: 0.7em;
+}
+
+th {
+    height: 2.5em;
+}
+
 /*
 ^ Manually insterted ^
 */
