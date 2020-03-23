@@ -8,8 +8,6 @@ Tags: terminal
 Keywords: bash, awk, grep, sed, zsh, linux
 read_time: 18
 chapter: 2
-prev_article_url: discovering-the-terminal
-next_article_url:
 
 <header>
 <p>
