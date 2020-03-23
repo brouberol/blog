@@ -11,7 +11,7 @@ class ExtendedBashLexer(BashLexer):
         'cp', 'mv', 'rm', 'man', 'ln', 'grep', 'less', 'awk', 'sed',
         'cut', 'paste', 'head', 'tail', 'wc', 'sort', 'uniq', 'tr',
         'fold', 'xargs', 'touch', 'tree', 'sudo', 'chsh', 'python',
-        'ifconfig'
+        'ifconfig', 'bash', 'chmod'
     ]
     EXTRA_KEYWORDS = [
         '>', '<', '<<', '>>', '&', '|', '^', '!$', '!!', '~', '~-', '~+'
