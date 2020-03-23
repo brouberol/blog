@@ -112,10 +112,16 @@ table {
 table, th, td {
   border: 1px solid #ddd;
   padding: 0.7em;
+  text-align: left;
 }
 
 th {
     height: 2.5em;
+
+}
+
+th:last-child, td:last-child {
+    text-align: center;
 }
 
 /*
