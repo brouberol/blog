@@ -29,7 +29,7 @@
 
 {% block content %}
 {% macro next_prev_chapter(article) %}
-{% if article.chapter %}
+{% if article.chapter and ( article.prev_article_url or  article.next_article_url ) %}
 <div class=article__next_prev_chapters>
 {% set curr_chapter = article.chapter | int %}
 {% if article.prev_article_url %}
