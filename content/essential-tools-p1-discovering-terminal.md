@@ -7,6 +7,7 @@ Image: https://blog.balthazar-rouberol.com/images/terminal/physical-terminal.png
 Tags: terminal
 Keywords: bash, zsh, linux
 read_time: 28
+chapter: 1
 prev_article_url:
 next_article_url: text-processing-in-the-shell
 

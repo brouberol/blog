@@ -82,9 +82,14 @@ div.article__next_prev_chapters:after {
     clear: both;
 }
 
-div.article__next_prev_chapters {
+div.article__next_prev_chapters:first-child {
+    padding-bottom: 5em;
+}
+
+div.article__next_prev_chapters:last-child {
     margin-top: 5em;
 }
+
 p.article__prev_chapter:before {
     content: "<<< ";
 }

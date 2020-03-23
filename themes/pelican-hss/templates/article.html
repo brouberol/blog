@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+
 {% block head %}
 <meta name="keywords" content="{{ article.tags | join(', ')}}{% if article.keywords %}, {{ article.keywords }}{% endif %}">
 <meta name="description" content="{% if article.description %}{{ article.description }}{% else %}{{ BIO }}{% endif %}">
@@ -27,6 +28,22 @@
 {% block title %}&ndash; {{ article.title }}{% endblock %}
 
 {% block content %}
+{% macro next_prev_chapter(article) %}
+{% if article.chapter %}
+<div class=article__next_prev_chapters>
+{% set curr_chapter = article.chapter | int %}
+{% if article.prev_article_url %}
+  {% set prev_chapter = curr_chapter - 1 %}
+  <a href="/{{ article.prev_article_url }}"><p class="article__prev_chapter">Chapter {{ prev_chapter }}</p></a>
+{% endif %}
+{% if article.next_article_url %}
+  {% set next_chapter = curr_chapter + 1 %}
+  <a href="/{{ article.next_article_url }}"><p class="article__next_chapter">Chapter {{ next_chapter }}</p></a>
+{% endif %}
+</div>
+{% endif %}
+{% endmacro %}
+
 <article>
   <div class="article__title">
     <h1><a href="{{ SITEURL }}/{{ article.url | replace('.html', '') }}">{{ article.title }}</a></h1>
@@ -47,16 +64,11 @@
     </p>
   </div>
   <div class="article__text">
+    {{ next_prev_chapter(article) }}
+
     {{ article.content }}
 
-    <div class=article__next_prev_chapters>
-    {% if article.prev_article_url %}
-      <a href="/{{ article.prev_article_url }}"><p class="article__prev_chapter">Previous chapter</p></a>
-    {% endif %}
-    {% if article.next_article_url %}
-      <a href="/{{ article.next_article_url }}"><p class="article__next_chapter">Next chapter</p></a>
-    {% endif %}
-    </div>
+    {{ next_prev_chapter(article) }}
 
   </div>
   {% if SHOW_SOCIAL_SHARE_BUTTON %}
