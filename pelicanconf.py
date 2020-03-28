@@ -21,7 +21,8 @@ FEED_RSS = "feeds/rss.xml"
 FEED_ALL_ATOM = "feeds/all.atom.xml"
 TRANSLATION_FEED_ATOM = None
 RSS_FEED_SUMMARY_ONLY = False
-CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
+CATEGORY_FEED_ATOM = "feeds/categories/{slug}.atom.xml"
+TAG_FEED_ATOM = "feeds/tags/{slug}.rss.xml"
 DISPLAY_CATEGORIES = True
 
 PATH = "content"
