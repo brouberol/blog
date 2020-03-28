@@ -11,10 +11,11 @@ class ExtendedBashLexer(BashLexer):
         'cp', 'mv', 'rm', 'man', 'ln', 'grep', 'less', 'awk', 'sed',
         'cut', 'paste', 'head', 'tail', 'wc', 'sort', 'uniq', 'tr',
         'fold', 'xargs', 'touch', 'tree', 'sudo', 'chsh', 'python',
-        'ifconfig', 'bash', 'chmod'
+        'ifconfig', 'bash', 'chmod', 'vim'
     ]
     EXTRA_KEYWORDS = [
-        '>', '<', '<<', '>>', '&', '|', '^', '!$', '!!', '~', '~-', '~+'
+        '>', '<', '<<', '>>', '&', '|', '!$', '!!', '~', '~-', '~+',
+        '!^', '^'
     ]
 
     def get_tokens_unprocessed(self, text):
