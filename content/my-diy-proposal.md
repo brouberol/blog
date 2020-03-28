@@ -2,6 +2,7 @@ Title: My DIY proposal
 Date: 2019-11-30
 Category: DIY
 Description: Who said that geeks couldn't be creative and romantic?
+Summary: ![My DIY chest](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/proposal/chest-3d.png) I proposed to my girlfriend by building her a Zelda chest and developing an Android application for the occasion.
 Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/proposal/chest-4.jpeg
 
 
