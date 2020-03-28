@@ -1,0 +1,23 @@
+{% macro next_prev_chapter(article) %}
+  {% if article.chapter %}
+    {% set current_chapter = article.chapter | int %}
+    <div class=article__next_prev_chapters>
+      {% for _article in articles %}
+        {% if _article.category == article.category %}
+          {% set chap = _article.chapter |int %}
+          {% if chap == current_chapter - 1 %}
+            <a href="/{{ _article.slug }}"><p class="article__prev_chapter">Chapter {{ _article.chapter }}</p></a>
+          {% elif chap == current_chapter + 1 %}
+            <a href="/{{ _article.slug }}"><p class="article__next_chapter">Chapter {{ _article.chapter }}</p></a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endmacro %}
+
+{% macro reading_time(article) %}
+{% set num_words = article.content.split() | length  %}
+{% set rtime = (num_words / 200) | round | int %}
+{{ rtime }} minute read
+{% endmacro %}

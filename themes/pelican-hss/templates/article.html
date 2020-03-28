@@ -28,33 +28,14 @@
 {% block title %}&ndash; {{ article.title }}{% endblock %}
 
 {% block content %}
-{% macro next_prev_chapter(article) %}
-  {% if article.chapter %}
-    {% set current_chapter = article.chapter | int %}
-    <div class=article__next_prev_chapters>
-      {% for _article in articles %}
-        {% if _article.category == article.category %}
-          {% set chap = _article.chapter |int %}
-          {% if chap == current_chapter - 1 %}
-            <a href="/{{ _article.slug }}"><p class="article__prev_chapter">Chapter {{ _article.chapter }}</p></a>
-          {% elif chap == current_chapter + 1 %}
-            <a href="/{{ _article.slug }}"><p class="article__next_chapter">Chapter {{ _article.chapter }}</p></a>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </div>
-  {% endif %}
-{% endmacro %}
-
+{% import "modules/macros.html" as macros %}
 <article>
   <div class="article__title">
     <h1><a href="{{ SITEURL }}/{{ article.url | replace('.html', '') }}">{{ article.title }}</a></h1>
   </div>
   <div class="article__meta">
     <p class="article__meta__post-date">{{ article.locale_date }}</p>
-    {% if article.read_time %}
-    <p class="article__meta__category middot">{{ article.read_time }} minute read</p>
-    {% endif %}
+    <p class="article__meta__category middot">{{ macros.reading_time(article) }}</p>
     {% if DISPLAY_CATEGORIES == '' or DISPLAY_CATEGORIES %}
     <p class="article__meta__category middot"><a href="{{ SITEURL }}/{{ article.category.url | replace('.html', '')}}">{{ article.category }}</a>
     {% endif %}
@@ -66,11 +47,11 @@
     </p>
   </div>
   <div class="article__text">
-    {{ next_prev_chapter(article) }}
+    {{ macros.next_prev_chapter(article) }}
 
     {{ article.content }}
 
-    {{ next_prev_chapter(article) }}
+    {{ macros.next_prev_chapter(article) }}
 
   </div>
   {% if SHOW_SOCIAL_SHARE_BUTTON %}

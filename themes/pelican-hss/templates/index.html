@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% import "modules/macros.html" as macros %}
 {% block content %}
 {% for article in articles_page.object_list %}
 <article>
@@ -7,9 +8,7 @@
   </div>
   <div class="article__meta">
     <p class="article__meta__post-date">{{ article.locale_date }}</p>
-    {% if article.read_time %}
-    <p class="article__meta__category middot">{{ article.read_time }} minute read</p>
-    {% endif %}
+    <p class="article__meta__category middot">{{ macros.reading_time(article) }}</p>
     {% if DISPLAY_CATEGORIES == '' or DISPLAY_CATEGORIES %}
     <p class="article__meta__category middot"><a href="{{ SITEURL }}/{{ article.category.url | replace('.html', '')}}">{{ article.category }}</a>
     {% endif %}

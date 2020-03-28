@@ -6,7 +6,6 @@ Summary: One of the things that makes the shell an invaluable tool is the amount
 Image: https://live.staticflickr.com/2909/14074154115_efa9541b12_b.jpg
 Tags: terminal
 Keywords: bash, awk, grep, sed, zsh, linux
-read_time: 18
 chapter: 2
 
 <header>
