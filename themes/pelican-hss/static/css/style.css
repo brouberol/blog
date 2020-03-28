@@ -339,8 +339,8 @@ main {
 main header {
     padding-top: 40px;
     padding-bottom: 40px;
-    border-top: #eee 1px solid;
-    border-bottom: #eee 1px solid;
+    /*border-top: #eee 1px solid;*/
+    /*border-bottom: #eee 1px solid;*/
     text-align: center
 }
 
