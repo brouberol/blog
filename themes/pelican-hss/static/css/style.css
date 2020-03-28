@@ -129,6 +129,10 @@ th:last-child, td:last-child {
     text-align: center;
 }
 
+video {
+    width: 100%;
+}
+
 /*
 ^ Manually insterted ^
 */
