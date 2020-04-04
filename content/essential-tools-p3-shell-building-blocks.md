@@ -58,7 +58,7 @@ be called to perform a certain task.
 
 Here are a few examples:
 
--   `SHELL` defines what shell your terminal should run (‘/bin/bash',
+-   `SHELL` defines what shell your terminal runs (‘/bin/bash',
     `/bin/zsh`, `/bin/fish`, etc)
 -   `HOME` defines where your home directory is located
 -   `EDITOR` defines what text editor program should be used to edit
@@ -138,7 +138,8 @@ There is a difference between `SHELL` and `$SHELL`. The first one is the
 name of an environment variable, and the latter represents its value.
 Consequently, when we executed `echo $SHELL`, we told our shell to
 lookup what value was associated with the `SHELL` environment variable,
-and then display it to the screen via the `echo` command.
+and then display it to the screen via the `echo` command. `$` is what we
+call a *dereference operator* in that context.
 
 </div>
 
@@ -174,13 +175,6 @@ echo $NEW_VAR
 
 As you can see, the `echo_var.sh` *script* only contains one shell
 command: `echo $NEW_VAR`.
-
-<div class="Note" markdown="1">
-
-It is common (but not at all mandatory) for shell scripts to have the
-`.sh` suffix.
-
-</div>
 
 To execute that bash script, we can run `bash echo_var.sh`, and all
 instructions within that script will be executed by `bash`. Let's have a
@@ -281,6 +275,17 @@ You can mess with up your shell by running `unset PATH`.
 $ unset PATH
 $ ls
 zsh: command not found: ls
+```
+
+However, calling a command by using its absolute or relative path still
+works, as `PATH` is only used to look for commands that only have been
+invoked by name.
+
+``` extbash
+$ unset PATH
+$ /bin/ls
+bin    code    Documents  ..
+...
 ```
 
 </div>
@@ -399,18 +404,6 @@ function mkcd {
 }
 ```
 
-We can even avoid repeating ourselves by declaring a local variable
-which value is the first argument of that function, and use that
-variable afterwards.
-
-``` extbash
-function mkcd {
-    local target=$1
-    mkdir -p $target
-    cd $target
-}
-```
-
 Let's now see `mkcd` in action!
 
 ``` extbash
@@ -426,36 +419,14 @@ $ pwd
 /home/br/test
 ```
 
-<div class="Note" markdown="1">
-
-Using `local` will make sure the `target` variable does not “leak” out
-of the function, as illustrated in the next snippet:
-
-``` extbash
-$ function mkcd {
-    target=$1
-    mkdir -p $target
-    cd $target
-}
-$ mkcd /tmp/subdir
-$ echo $target
-/tmp/target
-```
-
-Because the `target` variable was not local, it was leaked into our
-shell's global scope.
-
-</div>
-
 You can use the `typeset -f` command to see how a function was defined
 (or `which <function-name>`, although that only works in `zsh`).
 
 ``` extbash
 $ typeset -f mkcd
 mkcd () {
-    local target=$1
-    mkdir -p $target
-    cd $target
+    mkdir -p $1
+    cd $1
 }
 ```
 
@@ -510,7 +481,7 @@ can revert my changes if needed.
 
 ### Password generation function
 
-This password generate a password composed of alphanumeric characters,
+This function generate a password composed of alphanumeric characters,
 of default length 32.
 
 ``` extbash
@@ -535,10 +506,9 @@ function weather {
 
 This function uses `curl` to send an HTTP request to the
 `http://wttr.in` website, that displays weather forecasts in a
-terminal-friendly way. I have the first argument's default value set to
-`lyon` (where I live), so I can just type `weather` and *voila*:
+terminal-friendly way. So I can just type `weather mycity` and *voila*:
 
-    $ weather
+    $ weather lyon
     Weather report: lyon
 
          \   /     Sunny
@@ -583,9 +553,9 @@ terminal-friendly way. I have the first argument's default value set to
 
 Environment variables, aliases and functions are simple yet powerful to
 change the shell's behavior into something that feels more intuitive.
-You feel like `less` is not shiny enough and prefer using `bat`[^2]
-instead? Sure. Just install `bat` and export `PAGER=bat`. Any command
-interacting with a pager would then use `bat` instead of `less`.
+You feel like `nano` is not shiny enough and prefer using `vim` instead?
+Sure. Define `PAGER=vim`. Any command interacting with an editor would
+then use `vim` instead of `nano`.
 
 Aliases are a great way to reduce mental friction in the shell by hiding
 away complex commands, or just reducing the amount of typing you have to
@@ -610,8 +580,6 @@ argument and renames `$1.bak` into `$1`.
 so that you can use `ls` again.
 
 [^1]: <https://github.com/sharkdp/bat>
-
-[^2]: <https://github.com/sharkdp/bat>
 
 
 <footer>
