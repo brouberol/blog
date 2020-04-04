@@ -7,7 +7,6 @@ Image: https://p1.pxfuel.com/preview/880/869/94/lego-build-building-blocks-toys.
 Tags: terminal
 Keywords: shell, bash, zsh, environment variables, functions, aliases
 chapter: 3
-Status: draft
 
 <header>
 <p>
