@@ -34,7 +34,7 @@ chapter: 3
 
 # The shell's building blocks
 
-As we have seen in the previous chapters, the shell is a program
+As we have seen in the <a href="https://blog.balthazar-rouberol.com/discovering-the-terminal">previous chapters</a>, the shell is a program
 allowing you to run other programs. It is an invaluable tool in the life
 of a software engineer, as it provides you with a simple text-based
 interface to control your computer and any program you might install or
@@ -43,7 +43,7 @@ write.
 Something I still find striking after years of using a shell almost
 daily is how simple yet powerful its building blocks are.
 
-Chapter 1 covered commands, I/O streams and pipes. This chapter will
+<a href="https://blog.balthazar-rouberol.com/discovering-the-terminal">Chapter 1</a> covered commands, I/O streams and pipes. This chapter will
 cover environment variables, aliases and functions.
 
 <a id="environment-variables"></a>
