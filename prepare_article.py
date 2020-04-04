@@ -7,7 +7,7 @@ filename = sys.argv[1]
 
 LINK_PATTERN = r'!\[([^\]]+)\]\((.+)\)\n\n'
 REPLACE_LINK_BY = '![\\1](\\2)\n<span class=imgcaption>\\1</span>\n\n'
-SETEXT_H1_PATTERN = r'([\w ]+)\n(=){2,}'
+SETEXT_H1_PATTERN = r'([\w\' ]+)\n(=){2,}'
 ATX_H1_PATTERN = '# \\1'
 SETEXT_H2_PATTERN = r'([^\n]+)\n(-){2,}'
 ATX_H2_PATTERN = '## \\1'
@@ -15,8 +15,12 @@ TITLE_META_PATTERN = r"Title:\n"
 LABEL_PATTERN = r'`\\label\{.+}`\{=tex\}'
 SHELL_BLOCKQUOTE_PATTERN = r'``` *(console|shell|zsh|bash)'
 SHELL_BLOCKQUOTE_REPLACE = '``` ext\\1'
+
+
 with open(filename) as f:
     data = f.read()
+
+    data = re.sub(r'’', "'", data)
 
     # Collapse multiline md image links
     for match in re.findall(LINK_PATTERN, data):
