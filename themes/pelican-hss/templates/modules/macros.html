@@ -1,14 +1,14 @@
-{% macro next_prev_chapter(article) %}
+{% macro next_prev_chapter(article, articles) %}
   {% if article.chapter %}
     {% set current_chapter = article.chapter | int %}
     <div class=article__next_prev_chapters>
-      {% for _article in articles %}
-        {% if _article.category == article.category %}
-          {% set chap = _article.chapter |int %}
+      {% for art in articles %}
+        {% if art.category == article.category %}
+          {% set chap = art.chapter | int %}
           {% if chap == current_chapter - 1 %}
-            <a href="/{{ _article.slug }}"><p class="article__prev_chapter">Chapter {{ _article.chapter }}</p></a>
+            <a href="/{{ art.slug }}"><p class="article__prev_chapter">Chapter {{ art.chapter }}</p></a>
           {% elif chap == current_chapter + 1 %}
-            <a href="/{{ _article.slug }}"><p class="article__next_chapter">Chapter {{ _article.chapter }}</p></a>
+            <a href="/{{ art.slug }}"><p class="article__next_chapter">Chapter {{ art.chapter }}</p></a>
           {% endif %}
         {% endif %}
       {% endfor %}

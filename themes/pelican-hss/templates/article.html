@@ -47,11 +47,11 @@
     </p>
   </div>
   <div class="article__text">
-    {{ macros.next_prev_chapter(article) }}
+    {{ macros.next_prev_chapter(article, articles) }}
 
     {{ article.content }}
 
-    {{ macros.next_prev_chapter(article) }}
+    {{ macros.next_prev_chapter(article, articles) }}
 
   </div>
   {% if SHOW_SOCIAL_SHARE_BUTTON %}
