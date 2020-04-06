@@ -167,4 +167,4 @@ tcpdump: listening on wg0, link-type RAW (Raw IP), capture size 262144 bytes
 I now have have a personal VPN I can use whenever I travel abroad.
 
 ---
-Thanks to Thomas for being patient with me while answering network questions at 11pm, and for proof-reading this article. Any remaining mistake is my own.
+Thanks to Thomas for being patient with me while answering networking questions at 11pm, and for proof-reading this article. Any remaining mistake is my own.
