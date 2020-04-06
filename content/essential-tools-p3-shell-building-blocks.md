@@ -553,7 +553,7 @@ terminal-friendly way. So I can just type `weather mycity` and *voila*:
 Environment variables, aliases and functions are simple yet powerful to
 change the shell's behavior into something that feels more intuitive.
 You feel like `nano` is not shiny enough and prefer using `vim` instead?
-Sure. Define `PAGER=vim`. Any command interacting with an editor would
+Sure. Define `EDITOR=vim`. Any command interacting with an editor would
 then use `vim` instead of `nano`.
 
 Aliases are a great way to reduce mental friction in the shell by hiding
