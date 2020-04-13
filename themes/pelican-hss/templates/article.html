@@ -50,6 +50,9 @@
   <div class="article__text">
     {{ macros.next_prev_chapter(article, articles) }}
 
+    {% if article.image %}
+    <img src="{{ article.image }}" class="article__main_img"/>
+    {% endif %}
     {{ article.content }}
 
     {{ macros.next_prev_chapter(article, articles) }}
