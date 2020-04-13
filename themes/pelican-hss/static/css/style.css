@@ -68,6 +68,7 @@ div.Warning {
 
 div#comments {
     padding-top: 2em;
+    float: left;
 }
 
 div#archives {
