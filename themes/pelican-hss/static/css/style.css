@@ -34,11 +34,10 @@ div.Note {
 
 div.box__next_prev_chapters {
   font-size: 14px;
-  display: flex;
-  justify-content: space-between;
 }
 
 div.box__chapter_ref {
+  width: 25%;
   line-height: 1.3em;
   padding: 10px;
   padding-bottom: 0;
@@ -49,14 +48,12 @@ div.box__chapter_ref {
 }
 
 div.box__prev_chapter {
-  order: 1;
-  flex-basis: 25%;
+  float: left;
   border-left-width: 4px;
 }
 
 div.box__next_chapter {
-  order: 2;
-  flex-basis: 25%;
+  float: right;
   border-right-width: 4px;
 }
 
