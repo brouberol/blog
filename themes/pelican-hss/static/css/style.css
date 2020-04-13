@@ -32,6 +32,34 @@ div.Note {
   margin-bottom: 1em;
 }
 
+div.box__next_prev_chapters {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.box__chapter_ref {
+  line-height: 1.3em;
+  padding: 10px;
+  padding-bottom: 0;
+  border: 1px solid #f3dd68;
+  background: #fefdf6;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+div.box__prev_chapter {
+  order: 1;
+  flex-basis: 25%;
+  border-left-width: 4px;
+}
+
+div.box__next_chapter {
+  order: 2;
+  flex-basis: 25%;
+  border-right-width: 4px;
+}
+
 div.Warning {
   padding: 15px;
   padding-bottom: 0;
@@ -42,7 +70,7 @@ div.Warning {
 }
 
 div#comments {
-    padding-top: 5em;
+    padding-top: 2em;
 }
 
 div#archives {
@@ -88,21 +116,6 @@ div.article__next_prev_chapters:first-child {
 
 div.article__next_prev_chapters:last-child {
     margin-top: 5em;
-}
-
-p.article__prev_chapter:before {
-    content: "<<< ";
-}
-p.article__prev_chapter {
-    float: left;
-}
-
-p.article__next_chapter {
-    float: right;
-}
-
-p.article__next_chapter:after {
-    content: " >>>";
 }
 
 div.avatar > img {
@@ -449,6 +462,7 @@ main article .article__text table.footnote {
 main article .article__text div.footnote {
     font-size: 13.5px;
     margin-top: 5em;
+    margin-bottom: 5em;
     line-height: 1.1em
 }
 
