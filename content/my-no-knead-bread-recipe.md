@@ -8,8 +8,6 @@ Description: My no-knead bread recipe
 Summary: ![bread](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/no-knead-bread-recipe/DSC_0032.JPG) I've started baking again, and I think I'm really getting nice results. On top of it, they are reproducible! In that post, I'll walk you through my favorite recipe step-by-step.
 Image: https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/no-knead-bread-recipe/DSC_0032.JPG
 
-![bread](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/no-knead-bread-recipe/DSC_0032.JPG)
-
 
 I've started baking again, and I think I'm really getting nice results. On top of it, they are reproducible! In that post, I'll walk you through my favorite recipe step-by-step.
 

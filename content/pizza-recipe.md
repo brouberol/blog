@@ -6,8 +6,6 @@ Summary: ![pizza](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/piz
 Image: https://blog.balthazar-rouberol.com/images/pizza-done.jpeg
 Tags: pizza
 
-![pizza](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-done.jpeg)
-
 I've always enjoyed a good looking Neapolitan pizza. You know, the ones with the [puffy, slightly burned crust](https://www.napolike.it/wp-content/uploads/2017/12/Pizze-gratis-al-Napoli-Pizza-village-per-il-riconoscimento-unesco.jpeg). I have probably baked dozens of them during the last couple of years, but only recently did I become satisfied enough with my recipe to feel comfortable sharing it.
 
 
