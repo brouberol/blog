@@ -124,7 +124,7 @@ The iTerm2 keyboard shortcuts I find the most useful are:
 | <kbd>Cmd</kbd> - <kbd>Shift</kbd> - <kbd>+</kbd> |                        zoom in|
 | <kbd>Cmd</kbd> - <kbd>Shift</kbd> - <kbd>-</kbd> |                       zoom out|
 | <kbd>Cmd</kbd> - <kbd>N</kbd>                    |              open a new window|
-| <kbd>Cmd</kbd> - <kbd>D</kbd>                    |     close the current terminal|
+| <kbd>Ctrk</kbd> - <kbd>D</kbd>                   |     close the current terminal|
 
 The following sections go over some non-default iTerm2 settings that I
 find convenient. Again, these are my preference and are in no way
