@@ -8,7 +8,6 @@ Image: https://c1.peakpx.com/wallpaper/1017/275/632/shell-beach-wallpaper.jpg
 Tags: terminal
 Keywords: oh-my-zsh, terminator, iterm2, zsh, bash, shell, prompt
 chapter: 4
-status: hidden
 ---
 
 <header>
