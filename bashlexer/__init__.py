@@ -15,7 +15,7 @@ class ExtendedBashLexer(BashLexer):
     ]
     EXTRA_KEYWORDS = [
         '>', '<', '<<', '>>', '&', '|', '!$', '!!', '~', '~-', '~+',
-        '!^', '^'
+        '!^', '^', '$?'
     ]
 
     def get_tokens_unprocessed(self, text):
