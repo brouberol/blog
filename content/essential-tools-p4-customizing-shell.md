@@ -336,6 +336,8 @@ follows.
 | `\W`      | The basename of the current working directory (`$HOME` rendered as `~`) |
 | `\n`      | A new line                                                              |
 
+These special characters are evaluated every-time the prompt is displayed to make sure you always get the most up-to-date context.
+
 <div class="Note" markdown="1">
 
 The `PROMPTING` section of the `bash` manual contains the full list of
@@ -669,9 +671,7 @@ logic into the following `colorized_prompt` bash function, and have it
 called every time `PS1` is rendered by including `$(colorized_prompt)`
 in the environment variable.
 
-The `$(colorized_prompt)` syntax means “call the `colorize_prompt`
-function”, and will be expanded into the output of the function, which
-will contain ASCII color codes colorizing the prompt.
+The `$(colorized_prompt)` syntax means "call the `colorize_prompt` function", and will be expanded into the output of the function (what it prints), which will contain ASCII color codes colorizing the prompt.
 
 ``` extbash
 function colorized_prompt {
