@@ -260,7 +260,7 @@ alias filesize='ls --size --human-readable -1'
 
 function mkcd {
     local target=$1
-    mkdir -p $target
+    mkdir -p "$target"
     cd $target
 }
 ```
@@ -674,7 +674,8 @@ The `$(colorized_prompt)` syntax means "call the `colorize_prompt` function", an
 
 ``` extbash
 function colorized_prompt {
-    if [[ $? ]]; then
+    # Check if last command exit code equals 0
+    if (($?)); then
         printf "\e[32m$\e[m"
     else
         printf "\e[31m$\e[m"
@@ -700,7 +701,7 @@ echo $?
 127
 ```
 
-The syntax `if [[ $? ]]; then` thus translates to “if the last command
+The syntax `if (($?)); then` thus translates to “if the last command
 executed successfully, then…”.
 
 </div>
