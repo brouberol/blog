@@ -4,7 +4,7 @@ Date: 2020-04-17
 Category: Essential Tools and Practices for the Aspiring Software Developer
 Description: A deep dive into how to customize your terminal and shell, in order to make it yours and increase productivity.
 Summary: It is very common for programmers to tweak and customize their terminal and shell for hours, add or write new plug-ins, all in pursuit of the “perfect environment” and an increase of productivity. In that spirit, this chapter will cover different recommendations of terminal configurations, as well as a deep dive into how to customize your prompt, add colors, experiment with color palettes, for both `bash` and `zsh`. We will finally introduce the Oh My Zsh configuration framework.
-Image: https://c1.peakpx.com/wallpaper/1017/275/632/shell-beach-wallpaper.jpg
+Image: https://blog.balthazar-rouberol.com/images/config-shell/header.jpg
 Tags: terminal
 Keywords: oh-my-zsh, terminator, iterm2, zsh, bash, shell, prompt
 chapter: 4
