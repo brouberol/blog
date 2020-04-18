@@ -112,7 +112,7 @@ First off, let’s define a couple of words.
 A terminal is an application you can open on your computer, in which
 you’ll be able to type commands in a command line interface (CLI). When
 you hit the <kbd>Enter</kbd> key, the command will be executed by a
-shell, and the result is displayed back in the terminal.
+program called a _shell_, and the result is displayed back in the terminal.
 
 In the early days of computing, video terminals were actual physical
 devices, used to execute commands onto a remote computer that could take
