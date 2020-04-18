@@ -256,7 +256,6 @@ export PATH=$HOME/bin
 alias ls='ls -G'
 alias ..='cd ..'
 alias ...='cd ../..'
-alias filesize='ls --size --human-readable -1'
 
 function mkcd {
     local target=$1
