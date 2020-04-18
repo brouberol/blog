@@ -128,7 +128,7 @@ the behavior of the video terminals of old.
 <span class=imgcaption>This is what a terminal looks like nowadays.</span>
 
 Different operating systems come with different terminals and different
-shells pre-installed, but most common shell out there is certainly `bash`.
+shells pre-installed, but the most common shell out there is certainly `bash`.
 
 Before we go any deeper, let’s open a terminal! The way you do this however depends on your operating system.
 
@@ -310,7 +310,7 @@ total 52M
 
 Short options make it easy to type a command quickly, but the result can
 be hard to decipher after a certain amount of options, and you might
-find yourself wondering that the command is doing in the first place.
+find yourself wondering what the command is doing in the first place.
 Luckily, options can have a *long form* and a *short form*. For example,
 `-s` can be replaced by its long form `--size`, and `-h` by
 `--human-readable`.
@@ -365,7 +365,7 @@ you have all your documents, downloads, etc). The same way you can
 navigate directories in a graphical file editor, you can do it in a
 terminal as well.
 
-Before going anywhere, we first need to find know where we are. Enters
+Before going anywhere, we first need to figure out where we are. Enters
 `pwd`, standing for *print working directory*. This command displays
 your current working directory (*a.k.a* where you are).
 
@@ -456,14 +456,14 @@ describing how files and directories are organized on your disk.
 
 The base directory (also called <span class="gls" key="rootdir">root
 directory</span>, and referred as `/`) is the highest directory in the
-hierarchy: it contains every single other file and directory in your
+hierarchy: it contains every single file and directory in your
 system, each of these directories possibly containing others, to form a
 structure looking like a tree.
 
 ![Your disk is organized like a tree](images/terminal/paths.png)
 <span class=imgcaption>Your disk is organized like a tree</span>
 
-Let’s look a what that `/` root directory contains.
+Let’s look at what that `/` root directory contains.
 
 ``` extbash
 $ ls /
@@ -471,7 +471,7 @@ bin  boot  dev  etc  home  lib  lib64  lost+found  media
 mnt opt  proc  root  run  sbin  srv  sys  tmp  usr  var
 ```
 
-Ok so, there is a couple of things in there. We have talked about home
+Ok so, there are a couple of things in there. We have talked about home
 directories before, remember? It turns out that all the users’ home
 directories are located under the `home` directory. As `home` is located
 under `/`, we can refer it via its *<span class="gls"
@@ -513,7 +513,7 @@ the folder’s parent](images/terminal/dotpaths.png)
 <span class=imgcaption>The `.` link points to the folder itself and the `..` link points to the folder’s parent</span>.
 
 We can use these `.` and `..` links when constructing relative paths.
-For example, were you current located in `/home/br`, you could refer to
+For example, if you were located in `/home/br`, you could refer to
 the `Android` folder as `./Android`, meaning “the `Android` folder
 located under `.` (the current directory)”.
 
@@ -522,7 +522,7 @@ $ ls ./Android
 Sdk
 ```
 
-Were you located under `/home/br/Android`, you could also refer as
+Were you located under `/home/br/Android`, you could also refer to
 `/home/br/Downloads` as `../Downloads`.
 
 ![Following `Android`’s `..` link takes you back to the `home` directory](images/terminal/dotdot.png)
@@ -567,7 +567,7 @@ $
 
 Notice that the `mkdir` command did not display anything. It might feel
 unusual at first, but this is the philosophy of these commands: only
-display something if something went bad. In other terms, no news if good
+display something if something went wrong. In other terms, no news if good
 news.
 
 We can now check that the directory has been created.
@@ -839,7 +839,7 @@ The `ls` synopsis is
     SYNOPSIS
            ls [OPTION]... [FILE]...
 
-`[OPTION]` and `[FILE]` means that both options and files are
+The square brackets around `[OPTION]` and `[FILE]` mean that both options and files are
 *optional*. As we’ve seen at the beginning of this chapter, just running
 `ls` on its own prints the content of the current working directory.
 
@@ -940,7 +940,7 @@ Each process has 3 streams by default:
 -   `stdout` (or *standard output*): displays the command’s output
 -   `stderr` (or *standard error*): displays the command’s error
 
-Each of these streams have an associated *<span class="gls"
+Each one of these streams has an associated *<span class="gls"
 key="fd">file descriptor</span>*, a number used by the shell to
 reference that stream. `stdin` has the file descriptor 0, `stdout` has
 1, and `stderr` has 2.
@@ -1026,7 +1026,6 @@ command to the `echoes-lines` files.
 
 ``` extbash
 $ wc -l < echoes > echoes-lines
-$ wc -l < echoes > echoes-lines
 $ cat echoes-lines
 2
 $ cat echoes
@@ -1069,7 +1068,7 @@ You can redirect that block into a file by combining both the `<<` and
 `>` operators.
 
 ``` extbash
-$ cat > aboutme <<EOF
+$ cat <<EOF > aboutme
 My username is br
 I'm living at /home/br
 EOF
@@ -1186,7 +1185,7 @@ $ command1 | command2 | command3 | ... | commandN
 
 <div class="Note" markdown="1">
 
-When you execute`command1 | command2`, your shell starts *all* commands
+When you execute `command1 | command2`, your shell starts *all* commands
 at the same time, and a command’s output is streamed into the next one
 as the commands run.
 
@@ -1222,12 +1221,14 @@ you want to store the output of a command in a file, but still be able
 to see what it’s doing in real-time.
 
 ``` extbash
-$ ls -1 | head -n 2 | tee output.txt
+$ ls -1 | tee output.txt
 Android
 code
+...
 $ cat output.txt
 Android
 code
+...
 ```
 
 ![`tee` is named after the T-splitter used in plumbing.](images/terminal/tee.png)
@@ -1302,7 +1303,7 @@ By putting quotes around the file name, you are telling your shell that
 whatever is between the quotes is a single argument.
 
 Like previously mentioned, we could also use the backslash escape
-character, which indicates that whatever following character doesn’t
+character, which indicates that the following character doesn’t
 have any special meaning.
 
 ``` extbash
