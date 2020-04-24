@@ -8,7 +8,6 @@ Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/shell-producti
 Tags: terminal
 Keywords: history navigation, expansions, productivity, shell, bash, zsh
 chapter: 5
-Status: draft
 ---
 
 <header>
