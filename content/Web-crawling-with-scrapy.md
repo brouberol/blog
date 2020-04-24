@@ -124,6 +124,8 @@ import pymongo
 from scrapy.exceptions import DropItem
 from scrapy.conf import settings
 from scrapy import log
+
+
 class MongoDBPipeline(object):
     def __init__(self):
         connection = pymongo.Connection(settings['MONGODB_SERVER'], settings['MONGODB_PORT'])
