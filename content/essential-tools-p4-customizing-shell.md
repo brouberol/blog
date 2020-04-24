@@ -251,7 +251,7 @@ These files usually reside in your home directory, and are named
 ``` extbash
 $ cat ~/.zshrc
 export EDITOR=vim
-export PATH=$HOME/bin
+export PATH=$HOME/bin:$PATH
 
 alias ls='ls -G'
 alias ..='cd ..'
