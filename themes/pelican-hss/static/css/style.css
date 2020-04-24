@@ -146,6 +146,10 @@ video {
     width: 100%;
 }
 
+div#archives {
+    margin-top: 1.3em;
+}
+
 /*
 ^ Manually insterted ^
 */
@@ -355,7 +359,7 @@ main {
 
 main header {
     padding-top: 40px;
-    padding-bottom: 40px;
+    /*padding-bottom: 40px;*/
     /*border-top: #eee 1px solid;*/
     /*border-bottom: #eee 1px solid;*/
     text-align: center
