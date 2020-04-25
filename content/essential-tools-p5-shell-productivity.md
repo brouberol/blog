@@ -807,20 +807,14 @@ rename all directories contained in the bcurrent directory to their
 uppercase equivalent.
 
 ``` extbash
-$ for dir in $(ls -1 -d */); do
-    mv $dir $(echo $dir | tr '[:lower:]' '[:upper:]')
+$ for dir in */; do
+    mv "$dir" "$(echo $dir | tr '[:lower:]' '[:upper:]')"
   done
 ```
 
 Let's decompose that command into its different steps:
 
--   first, we execute `ls -1 -d */`. This command will list all
-    directories contained in the current directory. The `-d` option
-    displays all directories as plain files, preventing `ls` from
-    recursively looking into them, meaning that the `*/` pattern will
-    only be expanded into the list of all directories. `-1` will display
-    each directory name on a different line.
--   the `$(ls -1 -d */)` command is expanded over the list of
+-   the `*/` glob pattern is expanded over the list of
     directories, on which we iterate via a `for` loop
 -   we execute `echo $dir | tr '[:lower:]' '[:upper:]'`, which will
     convert the current directory name to uppercase
