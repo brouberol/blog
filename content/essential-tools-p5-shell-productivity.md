@@ -383,7 +383,7 @@ if you want to see the full list.
 
 ### History expansion
 
-Your shell has multiple tricks in its sleeve to allow you to quickly
+Your shell has multiple tricks up its sleeve to allow you to quickly
 reference previous commands or arguments in history with a minimum of
 keystrokes. While this section only provides you with what we feel are
 the most useful of them, feel free to go to the `HISTORY EXPANSION`
@@ -747,7 +747,7 @@ pic1.jpg pic3.jpg pic5.jpg pic7.jpg pic9.jpg
 
 Your shell can replace a command surrounded by `$()` with its output.
 
-I personally like use to commands expansions can to iterate over a
+I personally like use to commands expansions to iterate over a
 command's result, or by combining it with a heredoc redirection:
 
 ``` extbash
@@ -793,7 +793,7 @@ $ tree
     \__ lyrics
         \__sound1.txt
 $ ls ~/assets
-README.txt pic1.jpg   pic2.jpg   pic3.jpg   pic4.jpg   pic5.jpg   pic6.jpg   pic7.jpg   sound1.txt
+pic1.jpg   pic2.jpg   pic3.jpg   pic4.jpg   pic5.jpg   pic6.jpg   pic7.jpg   sound1.mp3
 ```
 
 Using these expansions, we were able to move all `jpg` and `mp3` files
