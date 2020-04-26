@@ -1042,10 +1042,12 @@ the *heredoc* (here document) `<<` operator to accomplish this.
 
 A heredoc redirection has the following syntax:
 
-    command << DELIMITER
-    a multi-line
-    string
-    DELIMITER
+```
+command <<DELIMITER
+a multi-line
+string
+DELIMITER
+```
 
 The `DELIMITER` can be any string of your choosing, although `EOF` (“end
 of file”) is pretty commonly used.
