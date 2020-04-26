@@ -803,7 +803,7 @@ located in your home directory, in exactly 27 characters!
 ### Renaming multiple directories
 
 We could use a `for` loop, pathname expansion and a command expansion to
-rename all directories contained in the bcurrent directory to their
+rename all directories contained in the current directory to their
 uppercase equivalent.
 
 ``` extbash
