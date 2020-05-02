@@ -58,7 +58,7 @@ with a specialized tool.
 > Make each program do one thing well.[^1]
 
 The examples in that chapter might seem a little contrived at first, but
-this is also by design. Each of these tools were designed to solve one
+this is also by design. Each one of these tools was designed to solve one
 small problem. They however become extremely powerful when combined.
 
 We will go over some of the most common and useful text processing
@@ -546,7 +546,16 @@ $ echo "COMPUTERS ARE FAST" | tr '[:upper:]' '[:lower:]'
 computers are fast
 ```
 
-`tr -c SET1 SET2` will transform any character *not* in SET1 into the
+`tr SET1 SET2` will transform any character  in SET1 into the
+characters in SET2. The following example replaces all vowels by
+spaces.
+
+``` extbash
+$ echo "computers are fast" | tr '[aeiouy]' ' '
+c mp t rs  r  f st
+```
+
+`tr -c SET1 SET2` does the opposite: it transforms any character *not* in SET1 into the
 characters in SET2. The following example replaces all non vowels by
 spaces.
 
@@ -1004,7 +1013,7 @@ $ grep -r --files-with-matches bool_from_str .
 ./izk/prompt.py
 ```
 
-We can then use the `xargs` command to perform an action of each line in
+We can then use the `xargs` command to perform an action on each line in
 the output (each file containing the `bool_from_str` string).
 
 ``` extbash
@@ -1015,7 +1024,7 @@ $ grep -r --files-with-matches bool_from_str . | \
 `-n 1` tells `xargs` that each line in the output should cause a
 separate `sed` command to be executed.
 
-The following commands were then executed:
+The following commands are then executed:
 
 ``` extbash
 $ sed -i 's/bool_from_str/is_affirmative/' ./tests/test_utils.py
@@ -1027,7 +1036,7 @@ If the command you call with `xargs` (`sed`, in our case) support
 multiple arguments, you can (and shoud, as a single command will execute faster) drop the `-n 1` argument and run
 
 ``` extbash
-grep -r --files-with-matches bool_from_str . | xargs sed -i 's/bool_from_str/is_affirmative/'
+$ grep -r --files-with-matches bool_from_str . | xargs sed -i 's/bool_from_str/is_affirmative/'
 ```
 
 which will then execute
@@ -1099,7 +1108,7 @@ which can be a performance win if your command takes time to run.
 <a id="summary"></a>
 ## Summary
 
-All these tools open up a world of possibilities, as allow you to
+All these tools open up a world of possibilities, as they allow you to
 extract data and transform its format, to make it possible to build
 entire workflows of commands that were possibly never intended to work
 together. Each of these commands accomplishes has a relatively small
@@ -1107,7 +1116,7 @@ function (`sort` sorts, `cat` concatenates, `grep` filters, `sed` edits,
 `cut` cuts, etc).
 
 Any given task involving text, can then be reduced to a pipeline of
-smaller tasks, each of them performing a simple action and piping their
+smaller tasks, each of them performing a simple action and piping its
 output into the next task.
 
 For example, if we wanted to know how many unique IPs could be found in
