@@ -546,7 +546,7 @@ $ echo "COMPUTERS ARE FAST" | tr '[:upper:]' '[:lower:]'
 computers are fast
 ```
 
-`tr SET1 SET2` will transform any character  in SET1 into the
+`tr SET1 SET2` will transform any character in SET1 into the
 characters in SET2. The following example replaces all vowels by
 spaces.
 

@@ -592,12 +592,7 @@ command.
 
 <div class="Note" markdown="1">
 
-We could have executed the following commands for the same result:
-
--   `mv pic* pics` would have moved all files with name starting by
-    `pic` to the `pics` directory
--   `mv pic*.jpg pics` would have moved all files with name starting by
-    `pic` and ending with `.jpg` to the `pics` directory
+We could have executed the following command for the same result: `mv pic*.jpg pics`. This would have moved all files with name starting by `pic` and ending with `.jpg` to the `pics` directory
 
 </div>
 
