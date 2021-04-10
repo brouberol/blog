@@ -6,7 +6,6 @@ Summary: When I was preparing for Port Nyanzaru, in [Tomb of Annihilation](https
 Image: https://i.pinimg.com/originals/2a/8d/42/2a8d424a5f734afd5a388e75f627f656.png
 Tags: Tomb of Annihilation
 Keywords: dnd, toa, dinosaur, nyanzaru
-Status: draft
 
 When I was preparing for Port Nyanzaru, in [Tomb of Annihilation](https://dnd.wizards.com/products/tabletop-games/rpg-products/tomb-annihilation), I started reading what other Dungeons Masters had to say about the city. A lot of them would mention that the dinosaur race was a must-do, and that if done properly, it could really be a high point in the start of the adventure. The problem was, I felt that the official rules regarding this race were, well, underwhelming, to say the least. Each player rolls a dice, gets some points or not, repeatedly until the end of the race. If that race was going to be something to remember, I felt that I needed to spice it up a bit.
 
