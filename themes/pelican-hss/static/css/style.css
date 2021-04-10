@@ -150,6 +150,10 @@ div#archives {
     margin-top: 1.3em;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*
 ^ Manually insterted ^
 */

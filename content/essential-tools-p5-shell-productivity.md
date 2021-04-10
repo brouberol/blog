@@ -383,7 +383,7 @@ if you want to see the full list.
 
 ### History expansion
 
-Your shell has multiple tricks in its sleeve to allow you to quickly
+Your shell has multiple tricks up its sleeve to allow you to quickly
 reference previous commands or arguments in history with a minimum of
 keystrokes. While this section only provides you with what we feel are
 the most useful of them, feel free to go to the `HISTORY EXPANSION`
@@ -592,12 +592,7 @@ command.
 
 <div class="Note" markdown="1">
 
-We could have executed the following commands for the same result:
-
--   `mv pic* pics` would have moved all files with name starting by
-    `pic` to the `pics` directory
--   `mv pic*.jpg pics` would have moved all files with name starting by
-    `pic` and ending with `.jpg` to the `pics` directory
+We could have executed the following command for the same result: `mv pic*.jpg pics`. This would have moved all files with name starting by `pic` and ending with `.jpg` to the `pics` directory
 
 </div>
 
@@ -747,7 +742,7 @@ pic1.jpg pic3.jpg pic5.jpg pic7.jpg pic9.jpg
 
 Your shell can replace a command surrounded by `$()` with its output.
 
-I personally like use to commands expansions can to iterate over a
+I personally like use to commands expansions to iterate over a
 command's result, or by combining it with a heredoc redirection:
 
 ``` extbash
@@ -793,7 +788,7 @@ $ tree
     \__ lyrics
         \__sound1.txt
 $ ls ~/assets
-README.txt pic1.jpg   pic2.jpg   pic3.jpg   pic4.jpg   pic5.jpg   pic6.jpg   pic7.jpg   sound1.txt
+pic1.jpg   pic2.jpg   pic3.jpg   pic4.jpg   pic5.jpg   pic6.jpg   pic7.jpg   sound1.mp3
 ```
 
 Using these expansions, we were able to move all `jpg` and `mp3` files
@@ -803,12 +798,12 @@ located in your home directory, in exactly 27 characters!
 ### Renaming multiple directories
 
 We could use a `for` loop, pathname expansion and a command expansion to
-rename all directories contained in the bcurrent directory to their
+rename all directories contained in the current directory to their
 uppercase equivalent.
 
 ``` extbash
 $ for dir in */; do
-    mv "$dir" "$(echo $dir | tr '[:lower:]' '[:upper:]')"
+    mv "$dir" "$(echo "$dir" | tr '[:lower:]' '[:upper:]')"
   done
 ```
 
