@@ -43,7 +43,7 @@ $ cat data/default.dungeondraft_tags | jq .
 # ...
 ```
 
-I suspect the author does that because they export the same list of tag for each asset pack they release. However, having just bought a couple of ones, that causes my tag list to be pretty spotty.
+I suspect the author does that because they export the same list of tag for each asset pack they release. However, having only bought a couple, that caused my tag list to be pretty spotty.
 
 I decided to create a script that would automate the process of unpacking asset packs, removing these empty metadata entries, and then repacking everything up. While the proess is pretty simple conceptually, it can become tedious when the number of packs grows.
 
