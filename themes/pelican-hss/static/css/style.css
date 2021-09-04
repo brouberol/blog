@@ -379,7 +379,8 @@ main article {
 }
 
 main article .article__title h1 {
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    line-height: 1.4em;
 }
 /*
 main article .article__text {
@@ -397,7 +398,7 @@ main article .article__text h1 {
     margin-top: 2em;
     margin-bottom: 1.5rem;
     font-size: 1.8em;
-    padding-bottom: 0.5em
+    padding-bottom: 0.5em;
 }
 
 main article .article__text h2 {
