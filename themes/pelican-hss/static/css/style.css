@@ -74,10 +74,6 @@ hr {
     background-color: var(--hr-color);
 }
 
-main article .article__text h1, main article .article__text h2 {
-    border-bottom: #eee 1px solid;
-}
-
 .highlight pre {
     background: var(--dark-black);
     color: var(--pre-color);
