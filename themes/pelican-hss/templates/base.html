@@ -22,12 +22,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="{{ AUTHOR }}">
   <meta name="description" content="Posts and writings by {{ AUTHOR }}">
+  <meta name="color-scheme" content="dark light">
 
   {% if FEED_ALL_ATOM %}
-  <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom" />
+  <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate"
+    title="{{ SITENAME }} Atom" />
   {% endif %}
   {% if FEED_ALL_RSS %}
-  <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS" />
+  <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate"
+    title="{{ SITENAME }} RSS" />
   {% endif %}
 
   {% block head %}
@@ -52,9 +55,9 @@
       </div>
       <p>
       <div id=archives>
-      {% if ARCHIVES_URL %}
+        {% if ARCHIVES_URL %}
         <a href="{{ SITEURL }}/{{ ARCHIVES_URL | replace('.html', '')}}"><i class="fas fa-archive"></i> Archives</a>
-      {% else %}
+        {% else %}
         <a href="{{ SITEURL }}/archives"><i class="fab fas-archive"></i> Archives</a>
       </div>
       {% endif %}
@@ -70,68 +73,69 @@
     {% endblock %}
 
   </main>
-    <footer>
-      <div class="author__logo">
-          {% if USER_LOGO_URL %}
-          <img src="{{ USER_LOGO_URL }}" alt="logo">
-          {% else %}
-          <img src="{{ SITEURL }}/theme/images/logo.png" alt="logo">
-          {% endif %}
+  <footer>
+    <div class="author__logo">
+      {% if USER_LOGO_URL %}
+      <img src="{{ USER_LOGO_URL }}" alt="logo">
+      {% else %}
+      <img src="{{ SITEURL }}/theme/images/logo.png" alt="logo">
+      {% endif %}
+    </div>
+    <section class="author">
+      <div class="author__name">
+        <a href="{{ AUTHOR_URL }}">{{ AUTHOR }}</a>
+        <p>{{ TAGLINE }}</p>
       </div>
-      <section class="author">
-        <div class="author__name">
-          <a href="{{ AUTHOR_URL }}">{{ AUTHOR }}</a>
-          <p>{{ TAGLINE }}</p>
-        </div>
-        <div class="author__link">
-          <ul>
-            {% if DISPLAY_PAGES_ON_MENU %}{% for p in pages %}
-            {% if p.title == 'About Me' %}
-            <li><a href="{{ SITEURL }}/{{ p.url }}" title="About Me"><i class="fab fa-user"></i></a></li>
-            {% else %}
-            <li><a href="{{ SITEURL }}/{{ p.url }}" title="{{ p.title }}"><i class="fab fa-link"></i></a></li>
-            {% endif %}
-            {% endfor %}{% endif %}
-            {% for name, link in LINKS %}
-            <li><a href="{{ link }}" title="{{ name }}"><i class="fab fa-link"></i></a></li>
-            {% endfor %}
-            {% for name, link in SOCIAL %}
-            <li>
-              <a href="{{ link }}" target="_blank" title="{{ name }}">
+      <div class="author__link">
+        <ul>
+          {% if DISPLAY_PAGES_ON_MENU %}{% for p in pages %}
+          {% if p.title == 'About Me' %}
+          <li><a href="{{ SITEURL }}/{{ p.url }}" title="About Me"><i class="fab fa-user"></i></a></li>
+          {% else %}
+          <li><a href="{{ SITEURL }}/{{ p.url }}" title="{{ p.title }}"><i class="fab fa-link"></i></a></li>
+          {% endif %}
+          {% endfor %}{% endif %}
+          {% for name, link in LINKS %}
+          <li><a href="{{ link }}" title="{{ name }}"><i class="fab fa-link"></i></a></li>
+          {% endfor %}
+          {% for name, link in SOCIAL %}
+          <li>
+            <a href="{{ link }}" target="_blank" title="{{ name }}">
               {% if name == 'twitter' %}
-                <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-twitter-square"></i>
               {% elif name == 'github' %}
-                <i class="fab fa-github-square"></i>
+              <i class="fab fa-github-square"></i>
               {% elif name == 'facebook' %}
-                <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-facebook-square"></i>
               {% elif name == 'hatebu' %}
-                <i class="fab fa-hatebu-square"></i>
+              <i class="fab fa-hatebu-square"></i>
               {% elif name == 'bitbucket' %}
-                <i class="fab fa-bitbucket-square"></i>
+              <i class="fab fa-bitbucket-square"></i>
               {% elif name == 'instagram' %}
-                <i class="fab fa-instagram"></i>
+              <i class="fab fa-instagram"></i>
               {% elif name == 'linkedin' %}
-                <i class="fab fa-linkedin"></i>
+              <i class="fab fa-linkedin"></i>
               {% endif %}
-              </a>
-            </li>
-            {% endfor %}
-            {% if FEED_ALL_ATOM %}
-            <li>
-              <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" target="_blank" title="Feed">
-                <i class="fas fa-rss-square"></i>
-              </a>
-            </li>
-            {% elif FEED_ALL_RSS %}
-            <li>
-              <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" target="_blank" title="Feed">
-                <i class="fas fa-rss-square"></i>
-              </a>
-            </li>
-            {% endif %}
-          </ul>
-        </div>
-      </section>
-    </footer>
+            </a>
+          </li>
+          {% endfor %}
+          {% if FEED_ALL_ATOM %}
+          <li>
+            <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" target="_blank" title="Feed">
+              <i class="fas fa-rss-square"></i>
+            </a>
+          </li>
+          {% elif FEED_ALL_RSS %}
+          <li>
+            <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" target="_blank" title="Feed">
+              <i class="fas fa-rss-square"></i>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+    </section>
+  </footer>
 </body>
+
 </html>
