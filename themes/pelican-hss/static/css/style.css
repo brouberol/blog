@@ -443,8 +443,7 @@ main article .article__text h1 {
 
 main article .article__text h2 {
     margin-top: 3.375rem;
-    margin-bottom: 1.375em;
-    padding-bottom: 0.5em
+    padding-bottom: 0.2em;
 }
 
 main article .article__text h3,
@@ -452,7 +451,7 @@ main article .article__text h4,
 main article .article__text h5,
 main article .article__text h6 {
     margin-top: 2.375rem;
-    margin-bottom: 1.375em
+    margin-bottom: 1.375rem;
 }
 
 main article .article__text code {
