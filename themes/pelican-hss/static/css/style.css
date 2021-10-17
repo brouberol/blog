@@ -8,6 +8,10 @@
     src: url('../webfonts/Cascadia.ttf');
 }
 
+:root {
+    --dark-black: #272822
+}
+
 @media (prefers-color-scheme: light) {
     /* Light theme styles go here */
     :root {
@@ -18,6 +22,7 @@
         --note-background-color: #fefdf6;
         --code-color: #8B0000;
         --pre-color: #f8f8f2;
+        --current-page-background-color: #ddd;
     }
 
     footer {
@@ -36,11 +41,13 @@
         --note-background-color: #292928;
         --code-color: #eb9696;
         --pre-color: var(--text-color);
+        --current-page-background-color: var(--note-background-color);
     }
 
-    img {
+    img, video {
         /* Dim the images to avoid hurting the eyes */
         filter: brightness(.8) contrast(1.2);
+        box-shadow: 1px 1px 3px var(--dark-black);
     }
 }
 
@@ -54,7 +61,7 @@ main article .article__text h1, main article .article__text h2 {
 }
 
 .highlight pre {
-    background: #272822;
+    background: var(--dark-black);
     color: var(--pre-color);
 }
 
@@ -228,8 +235,8 @@ hr {
 }
 
 img {
-    padding-bottom: 20px;
-    padding-top: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     display: block;
     max-width: 100%;
     align-content: center;
@@ -291,7 +298,7 @@ dd {
 }
 
 .pagination ul li:hover:not(.active) {
-    background-color: #ddd
+    background-color: var(--current-page-background-color);
 }
 
 .pagination ul li a {
