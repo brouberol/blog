@@ -25,6 +25,7 @@
         --pre-color: #f8f8f2;
         --current-page-background-color: #ddd;
         --kbd-background-color: #eee;
+        --hr-color: #eee;
     }
 
     footer {
@@ -45,6 +46,7 @@
         --pre-color: var(--text-color);
         --current-page-background-color: var(--note-background-color);
         --kbd-background-color: var(--dark-black);
+        --hr-color: #414649;
     }
 
     img, video {
@@ -58,8 +60,7 @@
 }
 
 hr {
-    color: #eee;
-    background-color: #eee;
+    background-color: var(--hr-color);
 }
 
 main article .article__text h1, main article .article__text h2 {
