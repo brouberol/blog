@@ -17,6 +17,7 @@
         --title-color: #000;
         --note-background-color: #fefdf6;
         --code-color: #8B0000;
+        --pre-color: #f8f8f2;
     }
 }
 
@@ -30,6 +31,7 @@
         --title-color: rgb(228, 226, 226);
         --note-background-color: #292928;
         --code-color: #eb9696;
+        --pre-color: var(--text-color);
     }
 
     img {
@@ -42,10 +44,15 @@ hr {
     color: #eee;
     background-color: #eee;
 }
+
 main article .article__text h1, main article .article__text h2 {
     border-bottom: #eee 1px solid;
 }
 
+.highlight pre {
+    background: #272822;
+    color: var(--pre-color);
+}
 
 body {
     margin: 0;
