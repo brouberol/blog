@@ -57,6 +57,17 @@
     kbd {
         color: var(--text-color);
     }
+
+    #isso-thread h4 {
+        color: var(--meta-text-color) !important;
+    }
+
+    #isso-thread .textarea,
+    #isso-thread .auth-section input,
+    #isso-thread .post-action input {
+        background-color: #636c70 !important;
+        color: var(--text-color) !important;
+    }
 }
 
 hr {
