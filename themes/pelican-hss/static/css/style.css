@@ -131,13 +131,14 @@ div.Warning {
     background: var(--note-background-color);
 }
 
-div#comments {
+#comments {
     padding-top: 2em;
     float: left;
 }
 
-div#archives {
+#archives {
     text-align: center;
+    margin-top: 1.3em;
 }
 
 span.imgcaption {
@@ -199,10 +200,6 @@ th:last-child, td:last-child {
 
 video {
     width: 100%;
-}
-
-div#archives {
-    margin-top: 1.3em;
 }
 
 html {
