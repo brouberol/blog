@@ -19,6 +19,10 @@
         --code-color: #8B0000;
         --pre-color: #f8f8f2;
     }
+
+    footer {
+        border-top: #eee 1px solid;
+    }
 }
 
 
@@ -521,7 +525,6 @@ main article .article__meta p {
 }
 
 footer {
-    border-top: #eee 1px solid;
     width: 100%;
     font-size: 14px;
     padding-top: 5em;
