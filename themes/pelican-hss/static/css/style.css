@@ -9,7 +9,8 @@
 }
 
 :root {
-    --dark-black: #272822
+    --dark-black: #272822;
+    --border-radius-px: 4px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -23,6 +24,7 @@
         --code-color: #8B0000;
         --pre-color: #f8f8f2;
         --current-page-background-color: #ddd;
+        --kbd-background-color: #eee;
     }
 
     footer {
@@ -42,12 +44,16 @@
         --code-color: #eb9696;
         --pre-color: var(--text-color);
         --current-page-background-color: var(--note-background-color);
+        --kbd-background-color: var(--dark-black);
     }
 
     img, video {
         /* Dim the images to avoid hurting the eyes */
         filter: brightness(.8) contrast(1.2);
-        box-shadow: 1px 1px 3px var(--dark-black);
+    }
+
+    kbd {
+        color: var(--text-color);
     }
 }
 
@@ -77,15 +83,14 @@ body {
 }
 
 kbd {
-    background-color: #eee;
+    background-color: var(--kbd-background-color);
     border-radius: 3px;
     font-family: Cascadia;
     border: 1px solid #b4b4b4;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
-    color: #333;
     display: inline-block;
     font-size: .85em;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1;
     padding: 2px 4px;
     white-space: nowrap;
@@ -103,6 +108,7 @@ div.Note {
     border-left-width: 4px;
     margin-bottom: 1em;
     background: var(--note-background-color);
+    border-radius: var(--border-radius-px);
 }
 
 div.box__next_prev_chapters {
@@ -137,6 +143,7 @@ div.Warning {
     border-left-width: 4px;
     margin-bottom: 1em;
     background: var(--note-background-color);
+    border-radius: var(--border-radius-px);
 }
 
 #comments {
@@ -240,7 +247,7 @@ img {
     display: block;
     max-width: 100%;
     align-content: center;
-    border-radius: 5px;
+    border-radius: var(--border-radius-px);
 }
 
 iframe .slide_image {
@@ -304,7 +311,7 @@ dd {
 .pagination ul li a {
     padding: 8px 16px;
     text-decoration: none;
-    border-radius: 5px
+    border-radius: var(--border-radius-px);
 }
 
 .pagination ul li .pagination__prev--none,
@@ -343,7 +350,7 @@ dd {
 
 iframe.embedly-card {
     box-shadow: 5px 2.5px 2.5px 2.5px rgba(0, 0, 0, 0.4);
-    border-radius: 5px
+    border-radius: var(--border-radius-px);
 }
 
 @media screen and (min-width: 640px) {
@@ -444,7 +451,7 @@ main article .article__text code {
     color: var(--code-color);
     padding: 0.2em 0;
     font-family: "Cascadia", monospace;
-    border-radius: 3px
+    border-radius: var(--border-radius-px);
 }
 
 main article .article__text pre {
@@ -455,15 +462,15 @@ main article .article__text pre {
     line-height: 1.45;
     overflow-x: auto;
     border-style: none;
-    border-radius: 4px
+    border-radius: var(--border-radius-px);
 }
 
 main article .article__text ul {
-    padding-left: 20px
+    padding-left: 20px;
 }
 
 main article .article__text li {
-    margin-bottom: 0.5em
+    margin-bottom: 0.5em;
 }
 
 main article .article__text blockquote {
@@ -472,7 +479,7 @@ main article .article__text blockquote {
     padding: 1em 2em 1em 4em;
     color: #959393;
     font-style: italic;
-    position: relative
+    position: relative;
 }
 
 main article .article__text blockquote:before {
@@ -483,7 +490,7 @@ main article .article__text blockquote:before {
     left: 0;
     top: 0;
     position: absolute;
-    color: #9E9E9E
+    color: #9E9E9E;
 }
 
 main article .article__text table.footnote {
@@ -494,11 +501,11 @@ main article .article__text div.footnote {
     font-size: 13.5px;
     margin-top: 5em;
     margin-bottom: 5em;
-    line-height: 1.1em
+    line-height: 1.1em;
 }
 
 main article .gist {
-    line-height: .875em
+    line-height: .875em;
 }
 
 div.article__meta {
@@ -508,12 +515,12 @@ div.article__meta {
 main article .article__meta {
     font-size: 14px;
     color: var(--meta-text-color);
-    margin-bottom: 2rem
+    margin-bottom: 2rem;
 }
 
 main article .article__meta p {
     margin-top: 0;
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
 footer {
@@ -527,7 +534,7 @@ footer .author__logo {
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
-    max-width: 72px
+    max-width: 72px;
 }
 
 footer .author__logo img {
@@ -539,23 +546,23 @@ footer .author__logo img {
 footer section.author {
     font-size: 16px;
     max-width: 600px;
-    margin: 1.5em auto
+    margin: 1.5em auto;
 }
 
 footer section.author ul {
     margin-top: 15px;
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 
 footer section.author ul li {
     display: inline;
     margin-top: 0;
     margin-bottom: 0;
-    line-height: 1.2em
+    line-height: 1.2em;
 }
 
 footer section.author i.fa {
-    font-size: 30px
+    font-size: 30px;
 }
 
 footer section.author .author__name {
@@ -564,7 +571,7 @@ footer section.author .author__name {
     max-width: 420px;
     width: 70%;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
 footer section.author .author__name p {
@@ -580,12 +587,12 @@ footer section.author .author__link {
 
 footer section.author .author__link ul {
     padding-left: 0;
-    text-align: center
+    text-align: center;
 }
 
 footer .ending-message {
     border-top: #eee 1px solid;
     padding: 0 40px 0 40px;
     color: #999;
-    font-size: 10px
+    font-size: 10px;
 }
