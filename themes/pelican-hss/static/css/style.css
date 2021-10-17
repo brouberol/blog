@@ -65,7 +65,7 @@
     #isso-thread .textarea,
     #isso-thread .auth-section input,
     #isso-thread .post-action input {
-        background-color: #636c70 !important;
+        background-color: var(--dark-black) !important;
         color: var(--text-color) !important;
     }
 }
