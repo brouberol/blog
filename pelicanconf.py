@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+
+import os
 from os.path import abspath, join, dirname
+
 
 AUTHOR = "Balthazar Rouberol"
 AUTHOR_TWITTER = "@brouberol"
@@ -26,7 +29,13 @@ TAG_FEED_ATOM = "feeds/tags/{slug}.rss.xml"
 DISPLAY_CATEGORIES = True
 
 PATH = "content"
-STATIC_PATHS = ["images"]
+STATIC_PATHS = ["images", "extra"]
+
+extra_files = os.listdir(abspath(join(dirname(__file__), "content", "extra")))
+EXTRA_PATH_METADATA = {
+    "extra/%s" % (filename): {"path": "%s" % (filename)} for filename in extra_files
+}
+
 THEME = abspath(join(dirname(__file__), "themes", "pelican-hss"))
 
 USER_LOGO_URL = "https://balthazar-rouberol.com/static/img/image-small.jpg"
