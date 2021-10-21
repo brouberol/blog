@@ -19,31 +19,31 @@ _<a id=lang-switcher>Click here to switch to the <span id=lang-switcher-flag>ðŸ‡
 <picture>
     <source srcset="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/dark/1.png"
     media="(prefers-color-scheme: dark)">
-    <img src="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/1.png" />
+    <img class=dark src="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/1.png" />
 </picture>
 
 <picture>
     <source srcset="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/dark/2.png"
     media="(prefers-color-scheme: dark)">
-    <img src="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/2.png" />
+    <img class=dark src="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/2.png" />
 </picture>
 
 <picture>
     <source srcset="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/dark/3.png"
     media="(prefers-color-scheme: dark)">
-    <img src="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/3.png" />
+    <img class=dark src="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/3.png" />
 </picture>
 
 <picture>
     <source srcset="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/dark/4.png"
     media="(prefers-color-scheme: dark)">
-    <img src="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/4.png" />
+    <img class=dark src="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/4.png" />
 </picture>
 
 <picture>
     <source srcset="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/dark/5.png"
     media="(prefers-color-scheme: dark)">
-    <img src="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/5.png" />
+    <img class=dark src="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/5.png" />
 </picture>
 
 <script>

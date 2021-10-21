@@ -49,7 +49,7 @@
         --hr-color: #414649;
     }
 
-    img, video {
+    img:not(.dark), video {
         /* Dim the images to avoid hurting the eyes */
         filter: brightness(.8) contrast(1.2);
     }
