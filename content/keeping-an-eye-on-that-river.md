@@ -29,7 +29,7 @@ By "chance", the first flood stopped right before the house level, and the secon
 
 I thus created Datadog monitors over the [river level](https://github.com/brouberol/infrastructure/blob/0d4fa0ca629b852e2e3cbff2d7e2ea0701135371/terraform/datadog/monitors.tf#L217-L239) and the [alert level](https://github.com/brouberol/infrastructure/blob/0d4fa0ca629b852e2e3cbff2d7e2ea0701135371/terraform/datadog/monitors.tf#L193-L215), and I hooked them to a personal [Pagerduty](https://pagerduty.com) account, using their free tier.
 
-I made sure to enable `Critical Alers for High Urgency` in the app settings, which enables Pagerduty to override my phone volume preference, to wake me up even if is is in silent mode.
+I made sure to enable `Critical Alerts for High Urgency` in the app settings, which enables Pagerduty to override my phone volume preference, to wake me up even if is is in silent mode.
 
 Now, if the dam managers decide to open the gates during the night (it has happened), I'll know.
 
