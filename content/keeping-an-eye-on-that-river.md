@@ -32,3 +32,5 @@ I thus created Datadog monitors over the [river level](https://github.com/broube
 I made sure to enable `Critical Alers for High Urgency` in the app settings, which enables Pagerduty to override my phone volume preference, to wake me up even if is is in silent mode.
 
 Now, if the dam managers decide to open the gates during the night (it has happened), I'll know.
+
+![pagerduty](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/river-monitoring/pagerduty.webp)
