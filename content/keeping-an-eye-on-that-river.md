@@ -9,9 +9,9 @@ Keywords: weather, monitoring, datadog
 
 <p style="text-align:center;font-style:italic;font-size:0.8em;">water level (m) over time</p>
 
-Last month, Ardèche experienced _very_ heavy precipitations in the span of couple of hours. As a result, the dam located upriver from me opened the floodgates (literally), which caused the Chassezac level to raise by about 6.5m in about 1.5h. My basement was completely flooded, and the water level stabilized at about a 1m from my ground floor. We had just enough time to move our belongings to the first floor. The riverside was unrecognizable, to the point where we found fish in the trees.
+Last month, Ardèche experienced _very_ heavy precipitations in the span of couple of hours. As a result, the dam located upriver from me opened the floodgates (literally), which caused the Chassezac level to raise by about 6.5m in about 1.5h. My basement was completely flooded, and the water level stabilized just about a 1m from the house ground floor. We had just enough time to move our belongings to the first floor. The riverside was unrecognizable, to the point where we found fish in the trees.
 
-3 weeks later, the same thing happened, but this time the dam manager did their job. They only let enough water to make sure everyone was safe.  
+3 weeks later, the same thing happened, but this time the dam manager did their job. They only let enough water to make the dam wasn't overrun, while keeping everyone safe downriver.
 
 What really bothered me though, is that at no point were we alerted of anything by EDF (the company managing the grid). No text, to alert, nothing.
 
