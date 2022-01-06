@@ -8,9 +8,9 @@ from pelican.readers import HTMLReader, MarkdownReader, RstReader
 from pelican.utils import pelican_open
 
 
-class JinjaContentMixin:
+class JinjaContentMixin(object):
     def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+        super(JinjaContentMixin, self).__init__(*args, **kwargs)
 
         # will look first in 'JINJA2CONTENT_TEMPLATES', by default the
         # content root path, then in the theme's templates
@@ -45,7 +45,7 @@ class JinjaContentMixin:
         with NamedTemporaryFile(delete=False) as f:
             f.write(text.encode())
             f.close()
-            content, metadata = super().read(f.name)
+            content, metadata = super(JinjaContentMixin, self).read(f.name)
             os.unlink(f.name)
             return content, metadata
 
