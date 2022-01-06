@@ -1,3 +1,4 @@
+{% from 'picture.j2' import picture_light_dark %}
 Title: To the Underdark and back
 Date: 2021-10-21
 Category: Dungeons and Dragons
@@ -16,35 +17,11 @@ Following are my session design notes, that lasted me 2 whole sessions. These we
 
 _<a id=lang-switcher>Click here to switch to the <span id=lang-switcher-flag>🇫🇷</span> version.</a>_
 
-<picture>
-    <source srcset="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/dark/1.png"
-    media="(prefers-color-scheme: dark)">
-    <img class=dark src="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/1.png" />
-</picture>
-
-<picture>
-    <source srcset="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/dark/2.png"
-    media="(prefers-color-scheme: dark)">
-    <img class=dark src="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/2.png" />
-</picture>
-
-<picture>
-    <source srcset="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/dark/3.png"
-    media="(prefers-color-scheme: dark)">
-    <img class=dark src="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/3.png" />
-</picture>
-
-<picture>
-    <source srcset="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/dark/4.png"
-    media="(prefers-color-scheme: dark)">
-    <img class=dark src="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/4.png" />
-</picture>
-
-<picture>
-    <source srcset="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/dark/5.png"
-    media="(prefers-color-scheme: dark)">
-    <img class=dark src="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/5.png" />
-</picture>
+{{ picture_light_dark("https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/1.png") }}
+{{ picture_light_dark("https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/2.png") }}
+{{ picture_light_dark("https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/3.png") }}
+{{ picture_light_dark("https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/4.png") }}
+{{ picture_light_dark("https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/5.png") }}
 
 <script>
 const langSwitcher = document.querySelector('#lang-switcher');
