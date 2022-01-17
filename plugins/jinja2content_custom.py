@@ -39,6 +39,7 @@ class JinjaContentMixin(object):
 
     def read(self, source_path):
         with pelican_open(source_path) as text:
+            ## Here is the custom part: an escape hatch for some articles
             if source_path not in self.settings["JINJA2CONTENT_IGNORE"]:
                 text = self.env.from_string(text).render()
 
