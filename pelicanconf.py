@@ -57,9 +57,13 @@ DEFAULT_PAGINATION = 10
 RELATIVE_URLS = True
 
 JINJA2CONTENT_TEMPLATES = ["../jinja"]
+_JINJA2CONTENT_IGNORE = [
+    "advent-of-code-day-3",
+    "essential-tools-p4-customizing-shell",
+]
 JINJA2CONTENT_IGNORE = [
-    abspath(join(dirname(__file__), "content", path))
-    for path in ["advent-of-code-day-3.md", "essential-tools-p4-customizing-shell.md"]
+    abspath(join(dirname(__file__), "content", path + ".md"))
+    for path in _JINJA2CONTENT_IGNORE
 ]
 
 PLUGIN_PATHS = ["pelican-plugins", "plugins"]
