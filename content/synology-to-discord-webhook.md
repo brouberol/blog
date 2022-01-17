@@ -8,7 +8,7 @@ Tags: synology, self-hosting
 Keywords: synology, discord, webhook, dsm
 
 
-Given the fact that running a Datadog agent on a Synology Play NAS is not obvious, I wanted to enable Discord webhooks push notifications (as this is where my Datadog alerts are already being sent). This way, I'd get plenty of alerts "for free" without having to configure new datadog monitors.
+Given the fact that running a Datadog agent on a Synology Play NAS is not obvious, I wanted to enable Discord webhooks push notifications (as this is where my Datadog alerts are already being sent). This way, I'd get plenty of alerts "for free" without having to configure new Datadog monitors.
 
 While sending webhooks notifications from a Synology NAS to Discord is technically possible, the DSM UI somehow seems to prevent us from doing so, as documented in this [forum thread](https://www.synoforum.com/threads/webhooks-to-post-alerts-messages-on-to-discord.6725/#post-32618). Somehow, we _have_ to include a `hello world` message in the notification, as part of the message content, without which, the UI won't allow us to save the webhook configuration.
 
