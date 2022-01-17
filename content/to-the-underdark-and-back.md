@@ -17,11 +17,11 @@ Following are my session design notes, that lasted me 2 whole sessions. These we
 
 _<a id=lang-switcher>Click here to switch to the <span id=lang-switcher-flag>🇫🇷</span> version.</a>_
 
-{{ picture_light_dark("https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/1.png") }}
-{{ picture_light_dark("https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/2.png") }}
-{{ picture_light_dark("https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/3.png") }}
-{{ picture_light_dark("https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/4.png") }}
-{{ picture_light_dark("https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/underdark/en/light/5.png") }}
+{{ picture_light_dark("underdark/en/light/1.png") }}
+{{ picture_light_dark("underdark/en/light/2.png") }}
+{{ picture_light_dark("underdark/en/light/3.png") }}
+{{ picture_light_dark("underdark/en/light/4.png") }}
+{{ picture_light_dark("underdark/en/light/5.png") }}
 
 <script>
 const langSwitcher = document.querySelector('#lang-switcher');
