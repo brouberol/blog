@@ -475,6 +475,9 @@ main article .article__text pre {
     border-style: none;
     border-radius: var(--border-radius-px);
 }
+main article .article__text pre > code {
+    color: var(--pre-color);
+}
 
 main article .article__text ul {
     padding-left: 20px;
