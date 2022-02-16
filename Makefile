@@ -5,4 +5,4 @@ serve:
 	@poetry run pelican --listen --autoreload -o output -s pelicanconf.py --debug
 
 html:
-	pelican content -o output -s pelicanconf.py
+	@poetry run pelican content -o output -s pelicanconf.py
