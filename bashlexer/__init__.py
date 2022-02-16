@@ -3,19 +3,70 @@ from pygments.token import Keyword, Token
 
 
 class ExtendedBashLexer(BashLexer):
-    name = 'extbash'
-    aliases = ['extbash', 'extzsh', 'extconsole', 'extshell']
+    name = "extbash"
+    aliases = [
+        "extbash",
+        "extzsh",
+        "extconsole",
+        "extshell",
+        "bash",
+        "shell",
+        "console",
+    ]
 
     EXTRA_BUILTINS = [
-        'alias', 'which', 'typeset', 'echo', 'cat', 'ls', 'mkdir',
-        'cp', 'mv', 'rm', 'man', 'ln', 'grep', 'less', 'awk', 'sed',
-        'cut', 'paste', 'head', 'tail', 'wc', 'sort', 'uniq', 'tr',
-        'fold', 'xargs', 'touch', 'tree', 'sudo', 'chsh', 'python',
-        'ifconfig', 'bash', 'chmod', 'vim', 'printenv'
+        "alias",
+        "which",
+        "typeset",
+        "echo",
+        "cat",
+        "ls",
+        "mkdir",
+        "cp",
+        "mv",
+        "rm",
+        "man",
+        "ln",
+        "grep",
+        "less",
+        "awk",
+        "sed",
+        "cut",
+        "paste",
+        "head",
+        "tail",
+        "wc",
+        "sort",
+        "uniq",
+        "tr",
+        "fold",
+        "xargs",
+        "touch",
+        "tree",
+        "sudo",
+        "chsh",
+        "python",
+        "ifconfig",
+        "bash",
+        "chmod",
+        "vim",
+        "printenv",
     ]
     EXTRA_KEYWORDS = [
-        '>', '<', '<<', '>>', '&', '|', '!$', '!!', '~', '~-', '~+',
-        '!^', '^', '$?'
+        ">",
+        "<",
+        "<<",
+        ">>",
+        "&",
+        "|",
+        "!$",
+        "!!",
+        "~",
+        "~-",
+        "~+",
+        "!^",
+        "^",
+        "$?",
     ]
 
     def get_tokens_unprocessed(self, text):
