@@ -70,7 +70,6 @@ class ExtendedBashLexer(BashLexer):
     ]
 
     def get_tokens_unprocessed(self, text):
-        print("it works!")
         for index, token, value in BashLexer.get_tokens_unprocessed(self, text):
             if value in self.EXTRA_KEYWORDS:
                 yield index, Keyword, value
