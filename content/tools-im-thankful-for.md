@@ -6,7 +6,6 @@ Summary: Software engineers sometimes have a reputation for being overly critica
 Image: https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcGQ0My0wMi0wMTEtZXllXzEuanBn.jpg?s=lpexiDOfvyyBvu5KHWfgqE9pBkcnyZ_xkNA4-EV9E5A
 Tags:
 Keywords: docker, raspberry-pi, python, software, kubernetes
-Status: draft
 
 
 Software engineers sometimes have a reputation of being overly critical when it comes to tools and programming languages. The web is full of rants, heated debates and articles about what technology is "better" and which is "crap". It was thus refreshing to read an post titled [_Software I'm thankful for_](https://www.jowanza.com/blog/2022/2/21/software-im-thankful-for), that shone a light on some pieces of software in a positive light. In honor of this article, I've decided to go through the same exercise.
