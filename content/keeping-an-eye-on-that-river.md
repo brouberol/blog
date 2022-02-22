@@ -17,7 +17,7 @@ What really bothered me though, is that at no point were we alerted of anything 
 
 Datadog to the rescue.
 
-Using custom scripts, I now measure the [river level](https://github.com/brouberol/infrastructure/blob/master/playbooks/roles/gallifrey/monitoring/files/monitor_rivers) at the station before and after my house. I also keep tabs on the [amount of rain](https://github.com/brouberol/infrastructure/blob/master/playbooks/roles/gallifrey/monitoring/templates/monitor_rain) measured at these stations, as well as the general alert level.
+Using custom scripts, I now measure the [river level](https://github.com/brouberol/infrastructure/blob/master/playbooks/roles/gallifrey/monitoring/templates/monitor_rivers) at the station before and after my house. I also keep tabs on the [amount of rain](https://github.com/brouberol/infrastructure/blob/master/playbooks/roles/gallifrey/monitoring/templates/monitor_rain) measured at these stations, as well as the general alert level.
 
 <a target="blank" href="https://p.datadoghq.com/sb/bc352bb82-c122f0855899cdbcc73f2ca478d6d7b6"><picture>
     <source srcset="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/river-monitoring/river-monitoring-dark.webp"
