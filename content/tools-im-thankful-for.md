@@ -13,7 +13,7 @@ Software engineers sometimes have a reputation of being overly critical when it 
 
 ## Python
 
-[Python](https://python.org) was my gateway to becoming a software engineering. It was the first programming language I _loved_, and I still do to this day.
+[Python](https://python.org) was my gateway to becoming a software engineer. It was the first programming language I _loved_, and I still do to this day.
 I wrote Python code professionally for a an AI startup, an e-ticketing startup, the Scottish government, a global hosting provider, a huge observability SaaS. I've written large Python webapps and quick Python scripts. I've written large asynchronous task workflows processing payments, trained machine learning models, written self-documented REST APIs, found my house listing by scraping the web, [monitor the level of the river close by](/river-monitoring-with-datadog), all of that in Python.
 
 I also write Python code to maintain my own [infrastructure](https://github.com/brouberol/infrastructure), that I deploy via [ansible](https://docs.ansible.com/), itself written in Python. This blog is generated via [Pelican](https://pelican.readthedocs.org), which is written in Python. I've started to play with a Raspberry Pi Pico, that I program in ... [CircuitPython](http://docs.circuitpython.org/en/latest/README.html). It's ubiquitous, and I've heard it be called "The second best tool for every job", meaning that it probably won't be the most performant tool for what you're working on, but you'll make progress really fast.
