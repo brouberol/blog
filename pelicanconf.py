@@ -29,7 +29,7 @@ TAG_FEED_ATOM = "feeds/tags/{slug}.rss.xml"
 DISPLAY_CATEGORIES = True
 
 PATH = "content"
-STATIC_PATHS = ["images", "extra"]
+STATIC_PATHS = ["extra"]
 
 extra_files = os.listdir(abspath(join(dirname(__file__), "content", "extra")))
 EXTRA_PATH_METADATA = {
