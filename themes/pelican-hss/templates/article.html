@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 
 {% block head %}
-<meta name="keywords" content="{{ article.tags | join(', ')}}{% if article.keywords %}, {{ article.keywords }}{% endif %}">
+<meta name="keywords"
+  content="{{ article.tags | join(', ')}}{% if article.keywords %}, {{ article.keywords }}{% endif %}">
 <meta name="description" content="{% if article.description %}{{ article.description }}{% else %}{{ BIO }}{% endif %}">
-<meta property="og:description" content="{% if article.description %}{{ article.description }}{% else %}{{ BIO }}{% endif %}">
+<meta property="og:description"
+  content="{% if article.description %}{{ article.description }}{% else %}{{ BIO }}{% endif %}">
 <meta property="og:title" content="{{ article.title }}" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ ABSOLUTE_SITEURL }}/{{ article.url | replace('.html', '')}}" />
@@ -18,12 +20,13 @@
 <meta name="twitter:title" content="{{ article.title }}" />
 <meta name="twitter:site" content="{{ AUTHOR_TWITTER }}" />
 <meta name="twitter:url" content="{{ ABSOLUTE_SITEURL }}/{{ article.url | replace('.html', '')}}" />
-<meta name="twitter:description" content="{% if article.description %}{{ article.description }}{% else %}{{ BIO }}{% endif %}">
+<meta name="twitter:description"
+  content="{% if article.description %}{{ article.description }}{% else %}{{ BIO }}{% endif %}">
 <meta name="twitter:creator" content="{{ AUTHOR_TWITTER }}" />
 {% if article.category %}
 <meta name="twitter:label1" value="Theme" />
 <meta name="twitter:data1" value="{{ article.category }}" />
-    {% endif %}
+{% endif %}
 {% endblock %}
 
 {% block title %}&ndash; {{ article.title }}{% endblock %}
@@ -38,11 +41,13 @@
     <p class="article__meta__post-date">{{ article.locale_date }}</p>
     <p class="article__meta__category middot">{{ macros.reading_time(article) }}</p>
     {% if DISPLAY_CATEGORIES == '' or DISPLAY_CATEGORIES %}
-    <p class="article__meta__category middot"><a href="{{ SITEURL }}/{{ article.category.url | replace('.html', '')}}">{{ article.category }}</a>
-    {% endif %}
+    <p class="article__meta__category middot"><a
+        href="{{ SITEURL }}/{{ article.category.url | replace('.html', '')}}">{{ article.category }}</a>
+      {% endif %}
       {% if article.tags %}
       {% for tag in article.tags %}
-      <a class="taglink middot" href="{{ SITEURL }}/{{ tag.url | replace('.html', '') }}">{{ tag }}</a>{% if not loop.last %} {% endif %}
+      <a class="taglink middot" href="{{ SITEURL }}/{{ tag.url | replace('.html', '') }}">{{ tag }}</a>{% if not
+      loop.last %} {% endif %}
       {% endfor %}
       {% endif %}
     </p>
@@ -59,16 +64,13 @@
 
   </div>
   {% if SHOW_SOCIAL_SHARE_BUTTON %}
-    {% include "modules/social-tools.html" %}
+  {% include "modules/social-tools.html" %}
   {% endif %}
   {% if ISSOURL %}
   <div id=comments>
     <h2>Comments</h2>
-    <script data-isso="{{ ISSOURL }}/"
-            data-isso-avatar="false"
-            data-isso-gravatar="true"
-            data-isso-require-email = "true"
-            src="{{ ISSOURL }}/js/embed.min.js"></script>
+    <script data-isso="{{ ISSOURL }}/" data-isso-avatar="false" data-isso-gravatar="true" data-isso-require-email="true"
+      src="{{ ISSOURL }}/js/embed.min.js"></script>
     <section id="isso-thread"></section>
   </div>
   {% endif %}

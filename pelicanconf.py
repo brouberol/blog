@@ -1,10 +1,9 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- #
+
 from __future__ import unicode_literals
 
 import os
 from os.path import abspath, join, dirname
-
 
 AUTHOR = "Balthazar Rouberol"
 AUTHOR_TWITTER = "@brouberol"
