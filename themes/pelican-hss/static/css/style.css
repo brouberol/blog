@@ -14,6 +14,7 @@
 }
 
 @media (prefers-color-scheme: light) {
+
     /* Light theme styles go here */
     :root {
         --background-color: #fff;
@@ -35,6 +36,7 @@
 
 
 @media (prefers-color-scheme: dark) {
+
     /* Dark theme styles go here */
     :root {
         --background-color: #313537;
@@ -49,7 +51,8 @@
         --hr-color: #414649;
     }
 
-    img:not(.dark), video {
+    img:not(.dark),
+    video {
         /* Dim the images to avoid hurting the eyes */
         filter: brightness(.8) contrast(1.2);
     }
@@ -104,7 +107,12 @@ kbd {
     white-space: nowrap;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--title-color);
     overflow-wrap: break-word;
 }
@@ -195,7 +203,7 @@ div.article__next_prev_chapters:last-child {
     margin-top: 5em;
 }
 
-div.avatar > img {
+div.avatar>img {
     border-radius: 50%;
 }
 
@@ -206,7 +214,9 @@ table {
     margin-bottom: 2em;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid #ddd;
     padding: 0.7em;
     text-align: left;
@@ -217,7 +227,8 @@ th {
 
 }
 
-th:last-child, td:last-child {
+th:last-child,
+td:last-child {
     text-align: center;
 }
 
@@ -373,11 +384,13 @@ iframe.embedly-card {
         overflow-x: hidden;
         overflow-y: hidden
     }
+
     main article {
         max-width: 900px;
         margin-left: auto;
         margin-right: auto
     }
+
     main article .article__meta {
         display: flex
     }
@@ -385,12 +398,15 @@ iframe.embedly-card {
     main article .article__meta p .article__meta__post-date {
         width: 20em
     }
+
     main header {
         border-top: 0
     }
+
     footer section.author .author__name {
         margin-left: auto
     }
+
     footer section.author .author__link {
         margin-right: auto;
         font-size: 30px
@@ -475,7 +491,8 @@ main article .article__text pre {
     border-style: none;
     border-radius: var(--border-radius-px);
 }
-main article .article__text pre > code {
+
+main article .article__text pre>code {
     color: var(--pre-color);
 }
 
