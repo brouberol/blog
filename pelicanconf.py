@@ -8,7 +8,7 @@ from os.path import abspath, join, dirname
 AUTHOR = "Balthazar Rouberol"
 AUTHOR_TWITTER = "@brouberol"
 AUTHOR_URL = "https://balthazar-rouberol.com"
-SITENAME = "Balthazar"
+SITENAME = "Balthazar - Blog"
 SITEURL = "https://blog.balthazar-rouberol.com"
 ISSOURL = "https://comments.balthazar-rouberol.com"
 ABSOLUTE_SITEURL = SITEURL
