@@ -56,7 +56,7 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-JINJA2CONTENT_TEMPLATES = ["../jinja"]
+JINJA2CONTENT_TEMPLATES = ["../jinja_macros"]  # relative to the `content` directory
 _JINJA2CONTENT_IGNORE = [
     "advent-of-code-day-3",
     "essential-tools-p4-customizing-shell",
@@ -66,7 +66,7 @@ JINJA2CONTENT_IGNORE = [
     for path in _JINJA2CONTENT_IGNORE
 ]
 
-PLUGIN_PATHS = ["pelican-plugins", "plugins"]
+PLUGIN_PATHS = ["pelican-plugins", "jinja_plugins"]
 PLUGINS = ["render_math", "jinja2content_custom"]
 
 MARKDOWN = {

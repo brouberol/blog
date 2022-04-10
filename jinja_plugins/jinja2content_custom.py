@@ -4,7 +4,7 @@ from tempfile import NamedTemporaryFile
 from jinja2 import ChoiceLoader, Environment, FileSystemLoader
 
 from pelican import signals
-from pelican.readers import HTMLReader, MarkdownReader, RstReader
+from pelican.readers import MarkdownReader
 from pelican.utils import pelican_open
 
 
@@ -46,7 +46,7 @@ class JinjaContentMixin(object):
         with NamedTemporaryFile(delete=False) as f:
             f.write(text.encode())
             f.close()
-            content, metadata = super(JinjaContentMixin, self).read(f.name)
+            content, metadata = super().read(f.name)
             os.unlink(f.name)
             return content, metadata
 
