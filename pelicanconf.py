@@ -74,6 +74,7 @@ MARKDOWN = {
         "markdown.extensions.codehilite",
         "markdown.extensions.extra",
         "markdown.extensions.meta",
+        "markdown_plugins.async_img:AsyncDecodedImgExtension",
     ],
     "extension_configs": {"markdown.extensions.codehilite": {"css_class": "highlight"}},
 }

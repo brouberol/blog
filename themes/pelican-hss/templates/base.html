@@ -84,9 +84,9 @@
   <footer>
     <div class="author__logo">
       {% if USER_LOGO_URL %}
-      <img src="{{ USER_LOGO_URL }}" alt="logo">
+      <img loading=lazy decoding=async src="{{ USER_LOGO_URL }}" alt="logo">
       {% else %}
-      <img src="{{ SITEURL }}/theme/images/logo.png" alt="logo">
+      <img loading=lazy decoding=async src="{{ SITEURL }}/theme/images/logo.png" alt="logo">
       {% endif %}
     </div>
     <section class="author">

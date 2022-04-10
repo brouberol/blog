@@ -51,7 +51,7 @@
     {{ macros.next_prev_chapter(article, articles) }}
 
     {% if article.image %}
-    <img src="{{ article.image }}" class="article__main_img"/>
+    <img src="{{ article.image }}" loading=lazy decoding=async class="article__main_img" />
     {% endif %}
     {{ article.content }}
 
