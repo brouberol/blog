@@ -33,18 +33,18 @@
 
   {% if FEED_ALL_ATOM %}
   <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate"
-    title="{{ SITENAME }} Atom" />
+    title="{{ SITENAME_FOR_READERS }} Atom" />
   {% endif %}
   {% if FEED_ALL_RSS %}
   <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate"
-    title="{{ SITENAME }} RSS" />
+    title="{{ SITENAME_FOR_READERS }} RSS" />
   {% endif %}
 
   {% block head %}
   {% endblock %}
 
   <title>
-    {{ SITENAME }}
+    {{ SITENAME_FOR_META }}
     {% block title %}{% endblock %}
   </title>
 
@@ -58,7 +58,7 @@
   <main>
     <header>
       <div class="site-name">
-        <a href="{{ SITEURL }}">{{ SITENAME }}</a>
+        <a href="{{ SITEURL }}">{{ SITENAME_FOR_READERS }}</a>
       </div>
       <p>
       <div id=archives>
