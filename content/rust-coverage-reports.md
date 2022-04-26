@@ -7,7 +7,6 @@ Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/rust-coverage/
 hide_image: True
 Tags: rust
 Keywords: github, gitub-actions, coverage, ci
-status: draft
 
 After having faced a couple of of regressions in [`bo`](https://github.com/brouberol/bo) (my personal text editor [written in Rust](/metaprocrastinating-on-writing-a-book-by-writing-a-text-editor)) in the past couple of days, I have tried to increase the number of unit tests related to the codebase sections handling navigation. I already had some unit tests, but I needed to know what lines of code were _not_ tested, to know what area of the codebase I needed to focus on.
 
