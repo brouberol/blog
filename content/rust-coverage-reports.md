@@ -1,8 +1,8 @@
 Title: Measuring the coverage of a rust program in Github Actions
 Date: 2022-04-26
 Category: programming
-Description: In this article, I will go through how I set up the measurement of my code coverage for `bo`, my text editor written in Rust, and publicly hosted the coverage reports on AWS S3.
-Summary: In this article, I will go through how I set up the measurement of my code coverage for `bo`, my text editor written in Rust, and publicly hosted the coverage reports on AWS S3.
+Description: In this article, I will go through how I set up code coverage measurement for `bo`, my text editor written in Rust, and publicly hosted the coverage report on S3.
+Summary: In this article, I will go through how I set up code coverage measurement for `bo`, my text editor written in Rust, and publicly hosted the coverage report on S3.
 Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/rust-coverage/cov.webp
 hide_image: True
 Tags: rust
