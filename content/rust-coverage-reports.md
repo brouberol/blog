@@ -3,7 +3,7 @@ Date: 2022-04-26
 Category: programming
 Description: In this article, I will go through how I set up code coverage measurement for `bo`, my text editor written in Rust, and publicly hosted the coverage report on S3.
 Summary: In this article, I will go through how I set up code coverage measurement for `bo`, my text editor written in Rust, and publicly hosted the coverage report on S3.
-Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/rust-coverage/cov.webp
+Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/rust-coverage/cov.jpg
 hide_image: True
 Tags: rust
 Keywords: github, gitub-actions, coverage, ci
