@@ -60,6 +60,7 @@ JINJA2CONTENT_TEMPLATES = ["../jinja_macros"]  # relative to the `content` direc
 _JINJA2CONTENT_IGNORE = [
     "advent-of-code-day-3",
     "essential-tools-p4-customizing-shell",
+    "rust-coverage-reports",
 ]
 JINJA2CONTENT_IGNORE = [
     abspath(join(dirname(__file__), "content", path + ".md"))
