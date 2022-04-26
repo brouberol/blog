@@ -1,6 +1,7 @@
 Title: Solution to Advent of Code "Day 3: Spiral Memory"
 Date: 2017-12-31
 Category: Programming
+Tags: rust
 
 After an unsuccessful attempt at learning Rust earlier this year (I mainly read through the documentation without applying it in any project), I recently started to tackle the [2017 edition of Advent of Code](https://adventofcode.com/2017/), in order to practice Rust for real.
 
