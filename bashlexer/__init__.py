@@ -51,6 +51,7 @@ class ExtendedBashLexer(BashLexer):
         "chmod",
         "vim",
         "printenv",
+        "open",
     ]
     EXTRA_KEYWORDS = [
         ">",
