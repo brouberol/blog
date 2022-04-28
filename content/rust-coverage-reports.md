@@ -51,6 +51,10 @@ resource "aws_s3_bucket" "github-brouberol-coverage" {
 }
 ```
 
+<div class="Note" markdown="1">
+There are other ways to host the HTML files than S3 (such as [Github Pages](https://pages.github.com/)), and you do _not_ have you terraform to do it, but I so happen to have a [terraform codebase](https://github.com/brouberol/infrastructure/tree/master/terraform) for my personal infrastructure, which made it a no-brainer. If you decide do host the files another way, feel free to jump <a href="#github-secrets">ahead</a>.
+</div>
+
 I then created an AWS user, associated with an AWS access_key/secret_key pair and the following IAM policy, granting that user read/write permissions on that S3 bucket, and nothing else.
 
 ```json
@@ -76,7 +80,7 @@ I then created an AWS user, associated with an AWS access_key/secret_key pair an
     ]
 }
 ```
-
+<div id="github-secrets"></div>
 I then had to store the bucket name, keypair and AWS region name as encrypted secrets in the `bo` [repository](https://github.com/brouberol/bo), by going to `Settings > Secrets > Actions > New repository secret`.
 
 ![Secrets](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/rust-coverage/secrets.webp)
