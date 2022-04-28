@@ -347,6 +347,7 @@
         --meta-text-color: #666666;
         --title-color: #000;
         --note-background-color: #f8ffff;
+        --warning-background-color: #fffaf3;
         --code-color: #8B0000;
         --pre-color: #f8f8f2;
         --current-page-background-color: #ddd;
@@ -369,6 +370,7 @@
         --meta-text-color: #c5c3c3;
         --title-color: rgb(228, 226, 226);
         --note-background-color: #292928;
+        --note-background-color: var(--note-background-color);
         --code-color: #eb9696;
         --pre-color: var(--text-color);
         --current-page-background-color: var(--note-background-color);
@@ -480,10 +482,10 @@ div.box__next_chapter {
 div.Warning {
     padding: 15px;
     padding-bottom: 0;
-    border: 1px solid #f36868;
+    border: 1px solid #cc8451;
     border-left-width: 4px;
     margin-bottom: 1em;
-    background: var(--note-background-color);
+    background: var(--warning-background-color);
     border-radius: var(--border-radius-px);
 }
 
