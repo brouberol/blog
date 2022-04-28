@@ -1,3 +1,4 @@
+{% from 'note.j2' import note %}
 Title: Running the Port Nyanzaru Dinosaur Race
 Date: 2021-04-10
 Category: Dungeons and Dragons
@@ -59,3 +60,5 @@ Here are the loot boxes that I came up with.
 Each player had to pay 20 gold to enter the race. The first finisher gets 100 gold, the second one gets 50 gold and the third one gets 20 gold. The players are obviously free to bet on anything they like, and the DM is responsible for giving them appropriate odds.
 
 I hope these rules will help you run a fun race, or at least give you ideas to create your own set of rules! Feel free to tell me what worked and what didn't if you ran with these!
+
+{{ note("For those of you using Foundry, Steve Vlaminck has created a [plugin](https://gitlab.com/mikedave/foundryvtt-macros/-/tree/master/dino-racing) implementing those very rules!") }}
