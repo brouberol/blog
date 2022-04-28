@@ -346,7 +346,7 @@
         --text-color: #313537;
         --meta-text-color: #666666;
         --title-color: #000;
-        --note-background-color: #fefdf6;
+        --note-background-color: #f8ffff;
         --code-color: #8B0000;
         --pre-color: #f8f8f2;
         --current-page-background-color: #ddd;
@@ -445,7 +445,7 @@ h6 {
 div.Note {
     padding: 15px;
     padding-bottom: 0;
-    border: 1px solid #f3dd68;
+    border: 1px solid #a9d5de;
     border-left-width: 4px;
     margin-bottom: 1em;
     background: var(--note-background-color);
