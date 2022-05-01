@@ -87,6 +87,18 @@ I then had to store the bucket name, keypair and AWS region name as encrypted se
 
 Once that was all set up, the project CI (Github Actions) needed to perform the [following actions](https://github.com/brouberol/bo/blob/main/.github/workflows/tests.yml#L28-L77):
 
+- Checking out the project and setting up a nightly rust toolchain
+
+```yaml
+- uses: actions/checkout@v2
+- name: Setup toolchain
+  uses: actions-rs/toolchain@v1
+  with:
+    toolchain: nightly
+    override: true
+    profile: minimal
+```
+
 - running the unit tests with profiling and coverage collection enabled
 
 ```yaml
