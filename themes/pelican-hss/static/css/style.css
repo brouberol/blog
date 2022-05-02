@@ -1,11 +1,13 @@
 @font-face {
     font-family: 'Merriweather';
     src: url('../webfonts/Merriweather-Light.ttf');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Cascadia';
     src: url('../webfonts/Cascadia.ttf');
+    font-display: swap;
 }
 
 .highlight pre .hll {
