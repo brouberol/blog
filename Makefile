@@ -1,5 +1,4 @@
-.DEFAULT_GOALi := serve
-.PHONY := serve
+.PHONY := serve html
 
 serve:
 	@poetry run pelican --listen --autoreload -o output -s pelicanconf.py --debug
