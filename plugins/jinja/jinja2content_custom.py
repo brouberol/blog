@@ -1,3 +1,10 @@
+"""
+This is a copy of https://github.com/getpelican/pelican-plugins/blob/master/jinja2content/jinja2content.py
+adding the ability of excluding some files from being processed, via the JINJA2CONTENT_IGNORE
+global list.
+
+"""
+
 import os
 from tempfile import NamedTemporaryFile
 

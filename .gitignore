@@ -2,7 +2,7 @@
 cache/
 output/
 *.pid
-pelican-plugins/
+plugins/pelican
 __pycache__
 .DS_Store
 .vscode

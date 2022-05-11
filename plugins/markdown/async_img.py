@@ -1,3 +1,9 @@
+"""
+This markdown plugin is in charge of injecting the decoding=async and loading=lazy
+attributes on all img nodes.
+
+"""
+
 from markdown.inlinepatterns import ImageInlineProcessor, IMAGE_LINK_RE
 from markdown.extensions import Extension
 

@@ -1,4 +1,10 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
+
+"""
+This script is in charge of taking a markdown file from the essential-tools repo and
+massaging it into a markdown file ready for blog publication.
+
+"""
 
 import sys
 import re
