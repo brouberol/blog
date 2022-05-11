@@ -106,7 +106,7 @@ def main():
         for image in images:
             logging.info(f"Processing {image}")
             original_size = round(
-                Path(image).expanduser().absolute().lstat().st_size / (1000 ** 2), 1
+                Path(image).expanduser().absolute().lstat().st_size / (1000**2), 1
             )
             converted_image_filepath = convert_to_image_format(
                 image, args.output_format, temp_dir
@@ -114,7 +114,7 @@ def main():
             resize_image(converted_image_filepath, args.output_width_px)
             new_size = round(
                 Path(converted_image_filepath).expanduser().absolute().lstat().st_size
-                / (1000 ** 2),
+                / (1000**2),
                 1,
             )
 
