@@ -3,7 +3,7 @@ Date: 2021-11-02
 Category: monitoring
 Description: How I used my day-to-way tools to setup reliable monitoring on the river I live close by.
 Summary: Last month, Ardèche experienced _very_ heavy precipitations in the span of couple of hours. As a result, the dam located upriver from me opened the floodgates (literally), which caused the Chassezac level to raise by about 6.5m in about 1.5h. I've setup some monitoring using Datadog and Pagerduty to make sure I know about it as soon as possible.
-Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/river-monitoring/gravieres.webp
+Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/river-monitoring/gravieres.jpg
 Tags: datadog
 Keywords: weather, monitoring, datadog
 
