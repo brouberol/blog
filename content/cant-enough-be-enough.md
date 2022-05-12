@@ -17,7 +17,7 @@ About 2.5 years after I was hired, Datadog became a publicly traded company.
 In this article, I will explain the impact this had on me, both financially and psychologically, as transparently that I can. The intention is to examine how such an event can change one's life, positively and not, and give you some return of experience on the choices that I made.
 
 
-{{ note("This is a weird and personal article. It is about the stock market, how stock options work, psycological paralysis, burn-out and life choices. I hope some of it can be useful to you, but really, this is also something I needed to write for my own catharsis.") }}
+{{ note("This is a weird and personal article. It is about the stock market, how stock options work, psychological paralysis, burn-out and life choices. I hope some of it can be useful to you, but really, this is also something I needed to write for my own catharsis.") }}
 
 ### How it started
 
@@ -75,7 +75,7 @@ After that conversation, I started to dig into the relationship between the exer
 
 {{ warning("Everything I say here applies to my understanding of the French tax code. I am not a lawyer. Do not take this as financial advice.") }}
 
-To understand why my colleague would always exercise right after his vesting date, you first need to understand how stocks are taxed. The way this works in France is pretty similar to the way the IRS does it in the US. If you live in Cyprus, Paraguay or any other tax heaven, you don't pay any tax on stocks, which is good for you and sad for your hospitals and roads.
+To understand why my colleague would always exercise right after his vesting date, you first need to understand how stocks are taxed. The way this works in France is pretty similar to the way the IRS does it in the US. If you live in Cyprus, Paraguay or any other tax haven, you don't pay any tax on stocks, which is good for you and sad for your hospitals and roads.
 
 There are 2 things to consider:
 
