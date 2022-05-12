@@ -116,7 +116,7 @@ Here are a couple of things I learned in the last years, that were paramount in 
 
 ### The money that <strike>could buy</strike> bought me a house
 
-In 2020, we were collectively struck by The Great Plague, and everybody was stuck inside. At that point, I realized that I a golden opportunity of being able to buy a house in the area that my fiancee and I dreamt of living in, instead of being boxed in a small flat.
+In 2020, we were collectively struck by The Great Plague, and everybody was stuck inside. At that point, I realized that I had golden opportunity of being able to buy a house in the area that my fiancee and I dreamt of living in, instead of being boxed in a small flat.
 
 And what happened then was... nothing. I was looking at other tech-company stocks that were benefiting from the lockdown, such as Zoom, Docusign, Shopify, etc, and they were miles ahead of where Datadog was. All I had to do was wait! (_rubs hands_).
 
@@ -126,13 +126,13 @@ This is when my fiancee kind lost it with my shenanigans, and told me that we co
 
 she told me.
 
-At that point, I knew that however high the stock price was, I was going to be too paralyzed to do anything else than looking at monkey money numbers. And so I estimated how much cash I'd need to cover the house as well as the acquisition and profit taxes, kept a healthy margin (remember the thing about me not being a fiscal advisor?), and sold about 60% of my total stocks at $66.6 (hell yeah).
+At that point, I knew that however high the stock price was, I was going to be too paralyzed to do anything else than looking at monkey money numbers anyway. And so I estimated how much cash I'd need to cover the house as well as the acquisition and profit taxes, kept a healthy margin (remember the thing about me not being a fiscal advisor?), and sold about 60% of my total stocks at $66.6 (hell yeah).
 
-And just like that, I made enough to afford our dream, and pay the taxes on it.
+And just like that, I had enough to afford our dream, and pay the taxes on it.
 
 ![the house of our dreams](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/cant-enough-be-enough/house.webp "The house of our dreams")
 
-"Now, what about the remaining 40%?" an astute reader might ask? Well, that I could afford to lose, and didn't have any specific plan in mind for. They are still in the market, and are worth a pretty hefty sum of money. I didn't feel like I needed to convert them into cash for anything. If their value rises, good, if not, it might rise again, who knows?
+"Now, what about the remaining 40%?" an astute reader might ask? Well, _that_ I could afford to lose, and didn't have any specific plan in mind for. They are still in the market, and are worth a pretty hefty sum of money. I didn't feel like I needed to convert them into cash for anything. If their value rises, good, if not, it might rise again, who knows?
 
 And with that, I was done. Or so I thought.
 
@@ -148,14 +148,14 @@ Where things started to get really tricky psychologically for me, is when 2 even
 - I started to feel the symptoms of a burn-out, as I was working pretty hard, and had to deal with renovation work in the house, organizing our wedding (which was lovely, thank you very much), and various other fun things
 - For various reasons that I won't go into, I was given 2 more RSU grants, on overlapping vesting calendars
 
-After 5 years, I was at a crossroads. The more I went on, the more I felt I needed to slow down. Years of exponential growth and on-call were taking on my mental health. I was constantly stressed out and on edge. I did not sleep well, was taking on weight and was overall losing interest in my work.
+After 5 years, I was at a crossroads. The more I went on, the more I felt I needed to slow down. Years of exponential growth and on-call were taxing on my mental health. I was constantly stressed out and on edge. I did not sleep well, was taking on weight and was overall losing interest in my work.
 
 As I saw it my two options were:
 
 - I could stay and get more stocks, make more money, and continue working (with great and talented people!) in an ever-exponentially growing company that was promising me a promotion to Engineering Manager (which itself probably meant more stocks, less personal time and more stress), or
 - I could decide to quit, rest, slow down and do something else.
 
-As I was slowly coming to the realization that option 2 was the one for me, came a nasty thought. Was there a point in the near future where I'd vest a substantial amount of RSUs, after which I could then quit? The answer was yes, about 10 months from then. And thus I tried to stick around, feeling more and more depressed and disengaged, all that in the prospect of vesting stocks amounting to about $150,000.
+As I was slowly coming to the realization that option 2 was the one for me, came an extremely toxic thought. Was there a point in the near future where I'd vest a substantial amount of RSUs, after which I could then quit? The answer was yes, about 10 months from then. And thus I tried to stick around, feeling more and more depressed and disengaged, all that in the prospect of vesting stocks amounting to about $150,000.
 
 Don't get me wrong, this is a _substantial_ amount of money, that most people aren't privileged enough to dream about. Except that I didn't need it really. I was already living where I wanted, with my wife that I love with all my heart. This _was_ the endgame. I quickly realized that I was putting my mental health in harms way just because I didn't want to feel like I was checking out of the table and leaving money on it. Money that I didn't really need in the first place, thanks to my remaining 40%.
 
