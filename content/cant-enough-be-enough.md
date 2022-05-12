@@ -52,7 +52,7 @@ By staying at Datadog, I had the opportunity to regularly wire my employer money
 
 ### strike price = f(risk)
 
-The central notion here is risk. If you join a startup in its infancy, the probability of you turning a profit on your stock options is infinitesimal. To counteract the odds, you will probably get a very low strike price and many stocks, whereas if you join a company on the verge of going through its <abbr title='Initial Public Offering. Understand "woohoo I am on the stock market now".'>IPO</abbr>, you will probably be given less stocks at a much higher strike price. The reason is simple: companies want to reward employees who took the risk of buying in early.
+The central notion here is risk. If you join a startup in its infancy, the probability of you turning a profit on your stock options is infinitesimal. To counteract the odds, you will probably get a very low strike price and many stocks, whereas if you join a company on the verge of going through its <abbr title='Initial Public Offering. Understand "woohoo I am on the stock market now".'>IPO</abbr>, you probably will be given less stocks at a much higher strike price. The reason is simple: companies want to reward employees who took the risk of buying in early.
 
 In my case, I joined Datadog when the probability of an IPO was still very low, which was reflected in my strike price.
 
@@ -141,7 +141,7 @@ And with that, I was done. Or so I thought.
 
 Do you know what happened at the end of my 4 year vesting period? Here's what I thought was going to happen: nothing. However, what really happened was an impromptu conversation with my Director, telling me that Datadog was giving me a _refresher_, in the form of a 4 year vesting with a one-year cliff calendar for about 2000 <abbr title="Restricted Stock Unit">RSU</abbr>.
 
-Aaand, back to financial minutiae just for a bit. RSU are "free stocks" the company gives you. You don't have to buy them (compared to stock options). So you get new stocks just by staying around and doing your job. As they are way less risky than stock options, because the company has already IPO-ed, you also get less of them.
+Aaand, back to financial minutiae just for a bit. RSU are "free stocks" the company gives you. You don't have to buy them (contrary to stock options). So you get new stocks just by staying around and doing your job. As they are way less risky than stock options, because the company has already IPO-ed, you also get less of them.
 
 Where things started to get really tricky psychologically for me, is when 2 events coincided:
 
