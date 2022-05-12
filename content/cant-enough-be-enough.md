@@ -62,7 +62,7 @@ In my case, I joined Datadog when the probability of an IPO was still very low, 
 Fast forward 2 years. There are now more and more internal rumors about a potential upcoming IPO. These rumors culminate into the subject being publicly discussed in an all-hands. We are told that we are indeed going through the IPO filing process, which could take many more months before it comes through, _if it does_. One point is hammered in: nothing is sure at that point. Everything could still fail.
 
 Immediately after the announcement, a seemingly never-ending stream of questions are being raised by employees. What strikes me is every question asked by one of our American colleagues seem well-informed. Many of them seem to have gone through an IPO before, and even those who have not seem to understand how these things work.
-The same cannot be said for my French colleagues and myself. We are collectively clueless. At that point, I hadn't even exercised a single stock option, as I was still fearful to commit thousands of euros in what could be a pipe dream.
+The same cannot be said for my French colleagues and myself. We are collectively clueless. At that point, I hadn't even exercised a single stock option, as I was still fearful of committing thousands of euros in what could be a pipe dream.
 
 I decide to ask one of my American teammates for advice. When I tell him that I still haven't exercised anything, he pauses for a second, and then proceeds to tell me the following.
 
@@ -107,7 +107,7 @@ Let's pause for a second, and imagine yourself sitting at a casino table. You're
 
 And that, dear reader, is why I think the casino pretty much always wins.
 
-Here are a couple of things I learned in the last years, that were paramount in fighting off that psycological paralysis:
+Here are a couple of things I learned in the last years, that were paramount in fighting off that psychological paralysis:
 
 - The money you have invested on the market is not real money. It's worth nothing until you sell.
 - Never put money in the market you can't afford to lose.
