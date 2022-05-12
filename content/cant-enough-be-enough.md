@@ -89,7 +89,7 @@ To understand how this works, let's take an example. Say my strike price is set 
 
 This means that the sooner I exercise, the smaller the difference between the exercise and strike price should be, meaning the smaller my acquisition tax will be in the end (following the hypothesis that the stock price does nothing but grow, which was true for us for a while).
 
-{{ note("In the case of a stock option related to a stock that is _not_ publicly traded yet (pre-IPO), the \"regular market price\" considered when calculating the acquisition tax is set to the stock <abbr title='Fair Market Value'>FMV</abbr>. The FVM is a theoretical price the stock _would_ have, according to some independent third party appraiser, that is regularly updated.") }}
+{{ note("In the case of a stock option related to a stock that is _not_ publicly traded yet (pre-IPO), the \"regular market price\" considered when calculating the acquisition tax is set to the stock <abbr title='Fair Market Value'>FMV</abbr>. The FMV is a theoretical price the stock _would_ have, according to some independent third party appraiser, that is regularly updated.") }}
 
 In our case, the FMV was updated every quarter and did nothing but go up until the actual IPO. The initial reasoning stood: the earlier my coworker exercised, the less acquisition tax he ended up paying.
 
