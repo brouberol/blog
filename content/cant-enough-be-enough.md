@@ -159,7 +159,7 @@ As I saw it, my two options were:
 
 As I was slowly coming to the realization that option 2 was the one for me, came an extremely toxic thought. Was there a point in the near future where I'd vest a substantial amount of RSUs, after which I could then quit? The answer was yes, about 10 months from then. And thus I tried to stick around, feeling more and more depressed and disengaged, all that in the prospect of vesting stocks amounting to about $150,000.
 
-Don't get me wrong, this is a _substantial_ amount of money, that most people aren't privileged enough to dream about. Except that I didn't need it really. I was already living where I wanted, with my wife that I love with all my heart. This _was_ the endgame. I quickly realized that I was putting my mental health in harm's way just because I didn't want to feel like I was checking out of the table and leaving money on it. Money that I didn't really need in the first place, thanks to my remaining 40%.
+Don't get me wrong, this is a _substantial_ amount of money, that most people aren't privileged enough to dream about. Except that I didn't need it really. I was already living where I wanted, with my wife that I loved with all my heart. This _was_ the endgame. I quickly realized that I was putting my mental health in harm's way just because I didn't want to feel like I was checking out of the table and leaving money on it. Money that I didn't really need in the first place, thanks to my remaining 40%.
 
 Realizing how unhealthy that line of thinking was, I settled on option #2, negotiated a 2-month leaving period (the legal one in France is 3 months), after which I said good-bye to all the wonderful people I had been lucky to work with for years.
 
