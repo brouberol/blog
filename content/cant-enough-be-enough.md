@@ -23,9 +23,9 @@ In this article, I will explain the impact this had on me, both financially and 
 
 When I joined, back in 2017, the first thing I had to do was choose between 3 compensation packages:
 
-- higher salary and lower stocks (36000 stock options)
-- medium salary and medium stocks (48000 stock options)
-- lower salary and higher stocks (60000 stock options)
+- higher salary and lower equity (36000 stock options)
+- medium salary and medium equity (48000 stock options)
+- lower salary and higher equity (60000 stock options)
 
 I chose the first one, as I didn't _really_ understand what stock options were. I held the financial world pretty much in contempt, and chose what I could understand: actual money in my bank account at the end of the month. I felt that there was about a 0% chance these stock options would be worth anything anyway, so choosing the highest salary was the safest move I could make.
 
