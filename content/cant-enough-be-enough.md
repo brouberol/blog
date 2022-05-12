@@ -155,7 +155,7 @@ As I saw it, my two options were:
 - I could stay and get more stocks, make more money, and continue working (with great and talented people!) in an ever-exponentially growing company that was promising me a promotion to Engineering Manager (which itself probably meant more stocks, less personal time and more stress), or
 - I could decide to quit, rest, slow down and do something else.
 
-{{ note("I just want to be clear there. There were other options, such as going back to an IC role, that I discussed with my manager. I don't want to come across as passively dissing on him. He truly was an incredible manager. But in the end, these were the 2 extreme options.") }}
+{{ note("I just want to be clear there. There were other options, such as going back to an IC role, that I discussed with my manager. I don't want to come across as passively dissing him. He truly was an incredible manager. But in the end, these were the 2 extreme options.") }}
 
 As I was slowly coming to the realization that option 2 was the one for me, came an extremely toxic thought. Was there a point in the near future where I'd vest a substantial amount of RSUs, after which I could then quit? The answer was yes, about 10 months from then. And thus I tried to stick around, feeling more and more depressed and disengaged, all that in the prospect of vesting stocks amounting to about $150,000.
 
