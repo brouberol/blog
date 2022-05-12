@@ -161,7 +161,7 @@ As I was slowly coming to the realization that option 2 was the one for me, came
 
 Don't get me wrong, this is a _substantial_ amount of money, that most people aren't privileged enough to dream about. Except that I didn't need it really. I was already living where I wanted, with my wife that I love with all my heart. This _was_ the endgame. I quickly realized that I was putting my mental health in harms way just because I didn't want to feel like I was checking out of the table and leaving money on it. Money that I didn't really need in the first place, thanks to my remaining 40%.
 
-Realizing how unhealthy that line of thinking was, I settled on option #2, negotiated a 2-month leaving period (the legal one in France is 3 months), after which I said good-bye to all the wonderful people I was lucky to work with for years.
+Realizing how unhealthy that line of thinking was, I settled on option #2, negotiated a 2-month leaving period (the legal one in France is 3 months), after which I said good-bye to all the wonderful people I had been lucky to work with for years.
 
 On my last day, my "Potential Benefit Value" in etrade was at about $1.2M. I left it all on the table.
 
