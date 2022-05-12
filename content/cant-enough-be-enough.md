@@ -11,7 +11,7 @@ Keywords: stock-market, stocks, ipo, datadog, ddog, addiction
 status: draft
 ---
 
-I left Datadog 2 weeks ago, after 5 intense, yet extremely enjoyable years. When I joined, we were about 300 people strong, whereas the current headcount is now approaching 4000. If you have never experienced exponential growth, this is about as close as you can get to it! This means that we were close to doubling in size each year, whether in headcount, infrastructure size, number of teams, and complexity.
+I left Datadog 2 weeks ago, after 5 intense and incredible years. When I joined, we were about 300 people strong, whereas the current headcount is now approaching 4000. If you have never experienced exponential growth, this is about as close as you can get to it! This means that we were close to doubling in size each year, whether in headcount, infrastructure size, number of teams, and complexity.
 
 About 2.5 years after I was hired, Datadog became a publicly traded company.
 
