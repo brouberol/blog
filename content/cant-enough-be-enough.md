@@ -103,11 +103,11 @@ The IPO went really well. `DDOG` went from $27 to about $42 in a single day, and
 
 I can't overstate how much of a bad idea this is. Having the feeling of "winning" or "losing" multiple times a day is addictive. The whole thing felt like a game, and I started to check my "Potential Benefit Value" in etrade several times a month. The numbers were in the 7 digits, and felt unreal.
 
-Let's pause for a second, and imagine yourself sitting at a casino table. You're on a strong start, the odds are in your favor, and your chip pile grows pretty fast. Now, until you cash out, these chips are monkey money. They are worth _nothing_, and are only worth something if you take the decision to take them out of the table. You've won most of your games, so every time you lose one, you convince yourself to stay at the table to try and wait until to at least get back your losses. But then you lose some more, but hey, you should not back out now, when you were winning so high not too long ago. On and on, in a loop. And so you stay at the table.
+Let's pause for a second, and imagine yourself sitting at a casino table. You're on a strong start, the odds are in your favor, and your chip pile grows pretty fast. Now, until you cash out, these chips are monkey money. They are worth _nothing_, and are only worth something if you take the decision to take them out of the table. You've won most of your games, so every time you lose one, you convince yourself to stay at the table to try and wait until to at least get back your losses. But then you lose some more, but hey, you should not back out now when you were winning so high not too long ago. On and on, in a loop. And so you stay at the table.
 
 And that, dear reader, is why I think the casino pretty much always wins.
 
-Here are a couple of things I learned in the last years, that were paramount in fighting off that dreadful paralysis:
+Here are a couple of things I learned in the last years, that were paramount in fighting off that psycological paralysis:
 
 - The money you have invested on the market is not real money. It's worth nothing until you sell.
 - Never put money in the market you can't afford to lose.
