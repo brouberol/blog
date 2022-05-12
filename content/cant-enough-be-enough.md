@@ -34,7 +34,7 @@ I chose the first one, as I didn't _really_ understand what stock options were. 
 
 Finance is fraught with lingo. Yes, possibly even more than technology. So before diving into how the stock market affected my psyche, let's try to define a couple of terms.
 
-A _stock_ is a financial instrument that represents the ownership of a fraction of a corporation. These shares are bought and sold on _stock exchanges_ (e.g. Nasdaq, Euronext, etc). For example, should I want to, I could currently buy a share of Amazon.com Inc. (referenced as `AMZN` on the market) for 2,107.44 USD on the Nasdaq, which would make me a (tiny) shareholder of Amazon.
+A _stock_ is a financial instrument representing the ownership of a fraction of a corporation. These shares are bought and sold on _stock exchanges_ (e.g. Nasdaq, Euronext, etc). For example, should I want to, I could currently buy a share of Amazon.com Inc. (referenced as `AMZN` on the market) for 2,107.44 USD on the Nasdaq, which would make me a (tiny) shareholder of Amazon.
 
 There are multiple reasons why one should want to hold stocks: either the stocks they own give them voting rights at the company annual meetings, allowing them to influence how the company is managed, or maybe they hope to make a profit by selling at a higher price than the one they bought the stock at.
 
@@ -52,30 +52,30 @@ By staying at Datadog, I had the opportunity to regularly wire my employer money
 
 ### strike price = f(risk)
 
-The central notion here is risk. If you join a startup in its infancy, the probability of you turning a profit on your stock options are infinitesimal. To counteract the odds, you will probably get a very low strike price and many stocks, whereas if you join a company on the verge of going through its <abbr title='Initial Public Offering. Understand "woohoo I am on the stock market now".'>IPO</abbr>, you will be given a less stocks at a much higher strike price. The reason is simple: companies want to reward employees who took the risk of buying in early.
+The central notion here is risk. If you join a startup in its infancy, the probability of you turning a profit on your stock options are infinitesimal. To counteract the odds, you will probably get a very low strike price and many stocks, whereas if you join a company on the verge of going through its <abbr title='Initial Public Offering. Understand "woohoo I am on the stock market now".'>IPO</abbr>, you probably will be given less stocks at a much higher strike price. The reason is simple: companies want to reward employees who took the risk of buying in early.
 
 In my case, I joined Datadog when the probability of an IPO was still very low, which reflected in my strike price.
 
 
 ### What will buy you bread vs what might buy you a house
 
-Fast forward 2 years. There are now more and more internal rumors about a potential upcoming IPO. These rumors culminate into the subject being publicly discussed in an all-hands. We are told that we are indeed going through the IPO filing process, which could take many more months before it happens, _if it happens_. One point is hammered in: nothing is sure at that point. Everything could still fail.
+Fast forward 2 years. There are now more and more internal rumors about a potential upcoming IPO. These rumors culminate into the subject being publicly discussed in an all-hands. We are told that we are indeed going through the IPO filing process, which could take many more months before it comes through, _if it does_. One point is hammered in: nothing is sure at that point. Everything could still fail.
 
 Immediately after the announcement, a seemingly never-ending stream of questions are being raised by employees. What strikes me is every question asked by one of our American colleagues seem well-informed. Many of them seem to have gone through an IPO before, and even those who have not seem to understand how these things work.
-The same cannot be said for my French colleagues and myself. We are collectively clueless. At that point, I hadn't even exercised a single stock option, as I was still fearful to commit thousands of Euro in what could be a pipe dream.
+The same cannot be said for my French colleagues and myself. We are collectively clueless. At that point, I hadn't even exercised a single stock option, as I was still fearful to commit thousands of euros in what could be a pipe dream.
 
 I decide to ask one of my American teammates for advice. When I tell him that I still haven't exercised anything, he pauses for a second, and then proceeds to tell me the following.
 
 > Look. I'm not going to tell you what to do, but here's what **I** do. Every time I vest, I exercise immediately after. Every time. My salary is what buys me bread. My stocks are what **might** buy me a house.
 
-After that conversation, I started to dig into the relationship between the exercise date and taxes, and proceeded to exercise everything that I had vested until then when things became clearer.
+After that conversation, I started to dig into the relationship between the exercise date and taxes, and proceeded to exercise everything that I had vested until then once things became clearer.
 
 
 ### Hey Mr Taxman
 
 {{ warning("Everything I say here applies to my understanding of the French tax code. I am not a lawyer. Do not read this as financial advice.") }}
 
-To understand why my colleague would always exercise right after his vesting date, you first need to understand about how stocks are being taxed. The way stock options are being taxed in France is pretty similar to the way the IRS does it in the US. If you live in Cyprus, Paraguay or any other tax heaven, you don't pay any tax on stocks, which is good for you and sad for your hospitals and roads.
+To understand why my colleague would always exercise right after his vesting date, you first need to understand about how stocks are taxed. The way this works in France is pretty similar to the way the IRS does it in the US. If you live in Cyprus, Paraguay or any other tax heaven, you don't pay any tax on stocks, which is good for you and sad for your hospitals and roads.
 
 There are 2 things to consider:
 
@@ -87,13 +87,13 @@ To understand how this works, let's take an example. Say my strike price is set 
 - I will pay acquisition taxes on the $9 difference between the regular market price and the strike price
 - I will pay profit taxes on the $30 difference between the sell price and the regular market price at the time of the purchase
 
-This means that the sooner I exercise, the smaller the difference between the exercise and strike price should be, meaning the smaller my acquisition tax will be in the end.
+This means that the sooner I exercise, the smaller the difference between the exercise and strike price should be, meaning the smaller my acquisition tax will be in the end (following the hypothesis that the stock price does nothing but grow, which was true for us for a while).
 
-{{ note("In the case of a stock option related to a stock that is _not_ publicly traded yet (pre-IPO), the \"regular market price\" considered when calculating the acquisition tax is set to the stock <abbr title='Fair Market Value'>FVM</abbr>. The FVM is a theoretical price the stock _would_ have, according to some independent third party appraiser, that is regularly updated.") }}
+{{ note("In the case of a stock option related to a stock that is _not_ publicly traded yet (pre-IPO), the \"regular market price\" considered when calculating the acquisition tax is set to the stock <abbr title='Fair Market Value'>FMV</abbr>. The FVM is a theoretical price the stock _would_ have, according to some independent third party appraiser, that is regularly updated.") }}
 
-In our case, the FVM was updated every quarter and did nothing but go up until the actual IPO. The initial reasoning stood: the earlier my coworker exercised, the less acquisition tax he ended up paying.
+In our case, the FMV was updated every quarter and did nothing but go up until the actual IPO. The initial reasoning stood: the earlier my coworker exercised, the less acquisition tax he ended up paying.
 
-At that point, the FVM was at about $9 and I decided to follow his advice.
+At that point, the FMV was at about $9 and I decided to follow his advice.
 
 ### Liftoff
 
