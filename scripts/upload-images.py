@@ -120,6 +120,9 @@ def main():
 
             logging.info(f"Size reduced from {original_size}MB to {new_size}MB")
             upload_image_to_s3(converted_image_filepath, args.s3_folder)
+            logging.info(
+                f"Image url: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/{args.s3_folder}/{converted_image_filepath.name}"
+            )
 
 
 if __name__ == "__main__":
