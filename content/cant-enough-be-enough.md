@@ -164,4 +164,4 @@ Realizing how unhealthy that line of thinking was, I settled on option #2, negot
 
 On my last day, my "Potential Benefit Value" in etrade was at about $1.2M. I left it all on the table.
 
-And you know what? I'm happy. I'm living my dream.
+And you know what? I'm happy. Enough was enough.
