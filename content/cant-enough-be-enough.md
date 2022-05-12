@@ -10,11 +10,11 @@ Tags:
 Keywords: stock-market, stocks, ipo, datadog, ddog, addiction
 ---
 
-I left Datadog 2 weeks ago, after 5 intense and incredible years. When I joined, we were about 300 people strong, whereas the current headcount is now approaching 4000. If you have never experienced exponential growth, this is about as close as you can get to it! This means that we were close to doubling in size each year, whether in headcount, infrastructure size, number of teams, and complexity.
+I left Datadog 2 weeks ago, after 5 intense and incredible years. When I joined, we were about 300 people strong, whereas the current headcount is now approaching 4000. If you never have experienced exponential growth, this is about as close as you can get to it! This means that we were close to doubling in size each year, whether in headcount, infrastructure size, number of teams, and complexity.
 
 About 2.5 years after I was hired, Datadog became a publicly traded company.
 
-In this article, I will explain the impact this had on me, both financially and psychologically, as transparently that I can. The intention is to examine how such an event can change one's life, either positively or not, and give you some return of experience on the choices that I made.
+In this article, I will explain the impact this had on me, both financially and psychologically, as transparently that I can. The intention is to examine how such an event can change one's life, positively and not, and give you some return of experience on the choices that I made.
 
 
 {{ note("This is a weird and personal article. It is about the stock market, how stock options work, psycological paralysis, burn-out and life choices. I hope some of it can be useful to you, but really, this is also something I needed to write for my own catharsis.") }}
@@ -34,13 +34,13 @@ I chose the first one, as I didn't _really_ understand what stock options were. 
 
 Finance is fraught with lingo. Yes, possibly even more than technology. So before diving into how the stock market affected my psyche, let's try to define a couple of terms.
 
-A _stock_ is a financial instrument representing the ownership of a fraction of a corporation. These shares are bought and sold on _stock exchanges_ (e.g. Nasdaq, Euronext, etc). For example, should I want to, I could currently buy a share of Amazon.com Inc. (referenced as `AMZN` on the market) for 2,107.44 USD on the Nasdaq, which would make me a (tiny) shareholder of Amazon.
+A _stock_ is a financial instrument representing the ownership of a fraction of a corporation. These shares are bought and sold on _stock exchanges_ (e.g. Nasdaq, Euronext, etc). For example, should I want to, I could currently buy a share of Amazon.com Inc. (referenced as `AMZN` on the market) for 2,107.44 USD on the Nasdaq, which would make me a (tiny) shareholder of Amazon. The price of said share varies according to demand and offer, basically.
 
 There are multiple reasons why one should want to hold stocks: either the stocks they own give them voting rights at the company annual meetings, allowing them to influence how the company is managed, or maybe they hope to make a profit by selling at a higher price than the one they bought the stock at.
 
 Now, onto stock options. A stock option is the opportunity to acquire a stock at a guaranteed reduced price. That reduced price is called the _strike price_, and should be part of your employment contract. In my case, that strike price was $0.85. That meant that should I want to acquire one of these 36000 stocks, I needed to give Datadog 85 US cent.
 
-{{ note("The word _option_ really means that you _can_ decide to purchase these stocks coming with a discount, but you don't have to. You have the option to do it.") }}
+{{ note("The word _option_ really means that you _can_ decide to purchase these stocks coming with a discount, but you don't _have_ to. You have the option to do it.") }}
 
 Obviously, companies don't grant _all_ stock options to their employees immediately after hiring, because new employees could decide to stay for a couple of days, pocket all their stocks and then move on. What happened in my case (which I hear is pretty common, really) is that I unlocked (the real term is _vest_) stock options according to a _vesting calendar_. I didn't get anything for a whole year, and then I unlocked (_vested_) 25% of my stocks in one go. It's called a _one year cliff_. After that, I vested 6.25% at the end of every quarter for the remaining 3 years.
 
@@ -48,13 +48,13 @@ Once a stock option was _vested_, I could then wire money to Datadog and acquire
 
 Phew. Let's recap.
 
-By staying at Datadog, I had the opportunity to regularly wire my employer money in order to acquire stocks (i.e. to become a shareholder) at a reduced price, according to a 4 year calendar, in the hope to be able to make a profit later.
+By staying at Datadog, I had the opportunity to regularly wire my employer money in order to acquire stocks (i.e. to become a shareholder) at a reduced price, according to a 4 year calendar, in the hope of making a profit later.
 
 ### strike price = f(risk)
 
 The central notion here is risk. If you join a startup in its infancy, the probability of you turning a profit on your stock options are infinitesimal. To counteract the odds, you will probably get a very low strike price and many stocks, whereas if you join a company on the verge of going through its <abbr title='Initial Public Offering. Understand "woohoo I am on the stock market now".'>IPO</abbr>, you probably will be given less stocks at a much higher strike price. The reason is simple: companies want to reward employees who took the risk of buying in early.
 
-In my case, I joined Datadog when the probability of an IPO was still very low, which reflected in my strike price.
+In my case, I joined Datadog when the probability of an IPO was still very low, which was reflected in my strike price.
 
 
 ### What will buy you bread vs what might buy you a house
