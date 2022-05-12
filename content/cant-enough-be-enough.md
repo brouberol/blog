@@ -141,7 +141,7 @@ And with that, I was done. Or so I thought.
 
 Do you know what happened at the end of my 4 year vesting period? Here's what I thought was going to happen: nothing. However, what really happened was an impromptu conversation with my Director, telling me that Datadog was giving me a _refresher_, in the form of a 4 year vesting with a one-year cliff calendar for about 2000 <abbr title="Restricted Stock Unit">RSU</abbr>.
 
-Aaand, back to financial minutiae just for a bit. RSU are "free stocks" the company gives you. You don't have to buy them (compared to stock options). So you get new stocks just by staying around and doing your job. Because they are way less risky than stock options, because the company has already IPO-ed, you also get less of them.
+Aaand, back to financial minutiae just for a bit. RSU are "free stocks" the company gives you. You don't have to buy them (compared to stock options). So you get new stocks just by staying around and doing your job. As they are way less risky than stock options, because the company has already IPO-ed, you also get less of them.
 
 Where things started to get really tricky psychologically for me, is when 2 events coincided:
 
@@ -150,10 +150,12 @@ Where things started to get really tricky psychologically for me, is when 2 even
 
 After 5 years, I was at a crossroads. The more I went on, the more I felt I needed to slow down. Years of exponential growth and on-call were taxing on my mental health. I was constantly stressed out and on edge. I did not sleep well, was taking on weight and was overall losing interest in my work.
 
-As I saw it my two options were:
+As I saw it, my two options were:
 
 - I could stay and get more stocks, make more money, and continue working (with great and talented people!) in an ever-exponentially growing company that was promising me a promotion to Engineering Manager (which itself probably meant more stocks, less personal time and more stress), or
 - I could decide to quit, rest, slow down and do something else.
+
+{{ note("I just want to be clear there. There were other options, such as going back to an IC role, that I discussed with my manager. I don't want to come across as passively dissing on him. He truly was an incredible manager. But in the end, these were the 2 extreme options.") }}
 
 As I was slowly coming to the realization that option 2 was the one for me, came an extremely toxic thought. Was there a point in the near future where I'd vest a substantial amount of RSUs, after which I could then quit? The answer was yes, about 10 months from then. And thus I tried to stick around, feeling more and more depressed and disengaged, all that in the prospect of vesting stocks amounting to about $150,000.
 
