@@ -126,7 +126,7 @@ This is when my fiancee kind lost it with my shenanigans, and told me that we co
 
 she told me.
 
-At that point, I knew that however high the stock price was, I was going to be too paralyzed to do anything else than looking at monkey money numbers anyway. And so I estimated how much cash I'd need to cover the house as well as the acquisition and profit taxes, kept a healthy margin (remember the thing about me not being a fiscal advisor?), and sold about 60% of my total stocks at $66.6 (hell yeah).
+At that point, I knew that however high the stock price was, I was going to be too paralyzed to do anything else than looking at monkey money numbers anyway. And so I estimated how much cash I'd need to cover the house as well as the acquisition and profit taxes, kept a healthy margin in case my tax estimates were wrong (remember the thing about me not being a fiscal advisor?) and for the unescapable renovation work that would need to be done, and sold about 60% of my total stocks at $66.6 (hell yeah).
 
 And just like that, I had enough to afford our dream, pay the taxes on it, as well as supporting my close family.
 
