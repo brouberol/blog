@@ -73,7 +73,7 @@ After that conversation, I started to dig into the relationship between the exer
 
 ### Hey Mr Taxman
 
-{{ warning("Everything I say here applies to my understanding of the French tax code. I am not a lawyer. Do not read this as financial advice.") }}
+{{ warning("Everything I say here applies to my understanding of the French tax code. I am not a lawyer. Do not take this as financial advice.") }}
 
 To understand why my colleague would always exercise right after his vesting date, you first need to understand about how stocks are taxed. The way this works in France is pretty similar to the way the IRS does it in the US. If you live in Cyprus, Paraguay or any other tax heaven, you don't pay any tax on stocks, which is good for you and sad for your hospitals and roads.
 
