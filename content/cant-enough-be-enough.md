@@ -8,7 +8,6 @@ Summary: In this article, I will explain the impact the Datadog IPO and the year
 Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/cant-enough-be-enough/ddog.jpg
 Tags:
 Keywords: stock-market, stocks, ipo, datadog, ddog, addiction
-status: draft
 ---
 
 I left Datadog 2 weeks ago, after 5 intense and incredible years. When I joined, we were about 300 people strong, whereas the current headcount is now approaching 4000. If you have never experienced exponential growth, this is about as close as you can get to it! This means that we were close to doubling in size each year, whether in headcount, infrastructure size, number of teams, and complexity.
