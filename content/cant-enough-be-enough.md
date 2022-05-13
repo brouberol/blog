@@ -4,7 +4,7 @@ Title: Can't enough be enough?
 Date: 2022-05-11
 Category: personal
 Description: A walkthrough of the impact the Datadog IPO and the years that followed it had on me, both financially and psychologically. The intention is to examine how such an event can change one's life, either positively or not, and give you some return of experience on the choices that I made.
-Summary: In this article, I will explain the impact the Datadog IPO and the years that followed it had on me, both financially and psychologically, as transparently that I can. The intention is to examine how such an event can change one's life, either positively or not, and give you some return of experience on the choices that I made.
+Summary: In this article, I will explain the impact the Datadog IPO and the years that followed it had on me, both financially and psychologically, as transparently as I can. The intention is to examine how such an event can change one's life, either positively or not, and give you some return of experience on the choices that I made.
 Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/cant-enough-be-enough/ddog.jpg
 Tags:
 Keywords: stock-market, stocks, ipo, datadog, ddog, addiction
@@ -14,7 +14,7 @@ I left Datadog 2 weeks ago, after 5 intense and incredible years. When I joined,
 
 About 2.5 years after I was hired, Datadog became a publicly traded company.
 
-In this article, I will explain the impact this had on me, both financially and psychologically, as transparently that I can. The intention is to examine how such an event can change one's life, positively and not, and give you some return of experience on the choices that I made.
+In this article, I will explain the impact this had on me, both financially and psychologically, as transparently as I can. The intention is to examine how such an event can change one's life, positively and not, and give you some return of experience on the choices that I made.
 
 
 {{ note("This is a weird and personal article. It is about the stock market, how stock options work, psychological paralysis, burn-out and life choices. I hope some of it can be useful to you, but really, this is also something I needed to write for my own catharsis.") }}
