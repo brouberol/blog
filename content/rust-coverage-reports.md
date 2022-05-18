@@ -161,4 +161,4 @@ Once that was all set up, the project CI (Github Actions) needed to perform the 
     DEST_DIR: 'bo'
 ```
 
-With all of that set up, the coverage report is now [publicly available](http://github-brouberol-coverage.s3-website.eu-west-3.amazonaws.com/bo/), refreshed every time a new commit hits `main`, and I even get a coverage shield for free! ![coverage shield](https://github-brouberol-coverage.s3.eu-west-3.amazonaws.com/bo/badges/flat.svg)
+With all of that set up, the coverage report is now [publicly available](http://github-brouberol-coverage.s3-website.eu-west-3.amazonaws.com/bo/main), refreshed every time a new commit hits `main`, and I even get a coverage shield for free! ![coverage shield](https://github-brouberol-coverage.s3.eu-west-3.amazonaws.com/bo/main/badges/flat.svg)
