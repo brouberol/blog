@@ -671,40 +671,6 @@ dd {
     display: none
 }
 
-.social-tools {
-    margin-bottom: 2rem
-}
-
-.social-tools__title {
-    display: block;
-    font-size: 13px;
-    color: #999;
-    margin-top: 3rem
-}
-
-.social-tools__buttons {
-    font-size: 26px
-}
-
-.social-tools__buttons a {
-    color: #999;
-    margin: 0.4rem
-}
-
-.social-tools__buttons a:hover {
-    color: #000000
-}
-
-.adsense {
-    margin-top: 2em;
-    margin-bottom: 2em
-}
-
-iframe.embedly-card {
-    box-shadow: 5px 2.5px 2.5px 2.5px rgba(0, 0, 0, 0.4);
-    border-radius: var(--border-radius-px);
-}
-
 @media screen and (min-width: 640px) {
     main {
         width: 100%;
