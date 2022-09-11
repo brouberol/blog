@@ -143,7 +143,7 @@ Do you know what happened at the end of my 4 year vesting period? Here's what I 
 
 Aaand, back to financial minutiae just for a bit. RSU are "free stocks" the company gives you. You don't have to buy them (contrary to stock options). So you get new stocks just by staying around and doing your job. As they are way less risky than stock options, because the company has already IPO-ed, you also get less of them.
 
-Where things started to get really tricky psychologically for me, is when 2 events coincided:
+Where things started to get really psychologically tricky for me, is when 2 events coincided:
 
 - I started to feel the symptoms of a burn-out, as I was working pretty hard, and had to deal with renovation work in the house, organizing our wedding (which was lovely, thank you very much), and various other fun things
 - For various reasons that I won't go into, I was given 2 more RSU grants, on overlapping vesting calendars
