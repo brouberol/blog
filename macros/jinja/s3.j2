@@ -1,0 +1,13 @@
+{% macro s3_url(folder, filename) %}
+https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/{{ folder }}/{{ filename }}
+{% endmacro%}
+
+
+{% macro s3_img(folder, filename, alt_text) %}
+{% set url = s3_url(folder, filename) %}
+{% if alt_text %}
+![alt_text]({{ url }})
+{% else %}
+![]({{ url }})
+{% endif %}
+{% endmacro %}

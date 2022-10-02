@@ -8,7 +8,7 @@ Tags: Tomb of Annihilation
 Image: https://media.dnd.wizards.com/styles/news_banner_header/public/images/news/Underdark_Header_0.jpg
 Keywords: dnd, toa, underdark
 
-I've recently designed a 2 session long (6h) detour into the Underdark, that would feed into one of my player's character's backstory. The goal was to allow her to meet her long-disappeared father, while introducing both the players and the characters to the strange and dangerous land that is the Underdark. 
+I've recently designed a 2 session long (6h) detour into the Underdark, that would feed into one of my player's character's backstory. The goal was to allow her to meet her long-disappeared father, while introducing both the players and the characters to the strange and dangerous land that is the Underdark.
 
 The way I prepared these sessions was an interesting process. I wanted these sessions to be mostly focused on exploration and roleplay, with a single (intense) fight, as well as a puzzle. I tried to design a sandboxed environement with enough lore and backstory to make sure the players enjoy themselves and have a reason to interact with the NPCs. I wanted them to care and have the necessary space and freedom to express themselves.
 
@@ -50,7 +50,7 @@ langSwitcher.addEventListener('click', event => {
         source = pic.getElementsByTagName("source")[0];
         img = pic.getElementsByTagName("img")[0];
         source.srcset = toggleLangInUrl(source.srcset, currentLang);
-        img.src = toggleLangInUrl(img.src, currentLang) 
+        img.src = toggleLangInUrl(img.src, currentLang)
     }
     if (currentLang == "en") {
         flag.textContent = "🇬🇧";
