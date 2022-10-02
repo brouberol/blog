@@ -264,8 +264,9 @@ I have added a [configuration-based tagging system](https://github.com/brouberol
 
 ## Demo time
 
+<div class="video-container">
 <iframe width="800" height="450" src="https://www.youtube.com/embed/cdB_y9KhCgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+</div>
 ---
 
 The final iteration of that project is available [here](https://github.com/brouberol/pico-mixer/tree/main/pico) (for the keypad code) and [here](https://github.com/brouberol/pico-mixer/tree/main/pico_mixer_web) (for the webserver and webapp code).
