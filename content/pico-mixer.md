@@ -251,6 +251,7 @@ ws.addEventListener('message', event => {
         break;
     }
   }
+}
 ```
 
 ## The finishing touch
