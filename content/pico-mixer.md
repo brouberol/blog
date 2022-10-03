@@ -274,9 +274,7 @@ I have added a [configuration-based tagging system](https://github.com/brouberol
 
 ## I have the hardware! How can I run it?
 
-Windows users will find getting started instructions in the project's [README](https://github.com/brouberol/pico-mixer#getting-started-on-windows).
-
-I will write macOS and Linux instructions when I can.
+Getting started instructions are available [here](https://github.com/brouberol/pico-mixer#getting-started-on-windows) for Windows users, and [here](https://github.com/brouberol/pico-mixer#getting-started-on-macos-and-linux) for macOS and Linux users.
 
 ---
 
