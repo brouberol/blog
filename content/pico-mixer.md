@@ -1,4 +1,5 @@
 {% from 's3.j2' import s3_url %}
+{% from 'note.j2' import note %}
 ---
 Title: My DIY Dungeons and Dragons ambiance mixer
 Date: 2022-09-24
@@ -260,8 +261,11 @@ To make this app a pleasure to use, I have added a couple of features that will 
 
 I have added a [configuration-based tagging system](https://github.com/brouberol/pico-mixer/blob/main/config.json), allowing me to get reminded of the main features for each individual track (is that an ambiance or combat music? Is it dark, light, opressing, eerie, etc?). I'm also propagating the key colors to the associated volume bar, allowing me to quickly identify the key that I need to press to start/pause/adjust a given audio track.
 
+
 ![webapp](https://user-images.githubusercontent.com/480131/191582090-3d54a629-ce9f-4f26-9178-f8311c55de6d.png)
 
+
+{{ note("The key colors were generated from [iwanthue](https://medialab.github.io/iwanthue/) and are stored in the `COLORS` list, in [`code.py`](https://github.com/brouberol/pico-mixer/blob/main/pico/code.py). Any changes to the colors will be reflected in the web UI, as they are advertised to the web-server at propagated to the UI when the keypad starts.")}}
 
 ## Demo time
 
