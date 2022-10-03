@@ -271,6 +271,13 @@ I have added a [configuration-based tagging system](https://github.com/brouberol
 ## Demo time
 
 {{ youtube_embed("https://www.youtube.com/embed/cdB_y9KhCgY") }}
+
+## I have the hardware! How can I run it?
+
+Windows users will find getting started instructions in the project's [README](https://github.com/brouberol/pico-mixer#getting-started-on-windows).
+
+I will write macOS and Linux instructions when I can.
+
 ---
 
 The final iteration of that project is available [here](https://github.com/brouberol/pico-mixer/tree/main/pico) (for the keypad code) and [here](https://github.com/brouberol/pico-mixer/tree/main/pico_mixer_web) (for the webserver and webapp code). The black casing was 3D-printed using the `rgb_keypad_-_bottom.stl` file from this [Thingiverse](https://www.thingiverse.com/thing:4883873/files) model.
