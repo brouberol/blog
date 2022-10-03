@@ -1,3 +1,4 @@
+{% from 'youtube.j2' import youtube_embed %}
 Title: My DIY proposal
 Date: 2019-11-30
 Category: DIY
@@ -8,9 +9,7 @@ Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/proposal/chest
 
 You know how everyone wants their proposal to be special, thoughtful, original, and above all, wants to avoid being cliché? Well, I wanted all that. I also wanted it to be DIY and geeky. With all that in mind, and because my SO is such a Zelda fan, I decided to propose to her by having her open an Ocarina of time themed treasure chest, which would light up from the inside and play the famous music when it opens.
 
-<div class="video-container">
-    <iframe class="video" src="https://www.youtube.com/embed/69AyYUJUBTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{ youtube_embed("https://www.youtube.com/embed/69AyYUJUBTg") }}
 
 I started googling for instructions for a DIY Zelda treasure chest and found this perfect [tutorial](https://www.instructables.com/id/Legend-of-Zelda-Treasure-chest-with-sound/). Now, being perfectly honest, I have to admit that I'm not a very gifted craftsman. The idea of making a chest myself from wood got me a little worried, as I felt that I really needed to be precise and prepared, whereas I tend to lean to the more yolo side of things.
 

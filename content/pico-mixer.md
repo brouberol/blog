@@ -1,5 +1,6 @@
 {% from 's3.j2' import s3_url %}
 {% from 'note.j2' import note %}
+{% from 'youtube.j2' import youtube_embed %}
 ---
 Title: My DIY Dungeons and Dragons ambiance mixer
 Date: 2022-09-24
@@ -269,9 +270,7 @@ I have added a [configuration-based tagging system](https://github.com/brouberol
 
 ## Demo time
 
-<div class="video-container">
-<iframe width="800" height="450" src="https://www.youtube.com/embed/cdB_y9KhCgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{ youtube_embed("https://www.youtube.com/embed/cdB_y9KhCgY") }}
 ---
 
 The final iteration of that project is available [here](https://github.com/brouberol/pico-mixer/tree/main/pico) (for the keypad code) and [here](https://github.com/brouberol/pico-mixer/tree/main/pico_mixer_web) (for the webserver and webapp code). The black casing was 3D-printed using the `rgb_keypad_-_bottom.stl` file from this [Thingiverse](https://www.thingiverse.com/thing:4883873/files) model.
