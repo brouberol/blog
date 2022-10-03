@@ -1,13 +1,14 @@
-{% macro note(text) -%}
-<div class="Note" markdown="1">
+{% macro _block(text, type) %}
+<div class="{{ type }}" markdown="1">
 {{ text }}
 </div>
 
+{% endmacro %}
+
+{% macro note(text) -%}
+{{ _block(text, type="Note")}}
 {%- endmacro %}
 
 {% macro warning(text) -%}
-<div class="Warning" markdown="1">
-{{ text }}
-</div>
-
+{{ _block(text, type="Warning")}}
 {%- endmacro %}
