@@ -6,7 +6,8 @@
   <div class="article__text">
     <ul>
       {%- for tag, articles in tags|sort %}
-          <li><a href="{{ SITEURL }}/{{ tag.url | replace('.html', '')}}">{{ tag }}</a> ({{ articles|count }})</li>
+      <li><a href="{{ SITEURL }}/{{ tag.url | replace('.html', '')}}">{{ tag | single_word_capitalize }}</a> ({{
+        articles|count }})</li>
       {% endfor %}
     </ul>
   </div>

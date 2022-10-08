@@ -2,7 +2,7 @@
 {% block title %}&ndash; Tag: {{ tag }}{% endblock %}
 
 {% block header %}
-&gt; Tag: {{ tag }}
+&gt; Tag: {{ tag | single_word_capitalize}}
 {% if TAG_FEED_ATOM %}
 <span class=middot>
     <a href="/{{ TAG_FEED_ATOM.format(slug=tag.slug) }}">

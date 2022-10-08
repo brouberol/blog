@@ -6,7 +6,8 @@
   <div class="article__text">
     <ul>
       {% for category, articles in categories|sort %}
-      <li><a href="{{ SITEURL }}/{{ category.url | replace('.html', '') }}">{{ category }}</a> ({{ articles|count }})</li>
+      <li><a href="{{ SITEURL }}/{{ category.url | replace('.html', '') }}">{{ category | single_word_capitalize }}</a>
+        ({{ articles|count }})</li>
       {% endfor %}
     </ul>
   </div>

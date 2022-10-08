@@ -1,8 +1,8 @@
 {% extends "index.html" %}
-{% block title %}&ndash; Category: {{ category }}{% endblock %}
+{% block title %}&ndash; Category: {{ category | single_word_capitalize }}{% endblock %}
 
 {% block header %}
-&gt; Category: {{ category }}
+&gt; Category: {{ category | single_word_capitalize}}
 {% if CATEGORY_FEED_ATOM %}
 <span class=middot>
     <a href="/{{ CATEGORY_FEED_ATOM.format(slug=category.slug) }}">
