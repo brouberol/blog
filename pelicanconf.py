@@ -67,8 +67,8 @@ JINJA2CONTENT_IGNORE = [
     for path in _JINJA2CONTENT_IGNORE
 ]
 
-PLUGIN_PATHS = ["plugins/pelican", "plugins/jinja"]
-PLUGINS = ["render_math", "jinja2content_custom"]
+PLUGIN_PATHS = ["plugins/pelican", "plugins"]
+PLUGINS = ["render_math", "jinja"]
 
 MARKDOWN = {
     "extensions": [

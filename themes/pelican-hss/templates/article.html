@@ -42,11 +42,14 @@
     <p class="article__meta__category middot">{{ macros.reading_time(article) }}</p>
     {% if DISPLAY_CATEGORIES == '' or DISPLAY_CATEGORIES %}
     <p class="article__meta__category middot"><a
-        href="{{ SITEURL }}/{{ article.category.url | replace('.html', '')}}">{{ article.category }}</a>
+        href="{{ SITEURL }}/{{ article.category.url | replace('.html', '')}}">{{ article.category |
+        single_word_capitalize }}</a>
       {% endif %}
       {% if article.tags %}
       {% for tag in article.tags %}
-      <a class="taglink middot" href="{{ SITEURL }}/{{ tag.url | replace('.html', '') }}">{{ tag }}</a>{% if not
+      <a class="taglink middot" href="{{ SITEURL }}/{{ tag.url | replace('.html', '') | single_word_capitalize }}">{{
+        tag }}</a>{%
+      if not
       loop.last %} {% endif %}
       {% endfor %}
       {% endif %}

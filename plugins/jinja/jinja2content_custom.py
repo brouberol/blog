@@ -10,7 +10,6 @@ from tempfile import NamedTemporaryFile
 
 from jinja2 import ChoiceLoader, Environment, FileSystemLoader
 
-from pelican import signals
 from pelican.readers import MarkdownReader
 from pelican.utils import pelican_open
 
@@ -60,12 +59,3 @@ class JinjaContentMixin(object):
 
 class JinjaMarkdownReader(JinjaContentMixin, MarkdownReader):
     pass
-
-
-def add_reader(readers):
-    for ext in JinjaMarkdownReader.file_extensions:
-        readers.reader_classes[ext] = JinjaMarkdownReader
-
-
-def register():
-    signals.readers_init.connect(add_reader)

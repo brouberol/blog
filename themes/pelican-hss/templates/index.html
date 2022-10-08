@@ -10,11 +10,14 @@
     <p class="article__meta__post-date">{{ article.locale_date }}</p>
     <p class="article__meta__category middot">{{ macros.reading_time(article) }}</p>
     {% if DISPLAY_CATEGORIES == '' or DISPLAY_CATEGORIES %}
-    <p class="article__meta__category middot"><a href="{{ SITEURL }}/{{ article.category.url | replace('.html', '')}}">{{ article.category }}</a>
-    {% endif %}
+    <p class="article__meta__category middot"><a
+        href="{{ SITEURL }}/{{ article.category.url | replace('.html', '')}}">{{ article.category |
+        single_word_capitalize }}</a>
+      {% endif %}
       {% if article.tags %}
       {% for tag in article.tags %}
-      <a class="taglink middot" href="{{ SITEURL }}/{{ tag.url | replace('.html', '')}}">{{ tag }}</a>
+      <a class="taglink middot" href="{{ SITEURL }}/{{ tag.url | replace('.html', '')}}">{{ tag | single_word_capitalize
+        }}</a>
       {% endfor %}
       {% endif %}
     </p>
@@ -29,5 +32,5 @@
 {% endblock %}
 
 {% block footer %}
-  {% include "modules/pagination.html" %}
+{% include "modules/pagination.html" %}
 {% endblock %}
