@@ -623,3 +623,7 @@ footer .ending-message {
     width: 100%;
     height: 100%;
 }
+
+.isso-text-wrapper a {
+    text-decoration:  underline;
+}
