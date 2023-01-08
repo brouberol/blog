@@ -1,29 +1,29 @@
 {% macro next_prev_chapter(article, articles) %}
-  {% if article.chapter %}
-    {% set current_chapter = article.chapter | int %}
-    <div class=box__next_prev_chapters>
-      {% for art in articles %}
-        {% if art.category == article.category %}
-          {% set chap = art.chapter | int %}
-          {% if chap == current_chapter - 1 %}
-          <div class="box__chapter_ref box__prev_chapter">
-            <p>Chapter {{ art.chapter }}</p>
-            <p><a href="/{{ art.slug }}">{{ art.title }}</p></a>
-          </div>
-          {% elif chap == current_chapter + 1 %}
-          <div class="box__chapter_ref box__next_chapter">
-            <p>Chapter {{ art.chapter }}</p>
-            <p><a href="/{{ art.slug }}">{{ art.title }}</p></a>
-          </div>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </div>
+{% if article.chapter %}
+{% set current_chapter = article.chapter | int %}
+<div class=box__next_prev_chapters>
+  {% for art in articles %}
+  {% if art.category == article.category %}
+  {% set chap = art.chapter | int %}
+  {% if chap == current_chapter - 1 %}
+  <div class="box__chapter_ref box__prev_chapter">
+    <p>Chapter {{ art.chapter }}</p>
+    <p><a href="/{{ art.slug }}">{{ art.title }}</p></a>
+  </div>
+  {% elif chap == current_chapter + 1 %}
+  <div class="box__chapter_ref box__next_chapter">
+    <p>Chapter {{ art.chapter }}</p>
+    <p><a href="/{{ art.slug }}">{{ art.title }}</p></a>
+  </div>
   {% endif %}
+  {% endif %}
+  {% endfor %}
+</div>
+{% endif %}
 {% endmacro %}
 
 {% macro reading_time(article) %}
-{% set num_words = article.content.split() | length  %}
+{% set num_words = article.content.split() | length %}
 {% set rtime = (num_words / 200) | round | int %}
-{{ rtime }} minute read
+{{ [rtime, 1] | max }} minute read
 {% endmacro %}
