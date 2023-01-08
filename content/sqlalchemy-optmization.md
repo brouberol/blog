@@ -1,5 +1,5 @@
 ---
-Title: Speeding up our longest job from 21h to 8 minutes: a story of SQLAlchemy optimization
+Title: Speeding up a 21h job to 8 minutes: a story of SQLAlchemy optimization
 Date: 2023-01-08
 Category: Programming
 Description: In this article published on the Alan tech blog, we explain how my team has reduced the runtime of our longest nightly job from 21h to about 8 minutes, by using simple profiling and SQLAlchemy optimizations.
