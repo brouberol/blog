@@ -1,6 +1,7 @@
 Title: How to randomly generate a Monty Python parody
 Date: 2011-11-16
 Category: Programming
+Tags: Python
 
 If you always wanted to write texts in the way of Monty Python, I have what you need !
 In this post, I am going to show you mathematical techniques to analyse a text, in order to randomly generate look-alike texts.

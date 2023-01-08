@@ -2,6 +2,7 @@ Title: Celery best practices
 Date: 2015-12-29
 Category: Programming
 Description: My set of best practices for writing Celery asynchronous tasks
+Tags: Python
 
 
 I've been programming with [celery](http://celery.readthedocs.org/) for the last three years, and [Deni Bertović](https://denibertovic.com/pages/about-me/)'s article about [Celery best practices](https://denibertovic.com/posts/celery-best-practices/) has truly been invaluable to me. In time, I've also come up with my set of best practices, and I guess this blog is as good a place as any to write them down.

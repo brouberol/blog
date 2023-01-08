@@ -1,6 +1,7 @@
 Title: Create a webcam manager using pyGTK and Gstreamer
 Category: Programming
 Date: 2012-02-29
+Tags: Python
 
 
 ## Introduction

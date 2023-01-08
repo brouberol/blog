@@ -1,6 +1,7 @@
 Title: Crawl a website with scrapy
 Category: Programming
 Date: 2012-04-23
+Tags: Python
 
 In this article, we are going to see how to scrape information from a website, in particular, from all pages with a common URL pattern. We will see how to do that with [Scrapy](http://scrapy.org/), a very powerful, and yet simple, scraping and web-crawling framework.
 
