@@ -211,7 +211,7 @@ So what happens now when I press a key:
 
 - a JSON-formatted message is sent from the pico to the serial port
 - the message is received by the webserver process, and propagated to the browser on a websocket
-- the browser deserializes the message, and take action, depending on the content of the event
+- the browser deserializes the message, and takes action, depending on the content of the event
 
 The browser-side message handler looks like this:
 
