@@ -129,7 +129,7 @@ if "20" in data:
 datadog.api.Metric.send(metrics=metrics)
 ```
 
-At that point, the measured current, voltage and power was sent out to Datadog every minute, and I was then able to create the following dashboard:
+At that point, the measured current, voltage and power was sent out to Datadog every minute, and I was then able to create the following [dashboard](https://p.datadoghq.com/sb/bc352bb82-f277a5982d97a0a007ab56fbc05e0ee8):
 
 [![Dashboard detailing electricity production over time]({{ s3_url("solar-panel", "dd-dash.webp")}})](https://p.datadoghq.com/sb/bc352bb82-f277a5982d97a0a007ab56fbc05e0ee8)
 
