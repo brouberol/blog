@@ -4,14 +4,14 @@ Title: Monitoring my solar panel power production
 Date: 2023-05-03
 Category: programming
 Description: A walkthrough of how I managed to pull metrics from the smart plug my solar panels were connected to, and send them to Datadog.
-Summary: I have recently acquired two solar panels from [Sunology](https://sunology.eu/products/sunology-play-kit-solaire) that advertise a total production of up to 810W. The panels come with a smart plug emitting the data to [Tuya](https://iot.tuya.com/), in order to retain and graph historical data. However, the only available granuarity for that data is _daily_ kWh production. In order to optimize the orientation and placement of the panels, I needed a much finer granularity than that. I decided to query the data myself and send it to Datadog.
+Summary: I have recently acquired two solar panels from [Sunology](https://sunology.eu/products/sunology-play-kit-solaire) that advertise a cumulated instantaneous  pproduction of up to 810W. The panels come with a smart plug emitting the data to [Tuya](https://iot.tuya.com/), in order to retain and graph historical data. However, the only available granuarity for that data is _daily_ kWh production. In order to optimize the orientation and placement of the panels, I needed a much finer granularity than that. I decided to query the data myself and send it to Datadog.
 Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/solar-panel/dd-dash.png
 hide_image: True
 Tags: datadog, DIY
 Keywords: solar panel,
 ---
 
-I have recently acquired two solar panels from [Sunology](https://sunology.eu/products/sunology-play-kit-solaire) that advertise a total production of up to 810W. The panels come with a smart plug emitting the data to [Tuya](https://iot.tuya.com/), in order to retain and graph historical data. However, the only available granuarity for that data is _daily_ kWh production. In order to optimize the orientation and placement of the panels, I needed a much finer granularity than that. I decided to query the data myself and send it to Datadog.
+I have recently acquired two solar panels from [Sunology](https://sunology.eu/products/sunology-play-kit-solaire) that advertise a cumulated instantaneous  pproduction of up to 810W. The panels come with a smart plug emitting the data to [Tuya](https://iot.tuya.com/), in order to retain and graph historical data. However, the only available granuarity for that data is _daily_ kWh production. In order to optimize the orientation and placement of the panels, I needed a much finer granularity than that. I decided to query the data myself and send it to Datadog.
 
 {{ s3_img("solar-panel", "schema.webp", "information flow from plug to Datadog") }}
 
