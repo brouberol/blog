@@ -8,7 +8,7 @@ Category: Dungeons and Dragons
 Description: A walkthrough of the design of my DIY hardware sound mixer, inspired by the Launchpad, allowing me to create a great sound ambiance at the D&D table.
 Summary: I find that an immersive sound ambiance is key to helping tabletop RPG players engage. It can increase their stress and sense of urgency during a fight, galvanize them during a harrowing speech, or break their heart when they realize they've just lost something and there's no getting it back. In that article, I will walk you through the design of my fully DIY sound mixer, inspired by the [Launchpad](https://novationmusic.com/en/launch/launchpad-x), allowing me to create a great sound ambiance at the table.
 Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/diy-sound-mixer/keypad.jpg
-Tags: Python
+Tags: Python, DIY
 Keywords: DIY, programming, circuitpython, pico, launchpad
 ---
 
