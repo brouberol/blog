@@ -3,6 +3,7 @@ Date: 2019-12-11
 Category: Programming
 Description: How to setup a wireguard VPN to stay safe when traveling
 Summary: This article will provide guidance about how to setup a Wireguard VPN between a server and your phone, allowing you to avoid being snooped on while you travel.
+Tags: DIY
 Image: https://www.cactusvpn.com/wp-content/uploads/2019/02/what-is-wireguard.gif
 
 
