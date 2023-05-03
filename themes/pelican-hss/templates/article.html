@@ -47,8 +47,8 @@
       {% endif %}
       {% if article.tags %}
       {% for tag in article.tags %}
-      <a class="taglink middot" href="{{ SITEURL }}/{{ tag.url | replace('.html', '') | single_word_capitalize }}">{{
-        tag }}</a>{%
+      <a class="taglink middot" href="{{ SITEURL }}/{{ tag.url | replace('.html', '') }}">{{ tag |
+        single_word_capitalize }}</a>{%
       if not
       loop.last %} {% endif %}
       {% endfor %}
