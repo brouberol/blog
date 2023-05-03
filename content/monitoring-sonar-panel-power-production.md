@@ -4,14 +4,14 @@ Title: Monitoring my solar panel power production
 Date: 2023-05-03
 Category: programming
 Description: A walkthrough of how I managed to pull metrics from the smart plug my solar panels were connected to, and send them to Datadog.
-Summary: I have recently acquired two solar panels from [Sunology](https://sunology.eu/products/sunology-play-kit-solaire) advertising a cumulated instantaneous  pproduction of up to 810W. The panels come with a smart plug emitting the data to [Tuya](https://iot.tuya.com/), in order to retain and graph historical data. However, the only available granuarity for that data is _daily_ kWh production. In order to optimize the orientation and placement of the panels, I needed a much finer granularity than that. I decided to query the data myself and send it to Datadog.
+Summary: I have recently acquired two solar panels from [Sunology](https://sunology.eu/products/sunology-play-kit-solaire) advertising a cumulated instantaneous  pproduction of up to 810W. The panels come with a smart plug emitting the data to [Tuya](https://iot.tuya.com/), in order to retain and graph historical data. However, the only available granuarity for that data is _daily_ kWh production. In order to optimize the orientation and placement of the panels, as well as measure the production efficiency (power produced / 810 * 100), I needed a much finer granularity than that. I decided to query the data myself and send it to Datadog.
 Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/solar-panel/dd-dash.png
 hide_image: True
 Tags: datadog, DIY
 Keywords: solar panel,
 ---
 
-I have recently acquired two solar panels from [Sunology](https://sunology.eu/products/sunology-play-kit-solaire) advertising a cumulated instantaneous  pproduction of up to 810W. The panels come with a smart plug emitting the data to [Tuya](https://iot.tuya.com/), in order to retain and graph historical data. However, the only available granuarity for that data is _daily_ kWh production. In order to optimize the orientation and placement of the panels, I needed a much finer granularity than that. I decided to query the data myself and send it to Datadog.
+I have recently acquired two solar panels from [Sunology](https://sunology.eu/products/sunology-play-kit-solaire) advertising a cumulated instantaneous  pproduction of up to 810W. The panels come with a smart plug emitting the data to [Tuya](https://iot.tuya.com/), in order to retain and graph historical data. However, the only available granuarity for that data is _daily_ kWh production. In order to optimize the orientation and placement of the panels, as well as measure the production efficiency (power produced / 810 * 100), I needed a much finer granularity than that. I decided to query the data myself and send it to Datadog.
 
 {{ s3_img("solar-panel", "schema.webp", "information flow from plug to Datadog") }}
 
@@ -133,4 +133,4 @@ At that point, the measured current, voltage and power was sent out to Datadog e
 
 [![Dashboard detailing electricity production over time]({{ s3_url("solar-panel", "dd-dash.webp")}})](https://p.datadoghq.com/sb/bc352bb82-f277a5982d97a0a007ab56fbc05e0ee8)
 
-With that granularity, I realized that the panels only started to really kick in after midday, and that I should probably move them to a spot with more exposure if I wanted to produce more than 4kWh a day (measured on a hot and sunny day without any clouds).
+With that granularity, I realized that the panels only started to really kick in after midday, and that I should probably move them to a spot with more exposure if I wanted to produce more than 4kWh a day (measured on a hot and sunny day without any clouds). That day, I only hit 85% efficiency though, even if I had hit 99% in previous days. That makes me wonder if I need to wash the panel.
