@@ -4,7 +4,7 @@
 Title: Generating pretty maps ready to be gift-wrapped
 Date: 2023-05-06
 Category: programming
-Description:
+Description: Quick walkthrough of my [`prettymaps`](https://github.com/brouberol/prettymaps) fork, for artistic map generation tailored for printing
 Summary: <img title="Lyon, France" alt="Lyon, France" src="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/prettymaps/lyonfrance-3000-A3-square-default.jpg" />I have been toying with the idea of generating visually pleasing maps centered on a given address, to have them printed and framed. The way I see it, it would make an original and personalised gift for the person living there. So when Marcelo de Oliveira Rosa Prates' [`prettymaps`](https://github.com/marceloprates/prettymaps) blew up on Reddit, I decided to try it.
 Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/prettymaps/lyonfrance-3000-A3-square-default.jpg
 hide_image: True
