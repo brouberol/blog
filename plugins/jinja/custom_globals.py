@@ -34,7 +34,7 @@ def responsive_image(unsized_image_path, suffix_to_size, max_width, alt):
             "<img",
             f'src="{max_size_image_path}"',
             f'srcset="{", ".join(srcset)}"',
-            f'sizes="(max-width: {max_width}px) {sizes[0]}px, {sizes[1]}px"',
+            f'sizes="(max-width: {max_width}px) {sizes[0]}w, {sizes[1]}w"',
             f'alt="{alt}"',
             f'title="{alt}"',
             "/>",
