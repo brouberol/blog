@@ -62,7 +62,7 @@ Here are a couple of examples of maps that I've generated and printed for people
     alt="Toulouse, France",
 )}}
 
-The color schemes are only applied to buildings, and are automatically generated from [`matplotlib` colormaps](https://matplotlib.org/stable/gallery/color/colormap_reference.html). This was an quick and easy to generate themes "for free". I also added a couple of Scottish tartan inspired themes, that I used to print a map for a lovely franco-scottish couple who was getting married.
+The color schemes are only applied to buildings, and are automatically generated from [`matplotlib` colormaps](https://matplotlib.org/stable/gallery/color/colormap_reference.html). This was an quick and easy to generate themes "for free". I also added a couple of Scottish tartan inspired themes, that I used to print a map as a wedding gift for a lovely franco-scottish couple.
 
 My local printer bills me about 1.5€ for each print, which makes for an original and yet remarkably cheap gift. I recommend a thick and matte paper, without any texture, as it might collide with the map dotted background.
 
