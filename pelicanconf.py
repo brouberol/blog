@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 import os
-from os.path import abspath, join, dirname
+from os.path import abspath, dirname, join
 
 AUTHOR = "Balthazar Rouberol"
 AUTHOR_TWITTER = "@brouberol"
@@ -27,6 +27,7 @@ RSS_FEED_SUMMARY_ONLY = False
 CATEGORY_FEED_ATOM = "feeds/categories/{slug}.atom.xml"
 TAG_FEED_ATOM = "feeds/tags/{slug}.rss.xml"
 DISPLAY_CATEGORIES = True
+ARTICLE_URL = "{slug}"
 
 PATH = "content"
 STATIC_PATHS = ["extra"]
