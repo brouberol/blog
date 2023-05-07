@@ -42,25 +42,26 @@ Here are a couple of examples of maps that I've generated and printed for people
 )}}
 {{ responsive_image(
 
-    s3_url("prettymaps", "2impassedel'ancienneposte71100chalonsursaône_france-2000-A3-square-RdPu.webp"),
-    suffix_to_size={30: 1392, 50: 1984},
-    max_width=1448,
-    alt="Chalon-sur-Saône, France",
-)}}
-{{ responsive_image(
-
-    s3_url("prettymaps", "19ruegustavebalny_60320_béthisy-saint-martin-3000-A3-square-RdPu.webp"),
-    suffix_to_size={30: 1392, 50: 1984},
-    max_width=1448,
-    alt="Béthisy Saint-Martin, France",
-)}}
-{{ responsive_image(
-
     s3_url("prettymaps", "40all.jeanjaurès31000toulouse_france-2000-A3-circle-default.webp"),
     suffix_to_size={30: 1392, 50: 1984},
     max_width=1448,
     alt="Toulouse, France",
 )}}
+{{ responsive_image(
+
+    s3_url("prettymaps", "2impassedel'ancienneposte71100chalonsursaône_france-2000-A3-square-viridis_r.webp"),
+    suffix_to_size={30: 1488, 50: 2480},
+    max_width=1500,
+    alt="Chalon-sur-Saône, France",
+)}}
+{{ responsive_image(
+
+    s3_url("prettymaps", "19ruegustavebalny_60320_béthisy-saint-martin-3000-A3-square-Oranges.webp"),
+    suffix_to_size={30: 1488, 50: 2480},
+    max_width=1448,
+    alt="Béthisy Saint-Martin, France",
+)}}
+
 
 The color schemes are only applied to buildings, and are automatically generated from [`matplotlib` colormaps](https://matplotlib.org/stable/gallery/color/colormap_reference.html). This was an quick and easy to generate themes "for free". I also added a couple of Scottish tartan inspired themes, that I used to print a map as a wedding gift for a lovely franco-scottish couple.
 
