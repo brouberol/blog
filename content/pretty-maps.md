@@ -43,8 +43,8 @@ Here are a couple of examples of maps that I've generated and printed for people
 {{ responsive_image(
 
     s3_url("prettymaps", "40all.jeanjaurès31000toulouse_france-2000-A3-circle-default.webp"),
-    suffix_to_size={30: 1392, 50: 1984},
-    max_width=1448,
+    suffix_to_size={30: 1488, 50: 2480},
+    max_width=1500,
     alt="Toulouse, France",
 )}}
 {{ responsive_image(
@@ -58,7 +58,7 @@ Here are a couple of examples of maps that I've generated and printed for people
 
     s3_url("prettymaps", "19ruegustavebalny_60320_béthisy-saint-martin-3000-A3-square-Oranges.webp"),
     suffix_to_size={30: 1488, 50: 2480},
-    max_width=1448,
+    max_width=1500,
     alt="Béthisy Saint-Martin, France",
 )}}
 
