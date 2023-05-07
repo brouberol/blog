@@ -10,6 +10,7 @@ AUTHOR_TWITTER = "@brouberol"
 AUTHOR_URL = "https://balthazar-rouberol.com"
 SITENAME_FOR_META = "Balthazar - Blog"
 SITENAME_FOR_READERS = "Balthazar"
+SITENAME = SITENAME_FOR_READERS
 SITEURL = "https://blog.balthazar-rouberol.com"
 ISSOURL = "https://comments.balthazar-rouberol.com"
 ABSOLUTE_SITEURL = SITEURL
