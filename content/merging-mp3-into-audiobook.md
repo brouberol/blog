@@ -10,7 +10,7 @@ Keywords: audiobook, ffmpeg, docker
 
 I recently found the 3 Lord of the Rings audiobooks I bought from [Phil Dragash](https://www.phildragash.com/index.html) some years back, as I was digging through my NAS. Each book is split into about 20 mp3 files, which makes it a bit unwieldy for me. As I mostly listen to audiobooks when I'm going to sleep, I oftentimes have to find the last part I remember listening to and start again from there the next day.
 
-Luckily, [BookPlayer](https://apps.apple.com/fr/app/bookplayer/id1138219998) solves this for me, as there's a "Stop after this chapter" feature. However, to import these books into the app, I needed to merge the mp3 files into a full-fledge audiobook [m4b](https://fileinfo.com/extension/m4b) file, with chapter metadata.
+Luckily, [BookPlayer](https://apps.apple.com/fr/app/bookplayer/id1138219998) solves this for me, via its "Stop after this chapter" feature. However, to import these books into the app, I needed to merge the mp3 files into a full-fledge audiobook [m4b](https://fileinfo.com/extension/m4b) file, with chapter metadata.
 
 After digging a little bit, this is what I found:
 
