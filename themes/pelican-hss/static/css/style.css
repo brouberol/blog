@@ -629,3 +629,12 @@ footer .ending-message {
 .isso-text-wrapper a {
     text-decoration:  underline;
 }
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 5px;
+}
