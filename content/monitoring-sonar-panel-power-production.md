@@ -134,3 +134,5 @@ At that point, the measured current, voltage and power was sent out to Datadog e
 [![Dashboard detailing electricity production over time]({{ s3_url("solar-panel", "dd-dash.webp")}})](https://p.datadoghq.com/sb/bc352bb82-f277a5982d97a0a007ab56fbc05e0ee8)
 
 With that granularity, I realized that the panels only started to really kick in after midday, and that I should probably move them to a spot with more exposure if I wanted to produce more than 4kWh a day (measured on a hot and sunny day without any clouds). That day, I only hit 85% efficiency though, even though I had hit 99% at some point during the previous weeks. That makes me wonder if I need to wash the panel.
+
+**Edit**: it rained that very night and I did hit 95% efficiency the next day.
