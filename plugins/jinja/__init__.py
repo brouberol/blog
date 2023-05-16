@@ -1,6 +1,6 @@
 from pelican import signals
 
-from .custom_filters import single_word_capitalize
+from .custom_filters import single_word_capitalize, subrender
 from .custom_globals import responsive_image
 from .jinja2content_custom import JinjaMarkdownReader
 
@@ -12,6 +12,7 @@ def add_all_filters(pelican):
 
 def add_all_globals(readers):
     readers.settings["JINJA_GLOBALS"].update({"responsive_image": responsive_image})
+    readers.settings["JINJA_FILTERS"].update({"subrender": subrender})
 
 
 def add_reader(readers):

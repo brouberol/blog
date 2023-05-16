@@ -1,4 +1,5 @@
 {% from 's3.j2' import s3_img, s3_url %}
+{% from 'note.j2' import note %}
 ---
 Title: Monitoring my solar panel power production
 Date: 2023-05-03
@@ -132,6 +133,8 @@ datadog.api.Metric.send(metrics=metrics)
 At that point, the measured current, voltage and power was sent out to Datadog every minute, and I was then able to create the following [dashboard](https://p.datadoghq.com/sb/bc352bb82-f277a5982d97a0a007ab56fbc05e0ee8):
 
 [![Dashboard detailing electricity production over time]({{ s3_url("solar-panel", "dd-dash.webp")}})](https://p.datadoghq.com/sb/bc352bb82-f277a5982d97a0a007ab56fbc05e0ee8)
+
+{{ note("This dashboard makes it seem like the panel can only hit 75% efficiency, when I have seen them hit 95-99%. This is due to the Datadog point interpolation happening on large time windows. When we focus on a smaller window, we can see these high (albeit brief) peaks. {{ s3_img('solar-panel', 'dd-dash-2.webp') }}") | subrender }}
 
 With that granularity, I realized that the panels only started to really kick in after midday, and that I should probably move them to a spot with more exposure if I wanted to produce more than 4kWh a day (measured on a hot and sunny day without any clouds). That day, I only hit 85% efficiency though, even though I had hit 99% at some point during the previous weeks. That makes me wonder if I need to wash the panel.
 
