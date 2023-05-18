@@ -21,7 +21,7 @@ $ docker run \
     -u $(id -u):$(id -g) \  # Use the same UID and GID than in the host to avoid permission issues
     -v "$(pwd)/audiobooks":/mnt \  # mount the ./audiobooks folder into /mnt in the container via a docker volume
 	sandreas/m4b-tool:latest \  # cf https://hub.docker.com/r/sandreas/m4b-tool
-		merge \  # subcommand in charge of merging mp3 into m4b
+		merge \  # subcommand in charge of merging the mp3 files into a single m4b file
 			"/mnt/The Fellowship of the Ring" \  # directory in which the audio files are located
 			--output-file "/mnt/The Fellowship of the Ring.m4b" \  # name of the generated m4b file
 			--series "The Lord of the Rings" \  # name of the book series
