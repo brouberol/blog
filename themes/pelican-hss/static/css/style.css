@@ -459,7 +459,7 @@ main article .article__text code {
 
 main article .article__text pre {
     margin: 22px 2px 22px 2px;
-    padding: 9.5px;
+    padding: 1em;
     font-family: "Cascadia", monospace;
     font-size: 0.9em;
     line-height: 1.45;
