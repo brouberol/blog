@@ -283,3 +283,5 @@ Getting started instructions are available [here](https://github.com/brouberol/p
 ---
 
 The final iteration of that project is available [here](https://github.com/brouberol/pico-mixer/tree/main/pico) (for the keypad code) and [here](https://github.com/brouberol/pico-mixer/tree/main/pico_mixer_web) (for the webserver and webapp code). The black casing was 3D-printed using the `rgb_keypad_-_bottom.stl` file from this [Thingiverse](https://www.thingiverse.com/thing:4883873/files) model.
+
+{{ note("I am grateful to [tom's Hardware](https://www.tomshardware.com/news/raspberry-pi-pico-adds-ambience-to-tabletop-adventures), [Adafruit](https://blog.adafruit.com/2022/10/05/a-raspberry-pi-pico-dd-keyboard-circuitpython-raspberrypi-keyboard-tomshardware-raspberry_pi/), [all3dp](https://all3dp.com/1/best-raspberry-pi-projects/#rpg-ambiance-soundboard) and [weareteachers](https://www.weareteachers.com/raspberry-pi-projects/) to have featured and shared this project to their audience.") }}
