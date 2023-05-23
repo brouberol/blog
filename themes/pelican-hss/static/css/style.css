@@ -626,6 +626,14 @@ footer .ending-message {
     height: 100%;
 }
 
+.isso-text-wrapper {
+    padding-left: 0 !important;
+}
+
+.isso-follow-up {
+    padding-left: calc(7%) !important;
+}
+
 .isso-text-wrapper a {
     text-decoration:  underline;
 }
