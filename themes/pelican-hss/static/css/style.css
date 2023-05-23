@@ -634,6 +634,10 @@ footer .ending-message {
     padding-left: calc(7%) !important;
 }
 
+.isso-avatar img {
+    border-radius: 50% !important;
+}
+
 .isso-text-wrapper a {
     text-decoration:  underline;
 }
