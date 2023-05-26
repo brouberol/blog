@@ -280,7 +280,11 @@ I have added a [configuration-based tagging system](https://github.com/brouberol
 
 Getting started instructions are available [here](https://github.com/brouberol/pico-mixer#getting-started-on-windows) for Windows users, and [here](https://github.com/brouberol/pico-mixer#getting-started-on-macos-and-linux) for macOS and Linux users.
 
+{{ note("Don't hesitate to read the comments if you have any doubt, as a fair share of questions have already be answered there.") }}
+
 ---
+
+## Closing words
 
 The final iteration of that project is available [here](https://github.com/brouberol/pico-mixer/tree/main/pico) (for the keypad code) and [here](https://github.com/brouberol/pico-mixer/tree/main/pico_mixer_web) (for the webserver and webapp code). The black casing was 3D-printed using the `rgb_keypad_-_bottom.stl` file from this [Thingiverse](https://www.thingiverse.com/thing:4883873/files) model.
 
