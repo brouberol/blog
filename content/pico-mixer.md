@@ -1,5 +1,5 @@
 {% from 's3.j2' import s3_url %}
-{% from 'note.j2' import note %}
+{% from 'note.j2' import note, warning %}
 {% from 'youtube.j2' import youtube_embed %}
 ---
 Title: My DIY Dungeons and Dragons ambiance mixer
@@ -281,7 +281,7 @@ I have added a couple of features that will help me stay as focused on the story
 
 Getting started instructions are available [here](https://github.com/brouberol/pico-mixer#getting-started-on-windows) for Windows users, and [here](https://github.com/brouberol/pico-mixer#getting-started-on-macos-and-linux) for macOS and Linux users.
 
-{{ note("Don't hesitate to read the comments if you have any doubt, as a fair share of questions have already be answered there.") }}
+{{ warning("Don't hesitate to read the comments if you have any doubt, as a fair share of questions have already be answered there.") }}
 
 ---
 
