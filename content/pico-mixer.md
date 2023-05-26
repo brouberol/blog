@@ -113,7 +113,7 @@ Key (1, 0) was pressed
 ...
 ```
 
-## Send structured data from the keypad
+## Sending structured data from the keypad
 
 Sending text data is fine, but we should probably send data that can be serialized on the keypad size and deserialized on the event listener side, as we will probably send the key ID, a state (`pressed`, `stop`, `volume_up`, etc). JSON is simple enough, and while the `json` package isn't available in CircuitPython, it's pretty easy to hand-encode JSON data:
 
