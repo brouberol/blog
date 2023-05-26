@@ -262,9 +262,10 @@ ws.addEventListener('message', event => {
 
 ## The finishing touch
 
-To make this app a pleasure to use, I have added a couple of features that will help me stay as focused  on the storytelling as possible while I'm DMing, instead of thinking about the sound mixing process.
+I have added a couple of features that will help me stay as focused on the storytelling as possible while I'm DMing, instead of thinking about the sound mixing process:
 
-I have added a [configuration-based tagging system](https://github.com/brouberol/pico-mixer/blob/main/config.json), allowing me to get reminded of the main features for each individual track (is that an ambiance or combat music? Is it dark, light, opressing, eerie, etc?). I'm also propagating the key colors to the associated volume bar, allowing me to quickly identify the key that I need to press to start/pause/adjust a given audio track.
+- a [configuration-based tagging system](https://github.com/brouberol/pico-mixer/blob/main/config.json), allowing me to get reminded of the main features for each individual track (is that an ambiance or combat music? Is it dark, light, opressing, eerie, etc?)
+- I'm also propagating the key colors to the associated volume bar, allowing me to quickly identify the key that I need to press to start/pause/adjust a given audio track.
 
 
 ![webapp](https://user-images.githubusercontent.com/480131/191582090-3d54a629-ce9f-4f26-9178-f8311c55de6d.png)
