@@ -626,6 +626,10 @@ footer .ending-message {
     overflow-wrap: break-word;
 }
 
+#comments pre {
+    white-space: pre-wrap;
+}
+
 .isso-text-wrapper {
     padding-left: 0 !important;
 }
