@@ -62,7 +62,7 @@ while True:
 
 I then copied `code.py` and `lib/rgbkeypad.py` under the `CIRCUITPY` volume that is mounted when the keypad gets plugged into the computer, and _voilà_.
 
-{{ s3_img("diy-sound-mixer", "red-blue.jpg", "red-blue") }}
+{{ s3_img("diy-sound-mixer", "red-blue.webp", "red-blue") }}
 
 ## Reacting to key presses
 
