@@ -77,6 +77,13 @@ MARKDOWN = {
         "markdown.extensions.extra",
         "markdown.extensions.meta",
         "plugins.markdown.async_img:AsyncDecodedImgExtension",
+        "markdown.extensions.toc",
     ],
-    "extension_configs": {"markdown.extensions.codehilite": {"css_class": "highlight"}},
+    "output_format": "html5",
+    "extension_configs": {
+        "markdown.extensions.codehilite": {"css_class": "highlight"},
+        "markdown.extensions.toc": {
+            "title": "Table of Contents",
+        },
+    },
 }

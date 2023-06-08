@@ -1,4 +1,4 @@
-{% from 's3.j2' import s3_url %}
+{% from 's3.j2' import s3_url, s3_img %}
 {% from 'note.j2' import note, warning %}
 {% from 'youtube.j2' import youtube_embed %}
 ---
@@ -13,7 +13,9 @@ Tags: Python, DIY
 Keywords: DIY, programming, circuitpython, pico, launchpad
 ---
 
-![keyapd](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/diy-sound-mixer/keypad.jpg)
+{{ s3_img("diy-sound-mixer", "keypad.jpg", "keypad") }}
+
+[TOC]
 
 I find that an immersive sound ambiance is key to helping tabletop RPG players engage. It can increase their stress and sense of urgency during a fight, galvanize them during a harrowing speech, or break their heart when they realize they've just lost something and there's no getting it back.
 
@@ -27,7 +29,7 @@ The color and brightness of the LEDs under the keys is [programmable](https://gi
 
 The main idea would be to use 12 of the available 16 keys to start and stop audio tracks, and use the 4 remaining keys as controls (increase/decrease volume, pause all tracks).
 
-![idea](https://user-images.githubusercontent.com/480131/190859070-7c1365d8-d062-462d-a73c-69e2f6cabcc1.png)
+{{ s3_img("diy-sound-mixer", "idea.jpg", "idea") }}
 
 ## Getting started
 
@@ -60,8 +62,7 @@ while True:
 
 I then copied `code.py` and `lib/rgbkeypad.py` under the `CIRCUITPY` volume that is mounted when the keypad gets plugged into the computer, and _voilà_.
 
-![red-blue]({{ s3_url("diy-sound-mixer", "red-blue.webp")}})
-
+{{ s3_img("diy-sound-mixer", "red-blue.jpg", "red-blue") }}
 
 ## Reacting to key presses
 
@@ -289,6 +290,8 @@ Once you have everything running, you can:
 - press the volume up/down key and a track key at the same time to increase/decrease the volume of the associated track
 - press the pause key and a track key at the same time to pause/restart the associated track
 - press the pauseAll key to pause/restart all tracks that were currently playing
+
+{{ s3_img("diy-sound-mixer", "idea.jpg", "idea") }}
 
 ---
 
