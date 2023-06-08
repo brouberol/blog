@@ -283,6 +283,13 @@ Getting started instructions are available [here](https://github.com/brouberol/p
 
 {{ warning("Don't hesitate to read the comments if you have any doubt, as a fair share of questions have already be answered there.") }}
 
+Once you have everything running, you can:
+
+- press one of the 12 track keys to start/stop each individual sound track
+- press the volume up/down key and a track key at the same time to increase/decrease the volume of the associated track
+- press the pause key and a track key at the same time to pause/restart the associated track
+- press the pauseAll key to pause/restart all tracks that were currently playing
+
 ---
 
 ## Closing words
