@@ -1,3 +1,4 @@
+{% from 'note.j2' import note %}
 Title: My pizza recipe
 Date: 2020-03-18
 Category: yeast
@@ -5,6 +6,8 @@ Description: Make your own pizza by doing almost nothing but waiting
 Summary: ![pizza](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-done.jpg) I've always enjoyed a good looking Neapolitan pizza. You know, the ones with the [puffy, slightly burned crust](https://www.napolike.it/wp-content/uploads/2017/12/Pizze-gratis-al-Napoli-Pizza-village-per-il-riconoscimento-unesco.jpeg). I have probably baked dozens of them during the last couple of years, but only recently did I become satisfied enough with my recipe to feel comfortable sharing it.
 Image: https://blog.balthazar-rouberol.com/images/pizza-done.jpeg
 Tags: pizza
+
+{{ note("If you're reading this, do yourself a favor. Stop right there, and go to this [post](/neapolitan-pizza-dough-recipe) instead. I was young and foolish, and didn't know any better." | subrender )}}
 
 I've always enjoyed a good looking Neapolitan pizza. You know, the ones with the [puffy, slightly burned crust](https://www.napolike.it/wp-content/uploads/2017/12/Pizze-gratis-al-Napoli-Pizza-village-per-il-riconoscimento-unesco.jpeg). I have probably baked dozens of them during the last couple of years, but only recently did I become satisfied enough with my recipe to feel comfortable sharing it.
 
