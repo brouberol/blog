@@ -40,7 +40,7 @@ EXTRA_PATH_METADATA = {
 
 THEME = abspath(join(dirname(__file__), "themes", "pelican-hss"))
 
-USER_LOGO_URL = "https://balthazar-rouberol.com/static/img/image-small.jpg"
+USER_LOGO_URL = "https://gravatar.com/avatar/6832e99e94636c4872030004c6f8fd70?s=180"
 TAGLINE = "I work with humans and computers."
 
 # Blogroll
