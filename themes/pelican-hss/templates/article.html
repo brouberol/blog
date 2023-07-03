@@ -33,11 +33,13 @@
 
 {% block content %}
 {% import "modules/macros.html" as macros %}
-<article>
+<article data-pagefind-body>
   <div class="article__title">
-    <h1><a href="{{ SITEURL }}/{{ article.url | replace('.html', '') }}">{{ article.title }}</a></h1>
+    <h1 data-pagefind-meta="title"><a href="{{ SITEURL }}/{{ article.url | replace('.html', '') }}">{{ article.title
+        }}</a></h1>
   </div>
   <div class="article__meta">
+    <p style="display:none;" data-pagefind-meta="date" data-pagefind-sort="date">{{ article.date.date() }}</p>
     <p class="article__meta__post-date">{{ article.locale_date }}</p>
     <p class="article__meta__category middot">{{ macros.reading_time(article) }}</p>
     {% if DISPLAY_CATEGORIES == '' or DISPLAY_CATEGORIES %}
@@ -47,7 +49,8 @@
       {% endif %}
       {% if article.tags %}
       {% for tag in article.tags %}
-      <a class="taglink middot" href="{{ SITEURL }}/{{ tag.url | replace('.html', '') }}">{{ tag |
+      <a data-pagefind-meta="tag" class="taglink middot" href="{{ SITEURL }}/{{ tag.url | replace('.html', '') }}">{{
+        tag |
         single_word_capitalize }}</a>{%
       if not
       loop.last %} {% endif %}

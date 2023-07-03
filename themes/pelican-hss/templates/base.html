@@ -6,10 +6,12 @@
   <link rel="stylesheet/less" type="text/css" href="{{ SITEURL }}/theme/css/style.less">
   <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>
   -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css">
   <link rel="preload" as="style" rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/fontawesome-all.min.css">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto+Mono">
+  <script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -92,6 +94,7 @@
         <a href="{{ AUTHOR_URL }}">{{ AUTHOR }}</a>
         <p>{{ TAGLINE }}</p>
       </div>
+      <div id="search"></div>
       <div class="author__link">
         <ul>
           {% if DISPLAY_PAGES_ON_MENU %}{% for p in pages %}
@@ -143,5 +146,10 @@
     </section>
   </footer>
 </body>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({ element: "#search" });
+  });
+</script>
 
 </html>

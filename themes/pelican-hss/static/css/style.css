@@ -17,6 +17,8 @@
 :root {
     --dark-black: #272822;
     --border-radius-px: 4px;
+    --pagefind-ui-text: var(--text-color);
+    --pagefind-ui-background: var(--background-color);
 }
 
 @media (prefers-color-scheme: light) {
@@ -59,6 +61,7 @@
         --current-page-background-color: var(--note-background-color);
         --kbd-background-color: var(--dark-black);
         --hr-color: #414649;
+        --pagefind-ui-tag: var(--code-color);
     }
 
     img:not(.dark),
