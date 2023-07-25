@@ -39,11 +39,11 @@
         }}</a></h1>
   </div>
   <div class="article__meta">
-    <p style="display:none;" data-pagefind-meta="date" data-pagefind-sort="date">{{ article.date.date() }}</p>
-    <p class="article__meta__post-date">{{ article.locale_date }}</p>
-    <p class="article__meta__category middot">{{ macros.reading_time(article) }}</p>
+    <span style="display:none;" data-pagefind-meta="date" data-pagefind-sort="date">{{ article.date.date() }}</span>
+    <span class="article__meta__post-date">{{ article.locale_date }}</span>
+    <span class="article__meta__category middot">{{ macros.reading_time(article) }}</span>
     {% if DISPLAY_CATEGORIES == '' or DISPLAY_CATEGORIES %}
-    <p class="article__meta__category middot"><a
+    <span class="article__meta__category middot"><a
         href="{{ SITEURL }}/{{ article.category.url | replace('.html', '')}}">{{ article.category |
         single_word_capitalize }}</a>
       {% endif %}
@@ -56,7 +56,7 @@
       loop.last %} {% endif %}
       {% endfor %}
       {% endif %}
-    </p>
+    </span>
   </div>
   <div class="article__text">
     {{ macros.next_prev_chapter(article, articles) }}
