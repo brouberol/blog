@@ -1,11 +1,11 @@
 {% from 's3.j2' import s3_url %}
 
-{% macro side_by_side_images(dir, filename1, filename2) -%}
+{% macro side_by_side_images(dir, filename1, filename2, style_1=None, style_2=None) -%}
  <div class="row">
-  <div class="column">
+  <div class="column"{% if style_1%} style="{{ style_1}}"{% endif %}>
     <img src="{{ s3_url(dir, filename1) }}">
   </div>
-  <div class="column">
+  <div class="column"{% if style_2%} style="{{ style_2}}"{% endif %}>
     <img src="{{ s3_url(dir, filename2) }}">
   </div>
 </div>
