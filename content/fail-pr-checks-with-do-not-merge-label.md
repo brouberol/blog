@@ -22,6 +22,11 @@ First, we introduce a Github Actions [workflow](https://github.com/brouberol/5es
 name: Check do not merge
 
 on:
+  # Check label at every push in a feature branch
+  push:
+    branches-ignore:
+      - main
+  # Check label during the lifetime of a pull request
   pull_request:
     types:
     - opened
