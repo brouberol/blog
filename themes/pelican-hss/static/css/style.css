@@ -257,6 +257,7 @@ a {
     color: var(--text-color);
     text-decoration: none;
     transition: 0.15ms;
+    overflow-wrap: break-word;
 }
 
 a:hover {
