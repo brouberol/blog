@@ -20,7 +20,7 @@ However, this poses a challenge when it comes to _profiling_ the code and interp
 
 ### The limitations of `cProfile` when profiling asynchronous code
 
-For example, the following graph representation was generated from a profile recording 300 consecutive calls to a single API endpoint, with an associated `get_character` [handler](https://github.com/brouberol/5esheets/blob/3b3bd1f99159f13e1b0e95b6ce3f825bc65a1e2d/dnd5esheets/api/character.py#L48-L63).
+For example, the following graph representation was generated from a `cProfile` profile recording 300 consecutive calls to a single API endpoint, with an associated `get_character` [handler](https://github.com/brouberol/5esheets/blob/3b3bd1f99159f13e1b0e95b6ce3f825bc65a1e2d/dnd5esheets/api/character.py#L48-L63).
 
 ![profile-cprofile](https://user-images.githubusercontent.com/480131/258567029-c3fc4124-4822-49b2-8ce7-1cb79c501227.png)
 
@@ -31,7 +31,7 @@ Zooming in, we notice 2 things about the `get_character` span:
 
 ![get-character-span](https://github.com/brouberol/5esheets/assets/480131/71ec8ae5-553b-44bc-9613-30b5da9a6240)
 
-As an asynchronous function is "entered" and "exited" by the event loop at each `await` clause, every time the event-loop re-enters a function, `cProfile` will see this as an additional call, thus causing seemingly larger-than-normal `ncalls` numbers. Indeed, we `await` every-time we perform an SQL request, commit or refresh the SQLAlchemy session, etc.
+As an asynchronous function is "entered" and "exited" by the event loop at each `await` clause, every time the event-loop re-enters a function, `cProfile` will see this as an additional call, thus causing seemingly larger-than-normal `ncalls` numbers. Indeed, we `await` every-time we perform an SQL request, commit or refresh the SQLAlchemy session, or anything else inducing asynchronous I/O.
 Secondly, the reason that the `get_character` span appears to be free-floating is because it is executed outside of the main thread, by the Python event-loop.
 
 This means that our good old faithful `cProfile` might not cut it for this inherently asynchronous server, and we need a more modern profiler with builtin asynchronous support if we want to really make sense of where time is spent during a request.
@@ -46,7 +46,7 @@ This means that our good old faithful `cProfile` might not cut it for this inher
 > _[Source](https://docs.python.org/3/library/profile.html#what-is-deterministic-profiling)_
 
 
-Second, it brings native support for profiling asynchronous python code:
+Second, it advertises native support for profiling asynchronous python code:
 
 > `pyinstrument` can profile async programs that use `async` and `await`. This async support works by tracking the context of execution, as provided by the built-in [`contextvars`](https://docs.python.org/3/library/contextvars.html) module.
 
@@ -63,7 +63,7 @@ This should allow us to get a sensible picture of where time is spent during the
 
 We rely on the `FastAPI.middleware` decorator to register a profiling middleware (only enabled if the `PROFILING_ENABLED` setting it set to `True`) in charge of profiling a request if the `profile=true` query argument is passed by the client.
 
-By default, `pyinstrument` will generate a JSON report compatible with [Speedscope](https://speedscope.app), an online interactive flamegraph visualizer. However, if the `profile_format=html` query argument is a passed, then a simple HTML report will be dumped to disk.
+By default, this middleware will generate a JSON report compatible with [Speedscope](https://speedscope.app), an online interactive flamegraph visualizer. However, if the `profile_format=html` query argument is passed, then a simple HTML report will be dumped to disk instead.
 
 ```python
 from fastapi import Request
@@ -126,7 +126,7 @@ def register_middlewares(app: FastAPI):
 
 We see pretty clearly the different SQL requests being performed (the `execute` spans), the different `await` clauses in the code causing the event loop to pause the execution, and that most of the request time is spent in SQL requests.
 
-Finally, using this setup, I was able to [observe the effects](https://github.com/brouberol/5esheets/pull/180) of replacing the `json` stdlib library by [`orjson`](https://github.com/ijl/orjson) when deserializing JSON data from database and speed up this endpoint by a couple of percent very easily.
+Finally, using this setup, I was able to [observe the effects](https://github.com/brouberol/5esheets/pull/180) of replacing the `json` stdlib library by [`orjson`](https://github.com/ijl/orjson) when deserializing JSON data from database, and speed up this endpoint by a couple of percent very easily.
 
 
 ### Sources
