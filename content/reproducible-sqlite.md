@@ -6,7 +6,6 @@ Category: Programming
 Description: A walkthrough of how to pin an sqlite version and feature set accross multiple environments, architectures and OSes.
 Summary: This article discusses the challenges of maintaining consistent versions of the SQLite library in different environments for a project that relies heavily on it. Unlike traditional databases, where server versions can be easily pinned, SQLite is embedded in applications, leading to potential feature mismatches due to what version is made available by each environment's system package manager.
 Tags: SQLite
-status: draft
 Keywords: sqlite, fastapi, python, docker
 ---
 
