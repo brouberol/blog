@@ -16,7 +16,7 @@ The [project](https://github.com/brouberol/5esheets) I'm currrently working on o
 When you rely on a traditional database server (PostgreSQL, MySQL, mongoDB, etc), you can achieve this by running the same server version in all your environments.
 
 {{ note("Docker really shines there, as it allows to do just that in a single command.
-```bash
+```extbash
 $ docker run postgres:15.4
 ```
 ") }}
@@ -27,7 +27,7 @@ Things are a bit different with SQLite, as it is _not_ an SQL server. It is a _l
 
 If we have a look at a `python3.11` installation directory on a random Ubuntu server, we see that it bundles an `_sqlite.so` shared object, that itself dynamically loads `libsqlite3.so.0`.
 
-```bash
+```extbash
 $ find /usr/lib/python3.11  -name "*sqlite3*.so"
 /usr/lib/python3.11/lib-dynload/_sqlite3.cpython-311-x86_64-linux-gnu.so
 $ ldd /usr/lib/python3.11/lib-dynload/_sqlite3.cpython-311-x86_64-linux-gnu.so
@@ -40,7 +40,7 @@ $ ldd /usr/lib/python3.11/lib-dynload/_sqlite3.cpython-311-x86_64-linux-gnu.so
 
 Same question: where does `/lib/x86_64-linux-gnu/libsqlite3.so.0` come from then?
 
-```bash
+```extbash
 $ apt-file search /lib/x86_64-linux-gnu/libsqlite3.so.0
 libsqlite3-0: /usr/lib/x86_64-linux-gnu/libsqlite3.so.0
 libsqlite3-0: /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6
@@ -52,7 +52,7 @@ This means that python relies on whatever `libsqlite3` version is installed by t
 
 To know what version is installed on that system, we can inspect the version of the `libsqlite3-0` apt package:
 
-```bash
+```extbash
 $ apt-cache show libsqlite3-0 | grep Version
 Version: 3.40.1-1
 ```
@@ -72,7 +72,7 @@ Assuming you are installing your packages via `brew` on macOS, you'll find that 
 
 Indeed, we see this library when inspecting the content of the `sqlite` brew package:
 
-```bash
+```extbash
 ~ ❯ ls -alh /opt/homebrew/opt/sqlite/lib/libsqlite3.dylib
 lrwxr-xr-x    18 br   16 May 15:45  /opt/homebrew/opt/sqlite/lib/libsqlite3.dylib -> libsqlite3.0.dylib
 ```
@@ -103,7 +103,7 @@ Compiling the sqlite source code into a shared library was made easy to do as [S
 
 The following script compiles `libsqlite3` for linux, with full text search enabled:
 
-```bash
+```extbash
 # script/compile-libsqlite-linux.sh
 #!/usr/bin/env bash
 set -e
@@ -131,7 +131,7 @@ rm -r SQLite-${sqlite_ref}.tar.gz SQLite-${sqlite_ref}
 The following script compiles `libsqlite3` for macOS, with full text search enabled:
 
 
-```bash
+```extbash
 # script/compile-libsqlite-macos.sh
 #!/usr/bin/env bash
 
@@ -216,7 +216,7 @@ COPY --from=sqlite-build /app/src/build/libsqlite3.so ./lib/libsqlite3.so
 CMD ["./start-app.sh"]
 ```
 
-```bash
+```extbash
 # start-app.sh
 #!/bin/bash
 
@@ -259,7 +259,7 @@ async def sqlite_info(
 ```
 
 We can then query the `sqlite` version through the API:
-```bash
+```extbash
 ❯ curl -s localhost:8000/api/debug/sqlite | jq .version
 "3.42.0"
 ```
