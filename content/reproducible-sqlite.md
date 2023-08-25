@@ -20,7 +20,7 @@ $ docker run postgres:15.4
 ```
 ") }}
 
-Things are a bit different with SQLite, as it is _not_ an SQL server. It is a _library_ that you embed in your program (either by compiling it alongside your code, or by relying on a shared library and language bindings). Python does the latter: its `sqlite3` package is written in C using the CPython API, and [includes](https://github.com/python/cpython/blob/4ae3edf3008b70e20663143553a736d80ff3a501/Modules/_sqlite/connection.h#L32) the `sqlite3.h` header file. Where does this header file come from though?
+Things are a bit different with SQLite, as it is _not_ an SQL server. It is a _library_ that you embed in your program (either by compiling it alongside your code, or by relying on a shared library and language bindings). Python does the latter: its `sqlite3` module is written in C using the CPython API, and [includes](https://github.com/python/cpython/blob/4ae3edf3008b70e20663143553a736d80ff3a501/Modules/_sqlite/connection.h#L32) the `sqlite3.h` header file. Where does this header file come from though?
 
 ### Inspecting the sqlite version on linux
 
