@@ -15,7 +15,7 @@ The [project](https://github.com/brouberol/5esheets) I'm currrently working on o
 
 When you rely on a traditional database server (PostgreSQL, MySQL, mongoDB, etc), you can achieve this by running the same server version in all your environments.
 
-{{ note("Docker really shines there, as it allows to do just that in a single command, eg:
+{{ note("Docker really shines there, as it allows to do just that in a single command.
 ```bash
 $ docker run postgres:15.4
 ```
@@ -23,12 +23,12 @@ $ docker run postgres:15.4
 
 Things are a bit different with SQLite, as it is _not_ an SQL server. It is a _library_ that you embed in your program (either by compiling it alongside your code, or by relying on a shared library and language bindings). Python does the latter: its `sqlite3` package is written in C using the CPython API, and [includes](https://github.com/python/cpython/blob/4ae3edf3008b70e20663143553a736d80ff3a501/Modules/_sqlite/connection.h#L32) the `sqlite3.h` header file. Where does this header file come from though?
 
-### Inspecting the sqlite version on a linux host
+### Inspecting the sqlite version on linux
 
 If we have a look at a `python3.11` installation directory on a random Ubuntu server, we see that it bundles an `_sqlite.so` shared object, that itself dynamically loads `libsqlite3.so.0`.
 
 ```bash
-$ find /usr/lib/python3.11  -name "_sqlite3*.so"
+$ find /usr/lib/python3.11  -name "*sqlite3*.so"
 /usr/lib/python3.11/lib-dynload/_sqlite3.cpython-311-x86_64-linux-gnu.so
 $ ldd /usr/lib/python3.11/lib-dynload/_sqlite3.cpython-311-x86_64-linux-gnu.so
 	linux-vdso.so.1 (0x00007ffcda976000)
@@ -38,7 +38,7 @@ $ ldd /usr/lib/python3.11/lib-dynload/_sqlite3.cpython-311-x86_64-linux-gnu.so
 	/lib64/ld-linux-x86-64.so.2 (0x00007fab44f17000)
 ```
 
-Same question: where does `/lib/_64-linux-gnu/libsqlite3.so.0` come from then?
+Same question: where does `/lib/x86_64-linux-gnu/libsqlite3.so.0` come from then?
 
 ```bash
 $ apt-file search /lib/x86_64-linux-gnu/libsqlite3.so.0
@@ -66,7 +66,7 @@ We can check that we're getting this exact version via python:
 ('3.40.1',)
 ```
 
-### Inspecting the sqlite version on a macOS host
+### Inspecting the sqlite version on macOS
 
 Assuming you are installing your packages via `brew` on macOS, you'll find that it does things a bit differently than `apt`. The `python3` formula [depends on `sqlite`](https://github.com/Homebrew/homebrew-core/blob/1aa36b1d93b4ee968d8d355640735f5ec21e7262/Formula/p/python@3.11.rb#L30), which itself [downloads](https://github.com/Homebrew/homebrew-core/blob/1aa36b1d93b4ee968d8d355640735f5ec21e7262/Formula/s/sqlite.rb#L4) an `sqlite` archive pinned to a given version (`3.43.0` at the time of writing), and then [compiles `libsqlite3.dylib`](https://github.com/Homebrew/homebrew-core/blob/1aa36b1d93b4ee968d8d355640735f5ec21e7262/Formula/s/sqlite.rb#L36-L56).
 
@@ -89,19 +89,19 @@ And sure enough, we see that we're running the expected version in python:
 ### Pinning the sqlite version by vendoring the compiled library
 
 
-What we can do to make sure we get the exact same sqlite version everywhere is to compile these shared/dynamically loaded libraries ourselves for all architectures we plan to support, vendor them in our codebase, and inject them into our application via `LD_PRELOAD`.
+To pin the `sqlite` version across all environments and OSes, we can compile these shared/dynamically loaded libraries ourselves for all architectures we plan to support, vendor them in our codebase, and inject them into our application via `LD_PRELOAD`.
 
 We'd need to cover all the ways we run the app:
 
-- running `make run` on either macOS or linux, which runs the app on the host, against the version of `sqlite` installed by the package manager
-- running `make docker-run` on either macOS or linux, which runs the application in a docker container against the `sqlite` version available through the image OS package manager
-- in CI (Github Actions), which runs the test against the `sqlite` version made available by the runner OS package manager
+- running `make run`, which runs the app on the host, against the version of `sqlite` installed by the package manager
+- running `make docker-run`, which runs the application in a docker container against the `sqlite` version available through the image OS package manager
+- running `make test` in CI (Github Actions), which runs the test against the `sqlite` version made available by the runner OS package manager
 
 Compiling the sqlite source code into a shared library was made easy to do as [Simon Willison](https://simonwillison.net/) already [documented](https://til.simonwillison.net/sqlite/sqlite-version-macos-python) the process.
 
 #### Compiling `libsqlite3` for linux
 
-The following script compiles `libsqlite3` for linux, with FTS5 enabled:
+The following script compiles `libsqlite3` for linux, with full text search enabled:
 
 ```bash
 # script/compile-libsqlite-linux.sh
@@ -128,7 +128,7 @@ rm -r SQLite-${sqlite_ref}.tar.gz SQLite-${sqlite_ref}
 
 #### Compiling `libsqlite3` for macOS
 
-The following script compiles `libsqlite3` for macOS, with FTS5 enabled:
+The following script compiles `libsqlite3` for macOS, with full text search enabled:
 
 
 ```bash
