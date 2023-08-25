@@ -67,7 +67,7 @@ We can check that we're getting this exact version via python:
 
 ### Inspecting the sqlite version on macOS
 
-Assuming you are installing your packages via `brew` on macOS, you'll find that it does things a bit differently than `apt`. The `python3` formula [depends on `sqlite`](https://github.com/Homebrew/homebrew-core/blob/1aa36b1d93b4ee968d8d355640735f5ec21e7262/Formula/p/python@3.11.rb#L30), which itself [downloads](https://github.com/Homebrew/homebrew-core/blob/1aa36b1d93b4ee968d8d355640735f5ec21e7262/Formula/s/sqlite.rb#L4) an `sqlite` archive pinned to a given version (`3.43.0` at the time of writing), and then [compiles `libsqlite3.dylib`](https://github.com/Homebrew/homebrew-core/blob/1aa36b1d93b4ee968d8d355640735f5ec21e7262/Formula/s/sqlite.rb#L36-L56).
+Assuming you are installing your packages via `brew` on macOS, you'll find that it does things a bit differently than `apt`. The `python3` formula [depends on `sqlite`](https://github.com/Homebrew/homebrew-core/blob/1aa36b1d93b4ee968d8d355640735f5ec21e7262/Formula/p/python@3.11.rb#L30), which itself [downloads](https://github.com/Homebrew/homebrew-core/blob/1aa36b1d93b4ee968d8d355640735f5ec21e7262/Formula/s/sqlite.rb#L4) an archive pinned to a given version (`3.43.0` at the time of writing), and then [compiles `libsqlite3.dylib`](https://github.com/Homebrew/homebrew-core/blob/1aa36b1d93b4ee968d8d355640735f5ec21e7262/Formula/s/sqlite.rb#L36-L56).
 
 Indeed, we see this library when inspecting the content of the `sqlite` brew package:
 
@@ -92,9 +92,9 @@ To pin the `sqlite` version across all environments and OSes, we can compile the
 
 We'd need to cover all the ways we run the app:
 
-- running `make run`, which runs the app on the host, against the version of `sqlite` installed by the package manager
-- running `make docker-run`, which runs the application in a docker container against the `sqlite` version available through the image OS package manager
-- running `make test` in CI (Github Actions), which runs the test against the `sqlite` version made available by the runner OS package manager
+- running `make run`, which runs the app on the host, against the version of `libsqlite3` installed by the package manager
+- running `make docker-run`, which runs the application in a docker container against the `libsqlite3` version available through the image OS package manager
+- running `make test` in CI (Github Actions), which runs the test against the `libsqlite3` version made available by the runner OS package manager
 
 Compiling the sqlite source code into a shared library was made easy to do as [Simon Willison](https://simonwillison.net/) already [documented](https://til.simonwillison.net/sqlite/sqlite-version-macos-python) the process.
 
