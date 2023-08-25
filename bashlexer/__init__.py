@@ -52,6 +52,12 @@ class ExtendedBashLexer(BashLexer):
         "vim",
         "printenv",
         "open",
+        "find",
+        "ldd",
+        "apt-cache",
+        "apt-file",
+        "pushd",
+        "popd",
     ]
     EXTRA_KEYWORDS = [
         ">",
