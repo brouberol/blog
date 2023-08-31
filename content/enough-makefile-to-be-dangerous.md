@@ -271,6 +271,6 @@ doc/makefile.png: Makefile
 
 This is probably my most fundamental best practice.
 
-Over the years, I have realized that I'm not smart enough to maintain a cryptic-looking `Makefile`. I my view, articles such as [this one](https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/) steer the reader into producing "smart" Makfiles that are non obvious to reason about (especially the last example). I need to be able to read a target's logic and understand what it does months after having written it. The same way, I won't hesitate to repeat myself and avoid variables when I think the output looks clearer.  I try not to use ["magic variables"](https://devhints.io/makefile) too much.
+Over the years, I have realized that I'm not smart enough to maintain a cryptic-looking `Makefile`. I my view, articles such as [this one](https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/) steer the reader into producing "smart" Makefiles that are non obvious to reason about (especially the last example). I need to be able to read a target's logic and understand what it does months after having written it. The same way, I won't hesitate to repeat myself and avoid variables when I think the output looks clearer.  I try not to use ["magic variables"](https://devhints.io/makefile) too much.
 
 There's a delicate balance to be struck between expressibility and readability, and I think readability should _always_ win. You'll thank yourself later.
