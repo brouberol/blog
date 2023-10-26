@@ -100,13 +100,14 @@ def register_middlewares(app: FastAPI):
                 # we profile the request along with all additional middlewares, by interrupting
                 # the program every 1ms1 and records the entire stack at that point
                 with Profiler(interval=0.001, async_mode="enabled") as profiler:
-                    await call_next(request)
+                    response = await call_next(request)
 
                 # we dump the profiling into a file
                 extension = profile_type_to_ext[profile_type]
                 renderer = profile_type_to_renderer[profile_type]()
                 with open(f"profile.{extension}", "w") as out:
                     out.write(profiler.output(renderer=renderer))
+                return response
 
             # Proceed without profiling
             return await call_next(request)
