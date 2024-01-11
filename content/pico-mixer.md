@@ -23,7 +23,7 @@ I have been thinking about using a [Launchpad](https://novationmusic.com/en/laun
 
 The project started to take shape when I stumbled upon the [Pimoroni RGB Keypad](https://shop.pimoroni.com/products/pico-rgb-keypad-base), a 4x4 rainbow-illuminated keypad that I could program using a [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/), for a budget of about 30€.
 
-![pimoroni keypad](https://camo.githubusercontent.com/9ff5aa6dd7396118c6ac313e7aac199098ebae3654923a987fc6797fe025d0e3/68747470733a2f2f63646e2e73686f706966792e636f6d2f732f66696c65732f312f303137342f313830302f70726f64756374732f7069636f2d6164646f6e732d325f3130323478313032342e6a70673f763d31363131313737393035)
+![pimoroni keypad](https://shop.pimoroni.com/cdn/shop/products/pico-addons-2_768x768_crop_center.jpg)
 
 The color and brightness of the LEDs under the keys is [programmable](https://github.com/martinohanlon/pico-rgbkeypad), meaning I could go for the look and feel of a Launchpad, while keeping my budget and the overall complexity in check.
 
