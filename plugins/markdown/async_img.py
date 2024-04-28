@@ -4,8 +4,8 @@ attributes on all img nodes.
 
 """
 
-from markdown.inlinepatterns import ImageInlineProcessor, IMAGE_LINK_RE
 from markdown.extensions import Extension
+from markdown.inlinepatterns import IMAGE_LINK_RE, ImageInlineProcessor
 
 
 class AsyncDecodedImgInlineProcessor(ImageInlineProcessor):
