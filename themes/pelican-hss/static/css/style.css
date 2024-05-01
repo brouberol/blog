@@ -665,13 +665,16 @@ footer .ending-message {
   text-decoration: underline;
 }
 
-.row {
-  display: flex;
-}
+/* Only display images side-by-side when not on mobile */
+@media screen and (min-width: 769px) {
+  .row {
+    display: flex;
+  }
 
-.column {
-  flex: 50%;
-  padding: 5px;
+  .column {
+    flex: 50%;
+    padding: 5px;
+  }
 }
 
 .toc {
