@@ -1,12 +1,16 @@
-{% from 's3.j2' import s3_url %}
+{% from 's3.j2' import s3_url, responsive_s3_img %}%}
 
 {% macro side_by_side_images(dir, filename1, filename2, style_1=None, style_2=None) -%}
+{% set base_filename1 = filename1.split(".")[0]%}
+{% set base_filename2 = filename2.split(".")[0]%}
+{% set extension1 = filename1.split(".")[1]%}
+{% set extension2 = filename2.split(".")[1]%}
  <div class="row">
   <div class="column"{% if style_1%} style="{{ style_1}}"{% endif %}>
-    <img src="{{ s3_url(dir, filename1) }}">
+    {{ responsive_s3_img(dir, base_filename1, extension=extension1) }}
   </div>
   <div class="column"{% if style_2%} style="{{ style_2}}"{% endif %}>
-    <img src="{{ s3_url(dir, filename2) }}">
+    {{ responsive_s3_img(dir, base_filename2, extension=extension2) }}
   </div>
 </div>
 {% endmacro %}

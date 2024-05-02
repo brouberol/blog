@@ -1,5 +1,5 @@
 {% from 'img.j2' import side_by_side_images %}
-{% from 's3.j2' import s3_img %}
+{% from 's3.j2' import s3_img, responsive_s3_img %}
 {% from 'note.j2' import note %}
 {% from 'picture.j2' import picture_light_dark %}
 ---
@@ -23,7 +23,7 @@ I draw all of my maps on a [basic Pathfinder Flip-Mat](https://paizo.com/product
 I also own a physical healing potion, as well as a couple of DIY flasks, that are always fun to give around whenever players find an unidentified potion.
 Finally, I have a couple of coins and seals to give whenever someone is awarded an inspiration point.
 
-{{ s3_img("dm-toolkit", "potions.jpg") }}
+{{ responsive_s3_img("dm-toolkit", "potions") }}
 
 I think this helps remind players that they _have_ these resources at their disposal, as they're not lost in sea of information in their character sheet.
 
@@ -31,7 +31,7 @@ I think this helps remind players that they _have_ these resources at their disp
 
 My [previous article](https://blog.balthazar-rouberol.com/my-diy-dungeons-and-dragons-ambiance-mixer) goes into all the gory details, but the gist is: I built a soundboard allowing me to overlay multiple sound ambiances. I can seamlessly start a combat playlist, then add up some dragon screams when the beast starts hovering over the fight, and amp up the tension by switching to a faster paced-track as the combat ramps up.
 
-{{ side_by_side_images("diy-sound-mixer", "keypad.jpg", "pico-mixer.webp")}}
+{{ side_by_side_images("dm-toolkit", "keypad.jpg", "pico-mixer.webp")}}
 
 I pretty quickly realized that I also wanted a way to easily add new ones to my `pico-mixer` config.
 
@@ -76,8 +76,8 @@ I wanted my players to not only be able to quickly decide what spell to use, but
 
 We ended up with tarot-sized cards looking like [this](https://balthazar-rouberol.com/public/rpg-cards.pdf).
 
-{{ s3_img("dm-toolkit", "cards-recto.webp") }}
-{{ s3_img("dm-toolkit", "cards-verso.webp") }}
+{{ responsive_s3_img("dm-toolkit", "cards-recto") }}
+{{ responsive_s3_img("dm-toolkit", "cards-verso") }}
 
 {{ note("This is still a WIP, and we're actively improving the design. I'm planning to communicate about the tooling we used when we decide it is ready to be shared.") }}
 
