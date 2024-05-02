@@ -6,8 +6,8 @@
 Title: My dungeon master toolkit
 Date: 2024-04-28
 Category: Dungeons and Dragons
-Description: One of my favourite aspects of being a dungeon master is building my own tools, with a single goal in mind: improving the immersion by removing much of the in-game friction. This article will walk you through these tools and provide you with the resources you need should you want to replicate them.
-Summary: One of my favourite aspects of being a dungeon master is building my own tools, with a single goal in mind: improving the immersion by removing much of the in-game friction. This article will walk you through these tools and provide you with the resources you need should you want to replicate them.
+Description: One of my favourite aspect of being a dungeon master is building my own tools. I do this with a single goal in mind: improving the immersion by removing much of the in-game friction. This article will walk you through these tools and provide you with the resources you need should you want to use them as well.
+Summary: One of my favourite aspect of being a dungeon master is building my own tools. I do this with a single goal in mind: improving the immersion by removing much of the in-game friction. This article will walk you through these tools and provide you with the resources you need should you want to use them as well.
 Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/dm-toolkit/dm-toolkit.jpeg
 Tags: python, DIY
 Keywords: Dungeon Master, TTRPG, D&D, Python, DIY
@@ -15,7 +15,7 @@ status: draft
 ---
 
 
-One of my favourite aspect of being a dungeon master is building my own tools with a single goal in mind: improving the immersion by removing much of the in-game friction. This article will walk you through these tools and provide you with the resources you need should you want to use them as well.
+One of my favourite aspect of being a dungeon master is building my own tools. I do this with a single goal in mind: improving the immersion by removing much of the in-game friction. This article will walk you through these tools and provide you with the resources you need should you want to use them as well.
 
 ## Physical accessories
 
@@ -26,6 +26,7 @@ Finally, I have a couple of coins and seals to give whenever someone is awarded 
 
 {{ s3_img("dm-toolkit", "potions.jpg") }}
 
+I think this helps remind players that they _have_ these resources at their disposal, as they're not lost in sea of information in their character sheet.
 
 ## Soundboard and ambiance mixer
 
@@ -33,9 +34,9 @@ My [previous article](https://blog.balthazar-rouberol.com/my-diy-dungeons-and-dr
 
 {{ side_by_side_images("diy-sound-mixer", "keypad.jpg", "pico-mixer.webp")}}
 
-Once I had a way to overlay sound ambiances, I also wanted a way to easily add new ones to my `pico-mixer` config.
+I pretty quickly realized that I also wanted a way to easily add new ones to my `pico-mixer` config.
 
-I quicky discovered [tabletopaudio.com](https://tabletopaudio.com) and the plethora of freely available ambiances to choose from. I found myself thinking about the atmosphere I wanted for my next game, listened to a couple of tracks, and once I found the perfect one, downloaded it and added it to my `pico-mixer` config file. While that worked well, I quickly built a [tool](https://gist.github.com/brouberol/afdd5e947f835fdc06ee4c91e79c8f92) to [automate](https://xkcd.com/1319/) these steps, to make it even easier for myself.
+I was introduced to [tabletopaudio.com](https://tabletopaudio.com) and the plethora of freely available ambiances to choose from. I found myself thinking about the atmosphere I wanted for my next game, listened to a couple of tracks, and once I found the perfect one, downloaded it and added it to my `pico-mixer` config file. While that worked well, I ended up building a [tool](https://gist.github.com/brouberol/afdd5e947f835fdc06ee4c91e79c8f92) [automating](https://xkcd.com/1319/) these steps, to make it even easier for myself.
 
 {{ picture_light_dark("dm-toolkit/tabletopaudio-dl-light.webp") }}
 
@@ -47,9 +48,9 @@ This setup has proven _very_ efficient: my players usually don't even consciousl
 
 The process of tracking initiative at my table was always a little bit ad-hoc and painful. We would usually start writing the players initiative on the battlemap, and then would cram the monster initiative in between, where appropriate. This would result in the turn order being sometimes barely legible, which would in turn break combat immersion as we would try to figure out who was next.
 
-I found this process painful enough to spend an hour to improve it. I wanted to build an initiative tracker that would be easy to see from both sides of the table, easy to reorganize as the combat evolved, and easy to reuse game night after game night.
+I found this process painful enough to spend time to improve it. I wanted to build an initiative tracker that would be easy to see from both sides of the table, easy to reorganize as the combat evolved, and easy to reuse game night after game night.
 
-I drew a simple flag on a piece of paper, took a picture of it and [converted](https://stackoverflow.com/a/12608376) to jpg to an [SVG](https://balthazar-rouberol.com/public/initiative-tracker-flag.svg). I then cranked up Photoshop, placed 14 of these flags on a [2-side A4 page with cutting lines](https://balthazar-rouberol.com/public/initiative-tracker.pdf), with enough space at the left for a magnet that would allow me to place them on a vertical bar of some kind. I finally printed the page, laminated it, and cut it along the lines.
+I drew a simple flag on a piece of paper, took a picture of it and [converted](https://stackoverflow.com/a/12608376) to jpg to an [SVG](https://balthazar-rouberol.com/public/initiative-tracker-flag.svg). I then cranked up Photoshop, placed 14 of these flags on a [2-side A4 page with cutting lines](https://balthazar-rouberol.com/public/initiative-tracker.pdf), with enough space on the left for a magnet that would allow me to place them on a vertical bar of some kind. I finally printed the page, laminated it, and cut along the lines.
 
 Whenever we start a fight, each player writes their character name and initiative on each side of their tracker, while I do the same for the monsters. We then simply organize the trackers by initiative and start the fight.
 
@@ -62,11 +63,11 @@ Because the paper is laminated, I can dry-erase whatever I wrote on each tracker
 
 ## Spell cards
 
-After a few game nights, I started to notice that one of my players (who was a first-timer), was spending a lot of time looking at his phone under the table. When I pointed this out, he said that he was actually reading his spells descriptions. He was feeling a bit overwhelmed by the number of spells he needed to master, and was afraid of not thinking of the "right" spell to use. As a consequence, he had issues following the game, because he was too focused on his spells under the table instead of on focusing on what was happening _at_ the table.
+After a few game nights, I started to notice that one of my players (who was a first-timer) was spending a lot of time looking at his phone under the table. When I pointed this out, he said that he was actually reading his spells descriptions. He was feeling a bit overwhelmed by the number of spells he needed to master, and was afraid of not thinking of the "right" spell to use. As a consequence, he had issues following the game, because he was distracted by his spells under the table, instead of focusing on what was happening _at_ the table.
 
 To remedy this issue, [Etienne](https://etnbrd.com/) and I worked on a way to print physical spell cards to gift each spellcaster. We had several goals for this project:
 
-- the text would need to be in french but the tooling could export the english spells version as well
+- the text should be in french but the tooling should be able to export the english spells version as well
 - it should be easy to visually sort the spells by level
 - it should be easy to determine the type of spell (utility, healing, damage dealing, buff, debuff, control, etc)
 - it should be easy to know what dice to roll (I noticed that new players had difficulties knowing which of their dice was the d8, d10 or d12)
@@ -81,9 +82,9 @@ We ended up with tarot-sized cards looking like [this](https://balthazar-roubero
 
 {{ note("This is still a WIP, and we're actively improving the design. I'm planning to communicate about the tooling we used when we decide it is ready to be shared.") }}
 
-Not only were my players really happy about being gifted a prop, but they really seemed to be engaging with their spellbook much more than with the condensed list of spells on their character sheet, and ended up being more creative with their abilities! I made sure to have them laminated, so they could for example put a small dot on a card to indicate that the spell was prepared, amd dry-erase it it was no longer the case. It also looks generally cooler.
+Not only were my players really happy about being gifted a prop, but they really seemed to be engaging with their spellbook much more than with the condensed list of spells on their character sheet, and ended up being more creative with their abilities! I made sure to have them laminated, so they could for example put a small dot on a card to indicate that the spell was prepared, and dry-erase it it was no longer the case. It also looks generally cooler.
 
 
 ## Conclusion
 
-I believe in the power of using physical accessories to ground a theater-of-the-mind experience, especially if these accessories are beautiful to look at, feel cool to use, as well as hide or remove mechanical friction. These accessories help run run a smooth game in which I can build and maintain dramatic tension. Having a smooth game Tension around the table is like a soufflé. Wait too long for someone to make a decision, and it deflates.
+I believe in the power of using physical accessories to ground a theater-of-the-mind experience, especially if these accessories are beautiful to look at, feel cool to use, as well as hide or remove mechanical friction. These accessories help me run a smooth game in which I can build and maintain dramatic tension.
