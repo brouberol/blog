@@ -1,6 +1,5 @@
 {% macro s3_url(folder, filename) %}
-https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/{{ folder }}/{{ filename }}
-{% endmacro%}
+https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/{{ folder }}/{{ filename }}{% endmacro %}
 
 
 {% macro s3_img(folder, filename, alt_text) %}
@@ -10,4 +9,14 @@ https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/{{ folder }}/{{ filen
 {% else %}
 ![]({{ url }})
 {% endif %}
+{% endmacro %}
+
+
+{% macro responsive_s3_img(folder, filename, alt_text, extension="webp") %}
+{% set url = s3_url(folder, filename) %}
+<img
+  src="{{ url }}-300.{{ extension }}"
+  srcset="{{ url }}-300.{{ extension }} 320w,{{ url }}-600.{{ extension }} 630w,{{ url }}-1200.{{ extension }} 1250w,{{ url }}-2000.{{ extension }} 2100w"
+  alt="{{ alt_text }}"
+/>
 {% endmacro %}
