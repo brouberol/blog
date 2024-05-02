@@ -14,7 +14,6 @@ Keywords: Dungeon Master, TTRPG, D&D, Python, DIY
 status: draft
 ---
 
-**TODO improve main picture**
 
 One of my favourite aspect of being a dungeon master is building my own tools with a single goal in mind: improving the immersion by removing much of the in-game friction. This article will walk you through these tools and provide you with the resources you need should you want to use them as well.
 
@@ -25,7 +24,8 @@ I draw all of my maps on a [basic Pathfinder Flip-Mat](https://paizo.com/product
 I also own a physical healing potion, as well as a couple of DIY flasks, that are always fun to give around whenever players find an unidentified potion.
 Finally, I have a couple of coins and seals to give whenever someone is awarded an inspiration point.
 
-**TODO picture of potions and coins**
+{{ s3_img("dm-toolkit", "potions.jpg") }}
+
 
 ## Soundboard and ambiance mixer
 
@@ -62,14 +62,14 @@ Because the paper is laminated, I can dry-erase whatever I wrote on each tracker
 
 ## Spell cards
 
-After a few game nights, I started to notice that one of my players (who was a first-timer), was spending a lot of time looking at his phone under the table. When I pointed this out, he said that he was actually reading his spells descriptions. He was feeling a bit overwhelmed by the number of spells he needed to master, and was afraid of not thinking of the "right" spell to use. As a consequence, he had issues following the game, because he was too focused on his spells under the table instead of what was happening _at_ the table.
+After a few game nights, I started to notice that one of my players (who was a first-timer), was spending a lot of time looking at his phone under the table. When I pointed this out, he said that he was actually reading his spells descriptions. He was feeling a bit overwhelmed by the number of spells he needed to master, and was afraid of not thinking of the "right" spell to use. As a consequence, he had issues following the game, because he was too focused on his spells under the table instead of on focusing on what was happening _at_ the table.
 
 To remedy this issue, [Etienne](https://etnbrd.com/) and I worked on a way to print physical spell cards to gift each spellcaster. We had several goals for this project:
 
 - the text would need to be in french but the tooling could export the english spells version as well
 - it should be easy to visually sort the spells by level
 - it should be easy to determine the type of spell (utility, healing, damage dealing, buff, debuff, control, etc)
-- it should be easy to know what dice to roll (I notice that new players had difficulties knowing which of their dice was the d8, d10 or d12)
+- it should be easy to know what dice to roll (I noticed that new players had difficulties knowing which of their dice was the d8, d10 or d12)
 - they would need to look nicer than the [Gale Force Nine ones](https://dnd.gf9games.com/gameAcc/tabid/87/entryid/92/spellbook-cards-arcane-73915.aspx)
 
 I wanted my players to not only be able to quickly decide what spell to use, but to feel empowered do this publicly using game props, instead of their phone under the table.
@@ -86,4 +86,4 @@ Not only were my players really happy about being gifted a prop, but they really
 
 ## Conclusion
 
-I believe in the power of using physical accessories to ground a theater-of-the-mind experience, especially if these accessories are beautiful to look at, feel cool to use, as well as hide or remove mechanical friction. Tension around the table is like a soufflé. Wait too long for someone to make a decision, and it deflates.
+I believe in the power of using physical accessories to ground a theater-of-the-mind experience, especially if these accessories are beautiful to look at, feel cool to use, as well as hide or remove mechanical friction. These accessories help run run a smooth game in which I can build and maintain dramatic tension. Having a smooth game Tension around the table is like a soufflé. Wait too long for someone to make a decision, and it deflates.
