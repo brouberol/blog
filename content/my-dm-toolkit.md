@@ -31,7 +31,7 @@ I think this helps remind players that they _have_ these resources at their disp
 
 My [previous article](https://blog.balthazar-rouberol.com/my-diy-dungeons-and-dragons-ambiance-mixer) goes into all the gory details, but the gist is: I built a soundboard allowing me to overlay multiple sound ambiances. I can seamlessly start a combat playlist, then add up some dragon screams when the beast starts hovering over the fight, and amp up the tension by switching to a faster paced-track as the combat ramps up.
 
-{{ side_by_side_images("dm-toolkit", "keypad.jpg", "pico-mixer.webp")}}
+{{ side_by_side_images("dm-toolkit", "keypad.webp", "pico-mixer.webp")}}
 
 I pretty quickly realized that I also wanted a way to easily add new ones to my `pico-mixer` config.
 
