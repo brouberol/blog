@@ -1,5 +1,5 @@
 {% macro picture_light_dark(light_src) -%}
-{% set dark_src = light_src.replace("/light/", "/dark/") %}
+{% set dark_src = light_src.replace("light", "dark") %}
 <picture>
     <source srcset="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/{{ dark_src }}" media="(prefers-color-scheme: dark)">
     ![](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/{{ light_src }})
