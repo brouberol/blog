@@ -25,7 +25,7 @@ Finally, I have a couple of coins and seals to give whenever someone is awarded 
 
 {{ responsive_s3_img("dm-toolkit", "potions") }}
 
-I think this helps remind players that they _have_ these resources at their disposal, as they're not lost in sea of information in their character sheet.
+I think this helps remind players that they _have_ these resources at their disposal, as they're not lost in a sea of information in their character sheet.
 
 ## Soundboard and ambiance mixer
 
