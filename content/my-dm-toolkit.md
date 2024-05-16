@@ -2,6 +2,7 @@
 {% from 's3.j2' import s3_img, responsive_s3_img %}
 {% from 'note.j2' import note %}
 {% from 'picture.j2' import picture_light_dark %}
+{% from 'youtube.j2' import youtube_embed %}
 ---
 Title: My dungeon master toolkit
 Date: 2024-04-28
@@ -83,6 +84,22 @@ We ended up with tarot-sized cards looking like [this](https://balthazar-roubero
 
 Not only were my players really happy about being gifted a prop, but they really seemed to be engaging with their spellbook much more than with the condensed list of spells on their character sheet, and ended up being more creative with their abilities! I made sure to have them laminated, so they could for example put a small dot on a card to indicate that the spell was prepared, and dry-erase it it was no longer the case. It also looks generally cooler.
 
+
+## Physical tokens
+
+I love my minis, but I also wanted to be able to bring more realistic renditions of monsters on the table when I could, especially as my players are about to enter the Underdark and start facing Mind Flayers. I wanted them to be able to see horror face to face, so to speak.
+
+I found this great video from [JP Coovert](https://www.youtube.com/@JPCoovert), who makes all kinds of fun D&D/DIY videos, about how to draw monsters and create physical tokens out of the drawings, using a hole puncher, [magnets](https://www.amazon.fr/Baker-Ross-disques-magn%C3%A9tiques-Autocollants/dp/B07H5PC1X1/ref=pd_bxgy_thbs_d_sccl_2/261-9604968-9320149?pd_rd_w=W7vAc&content-id=amzn1.sym.7c6a734e-8527-40ee-abbf-1b6b03d9c343&pf_rd_p=7c6a734e-8527-40ee-abbf-1b6b03d9c343&pf_rd_r=NT13QX2CX29ZK0R9B0RW&pd_rd_wg=N5L6h&pd_rd_r=e7d7f9a9-731a-4932-992e-4a991a02ceb6&pd_rd_i=B07H5PC1X1&psc=1) and small [token epoxy covers](https://www.amazon.fr/HEALLILY-Autocollants-Artisanat-Pendentifs-Fabrication/dp/B08XTG1SCQ?pd_rd_w=aM7TK&content-id=amzn1.sym.ccfa293c-eedb-4137-a11f-3633168fdf16&pf_rd_p=ccfa293c-eedb-4137-a11f-3633168fdf16&pf_rd_r=02MHG5DF94MPP03SDBXE&pd_rd_wg=rODEx&pd_rd_r=d0d29265-bc98-44ae-bd0c-2c955955edcf&pd_rd_i=B08XTG1SCQ&psc=1&ref_=pd_bap_d_grid_rp_0_1_ec_pd_gwd_bag_pd_hp_d_atf_rp_1_i).
+
+{{ youtube_embed("https://www.youtube.com/watch?v=LBZPi4oKlCQ") }}
+
+Being the crafty programmer that I am, I then created a [CLI tool](https://github.com/brouberol/dnd5e-token-exporter) to automatically layout monster tokens on a page (A4 or A3). I could then print it, and punch hole after hole until I got a pretty sizeable collection.
+
+{{ responsive_s3_img("dm-toolkit", "physical-tokens") }}
+
+By default, the CLI will fit 70 tokens on a A4 page (and 140 on an A3), and leave you enough margin to be able to punch-hole cleanly.
+
+By doing this, I can create beautiful and durable tokens for abouy 30c a piece. Thanks again to [JP Coovert](https://www.youtube.com/@JPCoovert) for the inspiration.
 
 ## Conclusion
 
