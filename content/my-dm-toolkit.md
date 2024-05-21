@@ -57,8 +57,6 @@ Whenever we start a fight, each player writes their character name and initiativ
 
 Because the paper is laminated, I can dry-erase whatever I wrote on each tracker at the end of the fight.
 
-{{ note("If I ever need some new trackers, I'll probably make them a bit smaller, to make sure I can stack a bit more.") }}
-
 
 ## Spell cards
 
