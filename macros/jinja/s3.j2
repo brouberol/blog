@@ -18,5 +18,7 @@ https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/{{ folder }}/{{ filen
   src="{{ url }}-300.{{ extension }}"
   srcset="{{ url }}-300.{{ extension }} 320w,{{ url }}-600.{{ extension }} 630w,{{ url }}-1200.{{ extension }} 1250w,{{ url }}-2000.{{ extension }} 2100w"
   alt="{{ alt_text }}"
+  loading="lazy"
+  decoding="async"
 />
 {% endmacro %}
