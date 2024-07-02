@@ -9,6 +9,7 @@
 <meta property="og:title" content="{{ article.title }}" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ ABSOLUTE_SITEURL }}/{{ article.url | replace('.html', '')}}" />
+<link data-pagefind-meta="url[href]" rel="canonical" href="{{ SITEURL }}/{{ article.url | replace('.html', '') }}">
 
 {% if article.image %}
 <meta name="twitter:card" content="summary_large_image" />
