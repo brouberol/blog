@@ -3,7 +3,7 @@ Date: 2020-03-05
 Category: Essential Tools and Practices for the Aspiring Software Developer
 Description: In which we help you take your first steps in the terminal
 Summary: This chapter will help you take your first steps in the terminal, this almost mythical (The Matrix, anyone?) application we oftentimes imagine hackers type in really fast. We will see how it works and how it can empower you, increase your productivity and give you insights about how your computer works.
-Image: https://blog.balthazar-rouberol.com/images/terminal/physical-terminal.png
+Image: https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/terminal/discovering-terminal.png
 Tags: terminal
 Keywords: bash, zsh, linux
 chapter: 1
