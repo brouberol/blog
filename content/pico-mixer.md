@@ -66,7 +66,7 @@ I then copied `code.py` and `lib/rgbkeypad.py` under the `CIRCUITPY` volume that
 
 ## Reacting to key presses
 
-Now that I knew how to program the key colors, brightness as well as knowing what keys were being pressed, I still needed a way to map these key events to starting audio tracks, and I was facing an immediate problem: the Pico has no way to play sound, even less on a Bluetooth-connected speaker. You know what can do all that really well though? My laptop.
+Now that I knew how to program the key colors, brightness, as well as knowing what keys were being pressed, I still needed a way to map these key events to starting audio tracks, and I was facing an immediate problem: the Pico has no way to play sound, even less on a Bluetooth-connected speaker. You know what can do all that really well though? My laptop.
 
 So, if I could send messages from the Pico to my laptop (on which the Pico is connected for power anyway) and have a program running on my laptop receive them, I could then start thinking about how to play sounds.
 
@@ -282,7 +282,7 @@ I have added a couple of features that will help me stay as focused on the story
 
 Getting started instructions are available [here](https://github.com/brouberol/pico-mixer#getting-started-on-windows) for Windows users, and [here](https://github.com/brouberol/pico-mixer#getting-started-on-macos-and-linux) for macOS and Linux users.
 
-{{ warning("Don't hesitate to read the comments if you have any doubt, as a fair share of questions have already be answered there.") }}
+{{ warning("Don't hesitate to read the comments if you have any doubt, as a fair share of questions has already be answered there.") }}
 
 Once you have everything running, you can:
 
