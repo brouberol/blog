@@ -3,6 +3,7 @@ name = "blog"
 version = "0.1.0"
 description = "Personal blog"
 authors = ["Balthazar Rouberol <br@imap.cc>"]
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.8"
