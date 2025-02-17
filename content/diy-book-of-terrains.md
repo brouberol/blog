@@ -77,7 +77,7 @@ I then exported the book to a PDF file without compression, and took it to the p
 ### Final product
 
 Once all pages were printed, I got them laminated (to make it possible to erase whatever was drawn during the encounter) and bound using a simple metallic book ring, and _voilà_!
-The grid being 1 inch, it fits perfectly with any standard-size mini you can buy out there, as well as with my [token exporter tooling].(https://github.com/brouberol/dnd5e-token-exporter).
+The grid being 1 inch, it fits perfectly with any standard-size mini you can buy out there, as well as with my [token exporter tooling](https://github.com/brouberol/dnd5e-token-exporter).
 
 {{ responsive_s3_img("diy-book-of-terrains", "IMG_1841") }}
 {{ responsive_s3_img("diy-book-of-terrains", "IMG_1842") }}
