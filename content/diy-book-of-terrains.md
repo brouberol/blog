@@ -1,12 +1,12 @@
-{% from 's3.j2' import responsive_s3_img %}
+{% from 's3.j2' import responsive_s3_img, s3_url %}
 {% from 'note.j2' import note %}
 {% from 'img.j2' import side_by_side_images %}
 ---
 Title: Making a DIY book of terrains
 Date: 2025-02-16
 Category: Dungeons and Dragons
-Description: I recently stumbled upon the [Giant Book of Battle Mats](https://shop.black-book-editions.fr/produit/14161/0/books-of-battlemats/big-book-of-battle-mats-vol3), which is a book of A3 laminated TTRPG battlemaps. The way I see it, the core idea of the book is to immerse the players into combat by providing a rich visual experience. The main issue I have with that book though, is that the maps are too rich in details, which impedes their reusability. The first time you run a battle on one of these maps, your players might have a lot of fun looking through everything their character can interact wit. However, the next time, they might get a sense of _déjà vu_, which in turn might impact their suspension of disbelief, and ultimately, their immersion. In this article, I'll go through my process for creating a similar book that I believe shows better reusability.
-Summary: I recently stumbled upon the [Giant Book of Battle Mats](https://shop.black-book-editions.fr/produit/14161/0/books-of-battlemats/big-book-of-battle-mats-vol3), which is a book of A3 laminated TTRPG battlemaps. The way I see it, the core idea of the book is to immerse the players into combat by providing a rich visual experience. The main issue I have with that book though, is that the maps are too rich in details, which impedes their reusability. The first time you run a battle on one of these maps, your players might have a lot of fun looking through everything their character can interact wit. However, the next time, they might get a sense of _déjà vu_, which in turn might impact their suspension of disbelief, and ultimately, their immersion. In this article, I'll go through my process for creating a similar book that I believe shows better reusability.
+Description: I recently stumbled upon the [Giant Book of Battle Mats](https://shop.black-book-editions.fr/produit/14161/0/books-of-battlemats/big-book-of-battle-mats-vol3), which is a book of A3 laminated TTRPG battlemaps. The way I see it, the core idea of the book is to immerse the players into combat by providing a rich visual experience. The main issue I have with that book though, is that the maps are too rich in details, which impedes their reusability. The first time you run a battle on one of these maps, your players might have a lot of fun looking through everything their character can interact wit. However, the next time, they might get a sense of _déjà vu_, which in turn might impact their suspension of disbelief, and ultimately, their immersion. In this article, I'll go through my process for creating a similar book that I believe displays better reusability.
+Summary: I recently stumbled upon the [Giant Book of Battle Mats](https://shop.black-book-editions.fr/produit/14161/0/books-of-battlemats/big-book-of-battle-mats-vol3), which is a book of A3 laminated TTRPG battlemaps. The way I see it, the core idea of the book is to immerse the players into combat by providing a rich visual experience. The main issue I have with that book though, is that the maps are too rich in details, which impedes their reusability. The first time you run a battle on one of these maps, your players might have a lot of fun looking through everything their character can interact wit. However, the next time, they might get a sense of _déjà vu_, which in turn might impact their suspension of disbelief, and ultimately, their immersion. In this article, I'll go through my process for creating a similar book that I believe displays better reusability.
 Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/diy-book-of-terrains/header-image.jpg
 hide_image: True
 Tags: DIY, Dungeondraft
@@ -15,13 +15,13 @@ Keywords: Dungeon Master, TTRPG, D&D, Python, DIY, Dungeondraft
 
 I recently stumbled upon the [Giant Book of Battle Mats](https://shop.black-book-editions.fr/produit/14161/0/books-of-battlemats/big-book-of-battle-mats-vol3), which is a book of A3 laminated TTRPG battlemaps. The way I see it, the core idea of the book is to immerse the players into combat by providing a rich visual experience. The main issue I have with that book though, is that the maps are too rich in details, which impedes their reusability. The first time you run a battle on one of these maps, your players might have a lot of fun looking through everything their character can interact with. However, the next time, they might get a sense of _déjà vu_, which in turn might impact their suspension of disbelief, and ultimately, their immersion.
 
-In this article, I'll go through my process for creating a similar book that I believe has better reusability.
+In this article, I'll go through my process for creating a similar book that I believe displays better reusability.
 
 ### Creating the terrains
 
 The first thing we need for a good book of terrains is, well, terrains. What I wanted was a set of diverse locations and colors, striking enough to be immersive, and generic enough to fit multiple encounters.
 
-To produce these, I used [Dungeondraft](https://dungeondraft.net/), along with some asset packs from [2 minute tabletop](https://2minutetabletop.com/product-category/map-assets/dungeondraft-assets/). The Dungeondraft map should be 16x11 tiles: each tile being 1 inch, you can fit 8x11 tiles on an A4 page, and we want each map to fit a double-page. I then experimented with terrain brushes, water brushes, material brushes as well as building floors, to produce 10 maps featuring grass, snow, tiles, oceanic water, space, etc, and I exported each 8x11 tiles half to a separate png file, at 300dpi.
+To produce these, I used [Dungeondraft](https://dungeondraft.net/), along with some asset packs from [2 minute tabletop](https://2minutetabletop.com/product-category/map-assets/dungeondraft-assets/). The Dungeondraft map should be 16x11 tiles: each tile being 1 inch, you can fit 8x11 tiles on an A4 page, and we want each map to fit a double-page. I then experimented with terrain brushes, water brushes, material brushes as well as building floors, to produce 10 maps featuring grass, snow, tiles, oceanic water, space, etc, and I exported each half (8x11 tiles) to a separate png file, at 300dpi.
 
 {{ responsive_s3_img("diy-book-of-terrains", "dungeondraft-grass") }}
 
@@ -57,8 +57,8 @@ Generating page for v1/maps/snow-left-8x11.png
 Generating page for v1/maps/snow-right-8x11.png
 Generating page for v1/maps/tiles-left-8x11.png
 Generating page for v1/maps/tiles-right-8x11.png
-Generating page for v1/maps/underdark-left-8x11.png
-Generating page for v1/maps/underdark-right-8x11.png
+Generating page for v1/maps/lava-left-8x11.png
+Generating page for v1/maps/lava-right-8x11.png
 Generating page for v1/maps/void-left-8x11.png
 Generating page for v1/maps/void-right-8x11.png
 ```
@@ -76,11 +76,11 @@ I then exported the book to a PDF file without compression, and took it to the p
 
 ### Final product
 
-Once all pages were printed, I got them laminated (to make it possible to erase whatever you drew during the encounter) and bound using a simple metallic book ring, and _voilà_!
-The grid being 1 inch, it fits perfectly with any standard-size mini you can buy out there, as well as with my [token exporter tooling](https://github.com/brouberol/dnd5e-token-exporter).
+Once all pages were printed, I got them laminated (to make it possible to erase whatever was drawn during the encounter) and bound using a simple metallic book ring, and _voilà_!
+The grid being 1 inch, it fits perfectly with any standard-size mini you can buy out there, as well as with my [token exporter tooling].(https://github.com/brouberol/dnd5e-token-exporter).
 
 {{ responsive_s3_img("diy-book-of-terrains", "IMG_1841") }}
 {{ responsive_s3_img("diy-book-of-terrains", "IMG_1842") }}
 {{ responsive_s3_img("diy-book-of-terrains", "IMG_1843") }}
 
-The whole thing did cost me about 15€ for a 10 double page book.
+The whole thing did cost me about 15€ at my friendly local printer for a 10 double page book. Should you want to do away with the whole DIY project and just get the same book printed, feel free to download it from [there]({{ s3_url("diy-book-of-terrains", "Book-of-Terrains-v1.pdf") }})!
