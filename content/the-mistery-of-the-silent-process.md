@@ -299,10 +299,11 @@ while things:
 ```
 ok, so for example, if we have `things = [1, 2, 3, 4]` and `batchsize = 2`, we get
 ```python
-things_batch = [1, 2]
+things = [1, 2, 3, 4]
+thing_batch = [1, 2]
 do_something_with_thing_batch([1, 2])
 things = [3, 4]
-things_batch = [3, 4]
+thing_batch = [3, 4]
 do_something_with_thing_batch([3, 4])
 things = []
 # done
