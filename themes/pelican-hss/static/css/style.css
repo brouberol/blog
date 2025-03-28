@@ -348,6 +348,7 @@ dd {
   display: none;
 }
 
+/* Tablet and larger */
 @media screen and (min-width: 640px) {
   main {
     width: 100%;
@@ -385,7 +386,14 @@ dd {
   }
 }
 
+/* phone to tablet */
 @media screen and (max-width: 769px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    width: 100%;
+  };
   article img {
     height: auto;
     width: 100%;
