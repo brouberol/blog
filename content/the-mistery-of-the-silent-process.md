@@ -5,7 +5,7 @@ Date: 2025-03-28
 Category: Programming
 Description: I'm reproducing my un-edited debugging notes when investigating what looked like a deadlock in production to show the process that led to fixing the issue. This article is intended to showcase how tools such as strace and a debugger are essential to my personal debugging workflow, and would probably benefit you too.
 Summary: I've recently had to debug why a program in charge of regularly dumping the [Wikimedia wikis data](https://dumps.wikimedia.org/) would simply... stop, without any prior knowledge of this (rather large) codebase. I'm reproducing my (mostly) un-edited debugging notes to show the actual debugging process that led to a very simple-looking fix, and is intended to showcase how tools such as `strace` and a debugger are essential to my personal debugging workflow, and would probably benefit you too.
-Tags: SRE, Python
+Tags: SRE, Debugging, Python
 ---
 
 I've recently had to debug why a program in charge of regularly dumping the [Wikimedia wikis data](https://dumps.wikimedia.org/) would simply... stop, without any  prior knowledge of this (rather large) codebase.
