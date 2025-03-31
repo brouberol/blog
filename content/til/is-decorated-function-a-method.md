@@ -27,9 +27,13 @@ I initially tried [`inspect.ismethod`](https://docs.python.org/3/library/inspect
 
 ```python
 >>> PhabricatorClient.show_user
-<function PhabricatorClient.show_user at 0x10605a0d0>
+<function PhabricatorClient.show_user at 0x102295040>
+>>> inspect.ismethod(PhabricatorClient.show_user)
+False
 >>> PhabricatorClient().show_user
-<bound method PhabricatorClient.show_user of <phable_cli.phabricator.PhabricatorClient object at 0x104d3d490>>
+<bound method PhabricatorClient.show_user of <phable_cli.phabricator.PhabricatorClient object at 0x100f10b80>>
+>>> inspect.ismethod(PhabricatorClient().show_user)
+True
 ```
 
 What I needed was a way to inspect the signature of `f`, to determine whether its first argument was named `self`. And this is what [`inspect.signature`](https://docs.python.org/3/library/inspect.html#inspect.signature) can be used for.
