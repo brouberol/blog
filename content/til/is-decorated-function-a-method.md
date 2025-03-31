@@ -36,7 +36,7 @@ False
 True
 ```
 
-What I needed was a way to inspect the signature of `f`, to determine whether its first argument was named `self`. And this is what [`inspect.signature`](https://docs.python.org/3/library/inspect.html#inspect.signature) can be used for.
+What I needed was a way to inspect the signature of the decorated function, to determine whether its first argument was named `self`. And this is what [`inspect.signature`](https://docs.python.org/3/library/inspect.html#inspect.signature) can be used for.
 
 ```python
 >>> from phable_cli.phabricator import PhabricatorClient
