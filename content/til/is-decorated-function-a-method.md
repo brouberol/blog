@@ -63,7 +63,7 @@ def cached(*cached_args, **cached_kwargs):
         def wrapper(*args, **kwargs):
             # Check if the decorated function takes a `self` parameter, which is then omitted
             # from the cache key, as we just care about the other arguments, not the class itself.
-            if list(inspect.signature(f).parameters.keys())[0] == "self":
+            if list(inspect.signature(f).parameters)[0] == "self":
                 cache_args = args[1:]
             else:
                 cache_args = args
