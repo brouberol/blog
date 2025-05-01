@@ -1,12 +1,12 @@
 ---
 Title: Build your own tools
 Date: 2025-04-30
-Category: DIY
+Category: Programming
 Description: A love letter to the act of building your own tools, aimed at solving your own problems.
 Summary: A love letter to the act of building your own tools, aimed at solving your own problems.
 Image: https://images.pexels.com/photos/112897/pexels-photo-112897.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 hide_image: True
-Tags: Programming
+Tags: DIY
 Keywords:
 ---
 
