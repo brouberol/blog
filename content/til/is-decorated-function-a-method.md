@@ -1,5 +1,5 @@
 ---
-Title: Detecting if a decorated function would be a bound method if called
+Title: Detecting if a decorated function would be a bound method at runtime
 Date: 2025-03-30
 Category: TIL
 Description: TIL how to dynamically detect if a decorated function would be a a bound method when called.
