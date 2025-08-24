@@ -24,7 +24,25 @@ For example, let's have a look at what both the Orange (`80.10.246.2`) and Coudf
 
 While I don't particularly enjoy being lied to for my own good, I actually wanted to use the same technique to block ads and tracking domains from being resolved within my LAN in the first place, using [pihole](https://pi-hole.net/). However, that involves being able to manually set the IP address of the DNS server in the router's DHCP settings. This not being an option, I could go around this by _disabling_ the DHCP server from the ISP router, and enabling it in pihole instead.
 
-The first thing I did was to deploy [`cloudflared`](https://github.com/cloudflare/cloudflared), acting as a DNS proxy to some upstream resolver over HTTPs. Instead of relying on the Cloudflare or Google upstreams, as is common, I decided to integrate with [Wikimedia DNS](https://meta.wikimedia.org/wiki/Wikimedia_DNS). I'm employed by the Foundation, and know and trust the engineers in charge of the service.
+The first thing I need to do is make sure that the RaspberryPi on which pihole will run gets a statically assigned IP, instead of getting it via DHCP. This guarantees the stability of the DNS server IP.
+
+```bash
+br@retropie:~ $ cat /etc/network/interfaces.d/eth0
+auto eth0
+iface eth0 inet static
+  address 192.168.1.17
+  netmask 255.255.255.0
+  gateway 192.168.1.1
+  dns-nameservers 1.1.1.1
+  dns-nameservers 8.8.8.8
+br@retropie:~ $ sudo systemctl restart networking.service
+br@retropie:~ $ ifconfig eth0
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.1.17  netmask 255.255.255.0  broadcast 192.168.1.255
+        inet6 2a01:cb14:189b:5a00:ba27:ebff:feed:b950  prefixlen 64  scopeid 0x0<global>
+```
+
+I then run [`cloudflared`](https://github.com/cloudflare/cloudflared), acting as a DNS proxy to some upstream resolver over HTTPs. Instead of relying on the Cloudflare or Google upstreams, as is common, I decided to integrate with [Wikimedia DNS](https://meta.wikimedia.org/wiki/Wikimedia_DNS). I'm employed by the Foundation, and know and trust the engineers in charge of the service.
 
 `cloudflared` runs via systemd and listens on `127.0.0.1:5053`:
 
@@ -48,9 +66,7 @@ KillMode=process
 WantedBy=multi-user.target
 ```
 
-With that setup, I can then deploy `pihole`
-
-The pihole DHCP server also needs to advertise the DNS server IP as its own (`192.168.1.17` in my case), through the [DHCP option 6 field](https://efficientip.com/glossary/dhcp-option/).
+With that setup, I can then deploy `pihole` with the DNS server IP advertised as its own (`192.168.1.17` in my case), through the [DHCP option 6 field](https://efficientip.com/glossary/dhcp-option/).
 
 ```bash
 br@retropie:~ $ cat /etc/default/pihole
