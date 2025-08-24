@@ -1,5 +1,6 @@
 ---
-Title: Build your own tools
+Title: On building your own tools
+Slug: build-your-own-tools
 Date: 2025-04-30
 Category: Programming
 Description: A love letter to the act of building your own tools, aimed at solving your own problems.
