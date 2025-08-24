@@ -83,7 +83,7 @@ With that in place, I can check that the DNS server IP is indeed advertised as e
 
 {{ responsive_s3_img("pihole-dhcp", "wifi-dhcp-dns") }}
 
-After a couple of days of that setup running, I can see that about 5% of my DNS traffic is being blackholed, thus benefiting everyone at home. The rest of the traffic is resolved via a privary-respecting DNS server.
+After a couple of days of that setup running, I can see that about 5% of my DNS traffic is being blackholed, thus benefiting everyone at home. The rest of the traffic is resolved via a privacy-respecting DNS server.
 
 {{ responsive_s3_img("pihole-dhcp", "pihole-stats") }}
 
