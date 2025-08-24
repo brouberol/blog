@@ -1,0 +1,61 @@
+{% from 's3.j2' import responsive_s3_img %}
+---
+Title: Blackholing tracking domains by running Pihole as a DHCP server
+Date: 2025-08-24
+Category: Programming
+Description:  My new ISP provided router does not allow me to change the advertised DNS server IP. By running <a href=https://pi-hole.net>pihole</a> with a DHCP server, I can get around this limitation to ensure that tracking domains are blackholed for everyone at home.
+Summary: My new ISP provided router does not allow me to change the advertised DNS server IP. By running <a href="https://pi-hole.net/">pihole</a> with a DHCP server, I can get around this limitation to ensure that tracking domains are blackholed for everyone at home.
+Tags: DIY
+Keywords: Pihole, adblock, self-hosting
+---
+
+
+My new ISP provided router does not allow me to change the advertised DNS server IP. This allows them to [DNS-lie](https://labs.ripe.net/author/stephane_bortzmeyer/dns-censorship-dns-lies-as-seen-by-ripe-atlas/) about certain domains the French government does not want you to visit.
+
+For example, let's have a look at what both the Orange (`80.10.246.2`) and Coudflare DNS servers (`1.1.1.1`) have to say about The Pirate Bay.
+
+```bash
+~ ❯ dig +short thepiratebay.org @80.10.246.2
+127.0.0.1  # well, that's a lie.
+~ ❯ dig +short thepiratebay.org @1.1.1.1
+162.159.137.6
+162.159.136.6
+```
+
+While I don't particularly enjoy being lied to for my own good, I actually wanted to use the same technique to block ads and tracking domains from being resolved within my LAN in the first place, using [pihole](https://pi-hole.net/). However, that involves being able to manually set the IP address of the DNS server in the router's DHCP settings. This not being an option, I could go around this by _disabling_ the DHCP server from the ISP router, and enabling it in pihole instead.
+
+The pihole DHCP server also needs to advertise the DNS server IP as its own (`192.168.1.17` in my case), through the [DHCP option 6 field](https://efficientip.com/glossary/dhcp-option/).
+
+```bash
+$ grep dhcp /etc/default/pihole
+FTLCONF_dhcp_active=True
+FTLCONF_dhcp_end=192.168.1.150
+FTLCONF_dhcp_start=192.168.1.10
+FTLCONF_misc_dnsmasq_lines=dhcp-option=6,192.168.1.17  # advertise the DNS server IP as itself
+$ docker run \
+  --name pihole \
+  --rm \
+  --env-file /etc/default/pihole \
+  --volume /etc/pihole:/etc/pihole/ \
+  --network host \ #  because DHCP works by broadcasting on the network
+  --cap-add NET_ADMIN \
+  --cap-add CAP_SYS_TIME \
+  --cap-add CAP_SYS_NICE \
+  pihole/pihole
+```
+
+With that in place, I can check that the DNS server IP is indeed advertised as expected.
+
+{{ responsive_s3_img("pihole-dhcp", "wifi-dhcp-dns") }}
+
+After a couple of days of that setup running, I can see that about 5% of my DNS traffic is being blackholed, thus benefiting everyone at home.
+
+{{ responsive_s3_img("pihole-dhcp", "pihole-stats") }}
+
+And as an extra, the French government gets to stay out of my buisness as well.
+
+```bash
+~ ❯ dig +short thepiratebay.org
+162.159.136.6
+162.159.137.6
+```
