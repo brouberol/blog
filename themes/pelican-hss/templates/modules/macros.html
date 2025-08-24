@@ -25,5 +25,5 @@
 {% macro reading_time(article) %}
 {% set num_words = article.content.split() | length %}
 {% set rtime = (num_words / 200) | round | int %}
-{{ [rtime, 1] | max }} minute read
+⏲ {{ [rtime, 1] | max }} min.
 {% endmacro %}
