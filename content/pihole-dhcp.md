@@ -24,7 +24,7 @@ For example, let's have a look at what both the Orange (`80.10.246.2`) and Coudf
 
 While I don't particularly enjoy being lied to for my own good, I actually wanted to use the same technique to block ads and tracking domains from being resolved within my LAN in the first place, using [pihole](https://pi-hole.net/). However, that involves being able to manually set the IP address of the DNS server in the router's DHCP settings. This not being an option, I could go around this by _disabling_ the DHCP server from the ISP router, and enabling it in pihole instead.
 
-The first things I did was to deploy [`cloudflared`](https://github.com/cloudflare/cloudflared), acting as a DNS proxy to some upstream resolver over HTTPs. Instead of relying on the Cloudflare or Google upstreams, as is common, I decided to integrate with [Wikimedia DNS](https://meta.wikimedia.org/wiki/Wikimedia_DNS). I'm employed by the Foundation, and know and trust the engineers in charge of the service.
+The first thing I did was to deploy [`cloudflared`](https://github.com/cloudflare/cloudflared), acting as a DNS proxy to some upstream resolver over HTTPs. Instead of relying on the Cloudflare or Google upstreams, as is common, I decided to integrate with [Wikimedia DNS](https://meta.wikimedia.org/wiki/Wikimedia_DNS). I'm employed by the Foundation, and know and trust the engineers in charge of the service.
 
 `cloudflared` runs via systemd and listens on `127.0.0.1:5053`:
 
