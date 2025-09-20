@@ -1,7 +1,7 @@
 {% from 'picture.j2' import picture_light_dark %}
 Title: To the Underdark and back
 Date: 2021-10-21
-Category: Dungeons and Dragons
+Category: TTRPG
 Description: My DM notes for a 2 session detour into the Underdark that I designed from scratch.
 Summary: I've recently designed a 2 session long (6h) detour into the Underdark, that would feed into one of my player's character's backstory. The goal was to allow him to meet his long-disappeared father, while introducing both the players and the characters to the strange and dangerous land that is the Underdark.
 Tags: Tomb of Annihilation

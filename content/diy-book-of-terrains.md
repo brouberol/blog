@@ -4,7 +4,7 @@
 ---
 Title: Making a DIY book of terrains
 Date: 2025-02-16
-Category: Dungeons and Dragons
+Category: TTRPG
 Description: I recently stumbled upon the [Giant Book of Battle Mats](https://shop.black-book-editions.fr/produit/14161/0/books-of-battlemats/big-book-of-battle-mats-vol3), which is a book of A3 laminated TTRPG battlemaps. In this article, I'll go through my process for creating a similar book that I believe displays better reusability.
 Summary: I recently stumbled upon the [Giant Book of Battle Mats](https://shop.black-book-editions.fr/produit/14161/0/books-of-battlemats/big-book-of-battle-mats-vol3), which is a book of A3 laminated TTRPG battlemaps. The way I see it, the core idea of the book is to immerse the players into combat by providing a rich visual experience. The main issue I have with that book though, is that the maps are too rich in details, which impedes their reusability. The first time you run a battle on one of these maps, your players might have a lot of fun looking through everything their character can interact wit. However, the next time, they might get a sense of _déjà vu_, which in turn might impact their suspension of disbelief, and ultimately, their immersion. In this article, I'll go through my process for creating a similar book that I believe displays better reusability.
 Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/diy-book-of-terrains/header-image.jpg

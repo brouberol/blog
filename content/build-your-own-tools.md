@@ -59,4 +59,3 @@ As you can see, some of these are work-related, some of these are for hobbies or
 Some are used by others, most of them aren't.
 
 All taught me something, and solved an issue I had at the time.
-
