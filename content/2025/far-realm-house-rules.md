@@ -29,7 +29,7 @@ The question becomes: how you you mechanically represent the warped geometry and
 
 I decided to introduce a couple of house rules, called _time changes_, _space changes_ and _reality changes_.
 
-While in combat, time and space will randomly change for each group (PCs and monsters). At initiative 20, each group rolls 2d10, and die representing the time and space changes. I settled on applying effects by group, because having _each_ player and monster roll random effects would have been too chaotic to track, and having the random effects apply to _all_ groups could negate its impact (ex: having both groups double in size is equivalent of having them stay at regular size).
+While in combat, time and space will randomly change for each group (PCs and monsters). At initiative 20, each group rolls 2d10, each die representing the time and space changes. I settled on applying effects by group, because having _each_ player and monster roll random effects would have been too chaotic to track, and having the random effects apply to _all_ groups could negate its impact (ex: having both groups double in size is equivalent of having them stay at regular size).
 
 In my experience, these random variations bring enough randommess and chaos to combat to add real flavour, as well as an extra layer of required adaptaton and strategizing from the players' part.
 
