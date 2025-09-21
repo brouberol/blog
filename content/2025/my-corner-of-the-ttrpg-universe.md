@@ -30,6 +30,8 @@ The one criticism I have before having played the game is that the combat system
 
 I'm planning to implement the Monster Action table from [Domain of Many Things](https://www.domainofmanythings.com/blog/combat-in-mothership-rpg-really-doesnt-have-to-be-complicated) (itself taken from [Alien - The RolePlaying game](https://freeleaguepublishing.com/games/alien/)) and steal and adapt their monster decision table to add impredictibility to how the monster behaves.
 
+I was so enthused at the idea of playing Mothership that I also bought [Hull Breach](https://www.hullbreachrpg.com/), an anothology of adventures and additional content.
+
 ### Pirate Borg
 
 ![pirate borg](https://images.squarespace-cdn.com/content/603fdb9fada6165d919a6543/1650649068563-X7EAXW0IDR77Y4ZK2J99/Pirate+Borg+Banner+16x9.jpg?format=1500w&content-type=image%2Fjpeg)
