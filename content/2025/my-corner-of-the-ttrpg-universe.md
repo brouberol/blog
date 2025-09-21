@@ -11,7 +11,7 @@ Keywords: mothership, daggerheart, pirate borg, dnd, dungeons and dragons, mork 
 
 [TOC]
 
-I've been playing TTRPGs for years, and have grown more and more tired of playing Dungeons and Dragons for a while now. It was slow trickle of things. One perception check too many, having to explain once more that your CON score does not matter and only your bonus does, the thousandth fireball, or simply having a player wait for their turn to simply miss and accomplish nothing. And then the [OGL controversy](https://en.wikipedia.org/wiki/Open_Game_License#Leaked_OGL1.1_draft) happened. _That_ really did put me off. Strong-arming your own creator community into paying up will never be something I condone. Period. After that whole shebang, I decided to not buy a single new book from WotC when my campaign was over.
+I've been playing TTRPGs for years, and have grown more and more tired of playing Dungeons and Dragons for a while now. It was a slow trickle of things. One perception check too many, having to explain once again that your CON score does not matter and only your bonus does, the thousandth fireball, or simply having a player wait for their turn to simply miss and accomplish nothing. And then the [OGL controversy](https://en.wikipedia.org/wiki/Open_Game_License#Leaked_OGL1.1_draft) happened. _That_ really did put me off. Strong-arming your own creator community into paying up will never be something I condone. Period. After that whole shebang, I decided to not buy a single new book from WotC when my campaign was over.
 
 2023 was interesting though, because that controversy led to a renewed blooming of the 3rd party ecosystem, and seemingly every TTRPG designer started a Kickstarter for a new game. 2 years later, many of these games are here, people are playing them, streaming them, and discussing them. And as my campaign is closing down, I'm really excited about many of these games.
 
@@ -80,7 +80,7 @@ TTRPG influencers are now all over Youtube, after Matt Colville paved the way wi
 
 ![rfc](https://battlezoo.com/cdn/shop/files/RFC_Logo_flat.png?v=1646150388)
 
-[Roll For Combat](https://www.youtube.com/@RollForCombat/videos?view=2&sort=dd&live_view=503&shelf_id=4) is a 2-person studio who somehow [published](https://battlezoo.com) a good 15 books in a couple of years. They constantly run multiple Kickstarter campaigns simultaneously, and publish for Pathfinder 2e, D&D5e as well as Shadowdark. The studio is composed of Stephen Glicker, publisher and do-it-all extraordinaire, as well as Mark Seifter, co-creator of Pathfinder 2e. They initially broke the OGL controversy story. They stream every Wednesday, and talk about game design, the TTRPG industry itself, how it shifts and reacts to the political madness of the day, and often feature guests as well. I've learned as much about TTRPGs and their industry than design, business or 80's movies listening to these folks talk.
+[Roll For Combat](https://www.youtube.com/@RollForCombat/videos?view=2&sort=dd&live_view=503&shelf_id=4) is a 2-person studio who somehow [published](https://battlezoo.com) a good 15 books in a couple of years. They constantly run multiple Kickstarter campaigns simultaneously, and publish for Pathfinder 2e, D&D5e as well as Shadowdark. The studio is composed of Stephen Glicker, publisher and do-it-all extraordinaire, as well as Mark Seifter, co-creator of Pathfinder 2e. They initially broke the OGL controversy story. They stream every Wednesday, for about 2h, and talk about game design, the TTRPG industry itself, how it shifts and reacts to the political madness of the day, and often feature guests as well. I've learned as much about TTRPGs and their industry than design, business or 80's movies listening to these folks talk.
 
 ### Knights of Last Call
 
@@ -91,7 +91,7 @@ TTRPG influencers are now all over Youtube, after Matt Colville paved the way wi
 
 ![jpc](https://c10.patreonusercontent.com/4/patreon-media/p/campaign/2727391/bdcedfa2291c41529de2c932bbc94a22/eyJ3IjoxNjAwLCJ3ZSI6MX0%3D/2.jpg?token-hash=PpE17XH8xScJnqX8KTpPnayMU2aXauwJvT9O33ecT8o%3D&token-time=1759536000)
 
-Everything [JP Coovert](https://www.youtube.com/@JPCoovert) puts out has this "super-stoked" (has he puts it) vibe. He regularly publishes DIY drawing or crafting tutorials. Everytime I watch some of his videos, I find myself in a better mood that I was in starting in, and inspired about learning how to draw. JP is my inspiration firestarter.
+Everything [JP Coovert](https://www.youtube.com/@JPCoovert) puts out has this "super-stoked" (has he puts it) vibe. He regularly publishes short DIY drawing or crafting tutorials. Everytime I watch some of his videos, I find myself in a better mood that I was in starting in, and inspired about learning how to draw. JP is my inspiration firestarter.
 
 ## Actual Plays
 
