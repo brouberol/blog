@@ -1,5 +1,6 @@
 {% from "s3.j2" import s3_img %}
 {% from "note.j2" import note %}
+{% from 'quote.j2' import quotesource %}
 ---
 Title: How to profile a FastAPI asynchronous request
 Date: 2023-08-05
@@ -42,8 +43,8 @@ This means that our good old faithful `cProfile` might not cut it for this inher
 `pyinstrument` is a _statistical profiler_, contrary to `cProfile`, which is _deterministic_.
 
 > Deterministic profiling is meant to reflect the fact that all function call, function return, and exception events are monitored, and precise timings are made for the intervals between these events (during which time the user’s code is executing). In contrast, statistical profiling [...] randomly samples the effective instruction pointer, and deduces where time is being spent. The latter technique traditionally involves less overhead (as the code does not need to be instrumented), but provides only relative indications of where time is being spent.
-
-> _[Source](https://docs.python.org/3/library/profile.html#what-is-deterministic-profiling)_
+>
+{{ quotesource("[Python documentation](https://docs.python.org/3/library/profile.html#what-is-deterministic-profiling)") }}
 
 
 Second, it advertises native support for profiling asynchronous python code:
@@ -53,8 +54,8 @@ Second, it advertises native support for profiling asynchronous python code:
 > When you start a `Profiler` with the `async_mode` enabled or strict (not disabled), that `Profiler` is attached to the current async context.
 
 > When profiling, `pyinstrument` keeps an eye on the context. When execution exits the context, it captures the await stack that caused the context to exit. Any time spent outside the context is attributed to the that halted execution of the await.
-
-> [Source](https://pyinstrument.readthedocs.io/en/latest/how-it-works.html#async-profiling)
+>
+{{ quotesource("[Pyinstrument documentation](https://pyinstrument.readthedocs.io/en/latest/how-it-works.html#async-profiling)") }}
 
 This should allow us to get a sensible picture of where time is spent during the lifespan of a FastAPI request, while also skipping the spans that are too fast to be profiled.
 

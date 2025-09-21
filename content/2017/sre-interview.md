@@ -1,8 +1,12 @@
+{% from 'quote.j2' import quotesource %}
+---
 Title: Preparing the SRE interview
 Date: 2017-04-20
 Category: Programming
+Summary: I recently interviewed for an <abbr title="Site Reliability Engineer">SRE</abbr> position. I spent a full week learning (or refreshing my memory) on the subjects and topics that could be covered in such an interview. I'll try and lay down the list of topics I covered and resources I used.
 Tags: SRE
 Description: Resources to prepare an SRE interview
+---
 
 I recently interviewed for an <abbr title="Site Reliability Engineer">SRE</abbr> position. I spent a full week learning (or refreshing my memory) on the subjects and topics that could be covered in such an interview. I'll try and lay down the list of topics I covered and resources I used.
 
@@ -23,7 +27,8 @@ If you haven't yet read the [SRE book][srebook], I strongly urge you to do so. T
 According to the SRE book, an SRE should spend half of its time on "ops" work, and the other half doing development.
 
 >  Google places a 50% cap on the aggregate "ops" work for all SREs—tickets, on-call, manual tasks, etc. [...] An SRE team must spend the remaining 50% of its time actually doing development.
-[Source](https://landing.google.com/sre/book/chapters/introduction.html)
+>
+{{ quotesource("[Google SRE Book](https://landing.google.com/sre/book/chapters/introduction.html)") }}
 
 Some skills are thus paramount to an SRE:
 

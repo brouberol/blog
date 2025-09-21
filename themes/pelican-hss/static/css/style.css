@@ -17,6 +17,7 @@
   --border-radius-px: 4px;
   --pagefind-ui-text: var(--text-color);
   --pagefind-ui-background: var(--background-color);
+  --font-size: 16px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -95,7 +96,7 @@ body {
   padding: 0;
   font-family: Merriweather, YuGothic, "Hiragino Kaku Gothic ProN", Meiryo,
     sans-serif;
-  font-size: 16px;
+  font-size: var(--font-size);
   font-weight: 400;
   line-height: 2em;
   background-color: var(--background-color);
@@ -550,6 +551,14 @@ main article .article__meta {
 main article .article__meta p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+main article span.quotesource {
+  font-size: calc(var(--font-size) * 0.85);
+}
+
+main article span.quotesource::before {
+  content: "-- "
 }
 
 footer {

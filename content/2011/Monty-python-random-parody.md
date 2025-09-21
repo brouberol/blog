@@ -1,3 +1,4 @@
+{% from 'quote.j2' import quotesource %}
 Title: How to randomly generate a Monty Python parody
 Date: 2011-11-16
 Category: Programming
@@ -29,8 +30,8 @@ The probability $p("e" / " th")$ is called a conditional probability.
 We are going to model our data text (here, the "Monthy Python and the Holy Grail" script) with a Markov chain of order $k$. This barbarian name refers to :
 
 > "a mathematical system that undergoes transitions from one state to another (from a finite or countable number of possible states) in a chain-like manner
-   --
-   [Source : Wikipedia](http://en.wikipedia.org/wiki/Markov_chain "Wikipedia")"
+>
+{{quotesource("[Wikipedia](http://en.wikipedia.org/wiki/Markov_chain)") }}
 
 That means that the following state is conditioned by the $k$ previous ones.
 
