@@ -13,7 +13,9 @@ Keywords: mothership, daggerheart, pirate borg, dnd, dungeons and dragons, mork 
 
 I've been playing TTRPGs for years, and have grown more and more tired of playing Dungeons and Dragons for a while now. It was slow trickle of things. One perception check too many, having to explain once more that your CON score does not matter and only your bonus does, the thousandth fireball, or simply having a player wait for their turn to simply miss and accomplish nothing. And then the [OGL controversy](https://en.wikipedia.org/wiki/Open_Game_License#Leaked_OGL1.1_draft) happened. _That_ really did put me off. Strong-arming your own creator community into paying up will never be something I condone. Period. After that whole shebang, I decided to not buy a single new book from WotC when my campaign was over.
 
-2023 was interesting though, because that controversy led to a renewed blooming of the 3rd party ecosystem, and seemingly every TTRPG designer started a Kickstarter for a new game. 2 years later, many of these games are here, people are playing them, streaming them, and discussing them. And as my campaign is closing down, I'm really excited about many of these games. I've decided to stop GM-ing year-long campaigns, and focus on 2-6 session adventures, to be able to experience many of these games, and tell more varied stories.
+2023 was interesting though, because that controversy led to a renewed blooming of the 3rd party ecosystem, and seemingly every TTRPG designer started a Kickstarter for a new game. 2 years later, many of these games are here, people are playing them, streaming them, and discussing them. And as my campaign is closing down, I'm really excited about many of these games.
+
+I've also decided to stop GM-ing year-long campaigns, and focus on 2-6 session adventures, to be able to experience many of these games, and tell more varied stories.
 
 ## Games
 
