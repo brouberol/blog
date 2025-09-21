@@ -25,7 +25,7 @@ That realm is supposed to be so alien, so paradoxical and so aberrant that it is
 >
 {{ quotesource("[D&DBeyond](https://www.dndbeyond.com/posts/1145-what-is-the-far-realm-a-timeless-land-of-writhing#far-realm-intro)")}}
 
-The question becomes: how you you mechanically represent the warped geometry and physics laws, and make your player feel the inherent paradox that is this place? Lofcraftian descriptions (describing by ommission) only took me so far, and at some point, I needed to give my players _something_ to make them feel this place for real.
+The question becomes: how you you mechanically represent the warped geometry and physics laws, and make your player feel the inherent paradox that is this place? Lovecraftian descriptions (describing by ommission) only took me so far, and at some point, I needed to give my players _something_ to make them feel this place for real.
 
 I decided to introduce a couple of house rules, called _time changes_, _space changes_ and _reality changes_.
 
