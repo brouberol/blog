@@ -7,14 +7,13 @@ Summary: I've recently grown tired of playing Dungeons and Dragons, and have tak
 Image:
 Tags:
 Keywords: mothership, daggerheart, pirate borg, dnd, dungeons and dragons, mork borg, shadowdark, dune
-status: draft
 ---
 
 [TOC]
 
 I've been playing TTRPGs for years, and have grown more and more tired of playing Dungeons and Dragons for a while now. It was slow trickle of things. One perception check too many, having to explain once more that your CON score does not matter and only your bonus does, the thousandth fireball, or simply having a player wait for their turn to simply miss and accomplish nothing. And then the [OGL controversy](https://en.wikipedia.org/wiki/Open_Game_License#Leaked_OGL1.1_draft) happened. _That_ really did put me off. Strong-arming your own creator community into paying up will never be something I condone. Period. After that whole shebang, I decided to not buy a single new book from WotC when my campaign was over.
 
-2023 was interesting though, because that controversy led to a renewed blooming of the 3rd party ecosystem, and everyone and their mother started a Kickstarter for their own game. 2 years later, these games are here, people are playing them, streaming them, discussing them. And as my campaign is closing down, I'm really excited about many of these games. I've decided to stop GM-ing year-long campaigns, and focus on 2-6 session adventures, to be able to experience many of these games, and tell more varied stories.
+2023 was interesting though, because that controversy led to a renewed blooming of the 3rd party ecosystem, and seemingly every TTRPG designer started a Kickstarter for a new game. 2 years later, many of these games are here, people are playing them, streaming them, and discussing them. And as my campaign is closing down, I'm really excited about many of these games. I've decided to stop GM-ing year-long campaigns, and focus on 2-6 session adventures, to be able to experience many of these games, and tell more varied stories.
 
 ## Games
 
@@ -25,15 +24,15 @@ I've been playing TTRPGs for years, and have grown more and more tired of playin
 
 I'm running [The Hauting of Ypsilon 14](https://www.tuesdayknightgames.com/products/the-haunting-of-ypsilon-14) in a couple of weeks, and I couldn't be more excited. I remixed resources and ideas from [TRAAASH](https://www.traaa.sh/the-ypsilon-14-terminal) and [Chris Airiau](https://chrisairiau.com/2022/05/22/off-the-ice-ypsilon-14-part-1/) as well as [`redhg/phosphor`](https://github.com/redhg/phosphor/) to produce this [retrofuturistic computer](https://balthazar-rouberol.com/ypsilon14) for my players to interact with.
 
-The one criticism I have before having played the game is that the combat system is a little vague, when it comes to how the monster acts. After having read a couple of things online, I gathered that you're supposed to telegraoph the monster action to your players, and they tell you what they're doing about it. The monster action is assumed to automatically succeed, except if the player counter-action is successful as well.
+The one criticism I have before having played the game is that the combat system is a little vague when it comes to how the monster acts. After having read a couple of things online, I gathered that you're supposed to telegraph the monster action to your players, and they tell you what they're doing about it. The monster action is assumed to automatically succeed, except if the player counter-action is itself successful.
 
-I'm planning to implement this idea from [Domain of Many Things](https://www.domainofmanythings.com/blog/combat-in-mothership-rpg-really-doesnt-have-to-be-complicated) and steal and adapt their monster decision table, to add impredictibility to how the monster behaves.
+I'm planning to implement the Monster Action table from [Domain of Many Things](https://www.domainofmanythings.com/blog/combat-in-mothership-rpg-really-doesnt-have-to-be-complicated) (itself taken from [Alien - The RolePlaying game](https://freeleaguepublishing.com/games/alien/)) and steal and adapt their monster decision table to add impredictibility to how the monster behaves.
 
 ### Pirate Borg
 
 ![pirate borg](https://images.squarespace-cdn.com/content/603fdb9fada6165d919a6543/1650649068563-X7EAXW0IDR77Y4ZK2J99/Pirate+Borg+Banner+16x9.jpg?format=1500w&content-type=image%2Fjpeg)
 
-[Pirate Borg](https://www.limithron.com/pirateborg) is a [Mörk Borg](https://morkborg.com/) hack in the universe of the Dark Carribbean. The vibe is Pirates of the Carribean mixed with [Black Sails](<https://en.wikipedia.org/wiki/Black_Sails_(TV_series)>), where you can consume a drug made of crushed undead bones and cast spells. The book art is so vivid, and in-your-face, and fun. I can't wait to have my players build their crazy scallywag pirates, and have them fight zombies and sea creatures, while their boat is being assaulted by the crew of _The Dishonorable Eel_ and everyone at the table is drinking rum when their attack misses.
+[Pirate Borg](https://www.limithron.com/pirateborg) is a [Mörk Borg](https://morkborg.com/) hack in the universe of the Dark Carribbean. The vibe is Pirates of the Carribean mixed with [Black Sails](<https://en.wikipedia.org/wiki/Black_Sails_(TV_series)>), where you can consume a drug made of crushed undead bones and cast spells. The book art is really vivid, in-your-face, and thematic. I can't wait to have my players build their crazy scallywag, smugglers and swashbucklers, to have them fight zombies and sea creatures; their ship assaulted by the crew of _The Dishonorable Eel_ while everyone at the table is drinking rum when their attack misses.
 
 This [character generator](https://pirateborg.brettodonnell.ca/) might prove very handy, as might this [Foundry game system](https://foundryvtt.com/packages/pirateborg).
 
@@ -42,7 +41,7 @@ This [character generator](https://pirateborg.brettodonnell.ca/) might prove ver
 ![daggheart](https://www.daggerheart.com/wp-content/uploads/2025/05/Daggerheaert-Core-Mat-Wilma-1_small.jpg)
 You might have heard about this small indie series called Critical Role? [Daggerheart](https://www.daggerheart.com/) is the game they released this year. It's a narrative and strategic game that both heavily inspired by [PbtA](https://en.wikipedia.org/wiki/Powered_by_the_Apocalypse) games, as well as D&D4e. The book itself is incredibly well done, with a legible layout and vibrant colors. Each power and ability gets its own card (and you know how much [I love cards](https://blog.balthazar-rouberol.com/my-dungeon-master-toolkit#spell-cards)).
 
-What I'm the most excited about with Daggerheart is the Fear/Hope system, where each action can succeed or fail _with consequences or opportunities_. I've missed this gradient of outcomes in D&D5e, where actions simply succeed or fail. There's really _a lot_ to like about this system. It feels like D&D, with more strategic monsters, less complicated classes, and real mechanics to reinforce the narration (character past experiences giving you a bonus when they apply, the flow of fear and hope between the GM and the players building up tension, ...).
+What I'm the most excited about with Daggerheart is the Fear/Hope system, where each action can succeed or fail _with consequences or opportunities_. I've missed this gradient of outcomes in D&D5e, where actions simply succeed or fail. There's really _a lot_ to like about this game. It feels like D&D, with more strategic monsters, less complicated classes, and real mechanics to reinforce the narration (character past experiences giving you a bonus when they apply, the flow of fear and hope between the GM and the players building up tension, ...).
 
 I also like the concept of [campaign frames](https://daggerheart.su/frame), which are some kind of mini campaign setting, "pitching" us a particular world, as well as the tone of the story we could/should tell in that frame and the associated specific mechanics.
 
@@ -64,22 +63,22 @@ I've used that official [character generator](https://shadowdarklings.net/create
 
 ![dune rpg](https://www.wargamer.com/wp-content/uploads/2021/08/dune-rpg-adventures-in-the-imperium-interview-11.jpg)
 
-This one is a bit of a pipe dream. I know I'd _love_ to play it, but I'm not great at running political intrigues, and none of my regular players are Dune-heads. That being, said, the game is _beautiful_. It's using the [2d20 system](https://modiphius.net/blogs/news/2d20-basics) from Modiphius, where any success earn you some meta-currency called _Momentum_, that will help you down the line. You can succeed by giving the GM in Threat, that they can then use down the road to raise the stakes.
+This one is a bit of a pipe dream. I know I'd _love_ to play it, but I'm bad at running political intrigues, and none of my regular players are Dune-heads. That being, said, the game is _beautiful_. It's using the [2d20 system](https://modiphius.net/blogs/news/2d20-basics) from Modiphius, where any success earn you some meta-currency called _Momentum_, that will help you down the line. You can succeed by giving the GM in Threat, that they can then use down the road to raise the stakes.
 The Momentum/Thread meta-currenncy duality reminds me of the Fear/Hope in Daggerheart. After having watched [Inherit the Sand](https://www.glasscannonnetwork.com/shows/inherit-the-sand), I can attest that they work really well to reinforce tension in a situation.
 
-Having read the book, I'm particularly impressed by the confrontation system, that uses the same fundamental rules to run a close combat, a building escape, up to a ranged spaceship fight.
+I'm particularly impressed by the confrontation system, that uses the same fundamental rules to run a close combat, a building escape, up to a ranged spaceship fight.
 
 I hope to try this one out some day!
 
 ## Youtube channels
 
-TTRPG influencers are now all over Youtube, after Matt Colville paved the way with his [Running the Game](https://www.youtube.com/playlist?list=PLlUk42GiU2guNzWBzxn7hs8MaV7ELLCP_) series. Here are my favourite, along with why you might (or might not) want to follow them. Note that I tend to favour long videos
+TTRPG influencers are now all over Youtube, after Matt Colville paved the way with his [Running the Game](https://www.youtube.com/playlist?list=PLlUk42GiU2guNzWBzxn7hs8MaV7ELLCP_) series. Here are my favourite, along with why you might (or might not) want to follow them. Note that I tend to favour long videos.
 
 ### Roll for Combat
 
 ![rfc](https://battlezoo.com/cdn/shop/files/RFC_Logo_flat.png?v=1646150388)
 
-[Roll For Combat](https://www.youtube.com/@RollForCombat/videos?view=2&sort=dd&live_view=503&shelf_id=4) is a 2-person studio who somehow [published](https://battlezoo.com) a good 15 books in a couple of years. They constantly run multiple Kickstarter campaigns simultaneously, and publish for Pathfinder 2e, D&D5e as well as Shadowdark. The studio features Stephen Glicker, publisher and do-it-all extraordinaire, as well as Mark Seifter, co-creator of Pathfinder 2e. They are the one who initially broke the OGL controversy story. They stream every Wednesday, and talk about game design, the TTRPG industry itself, how it shifts and reacts to the political madness of the day, and often feature guests as well. I've learned as much about TTRPGs and their industry than design, business or 80's movies listening to these folks talk.
+[Roll For Combat](https://www.youtube.com/@RollForCombat/videos?view=2&sort=dd&live_view=503&shelf_id=4) is a 2-person studio who somehow [published](https://battlezoo.com) a good 15 books in a couple of years. They constantly run multiple Kickstarter campaigns simultaneously, and publish for Pathfinder 2e, D&D5e as well as Shadowdark. The studio is composed of Stephen Glicker, publisher and do-it-all extraordinaire, as well as Mark Seifter, co-creator of Pathfinder 2e. They initially broke the OGL controversy story. They stream every Wednesday, and talk about game design, the TTRPG industry itself, how it shifts and reacts to the political madness of the day, and often feature guests as well. I've learned as much about TTRPGs and their industry than design, business or 80's movies listening to these folks talk.
 
 ### Knights of Last Call
 
@@ -94,7 +93,7 @@ Everything [JP Coovert](https://www.youtube.com/@JPCoovert) puts out has this "s
 
 ## Actual Plays
 
-I find Actual Plays to be one of my favourite types of media, when done right. There's freedom, cinematography, tension, madness, improvisation, emotion, laughter.. It's all in there! Good actual plays also give me a _lot_ of inspiration for my own games, and are a good way to learn new systems.
+I find Actual Plays to be one of my favourite types of media, when done right. There's freedom, cinematography, tension, madness, improvisation, emotion, laughter.. It's all in there! Good actual plays also give me a _lot_ of inspiration for my own games, and are a good way to absorb new systems.
 
 ### Mystery Quest
 
@@ -108,7 +107,7 @@ I find Actual Plays to be one of my favourite types of media, when done right. T
 
 That [10-episode Dune - Adventures in the Imperium AP](https://www.glasscannonnetwork.com/shows/inherit-the-sand) embodies to me what a Dune Actual Play done right should be. Everyone around the table understands the universe they play in, they lean into the drama, the political intrigues and the backstabbing.
 
-This story actually takes place in 2 parts, with 2 different GMs. If you're pressed for time, I'd even recommend focusing on the first one. Troy Lavallee GM style was a true masterclass.
+This story actually takes place in 2 parts, with 2 different GMs. If you're pressed for time, I'd recommend focusing on the first one. Troy Lavallee GM style was a true masterclass.
 
 ### Age of Umbra
 
@@ -120,4 +119,8 @@ It's a good way to soak in the Daggerhart rules if you don't have 68h to listen 
 ### Haunting of Hanashira
 ![hanashira](https://i.ytimg.com/vi/8erD6qhexBI/maxresdefault.jpg)
 
-[The Hauting of Hanashira](https://www.youtube.com/watch?v=8erD6qhexBI&list=PL7m14mvokus1obSEHJSug55NPzMjvheha) is a 6 episodes (plus episode 0) Daggerheart actual play, taking place in a custom campaign setting inspired by Korean folklore and industrial horror. Their youtube channel does not seem very well known, but I really enjoyed the narration style, the spirit world / modern world duality, and the overall tone of the story.
+[The Hauting of Hanashira](https://www.youtube.com/watch?v=8erD6qhexBI&list=PL7m14mvokus1obSEHJSug55NPzMjvheha) is a 6 episodes (plus episode 0) Daggerheart actual play, taking place in a custom campaign setting inspired by Korean folklore and industrial horror. Their youtube channel does not seem very well known, but I really enjoyed the narration style, the spirit world / modern world duality, and the overall tone of the story. The players really leaned into the co-creation of the world, and their choices had a true impact on the story. What I liked the most was the fact that Andrew was able to improvise real situational complications or opportunities when the players rolled with fear or hope, which had an impact on the course of the scene.
+
+---
+
+Did you discover something you liked? Let me know!
