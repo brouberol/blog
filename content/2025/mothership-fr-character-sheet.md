@@ -1,5 +1,6 @@
 ---
-Title: A French character sheet for Mothership 1E
+Title: A French character sheet for Mothership
+Slug: a-french-character-sheet-for-mothership-1e
 Date: 2025-09-20
 Category: TTRPG
 Description: I'm sharing my own French translation of the Mothership 1E character sheet.
