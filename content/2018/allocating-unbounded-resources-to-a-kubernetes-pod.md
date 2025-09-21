@@ -1,4 +1,4 @@
-Title: Allocating unbounded resources to a kubernetes pod
+Title: Allocating unbounded resources to a Kubernetes pod
 Date: 2018-09-29
 Category: Programming
 

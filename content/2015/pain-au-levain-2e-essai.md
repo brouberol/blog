@@ -1,7 +1,10 @@
+---
 Title: Pain au levain, deuxième essai
 Date: 2015-11-14
+Summary: Nouvel essai, nouvelle réussite! Cette fois, j'ai testé deux nouvelles techniques (l'autolyse et le pétrissage *stretch and fold*) et j'ai augmenté la proportion de farine complète.
 Category: yeast
 Tags: bread
+---
 
 Nouvel essai, nouvelle réussite! Cette fois, j'ai testé deux nouvelles techniques (l'autolyse et le pétrissage *stretch and fold*) et j'ai augmenté la proportion de farine complète.
 

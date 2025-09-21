@@ -1,8 +1,10 @@
+---
 Title: Pain au levain, premier essai
 Date: 2015-11-06
+Summary: Mon premier essai de pain au levain étant, en toute modestie, particulièrement réussi, je consigne ici la recette.
 Category: yeast
 Tags: bread
-
+---
 Mon premier essai de pain au levain étant, en toute modestie, particulièrement réussi, je consigne ici la recette.
 
 ![Hmm](
