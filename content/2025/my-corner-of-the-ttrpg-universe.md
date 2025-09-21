@@ -1,6 +1,6 @@
 ---
 Title: My corner of the TTRPG universe
-Date: 2025-09-21
+Date: 2025-09-22
 Category: TTRPG
 Description: I've recently grown tired of playing Dungeons and Dragons, and have taken a keen interest in expanding my TTRPG universe. This article will walk you through the games I'm excited to GM or play, as well as my favourite TTRPG Youtube channels and actual plays.
 Summary: I've recently grown tired of playing Dungeons and Dragons, and have taken a keen interest in expanding my TTRPG universe. This article will walk you through the games I'm excited to GM or play, as well as my favourite TTRPG Youtube channels and actual plays.
