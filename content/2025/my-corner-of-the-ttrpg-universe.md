@@ -38,6 +38,8 @@ I was so enthused at the idea of playing Mothership that I also bought [Hull Bre
 
 [Pirate Borg](https://www.limithron.com/pirateborg) is a [Mörk Borg](https://morkborg.com/) hack in the universe of the Dark Carribbean. The vibe is Pirates of the Carribean mixed with [Black Sails](<https://en.wikipedia.org/wiki/Black_Sails_(TV_series)>), where you can consume a drug made of crushed undead bones and cast spells. The book art is really vivid, in-your-face, and thematic. I can't wait to have my players build their crazy scallywag, smugglers and swashbucklers, to have them fight zombies and sea creatures; their ship assaulted by the crew of _The Dishonorable Eel_ while everyone at the table is drinking rum when their attack misses.
 
+One tring I struggled with a bit was the layout and font of the rules page, as impactful as they are, can hinder the absorption of the rules at first reading. The same can be said about Mörk Borg, so I'm guessing Luke Stratton went for the same style. Adventures don't suffer from that issue: the layout is compact and clear, and you have everything you need in a single spread.
+
 This [character generator](https://pirateborg.brettodonnell.ca/) might prove very handy, as might this [Foundry game system](https://foundryvtt.com/packages/pirateborg).
 
 ### Daggerheart
