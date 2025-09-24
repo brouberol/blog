@@ -28,7 +28,7 @@ I'm running [The Hauting of Ypsilon 14](https://www.tuesdayknightgames.com/produ
 
 The one criticism I have before having played the game is that the combat system is a little vague when it comes to how the monster acts. After having read a couple of things online, I gathered that you're supposed to telegraph the monster action to your players, and they tell you what they're doing about it. The monster action is assumed to automatically succeed, except if the player counter-action is itself successful.
 
-I'm planning to implement the Monster Action table from [Domain of Many Things](https://www.domainofmanythings.com/blog/combat-in-mothership-rpg-really-doesnt-have-to-be-complicated) (itself taken from [Alien - The RolePlaying game](https://freeleaguepublishing.com/games/alien/)) and steal and adapt their monster decision table to add impredictibility to how the monster behaves.
+I'm planning to implement the Monster Action table from [Domain of Many Things](https://www.domainofmanythings.com/blog/combat-in-mothership-rpg-really-doesnt-have-to-be-complicated) (itself taken from [Alien - The Roleplaying game](https://freeleaguepublishing.com/games/alien/)) and steal and adapt their monster decision table to add impredictibility to how the monster behaves.
 
 I was so enthused at the idea of playing Mothership that I also bought [Hull Breach](https://www.hullbreachrpg.com/), an anthology of adventures and additional content.
 
@@ -36,7 +36,7 @@ I was so enthused at the idea of playing Mothership that I also bought [Hull Bre
 
 ![pirate borg](https://images.squarespace-cdn.com/content/603fdb9fada6165d919a6543/1650649068563-X7EAXW0IDR77Y4ZK2J99/Pirate+Borg+Banner+16x9.jpg?format=1500w&content-type=image%2Fjpeg)
 
-[Pirate Borg](https://www.limithron.com/pirateborg) is a [Mörk Borg](https://morkborg.com/) hack in the universe of the Dark Carribbean. The vibe is Pirates of the Carribean mixed with [Black Sails](<https://en.wikipedia.org/wiki/Black_Sails_(TV_series)>), where you can consume a drug made of crushed undead bones and cast spells. The book art is really vivid, in-your-face, and thematic. I can't wait to have my players build their crazy scallywag, smugglers and swashbucklers, to have them fight zombies and sea creatures; their ship assaulted by the crew of _The Dishonorable Eel_ while everyone at the table is drinking rum when their attack misses.
+[Pirate Borg](https://www.limithron.com/pirateborg) is a [Mörk Borg](https://morkborg.com/) hack in the universe of the Dark Carribbean. The vibe is Pirates of the Carribean mixed with [Black Sails](<https://en.wikipedia.org/wiki/Black_Sails_(TV_series)>), where you can consume a drug made of crushed undead bones and cast spells. The book art is really vivid, in-your-face, and thematic. I can't wait to have my players build their crazy scallywags, smugglers and swashbucklers, to have them fight zombies and sea creatures; their ship assaulted by the crew of _The Dishonorable Eel_ while everyone at the table drinks rum when their attack misses.
 
 One tring I struggled with a bit was the layout and font of the rules page, as impactful as they are, can hinder the absorption of the rules at first reading. The same can be said about Mörk Borg, so I'm guessing Luke Stratton went for the same style. Adventures don't suffer from that issue: the layout is compact and clear, and you have everything you need in a single spread.
 
