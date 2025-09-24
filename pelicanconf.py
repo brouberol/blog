@@ -47,10 +47,7 @@ TAGLINE = "I work with humans and computers."
 LINKS = ()
 
 # Social widget
-SOCIAL = [
-    ("github", "https://github.com/brouberol"),
-    ("linkedin", "https://www.linkedin.com/in/balthazar-rouberol/"),
-]
+SOCIAL = []
 
 DEFAULT_PAGINATION = 10
 
