@@ -38,7 +38,7 @@ I was so enthused at the idea of playing Mothership that I also bought [Hull Bre
 
 [Pirate Borg](https://www.limithron.com/pirateborg) is a [Mörk Borg](https://morkborg.com/) hack in the universe of the Dark Carribbean. The vibe is Pirates of the Carribean mixed with [Black Sails](<https://en.wikipedia.org/wiki/Black_Sails_(TV_series)>), where you can consume a drug made of crushed undead bones and cast spells. The book art is really vivid, in-your-face, and thematic. I can't wait to have my players build their crazy scallywags, smugglers and swashbucklers, to have them fight zombies and sea creatures; their ship assaulted by the crew of _The Dishonorable Eel_ while everyone at the table drinks rum when their attack misses.
 
-One tring I struggled with a bit was the layout and font of the rules page, as impactful as they are, can hinder the absorption of the rules at first reading. The same can be said about Mörk Borg, so I'm guessing Luke Stratton went for the same style. Adventures don't suffer from that issue: the layout is compact and clear, and you have everything you need in a single spread.
+One thing I struggled with a bit was the layout and font of the rules page, as impactful as they are, can hinder the absorption of the rules at first reading. The same can be said about Mörk Borg, so I'm guessing Luke Stratton went for the same style. Adventures don't suffer from that issue: the layout is compact and clear, and you have everything you need in a single spread.
 
 This [character generator](https://pirateborg.brettodonnell.ca/) might prove very handy, as might this [Foundry game system](https://foundryvtt.com/packages/pirateborg).
 
@@ -59,7 +59,7 @@ This is a _large_ game though, and I'm unlikely to be GM-ing anytime soon. I'm h
 
 ![shadowdark](https://www.azathought.com/assets/img/posts/2024-08-31-shadowdark3.jpg)
 
-Shadowdark is basically my go-to game for new players who want to learn "D&D". It's very rules-light compared to 5e, making it pretty accessible for newcomers, and even more so if you're already familiar with 5e. You get all the traditional stuff: the d20 system, advantage/disadvantage, etc, but the mechanics have been streamlined to the essential. No skill checks, no spell slots, much fewer spells, no feats, etc. The [character sheet](https://imgv2-1-f.scribdassets.com/img/document/617822983/original/b465a1ea02/1689281843?v=1) speak for itself when it comes to how simple the game is.
+Shadowdark is basically my go-to game for new players who want to learn "D&D". It's very rules-light compared to 5e, making it pretty accessible for newcomers, and even more so if you're already familiar with 5e. You get all the traditional stuff: the d20 system, advantage/disadvantage, etc, but the mechanics have been streamlined to the essential. No skill checks, no spell slots, much fewer spells, no feats, etc. The [character sheet](https://imgv2-1-f.scribdassets.com/img/document/617822983/original/b465a1ea02/1689281843?v=1) speaks for itself when it comes to how simple the game is.
 
 The game might be rule-simple, but it is also dark, fast, stressful and brutal. There's a real-time aspect to the game, as torches are rare and run out after an hour of gane time. It's basically a mix of modern and OG D&D, distilled to its essential form. I've run a one shot, [Lost Citadel of the Scarlet Minotaur](https://www.thearcanelibrary.com/products/shadowdark-rpg-quickstart-set) with a group of new players, and they really seemed to have a blast.
 
