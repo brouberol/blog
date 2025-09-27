@@ -78,13 +78,13 @@ I hope to try this one out some day!
 
 ## Youtube channels
 
-TTRPG influencers are now all over Youtube, after Matt Colville paved the way with his [Running the Game](https://www.youtube.com/playlist?list=PLlUk42GiU2guNzWBzxn7hs8MaV7ELLCP_) series. Here are my favourite, along with why you might (or might not) want to follow them. Note that I tend to favour long videos.
+TTRPG influencers are now all over Youtube, after Matt Colville paved the way with his [Running the Game](https://www.youtube.com/playlist?list=PLlUk42GiU2guNzWBzxn7hs8MaV7ELLCP_) series. Here are my favourites, along with why you might (or might not) want to follow them. Note that I tend to favour long videos.
 
 ### Roll for Combat
 
 ![rfc](https://battlezoo.com/cdn/shop/files/RFC_Logo_flat.png?v=1646150388)
 
-[Roll For Combat](https://www.youtube.com/@RollForCombat/videos?view=2&sort=dd&live_view=503&shelf_id=4) is a 2-person studio who somehow [published](https://battlezoo.com) a good 15 books in a couple of years. They constantly run multiple Kickstarter campaigns simultaneously, and publish for Pathfinder 2e, D&D5e as well as Shadowdark. The studio is composed of Stephen Glicker, publisher and do-it-all extraordinaire, as well as Mark Seifter, co-creator of Pathfinder 2e. They initially broke the OGL controversy story. They stream every Wednesday, for about 2h, and talk about game design, the TTRPG industry itself, how it shifts and reacts to the political madness of the day, and often feature guests as well. I've learned as much about TTRPGs and their industry than design, business or 80's movies listening to these folks talk.
+[Roll For Combat](https://www.youtube.com/@RollForCombat/videos?view=2&sort=dd&live_view=503&shelf_id=4) is a 2-person studio who somehow [published](https://battlezoo.com) a good 15 books in a couple of years. They constantly run multiple simultaneous Kickstarter campaigns, and publish for Pathfinder 2e, D&D5e as well as Shadowdark. The studio is composed of Stephen Glicker, publisher and do-it-all extraordinaire, as well as Mark Seifter, co-creator of Pathfinder 2e. They initially broke the OGL controversy story. They stream every Wednesday, for about 2h, and talk about game design, the TTRPG industry itself, how it shifts and reacts to the political madness of the day, and often feature guests as well. I've learned as much about TTRPGs and their industry than design, business or 80's movies listening to these folks talk.
 
 ### Knights of Last Call
 
@@ -125,7 +125,7 @@ It's a good way to soak in the Daggerhart rules if you don't have 68h to listen 
 ### Haunting of Hanashira
 ![hanashira](https://i.ytimg.com/vi/8erD6qhexBI/maxresdefault.jpg)
 
-[The Hauting of Hanashira](https://www.youtube.com/watch?v=8erD6qhexBI&list=PL7m14mvokus1obSEHJSug55NPzMjvheha) is a 6 episodes (plus episode 0) Daggerheart actual play, taking place in a custom campaign setting inspired by Korean folklore and industrial horror. Their youtube channel does not seem very well known, but I really enjoyed the narration style, the spirit world / modern world duality, and the overall tone of the story. The players really leaned into the co-creation of the world, and their choices had a true impact on the story. What I liked the most was the fact that Andrew was able to improvise real situational complications or opportunities when the players rolled with fear or hope, which had an impact on the course of the scene.
+[The Hauting of Hanashira](https://www.youtube.com/watch?v=8erD6qhexBI&list=PL7m14mvokus1obSEHJSug55NPzMjvheha) is a 6 episode (plus episode 0) Daggerheart actual play, taking place in a custom campaign setting inspired by Korean folklore and industrial horror. Their Youtube channel does not seem very well known, but I really enjoyed the narration style, the spirit world / modern world duality, and the overall tone of the story. The players really leaned into the co-creation of the world, and their choices had a true impact on the story. What I liked the most was the fact that Andrew (the GM) was able to improvise real situational complications and opportunities when the players rolled with fear or hope, which had an impact on the course of the scene.
 
 ---
 
