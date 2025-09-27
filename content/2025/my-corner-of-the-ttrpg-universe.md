@@ -69,8 +69,8 @@ I've used that official [character generator](https://shadowdarklings.net/create
 
 ![dune rpg](https://www.wargamer.com/wp-content/uploads/2021/08/dune-rpg-adventures-in-the-imperium-interview-11.jpg)
 
-This one is a bit of a pipe dream. I know I'd _love_ to play it, but I'm bad at running political intrigues, and none of my regular players are Dune-heads. That being, said, the game is _beautiful_. It's using the [2d20 system](https://modiphius.net/blogs/news/2d20-basics) from Modiphius, where any success earn you some meta-currency called _Momentum_, that will help you down the line. You can succeed by giving the GM in Threat, that they can then use down the road to raise the stakes.
-The Momentum/Thread meta-currenncy duality reminds me of the Fear/Hope in Daggerheart. After having watched [Inherit the Sand](https://www.glasscannonnetwork.com/shows/inherit-the-sand), I can attest that they work really well to reinforce tension in a situation.
+This one is a bit of a pipe dream. I know I'd _love_ to play it, but I'm bad at running political intrigues, and none of my regular players are Dune-heads. That being, said, the game is _beautiful_. It's using the [2d20 system](https://modiphius.net/blogs/news/2d20-basics) from [Modiphius](https://modiphius.net/), where any success earn you some meta-currency called _Momentum_, that will help you down the line. You can succeed by giving _Threat_ to the GM, that they can then use down the road to raise the stakes.
+The Momentum/Thread meta-currency duality reminds me of the Fear/Hope system in Daggerheart. After having watched [Inherit the Sand](https://www.glasscannonnetwork.com/shows/inherit-the-sand), I can attest that they work really well at reinforcing tension in a situation.
 
 I'm particularly impressed by the confrontation system, that uses the same fundamental rules to run a close combat, a building escape, up to a ranged spaceship fight.
 
