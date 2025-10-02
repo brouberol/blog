@@ -11,6 +11,7 @@
       {% endif %}
     </li>
 
+    {% set ns = namespace(before_set=false, after_set=false) %}
     {% for num in range( 1, 1 + articles_paginator.num_pages ) %}
 
     {% if num == articles_page.number %}
@@ -18,7 +19,6 @@
     {% else %}
     {% set class_str = '' %}
     {% endif %}
-
     {% if num == 1 %}
     <li>
       <a {{ class_str }} href="{{ SITEURL }}/{{ page_name }}.html">{{ num }}</a>
@@ -26,16 +26,17 @@
     {% elif (num - articles_page.number)|abs <= 3 or num==articles_paginator.num_pages %} <li>
       <a {{ class_str }} href="{{ SITEURL }}/{{ page_name }}{{ num }}.html">{{ num }}</a>
       </li>
-      {% else %}
-      {% if num < articles_page.number and not set_before_dots %} <li>.....</li>
-        {% set set_before_dots = True %}
-        {% elif num > articles_page.number and not set_after_dots %}
-        <li>.....</li>
-        {% set set_after_dots = True %}
-        {% endif %}
-        </li>
-        {% endif %}
-        {% endfor %}
+    {% else %}
+      {% if num < articles_page.number and not ns.before_set %}
+      <li>...</li>
+      {% set ns.before_set = True %}
+      {% elif num > articles_page.number and not ns.after_set %}
+      <li>...</li>
+      {% set ns.after_set = True %}
+      {% endif %}
+      </li>
+    {% endif %}
+    {% endfor %}
 
         <li class="pagination__next">
           {% if articles_page.has_next() %}
