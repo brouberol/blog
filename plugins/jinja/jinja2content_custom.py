@@ -9,7 +9,6 @@ import os
 from tempfile import NamedTemporaryFile
 
 from jinja2 import ChoiceLoader, Environment, FileSystemLoader
-
 from pelican.readers import MarkdownReader
 from pelican.utils import pelican_open
 

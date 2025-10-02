@@ -22,8 +22,8 @@ def subrender(context, value):
 
 @pass_context
 def s3_img_abspath(context, value):
-    if value.strip('"').strip("'").startswith('http'):
+    if value.strip('"').strip("'").startswith("http"):
         return value
-    if not value.startswith('/'):
-        value = f'/{value}'
-    return context['S3_IMAGE_BASE_URL'] + value
+    if not value.startswith("/"):
+        value = f"/{value}"
+    return context["S3_IMAGE_BASE_URL"] + value

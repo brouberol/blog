@@ -1,13 +1,18 @@
 from pelican import signals
 
-from .custom_filters import single_word_capitalize, subrender, s3_img_abspath
+from .custom_filters import s3_img_abspath, single_word_capitalize, subrender
 from .custom_globals import responsive_image
 from .jinja2content_custom import JinjaMarkdownReader
 
 
 def add_all_filters(pelican):
     """Add (register) all filters to Pelican."""
-    pelican.env.filters.update({"single_word_capitalize": single_word_capitalize,  "s3_img_abspath": s3_img_abspath})
+    pelican.env.filters.update(
+        {
+            "single_word_capitalize": single_word_capitalize,
+            "s3_img_abspath": s3_img_abspath,
+        }
+    )
 
 
 def add_all_globals(readers):
