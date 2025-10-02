@@ -22,12 +22,12 @@
       {% endif %}
     </span>
   </div>
-  <div class="article__text">
-    {{ article.summary }}
-  </div>
   {% if article.show_image_in_summary %}
   <img src="{{ article.image | s3_img_abspath }}" loading=lazy decoding=async class="article__main_img" />
   {% endif %}
+  <div class="article__text">
+    {{ article.summary }}
+  </div>
 </article>
 {% if not loop.last %}
 {% endif %}
