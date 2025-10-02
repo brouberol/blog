@@ -1,10 +1,11 @@
+{% from 's3.j2' import s3_img %}
 ---
 Title: Shell productivity tips and tricks
 Date: 2020-04-24
 Category: Essential Tools and Practices for the Aspiring Software Developer
 Description: An introduction to shell productivity features: autocompletion, keyboard shortcuts, history navigation and shell expansions.
 Summary: This chapter will walk you through different features of your shell allowing you to do more while typing less, such as autocompletion, keyboard shortcuts, history navigation and shell expansions. Even mastering _some_ of these should make you immensely more productive in your shell day-to-day!
-Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/shell-productivity/header.jpg
+Image: shell-productivity/header.jpg
 Tags: terminal
 Keywords: history navigation, expansions, productivity, shell, bash, zsh
 chapter: 5

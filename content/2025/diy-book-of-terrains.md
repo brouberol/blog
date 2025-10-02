@@ -1,4 +1,4 @@
-{% from 's3.j2' import responsive_s3_img, s3_url %}
+{% from 's3.j2' import responsive_s3_img, s3_url, s3_link %}
 {% from 'note.j2' import note %}
 {% from 'img.j2' import side_by_side_images %}
 ---
@@ -7,8 +7,9 @@ Date: 2025-02-16
 Category: TTRPG
 Description: I recently stumbled upon the [Giant Book of Battle Mats](https://shop.black-book-editions.fr/produit/14161/0/books-of-battlemats/big-book-of-battle-mats-vol3), which is a book of A3 laminated TTRPG battlemaps. In this article, I'll go through my process for creating a similar book that I believe displays better reusability.
 Summary: I recently stumbled upon the [Giant Book of Battle Mats](https://shop.black-book-editions.fr/produit/14161/0/books-of-battlemats/big-book-of-battle-mats-vol3), which is a book of A3 laminated TTRPG battlemaps. The way I see it, the core idea of the book is to immerse the players into combat by providing a rich visual experience. The main issue I have with that book though, is that the maps are too rich in details, which impedes their reusability. The first time you run a battle on one of these maps, your players might have a lot of fun looking through everything their character can interact wit. However, the next time, they might get a sense of _déjà vu_, which in turn might impact their suspension of disbelief, and ultimately, their immersion. In this article, I'll go through my process for creating a similar book that I believe displays better reusability.
-Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/diy-book-of-terrains/header-image.jpg
+Image: /diy-book-of-terrains/header-image.jpg
 hide_image: True
+show_image_in_summary: True
 Tags: DIY, Dungeondraft
 Keywords: Dungeon Master, TTRPG, D&D, Python, DIY, Dungeondraft
 ---
@@ -71,7 +72,7 @@ Now that we have the individual pages, we need to assemble them into the final b
 
 I then exported the book to a PDF file without compression, and took it to the printer.
 
-{{ note("I created a 4-page [template](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/diy-book-of-terrains/Book-of-Terrains-Template.sla) that you can download and  add pages to, should you want to replicate this for yourself. Don't forget that the first page in the book should be the right part of a double page, and that the last page in the book should be its left counterpart.") }}
+{{ note("I created a 4-page <a href={{ S3_IMAGE_BASE_URL }}/diy-book-of-terrains/Book-of-Terrains-Template.sla>template</a> that you can download and  add pages to, should you want to replicate this for yourself. Don't forget that the first page in the book should be the right part of a double page, and that the last page in the book should be its left counterpart.") | subrender }}
 
 
 ### Final product
@@ -83,4 +84,4 @@ The grid being 1 inch, it fits perfectly with any standard-size mini you can buy
 {{ responsive_s3_img("diy-book-of-terrains", "IMG_1842") }}
 {{ responsive_s3_img("diy-book-of-terrains", "IMG_1843") }}
 
-The whole thing did cost me about 15€ at my friendly local printer for a 10 double page book. Should you want to do away with the whole DIY project and just get the same book printed, feel free to download it from [there]({{ s3_url("diy-book-of-terrains", "Book-of-Terrains-v1.pdf") }})!
+The whole thing did cost me about 15€ at my friendly local printer for a 10 double page book. Should you want to do away with the whole DIY project and just get the same book printed, feel free to download it from {{ s3_link("diy-book-of-terrains", "Book-of-Terrains-v1.pdf", "there") }}!

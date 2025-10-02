@@ -1,11 +1,16 @@
+{% from 's3.j2' import s3_img %}
+{% from 'picture.j2' import picture_light_dark %}
+---
 Title: River monitoring with Datadog
 Date: 2021-11-02
 Category: monitoring
 Description: How I used my day-to-way tools to setup reliable monitoring on the river I live close by.
 Summary: Last month, Ardèche experienced _very_ heavy precipitations in the span of couple of hours. As a result, the dam located upriver from me opened the floodgates (literally), which caused the Chassezac level to raise by about 6.5m in about 1.5h. I've setup some monitoring using Datadog and Pagerduty to make sure I know about it as soon as possible.
-Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/river-monitoring/gravieres.jpg
+Image: river-monitoring/gravieres.jpg
+show_image_in_summary: True
 Tags: datadog, DIY
 Keywords: weather, monitoring, datadog
+---
 
 <p style="text-align:center;font-style:italic;font-size:0.8em;">water level (m) over time</p>
 
@@ -19,11 +24,9 @@ Datadog to the rescue.
 
 Using custom scripts, I now measure the [river level](https://github.com/brouberol/infrastructure/blob/master/playbooks/roles/gallifrey/monitoring/templates/monitor_rivers) at the station before and after my house. I also keep tabs on the [amount of rain](https://github.com/brouberol/infrastructure/blob/master/playbooks/roles/gallifrey/monitoring/templates/monitor_rain) measured at these stations, as well as the general alert level.
 
-<a target="blank" href="https://p.datadoghq.com/sb/bc352bb82-c122f0855899cdbcc73f2ca478d6d7b6"><picture>
-    <source srcset="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/river-monitoring/river-monitoring-dark.webp"
-    media="(prefers-color-scheme: dark)">
-    <img class=dark src="https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/river-monitoring/river-monitoring-light.webp" />
-</picture></a>
+<a target="blank" href="https://p.datadoghq.com/sb/bc352bb82-c122f0855899cdbcc73f2ca478d6d7b6">
+{{ picture_light_dark("river-monitoring/river-monitoring-light.webp") }}
+</a>
 
 By "chance", the first flood stopped right before the house level, and the second one stopped right before the basement. By extrapolating just a bit, I'm now able to have a good idea of the impact of a flood by looking at the river level at the station upriver.
 
@@ -33,4 +36,4 @@ I made sure to enable `Critical Alerts for High Urgency` in the app settings, wh
 
 Now, if the dam managers decide to open the gates during the night (it has happened), I'll know.
 
-![pagerduty](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/river-monitoring/pagerduty.webp)
+{{ s3_img("river-monitoring", "pagerduty.webp", "pagerduty") }}

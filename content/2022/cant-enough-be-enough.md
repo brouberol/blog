@@ -1,11 +1,12 @@
 {% from 'note.j2' import note, warning %}
+{% from 's3.j2' import s3_img %}
 ---
 Title: Can't enough be enough?
 Date: 2022-05-11
 Category: personal
 Description: A walkthrough of the impact the Datadog IPO and the years that followed it had on me, both financially and psychologically. The intention is to examine how such an event can change one's life, either positively or not, and give you some return of experience on the choices that I made.
 Summary: In this article, I will explain the impact the Datadog IPO and the years that followed it had on me, both financially and psychologically, as transparently as I can. The intention is to examine how such an event can change one's life, either positively or not, and give you some return of experience on the choices that I made.
-Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/cant-enough-be-enough/ddog.jpg
+Image: cant-enough-be-enough/ddog.jpg
 Tags:
 Keywords: stock-market, stocks, ipo, datadog, ddog, addiction
 ---
@@ -130,7 +131,7 @@ At that point, I knew that however high the stock price was, I was going to be t
 
 And just like that, I had enough to afford our dream, pay the taxes on it, as well as supporting my close family.
 
-![the house of our dreams](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/cant-enough-be-enough/house.webp "The house of our dreams")
+{{ s3_img("cant-enough-be-enough", "house.webp", "The house of our dreams") }}
 
 "Now, what about the remaining 40%?" an astute reader might ask? Well, _that_ I could afford to lose, and didn't have any specific plan in mind for. They are still in the market, and are worth a pretty hefty sum of money. I didn't feel like I needed to convert them into cash for anything. If their value rises, good, if not, it might rise again, who knows?
 

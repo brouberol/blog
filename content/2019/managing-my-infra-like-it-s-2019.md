@@ -1,16 +1,17 @@
+{% from 's3.j2' import s3_img %}
+---
 Title: Managing my infra like it's 2019
 Date: 2019-07-22
 Category: Programming
 Description: How I use modern tooling to manage my personal infrastructure
-Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/managing-infra/infra.png
+Summary: I recently realized that I was routinely managing thousands of servers and petabytes of data in my daily job, but was still managing my own personal infrastructure like I was living in 1999.
+Image: managing-infra/infra.png
+show_image_in_summary: True
 Tags: self-hosting, datadog
 Keywords: ansible, terraform
+---
 
 I recently realized that I was routinely managing thousands of servers and petabytes of data in my daily job, but was still managing my own personal infrastructure like I was living in 1999.
-
-![my-infra](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/managing-infra/infra.png)
-
----
 
 With the advent of configuration management tools such as [Ansible](https://docs.ansible.com/), [Chef](https://www.chef.io/), and the like, it became easier to configure instances in a reproducible manner by defining said configuration as code. [Terraform](http://terraform.io/) made it easier to codify and provision cloud resources: instances, but also security groups, permissions, storage, load balancers, etc.
 
@@ -29,7 +30,7 @@ Until now, each of these servers were managed in an _ad-hoc_ fashion, sometimes 
 
 I manage my DNS zones with OVH, I use the AWS S3 bucket free tier for the blog images, and Datadog for monitoring.
 
-![ssl-expiry-monitoring](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/managing-infra/datadog-monitors.png)
+{{ s3_img("managing-infra", "datadog-monitors.png", "ssl-expiry-monitoring") }}
 
 
 ## Improving the setup
@@ -56,7 +57,7 @@ You can have a look at the code [here](https://github.com/brouberol/infrastructu
 
 I'm now confident that I can open some of these services to friends, if they want to. I measure and monitor my own SLIs, the expiry of the SSL certificates, and can intervene from anywhere if something breaks.
 
-![ssl-expiry-monitoring](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/managing-infra/ssl-expiry-monitoring.png)
+{{ s3_img("managing-infra", "ssl-expiry-monitoring.png", "ssl-expiry-monitoring") }}
 
 My infrastructure is now more secure, and has been audited by fellow peers [^review]. I'm now confident I can restore the services in the face of an instance loss (which is very important for my mother, as her website has a fair amount of traffic and brings her regular new customers).
 

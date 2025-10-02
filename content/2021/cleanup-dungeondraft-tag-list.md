@@ -1,17 +1,20 @@
+{% from 's3.j2' import s3_img %}
+---
 Title: Cleaning up the Dungeondraft tag list
 Date: 2021-08-31
 Category: TTRPG
 Description: I wrote a tool to cleanup the Dugeondraft tag list
 Summary: I have spent quite a lot of time using [Dungeondraft](https://dungeondraft.net) recently, as I've designed many homebrewed places and encounters. The more maps I created, the more assets pack I bought from [CartographyAssets](https://cartographyassets.com), to further enrich and improve them. I quickly started to realize that some of these asset packs caused the tag list to be filled with entries that weren't linked to any assets at all. This made the asset discovery process quite frustrating.
-Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/cleaning-up-dungeondraft-tag-list/cleaned-up-taglist.jpg
+Image: cleaning-up-dungeondraft-tag-list/cleaned-up-taglist.jpg
 Tags: Dungeondraft, Python
 Keywords: dnd, dungeondraft
+---
 
 I have spent quite a lot of time using [Dungeondraft](https://dungeondraft.net) recently, as I've designed many homebrewed places and encounters.
 The more maps I created, the more assets pack I bought from [CartographyAssets](https://cartographyassets.com), to further enrich and improve them.
 I quickly started to realize that some of these asset packs caused the tag list to be filled with entries that weren't linked to any assets at all. This made the asset discovery process quite frustrating.
 
-![board](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/cleaning-up-dungeondraft-tag-list/empty-assets.webp)
+{{ s3_img("cleaning-up-dungeondraft-tag-list", "empty-assets.webp", "board") }}
 
 Luckily, I found out about [`Dungeondraft-GoPackager`](https://github.com/Ryex/Dungeondraft-GoPackager), a tool that allows anyone to unpack a Dungeondraft asset pack, and inspect its metadata. I discovered that some asset packs would ship with tag entries linked to an empty asset list:
 
@@ -79,11 +82,11 @@ INFO:root:Skipping empty tag Armor
 
 Now, re-open Dungeondraft, and point it to the `cleaned` directory that `cleanup-dungeondraft-asset-packs` created, in which it placed all cleaned assets.
 
-![cleaned-assets](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/cleaning-up-dungeondraft-tag-list/dungeondraft-assets-cleaned.webp)
+{{ s3_img("cleaning-up-dungeondraft-tag-list", "dungeondraft-assets-cleaned.webp", "cleaned-assets") }}
 
 
 At that point, your tag list should only contain entries linked to _actual_ assets!
 
-![cleaned-up-taglist](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/cleaning-up-dungeondraft-tag-list/cleaned-up-taglist.webp)
+{{ s3_img("cleaning-up-dungeondraft-tag-list", "cleaned-up-taglist.webp", "cleaned-up-taglist") }}
 
 There you go, I hope that helps! Happy Dungeondrafting!

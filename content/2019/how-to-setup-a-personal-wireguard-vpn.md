@@ -1,3 +1,5 @@
+{% from 's3.j2' import s3_img %}
+---
 Title: How to setup a personal wireguard VPN
 Date: 2019-12-11
 Category: Programming
@@ -5,7 +7,7 @@ Description: How to setup a wireguard VPN to stay safe when traveling
 Summary: This article will provide guidance about how to setup a Wireguard VPN between a server and your phone, allowing you to avoid being snooped on while you travel.
 Tags: DIY
 Image: https://www.cactusvpn.com/wp-content/uploads/2019/02/what-is-wireguard.gif
-
+---
 
 My work takes me to the United-States multiple times a year, and I've never been comfortable using the hotel Wi-Fi, or even my company VPN for that matter, when I'm there. I want to be assured that what I do online is my business and my business alone.
 
@@ -107,7 +109,7 @@ I use the Wireguard [Android app](https://play.google.com/store/apps/details?id=
 
 The server peer public key is set to the content of the remote `/etc/wireguard/publickey` file, on my VPS. As I want to route all my phone traffic through `wireguard`, I set the `Allowed IPs` field to `0.0.0.0/0`, and the peer endpoint to `<server public ens2 IP>:<public port>`.
 
-![screenshot](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/wireguard/android-wg.jpg)
+{{ s3_img("wireguard", "android-wg.jpg", "screenshot") }}
 
 ## Authorizing the phone peer
 After having generated a public key for the phone peer, we also need to authorize it on the server peer and restart `wireguard`.

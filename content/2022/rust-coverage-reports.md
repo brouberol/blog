@@ -1,12 +1,15 @@
+---
 Title: Measuring the coverage of a rust program in Github Actions
 Date: 2022-04-26
 Category: programming
 Description: In this article, I will go through how I set up code coverage measurement for `bo`, my text editor written in Rust, and publicly hosted the coverage report on S3.
 Summary: In this article, I will go through how I set up code coverage measurement for `bo`, my text editor written in Rust, and publicly hosted the coverage report on S3.
-Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/rust-coverage/cov.jpg
+Image: rust-coverage/cov.jpg
 hide_image: True
 Tags: rust
 Keywords: github, gitub-actions, coverage, ci
+---
+{% from 's3.j2' import s3_img %}
 
 After having faced a couple of of regressions in [`bo`](https://github.com/brouberol/bo) (my personal text editor [written in Rust](/metaprocrastinating-on-writing-a-book-by-writing-a-text-editor)) in the past couple of days, I have tried to increase the number of unit tests related to the codebase sections handling navigation. I already had some unit tests, but I needed to know what lines of code were _not_ tested, to know what area of the codebase I needed to focus on.
 
@@ -23,11 +26,11 @@ $ open ./target/debug/coverage/index.html
 
 This way, I got a beautiful HTML report in which I could see my code coverage, either global, file by file,
 
-![Coverage report](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/rust-coverage/cov.webp)
+{{ s3_img("rust-coverage", "cov.webp", "Coverage report") }}
 
 or line by line.
 
-![Coverage report](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/rust-coverage/cov2.webp)
+{{ s3_img("rust-coverage", "cov2.webp", "Coverage report") }}
 
 `grcov` even generates nice SVG badges displaying the coverage score, that I could display on the project homepage!
 
@@ -83,7 +86,7 @@ I then created an AWS user, associated with an AWS access_key/secret_key pair an
 <div id="github-secrets"></div>
 I then had to store the bucket name, keypair and AWS region name as encrypted secrets in the `bo` [repository](https://github.com/brouberol/bo), by going to `Settings > Secrets > Actions > New repository secret`.
 
-![Secrets](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/rust-coverage/secrets.webp)
+{{ s3_img("rust-coverage", "secrets.webp", "Secrets") }}
 
 Once that was all set up, the project CI (Github Actions) needed to perform the [following actions](https://github.com/brouberol/bo/blob/main/.github/workflows/tests.yml#L28-L77):
 
@@ -142,7 +145,7 @@ Once that was all set up, the project CI (Github Actions) needed to perform the 
     COV_REPORT_DIR: ${{ steps.coverage.outputs.report }}
 ```
 
-![Secrets](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/rust-coverage/cov3.webp)
+{{ s3_img("rust-coverage", "cov3.webp", "Secrets") }}
 
 - uploading the whole HTML coverage report to S3, using the [jakejarvis/s3-sync-action](https://github.com/jakejarvis/s3-sync-action ) action. We only do this for commits belonging the `main` branch (_i.e._ direct pushes or after a pull request was merged).
 

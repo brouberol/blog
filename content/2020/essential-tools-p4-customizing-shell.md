@@ -4,11 +4,13 @@ Date: 2020-04-17
 Category: Essential Tools and Practices for the Aspiring Software Developer
 Description: A deep dive into how to customize your terminal and shell, in order to make it yours and increase productivity.
 Summary: It is very common for programmers to tweak and customize their terminal and shell for hours, add or write new plug-ins, all in pursuit of the “perfect environment” and an increase of productivity. In that spirit, this chapter will cover different recommendations of terminal configurations, as well as a deep dive into how to customize your prompt, add colors, experiment with color palettes, for both `bash` and `zsh`. We will finally introduce the Oh My Zsh configuration framework.
-Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/header.jpg
+Image: customize-shell/header.jpg
 Tags: terminal
 Keywords: oh-my-zsh, terminator, iterm2, zsh, bash, shell, prompt
 chapter: 4
 ---
+
+{% from 's3.j2' import s3_img %}
 
 <header>
 <p>
@@ -87,7 +89,7 @@ default choices. It has several features I find useful:
 -   a grid system, allowing you to have multiple terminals in the same
     tab
 
-![I can work in multiple panes within the same tab, and have one tab per project](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/terminator.png)
+{{ s3_img("customize-shell", "terminator.png", "I can work in multiple panes within the same tab, and have one tab per project") }}
 <span class=imgcaption>I can work in multiple panes within the same tab, and have one tab per project</span>
 
 Here are the terminator keyboard shortcuts I find the most useful:
@@ -111,7 +113,7 @@ Terminal) to be hard to use. The terminal that seems to be widely
 accepted by the macOS programming community is iTerm2[^2]. It has all of
 the features cited above, and many (many) more!
 
-![iTerm2 looks similar to Terminator but can do much, much more](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/iterm2.png)
+{{ s3_img("customize-shell", "iterm2.png", "iTerm2 looks similar to Terminator but can do much, much more") }}
 <span class=imgcaption>iTerm2 looks similar to Terminator but can do much, much more</span>
 
 The iTerm2 keyboard shortcuts I find the most useful are:
@@ -138,7 +140,7 @@ resource with the default associated program. For example, it will open
 an URL in your browser, a path to a local PDF file with Preview, a text
 file with your preferred text editor, etc.
 
-![By enabling this feature, you will be able to open a file using a graphical application from your terminal](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/iterm2-pointer-pref.png)
+{{ s3_img("customize-shell", "iterm2-pointer-pref.png", "By enabling this feature, you will be able to open a file using a graphical application from your terminal") }}
 <span class=imgcaption>By enabling this feature, you will be able to open a file using a graphical application from your terminal</span>
 
 #### Intuitive location for new terminals
@@ -154,7 +156,7 @@ I did this because I oftentimes found myself splitting the current tab
 when I want to run multiple commands within the same project, and I had
 to `cd` into the project directory every time I did a pane split.
 
-![I reduced the time I spent `cd`-ing into project directories with these settings. Preferences \> Profiles \> General \> Working Directory \> Advanced Configuration \> Edit](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/iterm2-advanced-pref.png)
+{{ s3_img("customize-shell", "iterm2-advanced-pref.png", "I reduced the time I spent `cd`-ing into project directories with these settings. Preferences \> Profiles \> General \> Working Directory \> Advanced Configuration \> Edit") }}
 <span class=imgcaption>I reduced the time I spent `cd`-ing into project directories with these settings. Preferences \> Profiles \> General \> Working Directory \> Advanced Configuration \> Edit</span>
 
 <a id="what-font-should-i-use"></a>
@@ -170,7 +172,7 @@ also contains a set of *ligatures* for multi character combinations,
 such as `!` and `=` rendered in a single character, allowing you to read
 code and decode symbols more easily.
 
-![Example of rendered character ligatures](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/ligature-code-example.png)
+{{ s3_img("customize-shell", "ligature-code-example.png", "Example of rendered character ligatures") }}
 <span class=imgcaption>Example of rendered character ligatures</span>
 
 Note that not all terminals support fonts with ligatures. For example,
@@ -533,14 +535,14 @@ To define colorized zones in your bash prompt, use the following
 $ export PS1='[\t] \u@\h \W \e[32m$\e[m '
 ```
 
-![The `$` sign is now displayed in green](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/green-prompt.png)
+{{ s3_img("customize-shell", "green-prompt.png", "The `$` sign is now displayed in green") }}
 <span class=imgcaption>The `$` sign is now displayed in green</span>
 
 ``` extbash
 $ export PS1='\e[31m\u\e[m@\e[32m\h\e[m \e[36m\W\e[m $ '
 ```
 
-![The username is in red, the hostname in green and the path is in cyan. ](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/bash-colors-prompt.png)
+{{ s3_img("customize-shell", "bash-colors-prompt.png", "The username is in red, the hostname in green and the path is in cyan. ") }}
 <span class=imgcaption>The username is in red, the hostname in green and the path is in cyan. </span>
 
 ##### Color palettes
@@ -558,14 +560,14 @@ Following are two different color schemes, as well as the associated
 rendered prompt, both using the same `PS1` value, used in the previous
 example.
 
-![](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/color-scheme-solarized-dark-ansi.png)
+{{ s3_img("customize-shell", "color-scheme-solarized-dark-ansi.png", "") }}
 
-![The popular Solarized Dark color scheme](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/color-scheme-solarized-dark.png)
+{{ s3_img("customize-shell", "color-scheme-solarized-dark.png", "The popular Solarized Dark color scheme") }}
 <span class=imgcaption>The popular Solarized Dark color scheme</span>
 
-![](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/color-scheme-pastel-ansi.png)
+{{ s3_img("customize-shell", "color-scheme-pastel-ansi.png", "") }}
 
-![The Pastel (Dark Background) color scheme](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/color-scheme-pastel-dark-shell.png)
+{{ s3_img("customize-shell", "color-scheme-pastel-dark-shell.png", "The Pastel (Dark Background) color scheme") }}
 <span class=imgcaption>The Pastel (Dark Background) color scheme</span>
 
 As you can see, these both look quite different from the prompt
@@ -596,7 +598,7 @@ The 8-bit ANSI code syntax is `\e[38;5;n` where the colors associated
 with each value of `n` between 0 and 255 are represented in the
 following table[^11].
 
-![The 8-bit ANSI code allows you to render more than the initial 16 available colors](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/256col-table.png)
+{{ s3_img("customize-shell", "256col-table.png", "The 8-bit ANSI code allows you to render more than the initial 16 available colors") }}
 <span class=imgcaption>The 8-bit ANSI code allows you to render more than the initial 16 available colors</span>
 
 **Examples**
@@ -611,7 +613,7 @@ $ DOLLAR="\e[38;5;41m$\e[m"  # green
 $ export PS1="${TIME} ${USERNAME}@${HOSTNAME} ${PTH} ${DOLLAR} "
 ```
 
-![These ANSI codes sure are awful to read but they make for pretty colors ](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/256col-prompt.png)
+{{ s3_img("customize-shell", "256col-prompt.png", "These ANSI codes sure are awful to read but they make for pretty colors ") }}
 <span class=imgcaption>These ANSI codes sure are awful to read but they make for pretty colors </span>
 
 <div class="Note" markdown="1">
@@ -627,9 +629,9 @@ color schemes changes, as shown in the following examples, both re-using
 the same `PS1` configuration than in the <span class="ref"
 key="fig:256col-prompt">previous screenshot</span>.
 
-![](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/color-scheme-solarized-dark-256.png)
+{{ s3_img("customize-shell", "color-scheme-solarized-dark-256.png", "") }}
 
-![The colors remain unchanged](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/color-scheme-pastel-dark-256.png)
+{{ s3_img("customize-shell", "color-scheme-pastel-dark-256.png", "The colors remain unchanged") }}
 <span class=imgcaption>The colors remain unchanged</span>
 
 #### Adding color to your zsh prompt
@@ -648,7 +650,7 @@ also provides you with a much easier and readable color system:
 
 **Example**
 
-![The current working directory in blue and the dollar sign in bold pink](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/zsh-colors-prompt.png)
+{{ s3_img("customize-shell", "zsh-colors-prompt.png", "The current working directory in blue and the dollar sign in bold pink") }}
 <span class=imgcaption>The current working directory in blue and the dollar sign in bold pink</span>
 
 ### Displaying dynamic data in the prompt
@@ -705,7 +707,7 @@ executed successfully, then…”.
 
 </div>
 
-![The prompt is green after a successful command and red after a failed one](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/red-green-prompt.png)
+{{ s3_img("customize-shell", "red-green-prompt.png", "The prompt is green after a successful command and red after a failed one") }}
 <span class=imgcaption>The prompt is green after a successful command and red after a failed one</span>
 
 #### Displaying dynamic data in zsh
@@ -743,14 +745,14 @@ Here is a list of useful built-in conditions provided by `zsh`.
 $ export PROMPT='%F{%(0?.green.red)}$ %f'
 ```
 
-![Displays a dollar prompt in green if the last command was successful, or red if it failed](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/zsh-ternary-red-green.png)
+{{ s3_img("customize-shell", "zsh-ternary-red-green.png", "Displays a dollar prompt in green if the last command was successful, or red if it failed") }}
 <span class=imgcaption>Displays a dollar prompt in green if the last command was successful, or red if it failed</span>
 
 ``` extzsh
 $ export PROMPT='%* %1~ %(!.#.$) '
 ```
 
-![Display a dollar sign if you run your regular user, and a hash if you are running in super-user mode](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/zsh-ternary-root.png)
+{{ s3_img("customize-shell", "zsh-ternary-root.png", "Display a dollar sign if you run your regular user, and a hash if you are running in super-user mode") }}
 <span class=imgcaption>Display a dollar sign if you run your regular user, and a hash if you are running in super-user mode</span>
 
 <div class="Note" markdown="1">
@@ -772,7 +774,7 @@ count would however only be displayed when I was located in the root
 directory of the project, in the spirit of only displaying context when
 necessary.
 
-![](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/word-count-emoji.png)
+{{ s3_img("customize-shell", "word-count-emoji.png", "") }}
 
 <a id="shell-configuration-frameworks"></a>
 ## Shell configuration frameworks
@@ -794,7 +796,7 @@ to them (Oh My Zsh was first released around 2010, 20 years after zsh's
 first release), they certainly have helped in driving community adoption
 in the last couple of years[^15].
 
-![Comparison of Google Trends associated with zsh and Oh My Zsh](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/zsh-adoption.png)
+{{ s3_img("customize-shell", "zsh-adoption.png", "Comparison of Google Trends associated with zsh and Oh My Zsh") }}
 <span class=imgcaption>Comparison of Google Trends associated with zsh and Oh My Zsh</span>
 
 We will introduce you to the concepts behind Oh My Zsh, but it will then
@@ -982,7 +984,7 @@ enabling the following general-purpose plug-ins.
     default since they may change some user defined aliases
 -   `colored-man-pages`: colorize `man` pages
 
-![Colorized man pages are much easier to read!](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/colored-man-pages.png)
+{{ s3_img("customize-shell", "colored-man-pages.png", "Colorized man pages are much easier to read!") }}
 <span class=imgcaption>Colorized man pages are much easier to read!</span>
 
 -   `extract`: define an `extract` alias that can extract any type of
@@ -997,20 +999,20 @@ useful that I suggest you install them and give them a try.
     suggestion can be accepted by hitting <kbd>→</kbd> or ignored by
     just continuing typing.
 
-![I just typed `ls` and I immediately get a completion suggestion](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/zsh-autosuggestion-before.png)
+{{ s3_img("customize-shell", "zsh-autosuggestion-before.png", "I just typed `ls` and I immediately get a completion suggestion") }}
 <span class=imgcaption>I just typed `ls` and I immediately get a completion suggestion</span>
 
-![Suggestion accepted!](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/zsh-autosuggestion-after.png)
+{{ s3_img("customize-shell", "zsh-autosuggestion-after.png", "Suggestion accepted!") }}
 <span class=imgcaption>Suggestion accepted!</span>
 
 -   `zsh-syntax-highlighting`[^25]: provide syntax highlighting within
     the zsh command line. It also colorizes the name of the command you
     type in green if it is found, and in red if not.
 
-![`ls` is a valid command](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/zsh-syntax-highlight-prompt-cmd-green.png)
+{{ s3_img("customize-shell", "zsh-syntax-highlight-prompt-cmd-green.png", "`ls` is a valid command") }}
 <span class=imgcaption>`ls` is a valid command</span>
 
-![`cmdnotfound` is not](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/customize-shell/zsh-syntax-highlight-prompt-cmd-red.png)
+{{ s3_img("customize-shell", "zsh-syntax-highlight-prompt-cmd-red.png", "`cmdnotfound` is not") }}
 <span class=imgcaption>`cmdnotfound` is not</span>
 
 #### Uninstalling Oh My Zsh

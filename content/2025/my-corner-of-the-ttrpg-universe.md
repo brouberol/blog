@@ -4,7 +4,7 @@ Date: 2025-09-22
 Category: TTRPG
 Description: I've recently grown tired of playing Dungeons and Dragons, and have taken a keen interest in expanding my TTRPG universe. This article will walk you through the games I'm excited to GM or play, as well as my favourite TTRPG Youtube channels and actual plays.
 Summary: I've recently grown tired of playing Dungeons and Dragons, and have taken a keen interest in expanding my TTRPG universe. This article will walk you through the games I'm excited to GM or play, as well as my favourite TTRPG Youtube channels and actual plays.
-Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/ttrpg-universe/ttrpgs.jpg
+Image: ttrpg-universe/ttrpgs.jpg
 Tags:
 Keywords: mothership, daggerheart, pirate borg, dnd, dungeons and dragons, mork borg, shadowdark, dune
 ---

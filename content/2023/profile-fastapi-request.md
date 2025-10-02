@@ -7,8 +7,9 @@ Date: 2023-08-05
 Category: Programming
 Description: A short walkthrough of how to profile an HTTP request through an asynchronous FastAPI API handler
 Summary: In this article, I share the challenges I faced when trying to profile requests in an asynchronous FastAPI server. The traditional profiler, `cProfile`, provided inaccurate results due to the nature of asynchronous functions, which resulted in misleading statistics. To overcome this, I explored `pyinstrument`, a statistical profiler with built-in support for asynchronous Python code.
-Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/fastapi-async-profiling/speedscope.png
+Image: fastapi-async-profiling/speedscope.png
 hide_image: True
+show_image_in_summary: True
 Tags: Python
 Keywords: FastAPI, Profiling
 ---

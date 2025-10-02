@@ -4,8 +4,9 @@ Title: Neapolitan pizza dough recipe
 Date: 2023-06-09
 Category: Yeast
 Description:  I have created a small Neapolitan pizza dough recipe calculator so I don't have to figure out the recipe from scratch everytime I'm making pizza.
-Summary:  ![pizza](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/neapolitan-pizza-recipe/pizza.jpg) I have created a small [Neapolitan pizza dough recipe calculator](https://balthazar-rouberol.com/pizza)  so I don't have to figure out the recipe from scratch everytime I'm making pizza.
-Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/neapolitan-pizza-recipe/pizza.jpg
+Summary:  I have created a small [Neapolitan pizza dough recipe calculator](https://balthazar-rouberol.com/pizza)  so I don't have to figure out the recipe from scratch everytime I'm making pizza.
+Image: neapolitan-pizza-recipe/pizza.jpg
+show_image_in_summary: True
 Tags: Pizza
 ---
 

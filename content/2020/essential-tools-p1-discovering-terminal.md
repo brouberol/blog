@@ -1,13 +1,15 @@
+{% from 's3.j2' import s3_img %}
+---
 Title: Discovering the terminal
 Date: 2020-03-05
 Category: Essential Tools and Practices for the Aspiring Software Developer
 Description: In which we help you take your first steps in the terminal
 Summary: This chapter will help you take your first steps in the terminal, this almost mythical (The Matrix, anyone?) application we oftentimes imagine hackers type in really fast. We will see how it works and how it can empower you, increase your productivity and give you insights about how your computer works.
-Image: https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/terminal/discovering-terminal.png
+Image: /terminal/discovering-terminal.png
 Tags: terminal
 Keywords: bash, zsh, linux
 chapter: 1
-
+---
 
 <header>
 <p>
@@ -118,13 +120,13 @@ In the early days of computing, video terminals were actual physical
 devices, used to execute commands onto a remote computer that could take
 a whole room.
 
-![The DEC VT100, a physical video terminal dating back 1978](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/terminal/physical-terminal.png)
+{{ s3_img("terminal", "physical-terminal.png", "The DEC VT100, a physical video terminal dating back 1978") }}
 <span class=imgcaption>The DEC VT100, a physical video terminal dating back 1978</span>
 
 Nowadays, terminals are programs run into a graphical window, emulating
 the behavior of the video terminals of old.
 
-![This is what a terminal looks like nowadays](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/terminal/shell.png)
+{{ s3_img("terminal", "shell.png", "This is what a terminal looks like nowadays") }}
 <span class=imgcaption>This is what a terminal looks like nowadays.</span>
 
 Different operating systems come with different terminals and different
@@ -168,7 +170,8 @@ to display information useful for the user. In my case, `br` is my
 username, and `morenika` is my computer’s name (its *<span class="gls"
 key="hostname">hostname</span>*).
 
-![`br@morenika:~$` is my prompt](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/terminal/shell.png)
+{{ s3_img("terminal", "shell.png", "{{ `br@morenika:~$` is my prompt | subrender }}") }}
+
 <span class=imgcaption>`br@morenika:~$` is my prompt</span>
 
 The black rectangle is called a *cursor*. It represents your current
@@ -202,7 +205,7 @@ These are all the files and directories located in my personal directory
 (also called *<span class="gls" key="homedir">home directory</span>*).
 Let’s open a graphical file explorer and check, just to be sure.
 
-![As expected, we weren’t lied to](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/terminal/home.png)
+{{ s3_img("terminal", "home.png", "As expected, we weren’t lied to") }}
 <span class=imgcaption>As expected, we weren’t lied to</span>
 
 <div class="Warning" markdown="1">
@@ -343,7 +346,7 @@ that this option simply does not have a long form.
 -   By convention, options can have have multiple forms: a short and/or
     a long one.
 
-![Here is a summary of the different parts of a command](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/terminal/terminal-parts.png)
+{{ s3_img("terminal", "terminal-parts.png", "Here is a summary of the different parts of a command") }}
 <span class=imgcaption>Here is a summary of the different parts of a command</span>
 
 <a id="managing-files"></a>
@@ -460,7 +463,7 @@ hierarchy: it contains every single file and directory in your
 system, each of these directories possibly containing others, to form a
 structure looking like a tree.
 
-![Your disk is organized like a tree](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/terminal/paths.png)
+{{ s3_img("terminal", "paths.png", "Your disk is organized like a tree") }}
 <span class=imgcaption>Your disk is organized like a tree</span>
 
 Let’s look at what that `/` root directory contains.
@@ -508,8 +511,7 @@ located in `/home/br`, meaning that the absolute path of `bin` was
 Each folder on disk has a link to itself called `.`, and and link to its
 parent folder called `..`.
 
-![The `.` link points to the folder itself and the `..` link points to
-the folder’s parent](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/terminal/dotpaths.png)
+{{ s3_img("terminal", "dotpaths.png", "{{ The `.` link points to the folder itself and the `..` link points to the folder’s parent | subrender }}") }}
 <span class=imgcaption>The `.` link points to the folder itself and the `..` link points to the folder’s parent</span>.
 
 We can use these `.` and `..` links when constructing relative paths.
@@ -525,7 +527,7 @@ Sdk
 Were you located under `/home/br/Android`, you could also refer to
 `/home/br/Downloads` as `../Downloads`.
 
-![Following `Android`’s `..` link takes you back to the `home` directory](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/terminal/dotdot.png)
+{{ s3_img("terminal", "dotdot.png", "{{ Following Android's `..` link takes you back to the `home` directory | subrender }}" ) }}
 <span class=imgcaption>Following `Android`’s `..` link takes you back to the `home` director</span>
 
 <div class="Note" markdown="1">
@@ -580,7 +582,7 @@ AndroidStudioProjects  code  Documents  Dropbox    Firefox_wallpaper.png  Pictur
 
 We can also see that directory by opening our file explorer.
 
-![The directory we have just created in the terminal can be seen in our file explorer. The terminal displays the information as text, and the file explorer displays it in a graphical form.](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/terminal/new-dir.png)
+{{ s3_img("terminal", "new-dir.png", "The directory we have just created in the terminal can be seen in our file explorer. The terminal displays the information as text, and the file explorer displays it in a graphical form.") }}
 <span class=imgcaption>The directory we have just created in the terminal can be seen in our file explorer. The terminal displays the information as text, and the file explorer displays it in a graphical form.</span>
 
 Running `mkdir` on a pre-existing command causes it to fail and display
@@ -826,7 +828,7 @@ Let’s give it a go, by typing the following command.
 $ man ls
 ```
 
-![`man ls` displays the manual of the `ls` command: everything you need to know about what `ls` can be used for.](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/terminal/man-ls.png)
+{{ s3_img("terminal", "man-ls.png", "`man ls` displays the manual of the `ls` command: everything you need to know about what `ls` can be used for.") }}
 <span class=imgcaption>`man ls` displays the manual of the `ls` command: everything you need to know about what `ls` can be used for.</span>
 
 #### Reading the synopsis
@@ -907,7 +909,7 @@ example, I can use this command on my computer.
 $ less Documents/readme
 ```
 
-![](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/terminal/less-readme.png)
+{{ s3_img("terminal", "less-readme.png", "") }}
 
 You can look into the `less` help itself, by typing `h` when reading a
 man page, by typing `less --help` in a terminal, or even `man less`!
@@ -920,7 +922,7 @@ typing
 $ man man
 ```
 
-![Low and behold, the manual’s manual.](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/terminal/man-man.png)
+{{ s3_img("terminal", "man-man.png", "Low and behold, the manual’s manual.") }}
 <span class="imgcaption">Low and behold, the manual’s manual.</span>
 
 <a id="command-inputoutput-streams"></a>
@@ -945,7 +947,7 @@ key="fd">file descriptor</span>*, a number used by the shell to
 reference that stream. `stdin` has the file descriptor 0, `stdout` has
 1, and `stderr` has 2.
 
-![stdin (file descriptor 0) is the process input stream, stdout (file descriptor 1) is the process output stream and stderr (file descriptor 2) is the process error stream](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/terminal/process-stream.png)
+{{ s3_img("terminal", "process-stream.png", "stdin (file descriptor 0) is the process input stream, stdout (file descriptor 1) is the process output stream and stderr (file descriptor 2) is the process error stream") }}
 <span class=imgcaption>`stdin` (file descriptor 0) is the process input stream, `stdout` (file descriptor 1) is the process output stream and `stderr` (file descriptor 2) is the process error stream.</span>
 
 
@@ -1107,7 +1109,7 @@ cat: notthere: No such file or directory
 
 This `stderr` redirection can be illustrated by the following diagram.
 
-![Any errors displayed by `cat` will be redirected into the `errors.txt` file](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/terminal/redirect-stderr.png)
+{{ s3_img("terminal", "redirect-stderr.png", "Any errors displayed by `cat` will be redirected into the `errors.txt` file") }}
 <span class=imgcaption>Any errors displayed by `cat` will be redirected into the `errors.txt` file</span>
 
 You can also redirect the command’s `stdout` to a file, and its `stderr`
@@ -1120,7 +1122,7 @@ $ cat errors.txt
 cat: notthere: No such file or directory
 ```
 
-![Normal output will be redirected into `output.txt` whereas errors are redirected to into `errors.txt`](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/terminal/redirect-stdout-stderr.png)
+{{ s3_img("terminal", "redirect-stdout-stderr.png", "Normal output will be redirected into `output.txt` whereas errors are redirected to into `errors.txt`") }}
 <span class=imgcaption>Normal output will be redirected into `output.txt` whereas errors are redirected to into `errors.txt`</span>
 
 It is also possible to redirect the command’s `stderr` into its `stdout`
@@ -1133,7 +1135,7 @@ $ cat output.txt
 cat: notthere: No such file or directory
 ```
 
-![`cat`’s stdout and stderr are merged together into a single stream](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/terminal/redirect-stderr-into-stdout.png)
+{{ s3_img("terminal", "redirect-stderr-into-stdout.png", "`cat`’s stdout and stderr are merged together into a single stream") }}
 <span class=imgcaption>`cat`’s stdout and stderr are merged together into a single stream</span>
 
 <div class="Note" markdown="1">
@@ -1175,7 +1177,7 @@ A pipe simply works by connecting the `stdout` stream of a command to
 the `stdin` stream of the next command. Simply said, the output of a
 command becomes the input of the next.
 
-![`ls` is *piped* into `wc` by redirecting its output into `wc`’s input. A pipe allows to compose and assemble commands into pipelines, which makes the terminal so powerful.](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/terminal/process-pipe-stream.png)
+{{ s3_img("terminal", "process-pipe-stream.png", "`ls` is *piped* into `wc` by redirecting its output into `wc`’s input. A pipe allows to compose and assemble commands into pipelines, which makes the terminal so powerful.") }}
 <span class=imgcaption>`ls` is *piped* into `wc` by redirecting its output into `wc`’s input. A pipe allows to compose and assemble commands into pipelines, which makes the terminal so powerful.</span>
 
 You can of course chain as many commands as possible and create command
@@ -1233,7 +1235,7 @@ code
 ...
 ```
 
-![`tee` is named after the T-splitter used in plumbing.](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/terminal/tee.png)
+{{ s3_img("terminal", "tee.png", "`tee` is named after the T-splitter used in plumbing.") }}
 <span class=imgcaption>`tee` is named after the T-splitter used in plumbing.</span>
 
 <a id="escaping-from-bad-situations"></a>

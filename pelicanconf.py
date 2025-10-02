@@ -13,6 +13,7 @@ SITENAME_FOR_READERS = "Balthazar"
 SITENAME = SITENAME_FOR_READERS
 SITEURL = "https://blog.balthazar-rouberol.com"
 ISSOURL = "https://comments.balthazar-rouberol.com"
+S3_IMAGE_BASE_URL = "https://f003.backblazeb2.com/file/brouberol-blog"
 ABSOLUTE_SITEURL = SITEURL
 
 TIMEZONE = "Europe/Paris"
@@ -64,6 +65,7 @@ JINJA2CONTENT_IGNORE = [
     abspath(join(dirname(__file__), "content", path + ".md"))
     for path in _JINJA2CONTENT_IGNORE
 ]
+JINJA_GLOBALS = {"S3_IMAGE_BASE_URL": S3_IMAGE_BASE_URL}
 
 PLUGIN_PATHS = ["plugins/pelican", "plugins"]
 PLUGINS = ["render_math", "jinja"]

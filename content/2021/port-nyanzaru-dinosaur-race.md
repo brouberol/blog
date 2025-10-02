@@ -1,4 +1,6 @@
 {% from 'note.j2' import note %}
+{% from 's3.j2' import s3_img %}
+---
 Title: Running the Port Nyanzaru Dinosaur Race
 Date: 2021-04-10
 Category: TTRPG
@@ -7,12 +9,13 @@ Summary: When I was preparing for Port Nyanzaru, in [Tomb of Annihilation](https
 Image: https://i.pinimg.com/originals/2a/8d/42/2a8d424a5f734afd5a388e75f627f656.png
 Tags: D&D5e, Tomb of Annihilation
 Keywords: dnd, toa, dinosaur, nyanzaru
+---
 
 When I was preparing for Port Nyanzaru, in [Tomb of Annihilation](https://dnd.wizards.com/products/tabletop-games/rpg-products/tomb-annihilation), I started reading what other Dungeons Masters had to say about the city. A lot of them would mention that the dinosaur race was a must-do, and that if done properly, it could really be a high point in the start of the adventure. The problem was, I felt that the official rules regarding this race were, well, underwhelming, to say the least. Each player rolls a dice, gets some points or not, repeatedly until the end of the race. If that race was going to be something to remember, I felt that I needed to spice it up a bit.
 
 The way I designed the race was as a mix between the official rules, the Game of the Goose and Mario Kart. You win if you are the first to complete 2 full laps around the city.  Each lap is made of 48 squares, and starts/finishes at the Coliseum, marked with an X.
 
-![board](https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/nyanzaru-race/nyanzaru-race.webp)
+{{ s3_img("nyanzaru-race", "nyanzaru-race.webp", "board") }}
 
 The players roll initiative to determine the order in which they'll play. We however consider that they all move at the same time, meaning that if 2 dinosaurs cross the finish line during the same round, they'll be considered ex aequo.
 

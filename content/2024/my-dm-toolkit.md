@@ -8,7 +8,7 @@ Date: 2024-04-28
 Category: TTRPG
 Description: One of my favourite aspect of being a dungeon master is building my own tools. I do this with a single goal in mind: improving the immersion by removing much of the in-game friction. This article will walk you through these tools and provide you with the resources you need should you want to use them as well.
 Summary: One of my favourite aspect of being a dungeon master is building my own tools. I do this with a single goal in mind: improving the immersion by removing much of the in-game friction. This article will walk you through these tools and provide you with the resources you need should you want to use them as well.
-Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/dm-toolkit/dm-toolkit.jpeg
+Image: dm-toolkit/dm-toolkit.jpeg
 Tags: Python, DIY
 Keywords: Dungeon Master, TTRPG, D&D, Python, DIY
 ---

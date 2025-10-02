@@ -1,11 +1,14 @@
 {% from 'note.j2' import note %}
+{% from 's3.j2' import s3_img %}
+---
 Title: My pizza recipe
 Date: 2020-03-18
 Category: yeast
 Description: Make your own pizza by doing almost nothing but waiting
-Summary: ![pizza](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-done.jpg) I've always enjoyed a good looking Neapolitan pizza. You know, the ones with the [puffy, slightly burned crust](https://www.napolike.it/wp-content/uploads/2017/12/Pizze-gratis-al-Napoli-Pizza-village-per-il-riconoscimento-unesco.jpeg). I have probably baked dozens of them during the last couple of years, but only recently did I become satisfied enough with my recipe to feel comfortable sharing it.
-Image: https://blog.balthazar-rouberol.com/images/pizza-done.jpeg
+Summary: I've always enjoyed a good looking Neapolitan pizza. You know, the ones with the [puffy, slightly burned crust](https://www.napolike.it/wp-content/uploads/2017/12/Pizze-gratis-al-Napoli-Pizza-village-per-il-riconoscimento-unesco.jpeg). I have probably baked dozens of them during the last couple of years, but only recently did I become satisfied enough with my recipe to feel comfortable sharing it.
+Image: pizza-recipe/pizza-done.jpg
 Tags: pizza
+---
 
 {{ note("If you're reading this, do yourself a favor. Stop right there, and go to this [post](/neapolitan-pizza-dough-recipe) instead. I was young and foolish, and didn't know any better." | subrender )}}
 
@@ -38,7 +41,7 @@ For 2 pizzas, you'll need:
 When it comes to the flour, the traditional flour is called _Double zero_ (00) flour. This means that it's ground extremely fine. It's usually found in specialized Italian shops.
 
 <div class="Note" markdown="1">
-What's important to note here is that a flour is characterized by [several things](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-mix.jpeg):
+What's important to note here is that a flour is characterized by several things:
 
 - how fine it was ground
 - its protein content
@@ -69,11 +72,11 @@ In theory, we should add the salt after the autolysis process, but as I use kosh
 
 After having waited a good half-hour, incorporate the _petit levain_ with the mix of flour, salt and water, by using your dough scraper. It's ok if there is a bit of flour left in the bowl, it will get absorbed during the kneading. Wait for 10, 15 minutes.
 
-![mix](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-mix.jpeg)
+{{ s3_img("pizza-recipe", "pizza-mix.jpeg", "mix" ) }}
 
 Pop the dough on your table (add a little bit of flour on the table if there isn't any left in the bowl), and knead it for about 10 minutes. Feel free to stop when the dough is pretty smooth and supple.
 
-![ball](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-ball.jpeg)
+{{ s3_img("pizza-recipe", "pizza-ball.jpeg", "ball" ) }}
 
 Put the dough in a closed container, and put it to rest in the fridge for 48 to 72h. Yep, you read that right. If you're thinking _"I am my own person, I do what I want, and I want to eat that pizza tonight"_, sure, let the dough rest for about 2h on your kitchen counter instead, under a damp towel.
 
@@ -87,8 +90,8 @@ Take the container of the fridge about 6h (if you can) before cooking time, and 
 Letting the dough out early will give it time to "relax" and will make it easier to stretch.
 </div>
 
-![tuppwerware](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-tupperware.jpeg)
-![balls](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-balls.jpeg)
+{{ s3_img("pizza-recipe", "pizza-tupperware.jpeg", "tuppwerware" ) }}
+{{ s3_img("pizza-recipe", "pizza-balls.jpeg", "balls" ) }}
 
 [Shape](https://www.youtube.com/watch?v=v5t5MEZt6LM) each half into a nice stretched ball, and put them in a closed container until you start cooking (or put the second one in the fridge if you're only planning to make one).
 
@@ -97,7 +100,7 @@ Letting the dough out early will give it time to "relax" and will make it easier
 
 When stretching your dough, you want to make sure to *never* use a rolling pin, and never touch the outside rim, otherwise you'll chase the air out and the crust won't expand as much as we'd want. I learned a ton from that [super short video](https://www.youtube.com/watch?v=9f9-xTcKzZo), which really helped me getting that Neapolitan look I wanted.
 
-![streched](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-streched.jpeg)
+{{ s3_img("pizza-recipe", "pizza-streched.jpeg", "streched" ) }}
 
 Sprinkle flour on your pizza tray, and pop the dough on it.
 
@@ -106,7 +109,7 @@ Sprinkle flour on your pizza tray, and pop the dough on it.
 
 First off, add some tomato sauce. One important thing is to avoid putting too much, which would dampen the dough and make the pizza quite watery. I usually use 2 big spoons of sauce, and spread it in circles, starting from the center. Make sure to avoid touching the outside rim.
 
-![with tomato](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-tomato.jpeg)
+{{ s3_img("pizza-recipe", "pizza-tomato.jpeg", "with tomato" ) }}
 
 Pre-heat your oven at 250°C (480°F) with convection, if possible.
 
@@ -120,7 +123,7 @@ At that point, you're going to have to make choices. I won't tell you what you s
 
 Drizzle the rim with olive oil, which will give it a nice golden color at cooking time.
 
-![pre oven](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-pre-oven.jpeg)
+{{ s3_img("pizza-recipe", "pizza-pre-oven.jpeg", "pre oven" ) }}
 
 ### Cooking
 
@@ -128,4 +131,4 @@ When your oven is hot, cook your pizza for about 8 minutes.
 
 The rest is on you.
 
-![post oven](https://s3.eu-west-3.amazonaws.com/balthazar-rouberol-blog/pizza-recipe/pizza-post-oven.jpeg)
+{{ s3_img("pizza-recipe", "pizza-post-oven.jpeg", "post oven" ) }}

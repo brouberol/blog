@@ -6,7 +6,7 @@ Date: 2023-07-25
 Category: programming
 Description: I'll demonstrate a simple technique relying on Github Actions and pull request labels to block a pull request from being merged, until deemed safe to do so.
 Summary: Sometimes, a pull request is ready to go, but shouldn't be merged before some other changes are merged first. While the patch is valid on its own, it might depend on other changes, and could even break the application if merged _before_ the other. I'll demonstrate a simple technique relying on Github Actions and pull request labels to block a pull request from being merged, until deemed safe to do so.
-Image: https://balthazar-rouberol-blog.s3.eu-west-3.amazonaws.com/do-not-merge/required-checks.png
+Image: do-not-merge/required-checks.png
 hide_image: True
 Tags:
 Keywords: Github, Pull Request, CI/CD

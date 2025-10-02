@@ -64,7 +64,7 @@
 
     {% if article.image %}
     {% if not article.hide_image == "True" %}
-    <img src="{{ article.image }}" loading=lazy decoding=async class="article__main_img" />
+    <img src="{{ article.image | s3_img_abspath }}" loading=lazy decoding=async class="article__main_img" />
     {% endif %}
     {% endif %}
     {{ article.content }}
