@@ -11,6 +11,8 @@ pelican = "^4.6.0"
 Markdown = "^3.3.4"
 Pygments = "^2.9.0"
 Pillow = "^10.0"
+pelican-render-math = "^1.0.4"
+pelican-jinja2content = "^1.0.1"
 
 [poetry.group.dev.dependencies]
 black = { version = "^22.3.0", allow-prereleases = true }
