@@ -58,8 +58,6 @@ RELATIVE_URLS = True
 JINJA2CONTENT_TEMPLATES = ["../macros/jinja"]  # relative to the `content` directory
 _JINJA2CONTENT_IGNORE = [
     "2017/advent-of-code-day-3",
-    "2020/essential-tools-p4-customizing-shell",
-    "2022/rust-coverage-reports",
 ]
 JINJA2CONTENT_IGNORE = [
     abspath(join(dirname(__file__), "content", path + ".md"))

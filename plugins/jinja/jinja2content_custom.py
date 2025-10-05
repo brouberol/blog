@@ -6,6 +6,7 @@ global list.
 """
 
 import os
+import re
 from tempfile import NamedTemporaryFile
 
 from jinja2 import ChoiceLoader, Environment, FileSystemLoader
@@ -46,7 +47,15 @@ class JinjaContentMixin(object):
         with pelican_open(source_path) as text:
             ## Here is the custom part: an escape hatch for some articles
             if source_path not in self.settings["JINJA2CONTENT_IGNORE"]:
+                code_blocks = re.findall(r"```[\s\w]+\n[^`]+```\n", text)
+
+                for i, code_block in enumerate(code_blocks):
+                    text = text.replace(code_block, f"__CODEBLOCK__{i}__")
+
                 text = self.env.from_string(text).render()
+
+                for i, code_block in enumerate(code_blocks):
+                    text = text.replace(f"__CODEBLOCK__{i}__", code_block)
 
         with NamedTemporaryFile(delete=False) as f:
             f.write(text.encode())
