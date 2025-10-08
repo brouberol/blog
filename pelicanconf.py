@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 
-from __future__ import unicode_literals
+from pathlib import Path
 
-import os
-from os.path import abspath, dirname, join
+root_dir = Path(".").absolute()
+content_dir = root_dir / "content"
+extra_dir = content_dir / "extra"
 
 AUTHOR = "Balthazar Rouberol"
 AUTHOR_TWITTER = "@brouberol"
@@ -31,15 +32,13 @@ TAG_FEED_ATOM = "feeds/tags/{slug}.rss.xml"
 DISPLAY_CATEGORIES = True
 ARTICLE_URL = "{slug}"
 
-PATH = "content"
-STATIC_PATHS = ["extra"]
+PATH = content_dir
+STATIC_PATHS = [extra_dir]
 
-extra_files = os.listdir(abspath(join(dirname(__file__), "content", "extra")))
 EXTRA_PATH_METADATA = {
-    "extra/%s" % (filename): {"path": "%s" % (filename)} for filename in extra_files
+    f"extra/{path.name}": {"path": path.name} for path in extra_dir.glob("*")
 }
-
-THEME = abspath(join(dirname(__file__), "themes", "pelican-hss"))
+THEME = root_dir / "themes" / "pelican-hss"
 
 USER_LOGO_URL = "https://gravatar.com/avatar/6832e99e94636c4872030004c6f8fd70?s=180"
 TAGLINE = "I work with humans and computers."
@@ -55,13 +54,12 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-JINJA2CONTENT_TEMPLATES = ["../macros/jinja"]  # relative to the `content` directory
+JINJA2CONTENT_TEMPLATES = [root_dir / "macros/jinja"]
 _JINJA2CONTENT_IGNORE = [
     "2017/advent-of-code-day-3",
 ]
 JINJA2CONTENT_IGNORE = [
-    abspath(join(dirname(__file__), "content", path + ".md"))
-    for path in _JINJA2CONTENT_IGNORE
+    str(content_dir / f"{path}.md") for path in _JINJA2CONTENT_IGNORE
 ]
 JINJA_GLOBALS = {"S3_IMAGE_BASE_URL": S3_IMAGE_BASE_URL}
 
