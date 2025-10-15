@@ -45,11 +45,6 @@
   {% block head %}
   {% endblock %}
 
-  <title>
-    {{ SITENAME_FOR_META }}
-    {% block title %}{% endblock %}
-  </title>
-
   {%- if CUSTOM_HEADER_HTML %}
   {{ CUSTOM_HEADER_HTML }}
   {% endif -%}

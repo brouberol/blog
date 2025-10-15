@@ -3,6 +3,7 @@
 {% set article_url = ABSOLUTE_SITEURL ~ "/" ~ article.url | replace('.html', '') %}
 
 {% block head %}
+<title>{{ article.title }}</title>
 <meta name="keywords"
   content="{{ article.tags | join(', ')}}{% if article.keywords %}, {{ article.keywords }}{% endif %}">
 <meta name="description" content="{% if article.description %}{{ article.description }}{% else %}{{ BIO }}{% endif %}">
@@ -39,8 +40,6 @@
 {% endfor %}
 
 {% endblock %}
-
-{% block title %}&ndash; {{ article.title }}{% endblock %}
 
 {% block content %}
 {% import "modules/macros.html" as macros %}
