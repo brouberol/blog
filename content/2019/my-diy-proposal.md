@@ -6,7 +6,7 @@ Date: 2019-11-30
 Category: DIY
 Description: Who said that geeks couldn't be creative and romantic?
 Summary: I proposed to my girlfriend by building her a Zelda chest and developing an Android application for the occasion.
-Tags: DIY
+Tags: programming
 Image: proposal/chest-3d.png
 show_image_in_summary: True
 ---
