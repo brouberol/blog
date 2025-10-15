@@ -7,7 +7,6 @@ content_dir = root_dir / "content"
 extra_dir = content_dir / "extra"
 
 AUTHOR = "Balthazar Rouberol"
-AUTHOR_TWITTER = "@brouberol"
 AUTHOR_URL = "https://balthazar-rouberol.com"
 SITENAME_FOR_META = "Balthazar - Blog"
 SITENAME_FOR_READERS = "Balthazar"

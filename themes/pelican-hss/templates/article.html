@@ -19,11 +19,9 @@
 <meta name="twitter:card" content="summary" />
 {% endif %}
 <meta name="twitter:title" content="{{ article.title }}" />
-<meta name="twitter:site" content="{{ AUTHOR_TWITTER }}" />
 <meta name="twitter:url" content="{{ ABSOLUTE_SITEURL }}/{{ article.url | replace('.html', '')}}" />
 <meta name="twitter:description"
   content="{% if article.description %}{{ article.description }}{% else %}{{ BIO }}{% endif %}">
-<meta name="twitter:creator" content="{{ AUTHOR_TWITTER }}" />
 {% if article.category %}
 <meta name="twitter:label1" value="Theme" />
 <meta name="twitter:data1" value="{{ article.category }}" />
