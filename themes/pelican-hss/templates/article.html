@@ -28,6 +28,16 @@
 <meta name="twitter:label1" value="Theme" />
 <meta name="twitter:data1" value="{{ article.category }}" />
 {% endif %}
+
+{# Octothorpes, cf https://docs.octothorp.es/quickstart/ #}
+<link rel="preload" as="fetch" href="https://octothorp.es/?uri={{ article_url }}">
+{% if article.category %}
+<link rel="octo:octothorpes" href="{{ article.category }}">
+{% endif %}
+{% for tag in article.tags %}
+<link rel="octo:octothorpes" href="{{ tag }}">
+{% endfor %}
+
 {% endblock %}
 
 {% block title %}&ndash; {{ article.title }}{% endblock %}
