@@ -1,3 +1,4 @@
+---
 Title: Text processing in the shell
 Date: 2020-03-14
 Category: Essential Tools and Practices for the Aspiring Software Developer
@@ -7,6 +8,8 @@ Image: /text-processing/text-processing.jpg
 Tags: terminal
 Keywords: bash, awk, grep, sed, zsh, linux
 chapter: 2
+octothorpes_tag: programming
+---
 
 <header>
 <p>

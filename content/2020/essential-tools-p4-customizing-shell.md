@@ -8,6 +8,7 @@ Image: customize-shell/header.jpg
 Tags: terminal
 Keywords: oh-my-zsh, terminator, iterm2, zsh, bash, shell, prompt
 chapter: 4
+octothorpes_tag: programming
 ---
 
 {% from 's3.j2' import s3_img %}

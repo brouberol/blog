@@ -9,6 +9,7 @@ Image: /terminal/discovering-terminal.png
 Tags: terminal
 Keywords: bash, zsh, linux
 chapter: 1
+octothorpes_tag: programming
 ---
 
 <header>

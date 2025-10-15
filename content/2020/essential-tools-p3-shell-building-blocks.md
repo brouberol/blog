@@ -1,3 +1,4 @@
+---
 Title: The shell's building blocks
 Date: 2020-04-04
 Category: Essential Tools and Practices for the Aspiring Software Developer
@@ -7,7 +8,8 @@ Image: https://p1.pxfuel.com/preview/880/869/94/lego-build-building-blocks-toys.
 Tags: terminal
 Keywords: shell, bash, zsh, environment variables, functions, aliases
 chapter: 3
-
+octothorpes_tag: programming
+---
 <header>
 <p>
     This article is part of a self-published book project by Balthazar Rouberol and <a href=https://etnbrd.com>Etienne Brodu</a>, ex-roommates, friends and colleagues, aiming at empowering the up and coming generation of developers. We currently are hard at work on it!

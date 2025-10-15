@@ -9,6 +9,7 @@ Image: shell-productivity/header.jpg
 Tags: terminal
 Keywords: history navigation, expansions, productivity, shell, bash, zsh
 chapter: 5
+octothorpes_tag: programming
 ---
 
 <header>
