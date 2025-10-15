@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% set article_url = SITEURL ~ "/" ~ article.url | replace('.html', '') %}
+{% set article_url = ABSOLUTE_SITEURL ~ "/" ~ article.url | replace('.html', '') %}
 
 {% block head %}
 <meta name="keywords"
