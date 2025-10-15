@@ -32,10 +32,10 @@
 {# Octothorpes, cf https://docs.octothorp.es/quickstart/ #}
 <link rel="preload" as="fetch" href="https://octothorp.es/?uri={{ article_url }}">
 {% if article.category %}
-<link rel="octo:octothorpes" href="{{ article.category }}">
+<link rel="octo:octothorpes" href="{{ article.category | lower }}">
 {% endif %}
 {% for tag in article.tags %}
-<link rel="octo:octothorpes" href="{{ tag }}">
+<link rel="octo:octothorpes" href="{{ tag | lower }}">
 {% endfor %}
 
 {% endblock %}
