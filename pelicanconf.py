@@ -14,7 +14,6 @@ SITENAME = SITENAME_FOR_READERS
 SITEURL = "https://blog.balthazar-rouberol.com"
 ISSOURL = "https://comments.balthazar-rouberol.com"
 S3_IMAGE_BASE_URL = "https://f003.backblazeb2.com/file/brouberol-blog"
-ABSOLUTE_SITEURL = SITEURL
 
 TIMEZONE = "Europe/Paris"
 DEFAULT_LANG = "en"

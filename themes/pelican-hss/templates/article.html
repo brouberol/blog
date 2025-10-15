@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% set article_url = SITEURL ~ "/" ~ article.url | replace('.html', '') %}
+
 {% block head %}
 <meta name="keywords"
   content="{{ article.tags | join(', ')}}{% if article.keywords %}, {{ article.keywords }}{% endif %}">
@@ -8,8 +10,8 @@
   content="{% if article.description %}{{ article.description }}{% else %}{{ BIO }}{% endif %}">
 <meta property="og:title" content="{{ article.title }}" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="{{ ABSOLUTE_SITEURL }}/{{ article.url | replace('.html', '')}}" />
-<link data-pagefind-meta="url[href]" rel="canonical" href="{{ SITEURL }}/{{ article.url | replace('.html', '') }}">
+<meta property="og:url" content="{{ article_url }}" />
+<link data-pagefind-meta="url[href]" rel="canonical" href="{{ article_url }}">
 
 {% if article.image %}
 <meta name="twitter:card" content="summary_large_image" />
@@ -19,7 +21,7 @@
 <meta name="twitter:card" content="summary" />
 {% endif %}
 <meta name="twitter:title" content="{{ article.title }}" />
-<meta name="twitter:url" content="{{ ABSOLUTE_SITEURL }}/{{ article.url | replace('.html', '')}}" />
+<meta name="twitter:url" content="{{ article_url }}" />
 <meta name="twitter:description"
   content="{% if article.description %}{{ article.description }}{% else %}{{ BIO }}{% endif %}">
 {% if article.category %}
@@ -34,7 +36,7 @@
 {% import "modules/macros.html" as macros %}
 <article data-pagefind-body>
   <div class="article__title">
-    <h1 data-pagefind-meta="title"><a href="{{ SITEURL }}/{{ article.url | replace('.html', '') }}">{{ article.title
+    <h1 data-pagefind-meta="title"><a href="{{ article_url }}">{{ article.title
         }}</a></h1>
   </div>
   <div class="article__meta">
